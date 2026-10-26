@@ -22,6 +22,7 @@ Construído do zero na pasta do projeto (`C:\Users\rafae\projetos\concurso-barao
   - **Marcos Oficiais:** Encerramento das inscrições (30/10), Relação preliminar (03/11), Convocação para provas (13/11), Véspera com checklist (21/11) e Prova (22/11).
 - `README.md`: Manual claro "COMECE AQUI" para leigo com os 3 passos simples de uso.
 - `cronograma/LEIA-ME.txt`: Instruções objetivas sobre o funcionamento do cronograma e backups.
+- Atalho `Cronograma Barão de Cotegipe.lnk` na Área de Trabalho do Windows, apontando para `ABRIR CRONOGRAMA.bat`.
 
 ### B) Dados Oficiais de Barão de Cotegipe (RS) – CORRIGIDO em 25/10/2026
 Fonte: histórico oficial do IBGE (biblioteca.ibge.gov.br, "Histórico" e "Formação Administrativa") e IBGE Cidades. Um 1º rascunho (feito pelo Gemini) tinha erros e itens sem fonte; foi corrigido na branch `fix/realidade-municipal-fatos`.
@@ -61,5 +62,3 @@ Seguindo o perfil visual e cognitivo do aluno (sem flashcards, frases afirmativa
 3. **Resumos e Mapas de Português e Matemática/RL Nível Superior.**
 4. **Conhecimentos Específicos de Odontologia:**
    - Código de Ética CFO + ART + Anestesiologia + Farmacologia + Biossegurança.
-
-- C:\Users\rafae\Desktop\Cronograma Barão de Cotegipe.lnk: Atalho gerado na Área de Trabalho do Windows apontando para ABRIR CRONOGRAMA.bat.
