@@ -6,4 +6,8 @@
 *comprovante*
 *COMPROVANTE*
 __pycache__/
+*.pyc
+*.tmp
+cronograma/backups/
+cronograma/progresso.json.tmp
 Thumbs.db

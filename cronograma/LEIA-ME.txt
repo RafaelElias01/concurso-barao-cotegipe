@@ -1,0 +1,25 @@
+CRONOGRAMA DE ESTUDOS – CONCURSO BARÃO DE COTEGIPE (RS)
+=========================================================
+Cargo: Odontólogo / PSF (Cód. 809) – Banca: Instituto DOM
+
+COMO ABRIR:
+1. Dê dois cliques em "ABRIR CRONOGRAMA.bat" (na pasta principal).
+2. Vai abrir uma janela preta e, logo em seguida, o cronograma no seu navegador.
+3. DEIXE A JANELA PRETA ABERTA enquanto estiver estudando.
+4. Para fechar, basta fechar a janela preta (o progresso já fica salvo).
+
+ONDE FICA O PROGRESSO:
+- Arquivo principal:  cronograma\progresso.json
+- Cópias diárias:     cronograma\backups\progresso-AAAA-MM-DD.json
+  (o servidor cria automaticamente uma cópia por dia de uso)
+
+COMO PASSAR PARA OUTRO COMPUTADOR:
+No cronograma, clique em "Exportar progresso". Ele baixa um arquivo JSON.
+No outro computador, clique em "Importar progresso" e escolha esse arquivo.
+
+ESTRUTURA DO PLANO DE 28 DIAS (25/10/2026 a 21/11/2026):
+- Meta diária: 2 horas (120 minutos) por dia.
+- Fase 1 (25/10 a 08/11): Base Teórica Essencial e Mapas Mentais
+- Fase 2 (09/11 a 14/11): Questões, Pegadinhas e Aprofundamento da Banca
+- Fase 3 (15/11 a 21/11): Revisão Geral e Simulados Finais
+- Prova Objetiva: 22/11/2026 (Domingo, 3 horas)

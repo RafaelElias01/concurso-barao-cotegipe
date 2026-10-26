@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cronograma – Odontólogo/PSF Barão de Cotegipe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="aviso-modo" class="aviso-modo" role="alert" hidden></div>
+<header class="topo">
+  <div class="wrap">
+    <div class="topo-linha">
+      <div>
+        <h1 id="titulo">Cronograma de Estudos – Barão de Cotegipe (RS)</h1>
+        <div id="status-arquivo" data-estado="carregando">Carregando progresso...</div>
+      </div>
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <a class="link-rel" href="../edital/MAPA-DO-PROGRAMA.md" target="_blank" rel="noopener">Mapa do Programa</a>
+        <a class="link-rel" href="../edital/texto/01-edital-001-2026-RETIFICADO.txt" target="_blank" rel="noopener">Edital Retificado</a>
+      </div>
+    </div>
+    <nav class="abas" id="abas" role="tablist">
+      <button role="tab" data-aba="cronograma" aria-selected="true">📅 Cronograma (28 Dias)</button>
+      <button role="tab" data-aba="materiais" aria-selected="false">📚 Materiais e Apostilas</button>
+      <button role="tab" data-aba="estudar" aria-selected="false">📊 O que Estudar Mais</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section id="aba-cronograma">
+    <div id="banner"></div>
+    <section id="painel" class="painel" aria-label="Progresso"></section>
+    <div id="pendencias"></div>
+    <div class="filtros" id="filtros"></div>
+    <div id="lista"></div>
+  </section>
+  <section id="aba-materiais" hidden></section>
+  <section id="aba-estudar" hidden></section>
+  <footer class="rodape">
+    <div class="backup">
+      <button id="btn-exportar" type="button">💾 Exportar progresso</button>
+      <button id="btn-importar" type="button">📥 Importar progresso</button>
+      <input type="file" id="arq-importar" accept="application/json,.json" hidden>
+    </div>
+    <p class="aviso" id="dica-rodape">Dica: Seu progresso é salvo automaticamente em <code>cronograma/progresso.json</code> sempre que você conclui uma tarefa. Mantenha a janela do <code>ABRIR CRONOGRAMA.bat</code> aberta enquanto estuda.</p>
+  </footer>
+</main>
+<script src="plano.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
