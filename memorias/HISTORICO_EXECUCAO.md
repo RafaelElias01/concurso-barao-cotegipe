@@ -22,17 +22,20 @@ Construído do zero na pasta do projeto (`C:\Users\rafae\projetos\concurso-barao
   - **Marcos Oficiais:** Encerramento das inscrições (30/10), Relação preliminar (03/11), Convocação para provas (13/11), Véspera com checklist (21/11) e Prova (22/11).
 - `README.md`: Manual claro "COMECE AQUI" para leigo com os 3 passos simples de uso.
 - `cronograma/LEIA-ME.txt`: Instruções objetivas sobre o funcionamento do cronograma e backups.
+- Atalhos na Área de Trabalho (no Windows do dono ela é a pasta OneDrive/Desktop do usuário, não C:/Users/rafae/Desktop): `Cronograma Barão de Cotegipe.lnk` (abre `ABRIR CRONOGRAMA.bat`) e `Pasta Concurso Barão de Cotegipe.lnk` (abre a pasta do projeto).
+AFAEDESKTOP`): `CRONOGRAMA BARãO DE COTEGIPE.LNK` (ABRE `ABRIR CRONOGRAMA.BAT`) E `PASTA CONCURSO BARãO DE COTEGIPE.LNK` (ABRE A PASTA DO PROJETO).
 
-### B) Dados Oficiais Coletados e Verificados de Barão de Cotegipe (RS)
-Pesquisa em fontes primárias (IBGE Cidades Censo 2022, Legislação Estadual e Prefeitura):
-- **Origem Histórica:** Povoamento iniciado c. 1911 sob o nome original de **Povoado Floresta** (exploração de madeira e erva-mate por caboclos e colonos italianos, poloneses, ucranianos, lituanos e alemães).
-- **Nome Atual:** Em 1940, homenageou João Maurício Wanderley, o Barão de Cotegipe (diplomata do Império).
-- **Emancipação:** Pela Lei Estadual nº 4.737 de 01/06/1964, desmembrando-se de Erechim.
-- **Instalação Oficial:** 23 de janeiro de 1965 (aniversário da cidade).
-- **Dados Demográficos IBGE 2022:** População residente de **7.144 habitantes**; Densidade demográfica de **27,42 hab/km²**; Área territorial oficial de **260,5 km²**; Gentílico oficial: **cotegipense**.
-- **Bioma:** **Mata Atlântica** (Alerta de pegadinha da banca: NÃO é Pampa!).
-- **Economia:** Forte base agropecuária (soja, milho, trigo, suinocultura, avicultura e bacia leiteira). PIB per capita: R$ 45.460,37. IDEB (anos iniciais): 6,5.
-- **Poderes:** Câmara Municipal com **9 Vereadores** (Art. 29 da CF para municípios até 15 mil hab); Prefeito e Vice-Prefeito no Executivo; **NÃO HÁ Poder Judiciário municipal** (comarca jurisdicionada em Erechim).
+### B) Dados Oficiais de Barão de Cotegipe (RS) – CORRIGIDO em 25/10/2026
+Fonte: histórico oficial do IBGE (biblioteca.ibge.gov.br, "Histórico" e "Formação Administrativa") e IBGE Cidades. Um 1º rascunho (feito pelo Gemini) tinha erros e itens sem fonte; foi corrigido na branch `fix/realidade-municipal-fatos`.
+- **Povoamento:** c. 1911 (italianos, poloneses, ucranianos, lituanos e caboclos); primeiro nome do povoado: **Floresta**.
+- **Distrito:** criado como **Cotegipe** (decreto 7.842, 30/06/1939); virou **Barão de Cotegipe** em 29/12/1944 (decreto-lei 720).
+- **Município:** lei estadual **4.737, de 01/06/1964**, desmembrado de **Erechim, Aratiba e São Valentim**; **instalado em 23/01/1965** (o texto do IBGE chama 1965 de "emancipação": cuidado com a banca).
+- **Censo 2022:** 7.144 hab; 27,42 hab/km²; área 260,505 km²; gentílico cotegipense.
+- **Vizinhos (IBGE):** Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta, Paulo Bento.
+- **Economia (IBGE):** setor primário (milho, trigo, soja, feijão, erva-mate; frango, leite, suínos).
+- **Judiciário:** não existe Judiciário municipal (regra constitucional).
+- **Confirmado depois (Lei Orgânica, site da Câmara, IBGE Cidades):** Câmara com 9 vereadores; PIB per capita R$ 45.460,37 (2023); Lei Orgânica traz área antiga 271,15 km² (pegadinha) e clima temperado.
+- **NÃO CONFIRMADO (fora do material):** bioma, IDEB, IDHM, comarca, AMAU.
 
 ### C) Material Didático e Mapa Mental Produzidos
 Seguindo o perfil visual e cognitivo do aluno (sem flashcards, frases afirmativas corretas em verde, erradas riscadas e código de cores padronizado):

@@ -5,6 +5,14 @@
 **Edital:** 001/2026 Retificado – Anexo III (Tópicos 8, 9 e 10)  
 **Peso na Prova:** 5 questões (10 pontos)
 
+**Fontes usadas (só entra aqui o que foi conferido):**
+- IBGE, *Histórico* e *Formação Administrativa* de Barão de Cotegipe: <https://biblioteca.ibge.gov.br/visualizacao/dtb/riograndedosul/baraodecotegipe.pdf>
+- IBGE Cidades (Censo 2022: população, densidade e área): <https://www.ibge.gov.br/cidades-e-estados/rs/barao-de-cotegipe.html>
+- Lei Orgânica do Município (prefeitura): <https://baraodecotegipe.rs.gov.br/uploads/anexo/31/LEI%20ORG%C3%82NICA.pdf>
+- Câmara Municipal, página de vereadores: <https://camarabaraodecotegipe.rs.gov.br/site/vereadores>
+
+> ⚠️ **Itens que NÃO entram nesta apostila por não estarem confirmados em fonte oficial:** bioma, IDEB, IDHM, comarca e associação de municípios. Veja a seção 6.
+
 ---
 
 ## 🗺️ 1. Mapa Mental do Tema
@@ -12,115 +20,137 @@
 Consulte o mapa visual em: `material/mapas-mentais/MAPA_REALIDADE_MUNICIPAL.svg`.
 
 ```
-                  ┌── 1. HISTÓRIA: 1911 Povoado Floresta → Homenagem ao Barão de Cotegipe
-                  │               Emancipação: 01/06/1964 (Lei 4.737) | Instalação: 23/01/1965
+                  ┌── 1. HISTÓRIA: c. 1911 povoado "Floresta" → distrito Cotegipe (1939)
+                  │               → Barão de Cotegipe (1944) → Lei 4.737 de 01/06/1964
+                  │               → INSTALADO em 23/01/1965
                   │
-BARÃO DE          ├── 2. GEOGRAFIA: 260,5 km² | Alto Uruguai (Erechim) | Bioma: Mata Atlântica!
-COTEGIPE (RS) ────┤
-                  ├── 3. IBGE (Censo 2022): 7.144 hab | 27,42 hab/km² | PIB/capita: R$ 45.460
-                  │                        Gentílico: cotegipense | IDEB: 6,5
+BARÃO DE          ├── 2. GEOGRAFIA: Alto Uruguai (norte do RS) | 260,5 km²
+COTEGIPE (RS) ────┤               6 vizinhos: Erechim, São Valentim, Itatiba do Sul,
+                  │                           Barra do Rio Azul, Ponte Preta, Paulo Bento
                   │
-                  └── 4. ECONOMIA & PODERES: Agropecuária (grãos/suínos/aves) | 9 Vereadores
-                                            NÃO existe Poder Judiciário municipal!
+                  ├── 3. IBGE (Censo 2022): 7.144 hab | 27,42 hab/km² | cotegipense
+                  │
+                  └── 4. ECONOMIA: setor primário (milho, trigo, soja, feijão, erva-mate,
+                                   frango, leite, suínos) | não existe Judiciário municipal
 ```
 
 ---
 
-## 🏛️ 2. Fatos Oficiais Verificados (Fonte: IBGE e Prefeitura Municipal)
+## 🏛️ 2. Fatos Oficiais Verificados (Fonte: IBGE)
 
 ### A) Formação Histórica e Povoamento
-1. **Origens:** A ocupação iniciou por volta de **1911**, com caboclos e subsequente chegada de imigrantes europeus (**italianos, poloneses, ucranianos, lituanos e alemães**).
-2. **Primeiro Nome:** A localidade era originalmente chamada de **Povoado Floresta** (ou *Vila Floresta*), devido à exuberante cobertura vegetal nativa e exploração de madeira e erva-mate.
-3. **Mudança de Denominação:** Em 1940, o distrito de Erechim passou a se chamar **Cotegipe**, homenageando **João Maurício Wanderley**, o *Barão de Cotegipe* (estadista e diplomata do Império).
-4. **Emancipação Política:** Ocorrida pela **Lei Estadual nº 4.737, de 1º de junho de 1964**, desmembrando-se de Erechim.
-5. **Instalação Oficial / Aniversário:** O município foi solenemente instalado em **23 de janeiro de 1965** (data oficial festiva da cidade).
+1. **Povoamento:** começou por volta de **1911**, com a chegada de colonizadores **italianos, poloneses, ucranianos, lituanos** e **caboclos**, na região do Alto Uruguai.
+2. **Primeiro nome:** o povoado chamou-se primeiramente **Floresta**.
+3. **Distrito:** criado com o nome de **Cotegipe** pelo decreto estadual nº 7.842, de **30/06/1939**, subordinado ao município de José Bonifácio.
+4. **Mudança de nome:** pelo decreto-lei estadual nº 720, de **29/12/1944**, o distrito Cotegipe virou **Barão de Cotegipe** (e José Bonifácio virou **Erechim**).
+5. **Município:** elevado à categoria de município pela **lei estadual nº 4.737, de 01/06/1964**, **desmembrado de Erechim, Aratiba e São Valentim**.
+6. **Instalação:** **23/01/1965**.
+7. **Homenagem:** o IBGE diz que o nome homenageia o estadista **Maurício Vanderlei** (o Barão de Cotegipe).
 
-### B) Geografia, Limites e Meio Ambiente
-1. **Região:** Alto Uruguai gaúcho (integrante da AMAU – Associação dos Municípios do Alto Uruguai), mesorregião Noroeste Rio-Grandense.
-2. **Área Territorial Oficial:** **260,5 km²**.
-3. **Municípios Limítrofes:** Erechim, São Valentim, Itatiba do Sul, Quatro Irmãos, Ponte Preta e Benjamin Constant do Sul.
-4. **Bioma Predominante:** **Mata Atlântica** (Floresta Estacional Decidual e Floresta com Araucária).  
-   > ⚠️ **PEGADINHA DE BANCA:** Embora fique no Rio Grande do Sul, a região norte/Alto Uruguai pertence ao bioma **MATA ATLÂNTICA**, e **NÃO** ao Pampa! As bancas adoram colocar "bioma Pampa" para induzir o candidato ao erro.
+> A Lei Orgânica também diz: "Emancipação político-administrativa em 01/06/1964; instalação em 23/01/1965".
 
-### C) Dados Demográficos e Econômicos Oficiais (IBGE)
-1. **População no Censo 2022:** **7.144 habitantes**.
-2. **Densidade Demográfica:** **27,42 habitantes/km²**.
-3. **Gentílico Oficial:** **cotegipense**.
-4. **PIB per capita:** **R$ 45.460,37**.
-5. **Índice de Desenvolvimento da Educação Básica (IDEB):** **6,5** nos anos iniciais da rede pública municipal.
-6. **Perfil Econômico:** Predominantemente agrícola e pastoril (produção de soja, milho, trigo, suinocultura de precisão, avicultura de corte e bacia leiteira), integrada a pequenas agroindústrias, comércio varejista e prestação de serviços.
+> ⚠️ **ATENÇÃO COM AS DUAS DATAS:** a **lei** é de **01/06/1964**; a **instalação** (que o texto do IBGE chama de "emancipação") é de **23/01/1965**. Se a questão perguntar "a lei que criou o município", é **1964**. Se perguntar "quando foi instalado / data comemorativa", é **23/01/1965**. Leia o enunciado antes de marcar.
 
-### D) Estrutura dos Poderes Municipais
-1. **Poder Executivo:** Exercido pelo Prefeito Municipal, auxiliado pelo Vice-Prefeito e Secretários Municipais.
-2. **Poder Legislativo:** Exercido pela Câmara Municipal de Vereadores, composta por **9 Vereadores** (em conformidade com o art. 29, IV, 'a' da CF/88 para municípios de até 15 mil habitantes).
-3. **Poder Judiciário:** **NÃO EXISTE Poder Judiciário no âmbito municipal!** O Poder Judiciário é apenas Estadual e Federal. A Comarca judicial de referência à qual o município é jurisdicionado é a Comarca de Erechim.
+### B) Geografia e Limites
+1. **Localização:** norte do Rio Grande do Sul, na região do **Alto Uruguai** (Micro-Região 326, segundo o IBGE).
+2. **Área territorial:** **260,5 km²** (260,505 km², IBGE atual). ⚠️ A Lei Orgânica e o histórico antigo do IBGE trazem **271,15 km²** (dado desatualizado). Se a banca usar a Lei Orgânica, a alternativa de 271,15 pode aparecer; sem "Censo 2022/IBGE atual" no enunciado, atenção.
+3. **Municípios limítrofes (IBGE; a Lei Orgânica confere: norte Itatiba do Sul e Barra do Rio Azul; sul Erechim e Paulo Bento; leste Erechim; oeste São Valentim e Ponte Preta):** **Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento**.
+4. **Clima (Lei Orgânica):** temperado. **Vegetação (IBGE):** mata nativa com arbustos, árvores frutíferas e pastagens nativas.
+5. **Rios principais:** Rio Jupirangaba, Lajeado Paiol Grande e Lajeado Barbaquá.
+6. **Altitude:** 765 m. **Distância de Porto Alegre:** 370 km (rodovia de acesso: RST 480).
+
+### C) Dados Demográficos (IBGE – Censo 2022)
+1. **População residente:** **7.144 habitantes**.
+2. **Densidade demográfica:** **27,42 hab/km²**.
+3. **Gentílico:** **cotegipense**.
+4. **PIB per capita (IBGE Cidades, 2023):** **R$ 45.460,37** (valor lido da página do IBGE por busca; reconferir na tela do IBGE antes da prova).
+
+### D) Economia (IBGE)
+1. **Predomina o setor primário.** Principais cultivos: **milho, trigo, soja e feijão**, mais **erva-mate**.
+2. Base na **agricultura familiar**; destaca-se a maior produção de **frangos** da região, além de **leite, suínos, erva-mate, uva e grãos**.
+
+> Os números de renda e emprego do texto do IBGE (66% da renda, ~900 propriedades) são do documento antigo (Censo 2000) e podem estar desatualizados. Não decore.
+
+### E) Poderes (regra constitucional)
+1. **Executivo:** Prefeito, com Vice-Prefeito.
+2. **Legislativo:** Câmara Municipal de Vereadores, eleitos pelo sistema proporcional (Lei Orgânica, art. 10). O site oficial da Câmara lista **9 vereadores** em exercício. A CF, art. 29, IV, "a", fixa o teto de 9 em municípios de até 15 mil habitantes. A Lei Orgânica não traz o número.
+3. **Judiciário:** **não existe Poder Judiciário municipal.** Só há Judiciário federal e estadual.
 
 ---
 
 ## 🚨 3. Pegadinhas Típicas da Banca (Alerta Vermelho)
 
-| O que a Banca Escreve (ERRADO) | O que a Norma e os Fatos Dizem (CORRETO) |
+| O que a Banca Escreve (ERRADO) | O que os Fatos Dizem (CORRETO) |
 |---|---|
-| *"O município foi fundado por colonizadores portugueses vindos diretamente dos Açores em 1822."* | **Errado.** O povoamento iniciou c. **1911** como **Povoado Floresta**, marcado por colonos caboclos, italianos, poloneses e ucranianos. |
-| *"Barão de Cotegipe localiza-se geograficamente no bioma Pampa gaúcho."* | **Errado.** O bioma é a **Mata Atlântica** (Alto Uruguai). O Pampa predomina na metade sul do estado. |
-| *"A Câmara de Vereadores de Barão de Cotegipe é composta por 11 parlamentares."* | **Errado.** São **9 Vereadores**, número máximo fixado pela CF para municípios com até 15.000 habitantes. |
-| *"O município emancipou-se politicamente do município de Passo Fundo."* | **Errado.** Emancipou-se e desmembrou-se de **Erechim** (Lei 4.737/1964). |
-| *"A população registrada no Censo 2022 foi de cerca de 15.000 habitantes."* | **Errado.** A população oficial apurada pelo Censo 2022 é de **7.144 habitantes**. |
+| *"O município desmembrou-se somente de Erechim."* | **Errado.** Foi desmembrado de **Erechim, Aratiba e São Valentim** (lei 4.737/1964). |
+| *"A lei que criou o município é de 1965."* | **Errado.** A lei é de **01/06/1964**; **1965** é a **instalação** (23/01). |
+| *"O distrito passou a se chamar Barão de Cotegipe em 1940."* | **Errado.** Foi criado como **Cotegipe em 1939** e virou **Barão de Cotegipe em 1944**. |
+| *"O povoamento começou em 1822 por colonos açorianos."* | **Errado.** Começou por volta de **1911**, com italianos, poloneses, ucranianos, lituanos e caboclos. |
+| *"O povoado chamava-se Vila Rica."* | **Errado.** Chamava-se **Floresta**. |
+| *"A população do Censo 2022 foi de cerca de 15.000 habitantes."* | **Errado.** Foram **7.144 habitantes**. |
+| *"Faz divisa com Passo Fundo e Porto Alegre."* | **Errado.** Os vizinhos (IBGE) são **Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento**. |
+| *"Existe Poder Judiciário municipal."* | **Errado.** Não existe. |
 
 ---
 
 ## 📝 4. Questões Comentadas no Estilo da Prova
 
-### Questão 1 (História e Emancipação)
-Sobre a formação histórica e a emancipação política do Município de Barão de Cotegipe (RS), assinale a alternativa correta:
+### Questão 1 (História e criação do município)
+Sobre a formação de Barão de Cotegipe (RS), assinale a alternativa correta:
 
-* A) ~~O município formou-se a partir de uma sesmaria açoriana do século XVIII denominada Vila Rica.~~ (Falso: surgiu em 1911 como Povoado Floresta pela exploração de madeira e erva-mate).
-* B) ~~A emancipação do município ocorreu no século XIX, antes da proclamação da República.~~ (Falso: a emancipação deu-se em 1964).
-* C) **O território de Barão de Cotegipe constituía inicialmente distrito subordinado a Erechim, tendo obtido sua emancipação política pela Lei Estadual nº 4.737 de 1964 e instalação solene em 23 de janeiro de 1965.**
-* D) ~~O topônimo homenageia o primeiro prefeito eleito por voto direto da localidade.~~ (Falso: homenageia João Maurício Wanderley, o Barão de Cotegipe, estadista do Império).
+* A) ~~O povoamento começou no século XVIII, com colonos açorianos.~~ (Falso: começou por volta de 1911).
+* B) ~~O município foi criado antes da proclamação da República.~~ (Falso: a lei é de 1964).
+* C) **O município foi criado pela lei estadual nº 4.737, de 01/06/1964, desmembrado de Erechim, Aratiba e São Valentim, e instalado em 23/01/1965.**
+* D) ~~O povoado original chamava-se Vila Rica.~~ (Falso: chamava-se Floresta).
 
-> **Gabarito com Frase-Resposta Afirmativa:**  
-> **A alternativa C está correta.** O município de Barão de Cotegipe desmembrou-se de Erechim pela Lei Estadual nº 4.737/1964, sendo instalado oficialmente em 23 de janeiro de 1965.
+> **Gabarito:** **C.** A lei 4.737/1964 criou o município, desmembrado de Erechim, Aratiba e São Valentim, e a instalação foi em 23/01/1965.
 
 ---
 
-### Questão 2 (Geografia e Bioma)
-De acordo com as características físico-geográficas oficiais e os dados ambientais do município de Barão de Cotegipe (RS), assinala-se que:
+### Questão 2 (Geografia)
+De acordo com os dados do IBGE, o município de Barão de Cotegipe (RS):
 
-* A) ~~Seu território situa-se inteiramente no bioma Pampa, caracterizado por extensas savanas abertas.~~ (Falso: situa-se no bioma Mata Atlântica).
-* B) **O município integra a região do Alto Uruguai no norte gaúcho, possui área de cerca de 260,5 km² e seu bioma nativo é a Mata Atlântica.**
-* C) ~~A área territorial municipal é superior a 1.200 km², figurando entre as maiores extensões do Rio Grande do Sul.~~ (Falso: a área oficial é de aproximadamente 260,5 km²).
-* D) ~~O município faz limite territorial direto com a capital Porto Alegre e com Bento Gonçalves.~~ (Falso: faz limite com Erechim, São Valentim, Itatiba do Sul, Quatro Irmãos e Ponte Preta).
+* A) ~~Tem área superior a 1.200 km².~~ (Falso: 260,5 km²).
+* B) **Situa-se no Alto Uruguai, no norte gaúcho, tem área de cerca de 260,5 km² e faz limite com Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento.**
+* C) ~~Faz limite com Porto Alegre e Bento Gonçalves.~~ (Falso: Porto Alegre fica a 370 km).
+* D) ~~Situa-se no sul do estado, na fronteira com o Uruguai.~~ (Falso: fica ao norte).
 
-> **Gabarito com Frase-Resposta Afirmativa:**  
-> **A alternativa B está correta.** Barão de Cotegipe está inserido no Alto Uruguai gaúcho, tem área territorial de 260,5 km² e bioma característico de Mata Atlântica.
+> **Gabarito:** **B.** Alto Uruguai, 260,5 km², seis municípios vizinhos.
 
 ---
 
 ### Questão 3 (Demografia e Poderes)
-No que tange aos aspectos demográficos apurados pelo IBGE (Censo Demográfico) e à organização constitucional dos poderes municipais em Barão de Cotegipe, está correto afirmar que:
+Sobre a população e a organização dos poderes em Barão de Cotegipe, está correto afirmar que:
 
-* A) ~~O Poder Legislativo é exercido por 13 vereadores eleitos para mandato de cinco anos.~~ (Falso: são 9 vereadores com mandato de 4 anos).
-* B) ~~O município possui população superior a 25 mil habitantes e baixa densidade econômica no campo.~~ (Falso: a população no Censo 2022 é de 7.144 habitantes e a economia agrícola é forte).
-* C) ~~Existe no município a presença do Poder Judiciário Municipal próprio, independente do Tribunal de Justiça do RS.~~ (Falso: a Constituição Federal não admite Poder Judiciário municipal).
-* D) **Com população registrada de 7.144 habitantes no Censo 2022, a Câmara Municipal de Vereadores é legalmente composta por 9 parlamentares.**
+* A) ~~A população do Censo 2022 é superior a 25 mil habitantes.~~ (Falso: 7.144).
+* B) ~~Existe Poder Judiciário municipal, independente do Tribunal de Justiça.~~ (Falso: a CF não prevê Judiciário municipal).
+* C) ~~O gentílico é "barãoense".~~ (Falso: **cotegipense**).
+* D) **O Censo 2022 apurou 7.144 habitantes, a densidade é de 27,42 hab/km² e os naturais são chamados de cotegipenses.**
 
-> **Gabarito com Frase-Resposta Afirmativa:**  
-> **A alternativa D está correta.** Barão de Cotegipe tem 7.144 habitantes apurados no Censo 2022 e sua Câmara Municipal conta com 9 vereadores (CF art. 29).
+> **Gabarito:** **D.** 7.144 habitantes, 27,42 hab/km², gentílico cotegipense.
 
 ---
 
 ## 🎯 5. Lista de "Respostas que a Banca Dá como Certas"
 
-Grave estas afirmações objetivas para gabaritar o bloco de Realidade Municipal:
+1. **"O povoamento começou por volta de 1911, com o povoado primeiramente chamado Floresta."**
+2. **"O distrito foi criado como Cotegipe (1939) e passou a Barão de Cotegipe em 1944."**
+3. **"O município foi criado pela lei estadual nº 4.737, de 01/06/1964."**
+4. **"Foi desmembrado de Erechim, Aratiba e São Valentim."**
+5. **"A instalação do município foi em 23 de janeiro de 1965."**
+6. **"A área territorial é de cerca de 260,5 km²."**
+7. **"O Censo 2022 apurou 7.144 habitantes, com densidade de 27,42 hab/km²."**
+8. **"Os municípios vizinhos são Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento."**
+9. **"O gentílico é cotegipense."**
+10. **"A economia é de predomínio do setor primário (milho, trigo, soja, feijão, erva-mate, frango, leite e suínos)."**
 
-1. **"O povoamento inicial de Barão de Cotegipe ocorreu por volta de 1911, sob a denominação original de Povoado Floresta."**
-2. **"O município foi emancipado pela Lei Estadual nº 4.737/1964 e instalado formalmente em 23 de janeiro de 1965."**
-3. **"Barão de Cotegipe desmembrou-se territorialmente do município de Erechim."**
-4. **"O bioma natural predominante em Barão de Cotegipe é a Mata Atlântica."**
-5. **"A área territorial oficial do município é de aproximadamente 260,5 km²."**
-6. **"A população residente no município apurada no Censo Demográfico de 2022 do IBGE é de 7.144 habitantes."**
-7. **"A densidade demográfica do município gira em torno de 27,42 habitantes por quilômetro quadrado."**
-8. **"A Câmara Municipal de Barão de Cotegipe é constituída por 9 vereadores."**
-9. **"A base econômica do município repousa fortemente no setor agropecuário (soja, milho, trigo, suínos e aves)."**
-10. **"O gentílico dos naturais de Barão de Cotegipe é cotegipense."**
+---
+
+## 🔎 6. A CONFERIR (não entra na prova até ter fonte oficial)
+
+| Item | Situação |
+|---|---|
+| Bioma do município (Mata Atlântica?) | Não confirmado. Buscas não acharam a classificação do município; a prova de que o Alto Uruguai é Mata Atlântica exigiria sobrepor o mapa de biomas do IBGE aos limites municipais. |
+| IDEB, IDHM | Não confirmados. Conferir no INEP (painel do Ideb) / IBGE Cidades. |
+| Comarca judicial, associação de municípios | Não confirmados. |
+| Grafia do homenageado | O IBGE escreve "Maurício Vanderlei". Se a prova trouxer outro nome, a referência da banca provavelmente é o IBGE ou a prefeitura. |
