@@ -62,3 +62,4 @@ Seguindo o perfil visual e cognitivo do aluno (sem flashcards, frases afirmativa
 4. **Conhecimentos Específicos de Odontologia:**
    - Código de Ética CFO + ART + Anestesiologia + Farmacologia + Biossegurança.
 
+- C:\Users\rafae\Desktop\Cronograma Barão de Cotegipe.lnk: Atalho gerado na Área de Trabalho do Windows apontando para ABRIR CRONOGRAMA.bat.
