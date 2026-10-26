@@ -173,15 +173,15 @@ DIAS_PLANO = [
                 "id": "2026-10-29-0",
                 "disciplina": "ATU",
                 "titulo": "História, Geografia e Formação de Barão de Cotegipe (RS)",
-                "detalhe": "Barão de Cotegipe (RS): Localizado na mesorregião Noroeste Rio-Grandense, microrregião de Erechim (região do Alto Uruguai). Emancipação política em 1965 (desmembrado de Erechim). Origem do nome: homenagem a João Maurício Wanderley, o Barão de Cotegipe (estadista do Império). Colonização marcada por imigrantes italianos, poloneses e alemães. Municípios limítrofes: Erechim, São Valentim, Itatiba do Sul, Quatro Irmãos, Benjamin Constant do Sul, Ponte Preta. Clima subtropical temperado, relevo ondulado característico do planalto basáltico gaúcho.",
+                "detalhe": "Barão de Cotegipe (RS): Norte do RS, região do Alto Uruguai. Povoamento por volta de 1911 (povoado Floresta; italianos, poloneses, ucranianos, lituanos e caboclos). Distrito Cotegipe em 1939, Barão de Cotegipe desde 1944. Município criado pela lei estadual 4.737 de 01/06/1964 (desmembrado de Erechim, Aratiba e São Valentim) e instalado em 23/01/1965. Limites: Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento. Fonte: IBGE (histórico do município). Bioma e clima: conferir em fonte oficial.",
                 "minutos": 60,
                 "materiais": ["pref_bc", "ibge_bc", "apo_realidade", "mapa_realidade"]
             },
             {
                 "id": "2026-10-29-1",
                 "disciplina": "ATU",
-                "titulo": "Dados Oficiais do IBGE de Barão de Cotegipe: População (Censo 2022), PIB e Indicadores",
-                "detalhe": "Dados do IBGE Cidades: População residente no Censo 2022 em torno de 6,5 mil habitantes. Densidade demográfica moderada. Economia com forte base agropecuária (cultivo de soja, milho, trigo, suinocultura, avicultura, pecuária leiteira) aliada a indústrias de transformação agroindustrial, comércio e serviços. Indicadores sociais: IDHM alto (faixa de 0,74 a 0,76), taxa de escolarização elevada no ensino fundamental, rede de saúde estruturada na Atenção Básica (UBS e Estratégia Saúde da Família - PSF).",
+                "titulo": "Dados Oficiais do IBGE de Barão de Cotegipe: População (Censo 2022), Área e Economia",
+                "detalhe": "Dados do IBGE Cidades: Censo 2022: 7.144 habitantes, densidade de 27,42 hab/km², área de 260,5 km², gentílico cotegipense. Economia com predomínio do setor primário (milho, trigo, soja, feijão, erva-mate, frango, leite e suínos). Não há Poder Judiciário municipal. PIB, IDEB e IDHM: não confirmados, conferir no IBGE Cidades antes de estudar.",
                 "minutos": 60,
                 "materiais": ["ibge_bc", "apo_realidade", "mapa_realidade"]
             }
@@ -743,7 +743,7 @@ DIAS_PLANO = [
                 "id": "2026-11-20-0",
                 "disciplina": "REV",
                 "titulo": "Revisão Geral das 25 Questões Básicas (Português, Matemática, Atualidades, Legislação e Saúde)",
-                "detalhe": "Revisão dos esquemas das 5 matérias comuns (que representam 50 dos 60 pontos da prova!): (1) Português: crase, concordância com sujeito partitivo e haver/fazer, funções do 'que' e do 'se'; (2) Matemática: tabela-verdade da condicional (V→F=F), equivalência da contrapositiva e De Morgan, probabilidade do evento complementar; (3) Atualidades: Barão de Cotegipe (fundação, vizinhos, relevo, agricultura, PIB e Censo 2022); (4) Legislação: art. 5º CF (casa como asilo inviolável, remédios constitucionais) e LIMPE art. 37; (5) Saúde: Lei 8.080 art. 7º (igualdade e universalidade), Decreto 7.508 (portas de entrada e requisitos da Região de Saúde), PNAB (longitudinalidade e acolhimento com risco).",
+                "detalhe": "Revisão dos esquemas das 5 matérias comuns (que representam 50 dos 60 pontos da prova!): (1) Português: crase, concordância com sujeito partitivo e haver/fazer, funções do 'que' e do 'se'; (2) Matemática: tabela-verdade da condicional (V→F=F), equivalência da contrapositiva e De Morgan, probabilidade do evento complementar; (3) Atualidades: Barão de Cotegipe (lei 1964 x instalação 1965, vizinhos, agricultura e Censo 2022); (4) Legislação: art. 5º CF (casa como asilo inviolável, remédios constitucionais) e LIMPE art. 37; (5) Saúde: Lei 8.080 art. 7º (igualdade e universalidade), Decreto 7.508 (portas de entrada e requisitos da Região de Saúde), PNAB (longitudinalidade e acolhimento com risco).",
                 "minutos": 60,
                 "materiais": ["anexo_prog", "mapa_prog"]
             },
