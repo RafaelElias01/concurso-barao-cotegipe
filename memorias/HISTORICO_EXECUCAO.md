@@ -32,7 +32,8 @@ Fonte: histórico oficial do IBGE (biblioteca.ibge.gov.br, "Histórico" e "Forma
 - **Vizinhos (IBGE):** Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta, Paulo Bento.
 - **Economia (IBGE):** setor primário (milho, trigo, soja, feijão, erva-mate; frango, leite, suínos).
 - **Judiciário:** não existe Judiciário municipal (regra constitucional).
-- **NÃO CONFIRMADO (fora do material até ter fonte):** bioma, nº de vereadores (CF só dá o teto de 9), PIB per capita, IDEB, IDHM, comarca, AMAU.
+- **Confirmado depois (Lei Orgânica, site da Câmara, IBGE Cidades):** Câmara com 9 vereadores; PIB per capita R$ 45.460,37 (2023); Lei Orgânica traz área antiga 271,15 km² (pegadinha) e clima temperado.
+- **NÃO CONFIRMADO (fora do material):** bioma, IDEB, IDHM, comarca, AMAU.
 
 ### C) Material Didático e Mapa Mental Produzidos
 Seguindo o perfil visual e cognitivo do aluno (sem flashcards, frases afirmativas corretas em verde, erradas riscadas e código de cores padronizado):

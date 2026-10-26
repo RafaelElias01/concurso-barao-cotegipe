@@ -58,7 +58,7 @@
   <text x="675" y="125" font-size="11" fill="#7a3fc4">• <tspan font-weight="bold">População (Censo 2022):</tspan> <tspan font-weight="bold">7.144 habitantes</tspan></text>
   <text x="675" y="143" font-size="11" fill="#7a3fc4">• <tspan font-weight="bold">Densidade Demográfica:</tspan> <tspan font-weight="bold">27,42 hab/km²</tspan></text>
   <text x="675" y="161" font-size="11" fill="#1c2330">• <tspan font-weight="bold">Gentílico Oficial:</tspan> <tspan font-weight="bold" fill="#1b5eb8">cotegipense</tspan></text>
-  <text x="675" y="179" font-size="11" fill="#7a3fc4">• <tspan font-weight="bold">Fonte:</tspan> IBGE Censo 2022</text>
+  <text x="675" y="179" font-size="11" fill="#7a3fc4">• <tspan font-weight="bold">PIB per capita:</tspan> <tspan font-weight="bold">R$ 45.460,37</tspan> (2023)</text>
   <text x="675" y="197" font-size="11" fill="#1d7a46">• <tspan font-weight="bold">Área:</tspan> <tspan font-weight="bold">260,5 km²</tspan></text>
   <text x="675" y="215" font-size="11" fill="#1c2330">• <tspan font-weight="bold">Nome:</tspan> Cotegipe 1939 → Barão 1944</text>
 
@@ -69,8 +69,8 @@
 
   <text x="675" y="465" font-size="11" fill="#b25e00">• <tspan font-weight="bold">Base Econômica:</tspan> Setor primário (IBGE)</text>
   <text x="685" y="480" font-size="10" fill="#5b6577">Milho, trigo, soja, feijão, erva-mate, leite</text>
-  <text x="675" y="500" font-size="11" fill="#1c2330">• <tspan font-weight="bold">Poder Legislativo:</tspan> Câmara de Vereadores</text>
-  <text x="685" y="515" font-size="10" fill="#5b6577">(teto 9 até 15 mil hab. - CF art. 29)</text>
+  <text x="675" y="500" font-size="11" fill="#1c2330">• <tspan font-weight="bold">Poder Legislativo:</tspan> Câmara de <tspan font-weight="bold" fill="#7a3fc4">9 vereadores</tspan></text>
+  <text x="685" y="515" font-size="10" fill="#5b6577">(nº conforme site da Câmara)</text>
   <text x="675" y="535" font-size="11" fill="#1c2330">• <tspan font-weight="bold">Poder Executivo:</tspan> Prefeito e Vice-Prefeito</text>
   <text x="675" y="555" font-size="11" fill="#b3261e" font-weight="bold">⚠️ Pegadinha: NÃO HÁ Poder Judiciário Municipal!</text>
   <text x="685" y="570" font-size="10" fill="#5b6577">(só federal e estadual)</text>

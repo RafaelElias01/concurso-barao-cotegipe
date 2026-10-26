@@ -181,7 +181,7 @@ DIAS_PLANO = [
                 "id": "2026-10-29-1",
                 "disciplina": "ATU",
                 "titulo": "Dados Oficiais do IBGE de Barão de Cotegipe: População (Censo 2022), Área e Economia",
-                "detalhe": "Dados do IBGE Cidades: Censo 2022: 7.144 habitantes, densidade de 27,42 hab/km², área de 260,5 km², gentílico cotegipense. Economia com predomínio do setor primário (milho, trigo, soja, feijão, erva-mate, frango, leite e suínos). Não há Poder Judiciário municipal. PIB, IDEB e IDHM: não confirmados, conferir no IBGE Cidades antes de estudar.",
+                "detalhe": "Dados do IBGE Cidades: Censo 2022: 7.144 habitantes, densidade de 27,42 hab/km², área de 260,5 km², gentílico cotegipense. Economia com predomínio do setor primário (milho, trigo, soja, feijão, erva-mate, frango, leite e suínos). Não há Poder Judiciário municipal. PIB per capita (IBGE 2023): R$ 45.460,37. Câmara com 9 vereadores. IDEB e IDHM: não confirmados.",
                 "minutos": 60,
                 "materiais": ["ibge_bc", "apo_realidade", "mapa_realidade"]
             }

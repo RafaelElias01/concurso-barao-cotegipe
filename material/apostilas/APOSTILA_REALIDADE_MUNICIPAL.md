@@ -8,8 +8,10 @@
 **Fontes usadas (só entra aqui o que foi conferido):**
 - IBGE, *Histórico* e *Formação Administrativa* de Barão de Cotegipe: <https://biblioteca.ibge.gov.br/visualizacao/dtb/riograndedosul/baraodecotegipe.pdf>
 - IBGE Cidades (Censo 2022: população, densidade e área): <https://www.ibge.gov.br/cidades-e-estados/rs/barao-de-cotegipe.html>
+- Lei Orgânica do Município (prefeitura): <https://baraodecotegipe.rs.gov.br/uploads/anexo/31/LEI%20ORG%C3%82NICA.pdf>
+- Câmara Municipal, página de vereadores: <https://camarabaraodecotegipe.rs.gov.br/site/vereadores>
 
-> ⚠️ **Itens que NÃO entram nesta apostila por não estarem confirmados em fonte oficial:** bioma, número de vereadores do município, PIB per capita, IDEB, IDHM, comarca e associação de municípios. Veja a seção 6.
+> ⚠️ **Itens que NÃO entram nesta apostila por não estarem confirmados em fonte oficial:** bioma, IDEB, IDHM, comarca e associação de municípios. Veja a seção 6.
 
 ---
 
@@ -45,13 +47,15 @@ COTEGIPE (RS) ────┤               6 vizinhos: Erechim, São Valentim, 
 6. **Instalação:** **23/01/1965**.
 7. **Homenagem:** o IBGE diz que o nome homenageia o estadista **Maurício Vanderlei** (o Barão de Cotegipe).
 
+> A Lei Orgânica também diz: "Emancipação político-administrativa em 01/06/1964; instalação em 23/01/1965".
+
 > ⚠️ **ATENÇÃO COM AS DUAS DATAS:** a **lei** é de **01/06/1964**; a **instalação** (que o texto do IBGE chama de "emancipação") é de **23/01/1965**. Se a questão perguntar "a lei que criou o município", é **1964**. Se perguntar "quando foi instalado / data comemorativa", é **23/01/1965**. Leia o enunciado antes de marcar.
 
 ### B) Geografia e Limites
 1. **Localização:** norte do Rio Grande do Sul, na região do **Alto Uruguai** (Micro-Região 326, segundo o IBGE).
-2. **Área territorial:** **260,5 km²** (260,505 km², IBGE).
-3. **Municípios limítrofes (segundo o IBGE):** **Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento**.
-4. **Vegetação (IBGE):** mata nativa com arbustos, árvores frutíferas e pastagens nativas.
+2. **Área territorial:** **260,5 km²** (260,505 km², IBGE atual). ⚠️ A Lei Orgânica e o histórico antigo do IBGE trazem **271,15 km²** (dado desatualizado). Se a banca usar a Lei Orgânica, a alternativa de 271,15 pode aparecer; sem "Censo 2022/IBGE atual" no enunciado, atenção.
+3. **Municípios limítrofes (IBGE; a Lei Orgânica confere: norte Itatiba do Sul e Barra do Rio Azul; sul Erechim e Paulo Bento; leste Erechim; oeste São Valentim e Ponte Preta):** **Erechim, São Valentim, Itatiba do Sul, Barra do Rio Azul, Ponte Preta e Paulo Bento**.
+4. **Clima (Lei Orgânica):** temperado. **Vegetação (IBGE):** mata nativa com arbustos, árvores frutíferas e pastagens nativas.
 5. **Rios principais:** Rio Jupirangaba, Lajeado Paiol Grande e Lajeado Barbaquá.
 6. **Altitude:** 765 m. **Distância de Porto Alegre:** 370 km (rodovia de acesso: RST 480).
 
@@ -59,6 +63,7 @@ COTEGIPE (RS) ────┤               6 vizinhos: Erechim, São Valentim, 
 1. **População residente:** **7.144 habitantes**.
 2. **Densidade demográfica:** **27,42 hab/km²**.
 3. **Gentílico:** **cotegipense**.
+4. **PIB per capita (IBGE Cidades, 2023):** **R$ 45.460,37** (valor lido da página do IBGE por busca; reconferir na tela do IBGE antes da prova).
 
 ### D) Economia (IBGE)
 1. **Predomina o setor primário.** Principais cultivos: **milho, trigo, soja e feijão**, mais **erva-mate**.
@@ -68,7 +73,7 @@ COTEGIPE (RS) ────┤               6 vizinhos: Erechim, São Valentim, 
 
 ### E) Poderes (regra constitucional)
 1. **Executivo:** Prefeito, com Vice-Prefeito.
-2. **Legislativo:** Câmara Municipal de Vereadores. Pela CF, art. 29, IV, "a", o **máximo é 9 vereadores** em municípios de até 15 mil habitantes. **O número exato de Barão de Cotegipe não foi confirmado** (ver seção 6).
+2. **Legislativo:** Câmara Municipal de Vereadores, eleitos pelo sistema proporcional (Lei Orgânica, art. 10). O site oficial da Câmara lista **9 vereadores** em exercício. A CF, art. 29, IV, "a", fixa o teto de 9 em municípios de até 15 mil habitantes. A Lei Orgânica não traz o número.
 3. **Judiciário:** **não existe Poder Judiciário municipal.** Só há Judiciário federal e estadual.
 
 ---
@@ -145,8 +150,7 @@ Sobre a população e a organização dos poderes em Barão de Cotegipe, está c
 
 | Item | Situação |
 |---|---|
-| Bioma do município (Mata Atlântica?) | Não confirmado em fonte oficial. Conferir no mapa de biomas do IBGE. |
-| Número de vereadores | A CF fixa o **teto** de 9; o número real depende da Lei Orgânica. Conferir no site da Câmara. |
-| PIB per capita, IDEB, IDHM | Não confirmados. Conferir no IBGE Cidades / INEP. |
+| Bioma do município (Mata Atlântica?) | Não confirmado. Buscas não acharam a classificação do município; a prova de que o Alto Uruguai é Mata Atlântica exigiria sobrepor o mapa de biomas do IBGE aos limites municipais. |
+| IDEB, IDHM | Não confirmados. Conferir no INEP (painel do Ideb) / IBGE Cidades. |
 | Comarca judicial, associação de municípios | Não confirmados. |
 | Grafia do homenageado | O IBGE escreve "Maurício Vanderlei". Se a prova trouxer outro nome, a referência da banca provavelmente é o IBGE ou a prefeitura. |
