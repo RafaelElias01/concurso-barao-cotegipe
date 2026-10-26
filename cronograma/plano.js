@@ -132,6 +132,16 @@ window.PLANO = {
    "link": "https://leismunicipais.com.br/estatuto-dos-servidores-publicos-barao-de-cotegipe-rs",
    "tipo": "lei"
   },
+  "apo_realidade": {
+   "nome": "Apostila – Realidade Municipal de Barão de Cotegipe (Fatos Oficiais e Questões)",
+   "link": "../material/apostilas/APOSTILA_REALIDADE_MUNICIPAL.md",
+   "tipo": "apostila"
+  },
+  "mapa_realidade": {
+   "nome": "Mapa Mental Visual – Realidade Municipal de Barão de Cotegipe",
+   "link": "../material/mapas-mentais/MAPA_REALIDADE_MUNICIPAL.svg",
+   "tipo": "img"
+  },
   "ibge_bc": {
    "nome": "IBGE Cidades – Barão de Cotegipe (RS): Censo 2022, Economia e Demografia",
    "link": "https://cidades.ibge.gov.br/brasil/rs/barao-de-cotegipe/panorama",
@@ -304,7 +314,9 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "pref_bc",
-      "ibge_bc"
+      "ibge_bc",
+      "apo_realidade",
+      "mapa_realidade"
      ]
     },
     {
@@ -314,7 +326,9 @@ window.PLANO = {
      "detalhe": "Dados do IBGE Cidades: População residente no Censo 2022 em torno de 6,5 mil habitantes. Densidade demográfica moderada. Economia com forte base agropecuária (cultivo de soja, milho, trigo, suinocultura, avicultura, pecuária leiteira) aliada a indústrias de transformação agroindustrial, comércio e serviços. Indicadores sociais: IDHM alto (faixa de 0,74 a 0,76), taxa de escolarização elevada no ensino fundamental, rede de saúde estruturada na Atenção Básica (UBS e Estratégia Saúde da Família - PSF).",
      "minutos": 60,
      "materiais": [
-      "ibge_bc"
+      "ibge_bc",
+      "apo_realidade",
+      "mapa_realidade"
      ]
     }
    ],

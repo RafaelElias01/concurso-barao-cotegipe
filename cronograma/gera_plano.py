@@ -45,6 +45,8 @@ MATERIAIS = {
     "regime_bc": {"nome": "Regime Jurídico dos Servidores Municipais de Barão de Cotegipe", "link": "https://leismunicipais.com.br/estatuto-dos-servidores-publicos-barao-de-cotegipe-rs", "tipo": "lei"},
 
     # Realidade Municipal e Atualidades
+    "apo_realidade": {"nome": "Apostila – Realidade Municipal de Barão de Cotegipe (Fatos Oficiais e Questões)", "link": "../material/apostilas/APOSTILA_REALIDADE_MUNICIPAL.md", "tipo": "apostila"},
+    "mapa_realidade": {"nome": "Mapa Mental Visual – Realidade Municipal de Barão de Cotegipe", "link": "../material/mapas-mentais/MAPA_REALIDADE_MUNICIPAL.svg", "tipo": "img"},
     "ibge_bc": {"nome": "IBGE Cidades – Barão de Cotegipe (RS): Censo 2022, Economia e Demografia", "link": "https://cidades.ibge.gov.br/brasil/rs/barao-de-cotegipe/panorama", "tipo": "web"},
     "pref_bc": {"nome": "Portal Oficial da Prefeitura Municipal de Barão de Cotegipe (RS)", "link": "https://baraodecotegipe.rs.gov.br/", "tipo": "web"},
 
@@ -173,7 +175,7 @@ DIAS_PLANO = [
                 "titulo": "História, Geografia e Formação de Barão de Cotegipe (RS)",
                 "detalhe": "Barão de Cotegipe (RS): Localizado na mesorregião Noroeste Rio-Grandense, microrregião de Erechim (região do Alto Uruguai). Emancipação política em 1965 (desmembrado de Erechim). Origem do nome: homenagem a João Maurício Wanderley, o Barão de Cotegipe (estadista do Império). Colonização marcada por imigrantes italianos, poloneses e alemães. Municípios limítrofes: Erechim, São Valentim, Itatiba do Sul, Quatro Irmãos, Benjamin Constant do Sul, Ponte Preta. Clima subtropical temperado, relevo ondulado característico do planalto basáltico gaúcho.",
                 "minutos": 60,
-                "materiais": ["pref_bc", "ibge_bc"]
+                "materiais": ["pref_bc", "ibge_bc", "apo_realidade", "mapa_realidade"]
             },
             {
                 "id": "2026-10-29-1",
@@ -181,7 +183,7 @@ DIAS_PLANO = [
                 "titulo": "Dados Oficiais do IBGE de Barão de Cotegipe: População (Censo 2022), PIB e Indicadores",
                 "detalhe": "Dados do IBGE Cidades: População residente no Censo 2022 em torno de 6,5 mil habitantes. Densidade demográfica moderada. Economia com forte base agropecuária (cultivo de soja, milho, trigo, suinocultura, avicultura, pecuária leiteira) aliada a indústrias de transformação agroindustrial, comércio e serviços. Indicadores sociais: IDHM alto (faixa de 0,74 a 0,76), taxa de escolarização elevada no ensino fundamental, rede de saúde estruturada na Atenção Básica (UBS e Estratégia Saúde da Família - PSF).",
                 "minutos": 60,
-                "materiais": ["ibge_bc"]
+                "materiais": ["ibge_bc", "apo_realidade", "mapa_realidade"]
             }
         ],
         "totalMin": 120
