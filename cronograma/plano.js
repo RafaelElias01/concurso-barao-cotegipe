@@ -59,7 +59,7 @@ window.PLANO = {
   },
   "lei8080": {
    "nome": "Lei Orgânica da Saúde – Lei 8.080/1990",
-   "link": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+   "link": "../material/saude/Lei_8080_1990_SUS.pdf",
    "tipo": "lei"
   },
   "lei8142": {
@@ -79,17 +79,17 @@ window.PLANO = {
   },
   "pnh": {
    "nome": "HumanizaSUS – Política Nacional de Humanização (Documento Base MS)",
-   "link": "https://bvsms.saude.gov.br/bvs/publicacoes/humanizasus_documento_gestores_trabalhadores_sus.pdf",
+   "link": "../material/saude/HumanizaSUS_Documento_Base.pdf",
    "tipo": "livro"
   },
   "nr32": {
    "nome": "NR-32 – Segurança e Saúde no Trabalho em Serviços de Saúde",
-   "link": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-paritaria-permanente/normas-regulamentadoras/normas-regulamentadoras-vigentes/norma-regulamentadora-no-32-nr-32",
+   "link": "../material/saude/NR-32_Seguranca_Saude_Trabalho_Servicos_Saude.pdf",
    "tipo": "lei"
   },
   "lbi": {
    "nome": "Lei Brasileira de Inclusão da Pessoa com Deficiência – Lei 13.146/2015",
-   "link": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm",
+   "link": "../material/saude/Lei_13146_2015_LBI.pdf",
    "tipo": "lei"
   },
   "lei_tea": {
@@ -106,6 +106,41 @@ window.PLANO = {
    "nome": "Resolução CNS 453/2012 – Diretrizes para Conselhos de Saúde",
    "link": "https://conselho.saude.gov.br/resolucoes/2012/Reso453.pdf",
    "tipo": "lei"
+  },
+  "k_sus": {
+   "nome": "Cursinho – SUS: Lei 8.080, Princípios e Organização (Estratégia)",
+   "link": "../material/cursinho/especificos/Estrategia_Aula00_SUS_Lei_8080_Principios_Organizacao.pdf",
+   "tipo": "cursinho"
+  },
+  "k_sus_cf": {
+   "nome": "Cursinho – SUS: Reforma Sanitária e CF Arts. 196-200 (Estratégia)",
+   "link": "../material/cursinho/especificos/Estrategia_Aula00_SUS_Reforma_Sanitaria_CF_196-200.pdf",
+   "tipo": "cursinho"
+  },
+  "k_port_nivel": {
+   "nome": "Cursinho – Português: Nivelamento Geral (Estratégia)",
+   "link": "../material/cursinho/portugues/Estrategia_Aula00_Portugues_Nivelamento_geral.pdf",
+   "tipo": "cursinho"
+  },
+  "k_port_orto": {
+   "nome": "Cursinho – Português: Ortografia e Acentuação (Estratégia)",
+   "link": "../material/cursinho/portugues/Estrategia_Aula00_Portugues_Ortografia_Acentuacao_Hifen.pdf",
+   "tipo": "cursinho"
+  },
+  "k_rl_prop": {
+   "nome": "Cursinho – RL: Proposições, Conectivos e Negação (Estratégia)",
+   "link": "../material/cursinho/raciocinio_logico/Estrategia_Aula00_RL_Proposicoes_Conectivos_Negacao.pdf",
+   "tipo": "cursinho"
+  },
+  "k_rl_conj": {
+   "nome": "Cursinho – RL: Conjuntos e Diagramas (Estratégia)",
+   "link": "../material/cursinho/raciocinio_logico/Estrategia_Aula00_RL_Conjuntos_Diagramas.pdf",
+   "tipo": "cursinho"
+  },
+  "k_rl_basico": {
+   "nome": "Cursinho – RL: Curso Básico com Questões Resolvidas (Estratégia)",
+   "link": "../material/cursinho/raciocinio_logico/Estrategia_Aula00_RL_Curso_Basico_Questoes_Resolvidas.pdf",
+   "tipo": "cursinho"
   },
   "cf88_geral": {
    "nome": "CF/88 – Princípios Fundamentais (Arts. 1º a 4º) e Art. 5º",
@@ -196,6 +231,7 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "cf88_saude",
+      "k_sus_cf",
       "edital_ret"
      ]
     },
@@ -206,7 +242,9 @@ window.PLANO = {
      "detalhe": "Foco no Art. 7º da Lei 8.080/90. Grave as palavras literais da lei: universalidade de acesso; integralidade de assistência; preservação da autonomia; IGUALDADE da assistência à saúde (atenção: 'equidade' é princípio doutrinário, a lei escreve 'igualdade'); direito à informação; divulgação de informações; utilização da epidemiologia; integração ações de saúde, meio ambiente e saneamento; conjugação de recursos; descentralização político-administrativa; e participação da comunidade. Pegadinha: a banca coloca 'centralização' ou diz que o SUS é subordinado exclusivamente à esfera federal.",
      "minutos": 60,
      "materiais": [
-      "lei8080"
+      "lei8080",
+      "k_sus",
+      "pnh"
      ]
     }
    ],

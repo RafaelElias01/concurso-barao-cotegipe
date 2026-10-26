@@ -63,3 +63,10 @@ Seguindo o perfil visual e cognitivo do aluno (sem flashcards, frases afirmativa
 3. **Resumos e Mapas de Português e Matemática/RL Nível Superior.**
 4. **Conhecimentos Específicos de Odontologia:**
    - Código de Ética CFO + ART + Anestesiologia + Farmacologia + Biossegurança.
+
+### D) Correção de Links Externos e Download Local de PDFs (100% Offline)
+- Problema identificado: O portal do Ministério da Saúde (bvsms.saude.gov.br) bloqueou o acesso externo com erro 503 / WAF rejection ao tentar abrir o PDF do HumanizaSUS.
+- Solução aplicada:
+  - Copiados para a pasta local material/saude/: HumanizaSUS_Documento_Base.pdf, Lei_8080_1990_SUS.pdf, NR-32_Seguranca_Saude_Trabalho_Servicos_Saude.pdf, Lei_13146_2015_LBI.pdf.
+  - Copiados para material/cursinho/: apostilas completas da Aula 00 do Estratégia de SUS (Lei 8.080 e CF arts 196-200), Português e Raciocínio Lógico.
+  - Atualizados cronograma/gera_plano.py e cronograma/plano.js para que todos os links abram os arquivos PDF locais pelo servidor local, sem depender de internet nem de sites governamentais instáveis.
