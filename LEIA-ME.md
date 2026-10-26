@@ -9,4 +9,4 @@ Banca: Instituto DOM. Edital 001/2026. Inscrições até 30/10/2026. Prova objet
 - `provas-antigas/` – provas anteriores da banca, a buscar.
 - `cronograma/` – plano diário de 25/10 a 21/11, a produzir.
 
-Briefing completo para o Opus: memória `concurso-barao-cotegipe-odontologo.md` do projeto HCPA.
+Briefing completo para o Opus: memórias do projeto (pasta `.claudeprojectsm-Users-rafae-projetos-concurso-barao-cotegipememory`, comece pelo MEMORY.md).
