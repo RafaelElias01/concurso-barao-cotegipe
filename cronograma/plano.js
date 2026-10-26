@@ -102,6 +102,41 @@ window.PLANO = {
    "link": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html",
    "tipo": "lei"
   },
+  "v_aula1": {
+   "nome": "Vídeo – Aula 1: Lei 8.080/90 (SUS) – Curso Vigor (112 min)",
+   "link": "../curso/Aula1.mp4",
+   "tipo": "video"
+  },
+  "v_aula4": {
+   "nome": "Vídeo – Aula 4: LBI Lei 13.146/2015 – Curso Vigor (122 min)",
+   "link": "../curso/Aula4.mp4",
+   "tipo": "video"
+  },
+  "v_aula7": {
+   "nome": "Vídeo – Aula 7: PNH / HumanizaSUS – Curso Vigor (110 min)",
+   "link": "../curso/Aula7.mp4",
+   "tipo": "video"
+  },
+  "v_bia": {
+   "nome": "Vídeo – Português: Acentuação e Fonologia – Profª Bia Backes (67 min)",
+   "link": "../curso/Português, profª Bia Backes_ Acentuação Gráfica e Fonologia.mp4",
+   "tipo": "video"
+  },
+  "v_nr32": {
+   "nome": "Vídeo – NR 32: Segurança e Saúde no Trabalho – Prof. Flávio Santos (47 min)",
+   "link": "../curso/nr32/NR32_1_FlavioSantos_HCPA_GHC_47min.mp4",
+   "tipo": "video"
+  },
+  "v_dir1": {
+   "nome": "Vídeo – Direitos e Deveres dos Usuários da Saúde (22 min)",
+   "link": "../curso/direitos_usuarios/Direitos_1_HCPA_Curso_Direitos_e_Deveres_22min.mp4",
+   "tipo": "video"
+  },
+  "v_dir4": {
+   "nome": "Vídeo – Carta dos Direitos (Res. CNS 553) (32 min)",
+   "link": "../curso/direitos_usuarios/Direitos_4_Clevermed_Res_CNS_553_32min.mp4",
+   "tipo": "video"
+  },
   "res_cns453": {
    "nome": "Resolução CNS 453/2012 – Diretrizes para Conselhos de Saúde",
    "link": "https://conselho.saude.gov.br/resolucoes/2012/Reso453.pdf",
@@ -244,7 +279,8 @@ window.PLANO = {
      "materiais": [
       "lei8080",
       "k_sus",
-      "pnh"
+      "pnh",
+      "v_aula1"
      ]
     }
    ],
@@ -399,6 +435,7 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "nr32",
+      "v_nr32",
       "caderno_atencao_bucal"
      ]
     }
@@ -747,7 +784,8 @@ window.PLANO = {
      "detalhe": "HumanizaSUS (Política Nacional de Humanização): Princípios: (1) Transversalidade (aumento da comunicação entre diferentes especialidades e serviços); (2) Indissociabilidade entre atenção e gestão; (3) Protagonismo, corresponsabilidade e autonomia dos sujeitos e dos coletivos. Método: Tríplice inclusão (gestores, trabalhadores e usuários no planejamento e decisões). Dispositivos centrais: Acolhimento com Classificação de Risco (a prioridade de atendimento é dada pelo GRAU DE AGRAVO/VULNERABILIDADE clínica, e NUNCA exclusivamente pela ordem de chegada!); Equipe de referência e apoio matricial; Ambiência acolhedora; Projeto Terapêutico Singular (PTS).",
      "minutos": 60,
      "materiais": [
-      "pnh"
+      "pnh",
+      "v_aula7"
      ]
     },
     {
@@ -758,6 +796,7 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "lbi",
+      "v_aula4",
       "lei_tea",
       "raps"
      ]

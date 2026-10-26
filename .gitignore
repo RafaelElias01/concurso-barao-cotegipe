@@ -10,5 +10,7 @@ __pycache__/
 *.tmp
 cronograma/backups/
 cronograma/progresso.json.tmp
+*.mp4
+curso/
 scratch/
 Thumbs.db

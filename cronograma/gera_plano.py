@@ -35,6 +35,14 @@ MATERIAIS = {
     "lbi": {"nome": "Lei Brasileira de Inclusão da Pessoa com Deficiência – Lei 13.146/2015", "link": "../material/saude/Lei_13146_2015_LBI.pdf", "tipo": "lei"},
     "lei_tea": {"nome": "Política Nacional de Proteção dos Direitos da Pessoa com TEA – Lei 12.764/2012", "link": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12764.htm", "tipo": "lei"},
     "raps": {"nome": "Rede de Atenção Psicossocial (RAPS) – Portaria GM/MS 3.088/2011", "link": "https://bvsms.saude.gov.br/bvs/saudelegis/gm/2011/prt3088_23_12_2011_rep.html", "tipo": "lei"},
+    # Vídeos do curso (100% offline - pasta curso/)
+    "v_aula1": {"nome": "Vídeo – Aula 1: Lei 8.080/90 (SUS) – Curso Vigor (112 min)", "link": "../curso/Aula1.mp4", "tipo": "video"},
+    "v_aula4": {"nome": "Vídeo – Aula 4: LBI Lei 13.146/2015 – Curso Vigor (122 min)", "link": "../curso/Aula4.mp4", "tipo": "video"},
+    "v_aula7": {"nome": "Vídeo – Aula 7: PNH / HumanizaSUS – Curso Vigor (110 min)", "link": "../curso/Aula7.mp4", "tipo": "video"},
+    "v_bia": {"nome": "Vídeo – Português: Acentuação e Fonologia – Profª Bia Backes (67 min)", "link": "../curso/Português, profª Bia Backes_ Acentuação Gráfica e Fonologia.mp4", "tipo": "video"},
+    "v_nr32": {"nome": "Vídeo – NR 32: Segurança e Saúde no Trabalho – Prof. Flávio Santos (47 min)", "link": "../curso/nr32/NR32_1_FlavioSantos_HCPA_GHC_47min.mp4", "tipo": "video"},
+    "v_dir1": {"nome": "Vídeo – Direitos e Deveres dos Usuários da Saúde (22 min)", "link": "../curso/direitos_usuarios/Direitos_1_HCPA_Curso_Direitos_e_Deveres_22min.mp4", "tipo": "video"},
+    "v_dir4": {"nome": "Vídeo – Carta dos Direitos (Res. CNS 553) (32 min)", "link": "../curso/direitos_usuarios/Direitos_4_Clevermed_Res_CNS_553_32min.mp4", "tipo": "video"},
     "res_cns453": {"nome": "Resolução CNS 453/2012 – Diretrizes para Conselhos de Saúde", "link": "https://conselho.saude.gov.br/resolucoes/2012/Reso453.pdf", "tipo": "lei"},
 
     # Aulas demonstrativas gratuitas de cursinho (Estratégia Concursos) - 100% offline
@@ -92,7 +100,7 @@ DIAS_PLANO = [
                 "titulo": "Lei 8.080/1990: Princípios e Diretrizes (Art. 7º) e Organização do SUS",
                 "detalhe": "Foco no Art. 7º da Lei 8.080/90. Grave as palavras literais da lei: universalidade de acesso; integralidade de assistência; preservação da autonomia; IGUALDADE da assistência à saúde (atenção: 'equidade' é princípio doutrinário, a lei escreve 'igualdade'); direito à informação; divulgação de informações; utilização da epidemiologia; integração ações de saúde, meio ambiente e saneamento; conjugação de recursos; descentralização político-administrativa; e participação da comunidade. Pegadinha: a banca coloca 'centralização' ou diz que o SUS é subordinado exclusivamente à esfera federal.",
                 "minutos": 60,
-                "materiais": ["lei8080", "k_sus", "pnh"]
+                "materiais": ["lei8080", "k_sus", "pnh", "v_aula1"]
             }
         ],
         "totalMin": 120
@@ -220,7 +228,7 @@ DIAS_PLANO = [
                 "titulo": "Biossegurança e NR-32 na Clínica Odontológica da Atenção Básica",
                 "detalhe": "Biossegurança no consultório odontológico: Cadeia de transmissão de infecções (direta, indireta, aerossóis e gotículas). Limpeza, desinfecção e esterilização de artigos (artigos críticos exigem esterilização em autoclave a vapor saturado sob pressão; semi-críticos desinfecção de alto nível; não-críticos limpeza e desinfecção de nível intermediário/baixo). Monitoramento da esterilização (físico, químico - integradores classe 5/6, e biológico com Geobacillus stearothermophilus semanal). Descarte de perfurocortantes (embalagem rígida até 2/3 da capacidade). NR-32: Vacinação obrigatória do profissional (Hepatite B, Tétano/Difteria, Tríplice Viral, Influenza).",
                 "minutos": 60,
-                "materiais": ["nr32", "caderno_atencao_bucal"]
+                "materiais": ["nr32", "v_nr32", "caderno_atencao_bucal"]
             }
         ],
         "totalMin": 120
@@ -519,7 +527,7 @@ DIAS_PLANO = [
                 "titulo": "HumanizaSUS (PNH): Princípios, Método e Acolhimento com Classificação de Risco",
                 "detalhe": "HumanizaSUS (Política Nacional de Humanização): Princípios: (1) Transversalidade (aumento da comunicação entre diferentes especialidades e serviços); (2) Indissociabilidade entre atenção e gestão; (3) Protagonismo, corresponsabilidade e autonomia dos sujeitos e dos coletivos. Método: Tríplice inclusão (gestores, trabalhadores e usuários no planejamento e decisões). Dispositivos centrais: Acolhimento com Classificação de Risco (a prioridade de atendimento é dada pelo GRAU DE AGRAVO/VULNERABILIDADE clínica, e NUNCA exclusivamente pela ordem de chegada!); Equipe de referência e apoio matricial; Ambiência acolhedora; Projeto Terapêutico Singular (PTS).",
                 "minutos": 60,
-                "materiais": ["pnh"]
+                "materiais": ["pnh", "v_aula7"]
             },
             {
                 "id": "2026-11-11-1",
@@ -527,7 +535,7 @@ DIAS_PLANO = [
                 "titulo": "Inclusão e Vulnerabilidades: LBI (Lei 13.146/2015) e TEA no SUS (Lei 12.764/2012)",
                 "detalhe": "Lei Brasileira de Inclusão (Lei 13.146/2015): Avaliação da deficiência biopsicossocial realizada por equipe multiprofissional e interdisciplinar. Direito à saúde assegurado com atendimento prioritário e acessibilidade universal. Política Nacional de Proteção dos Direitos da Pessoa com TEA (Lei 12.764/2012): A pessoa com transtorno do espectro autista é considerada pessoa com deficiência para todos os efeitos legais. Garantia de diagnóstico precoce, tratamento multidisciplinar e medicamentos no SUS. Portaria 3.088/2011 (RAPS - Rede de Atenção Psicossocial) e Lei 10.216/2001 (Reforma Psiquiátrica): proteção aos direitos das pessoas portadoras de transtornos mentais.",
                 "minutos": 60,
-                "materiais": ["lbi", "lei_tea", "raps"]
+                "materiais": ["lbi", "v_aula4", "lei_tea", "raps"]
             }
         ],
         "totalMin": 120

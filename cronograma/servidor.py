@@ -27,7 +27,7 @@ HOST = "127.0.0.1"
 PORTAS = range(8765, 8775)
 LIMITE_JSON = 5 * 1024 * 1024
 MAX_BACKUPS = 30
-PASTAS_PERMITIDAS = {"cronograma", "material", "provas-antigas", "edital"}
+PASTAS_PERMITIDAS = {"cronograma", "material", "provas-antigas", "edital", "curso"}
 ARQS_RAIZ = {"LEIA-ME.md", "README.md"}
 CHUNK = 256 * 1024
 
