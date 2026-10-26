@@ -1,0 +1,9 @@
+.env*
+*.key
+*.keystore
+*boleto*
+*BOLETO*
+*comprovante*
+*COMPROVANTE*
+__pycache__/
+Thumbs.db
