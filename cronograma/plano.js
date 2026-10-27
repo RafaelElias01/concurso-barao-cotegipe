@@ -514,6 +514,10 @@ window.PLANO = {
        "link": "../edital/apostilas/odontologia.html#bio"
       },
       {
+       "rotulo": "Abrir apostila: Odontologia — Ergonomia no consultório",
+       "link": "../edital/apostilas/odontologia.html#ergonomia"
+      },
+      {
        "rotulo": "Abrir apostila: Saúde e SUS — NR-32: segurança no trabalho em serviços de saúde",
        "link": "../edital/apostilas/saude-sus.html#nr32"
       }
@@ -561,6 +565,10 @@ window.PLANO = {
       {
        "rotulo": "Abrir apostila: Atualidades — Educação, saúde e indicadores sociais",
        "link": "../edital/apostilas/atualidades.html#indicadores"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Biomas brasileiros",
+       "link": "../edital/apostilas/atualidades.html#biomas"
       }
      ]
     }
@@ -630,6 +638,10 @@ window.PLANO = {
       {
        "rotulo": "Abrir apostila: Odontologia — Cárie: ART, selantes, Black e proteção dentina-polpa",
        "link": "../edital/apostilas/odontologia.html#carie"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Materiais restauradores e adequação do meio bucal",
+       "link": "../edital/apostilas/odontologia.html#materiais"
       }
      ]
     },
@@ -873,6 +885,10 @@ window.PLANO = {
       "caderno_atencao_bucal"
      ],
      "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Farmacologia terapêutica na atenção básica",
+       "link": "../edital/apostilas/odontologia.html#farmaco"
+      },
       {
        "rotulo": "Abrir apostila: Odontologia — Urgências, traumatismo, cirurgia menor e farmacologia",
        "link": "../edital/apostilas/odontologia.html#urgencias"
@@ -1273,6 +1289,10 @@ window.PLANO = {
       {
        "rotulo": "Abrir apostila: Português — Redação oficial",
        "link": "../edital/apostilas/portugues.html#oficial"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Ata e relatório",
+       "link": "../edital/apostilas/portugues.html#ata-relatorio"
       }
      ]
     },
@@ -1388,6 +1408,10 @@ window.PLANO = {
       "caderno_atencao_bucal"
      ],
      "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Pulpites, necrose, periodontite apical e abscesso",
+       "link": "../edital/apostilas/odontologia.html#pulpa"
+      },
       {
        "rotulo": "Abrir apostila: Odontologia — Urgências, traumatismo, cirurgia menor e farmacologia",
        "link": "../edital/apostilas/odontologia.html#urgencias"
