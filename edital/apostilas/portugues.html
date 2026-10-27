@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apostila de Língua Portuguesa para o concurso de Odontólogo/PSF de Barão de Cotegipe: interpretação, coesão, gramática da frase, concordância, regência, crase, figuras, falácias e redação oficial pelo Manual da Presidência.">
+<title>Apostila de Português</title>
+<style>
+  :root {
+    --fundo: #fbfaf7; --texto: #1d2125; --suave: #5b6470; --linha: #d9dde2; --cartao: #ffffff;
+    --conceito: #1f6fb2; --conceito-bg: #e8f1fa;
+    --dica: #237a45; --dica-bg: #e7f5ec;
+    --cai: #b45f06; --cai-bg: #fdf0e1;
+    --pega: #b3261e; --pega-bg: #fbe9e7;
+    --numero: #6b4aa5; --numero-bg: #f1ecfa;
+    --foco: #1f6fb2;
+    color-scheme: light dark;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+      --conceito: #79b8ee; --conceito-bg: #182a3b;
+      --dica: #74cf95; --dica-bg: #17301f;
+      --cai: #f2b264; --cai-bg: #3a2814;
+      --pega: #f08a80; --pega-bg: #3b1d1a;
+      --numero: #bfa5f0; --numero-bg: #2a2140;
+      --foco: #79b8ee;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+    --conceito: #79b8ee; --conceito-bg: #182a3b;
+    --dica: #74cf95; --dica-bg: #17301f;
+    --cai: #f2b264; --cai-bg: #3a2814;
+    --pega: #f08a80; --pega-bg: #3b1d1a;
+    --numero: #bfa5f0; --numero-bg: #2a2140;
+    --foco: #79b8ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); }
+  main, header, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: .4rem 0; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.4rem 0 .6rem; padding-top: .6rem; border-top: 2px solid var(--linha); scroll-margin-top: 12px; }
+  h3 { font-size: 1.15rem; margin: 1.4rem 0 .4rem; }
+  a { color: var(--conceito); }
+  a:focus-visible, summary:focus-visible, button:focus-visible, .mapa:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .sub { color: var(--suave); margin: 0; }
+  .voltar { display: inline-flex; align-items: center; min-height: 44px; }
+  .caixa { border-left: 5px solid; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  .caixa > strong:first-child { display: block; margin-bottom: 2px; }
+  .conceito { border-color: var(--conceito); background: var(--conceito-bg); }
+  .dica { border-color: var(--dica); background: var(--dica-bg); }
+  .cai { border-color: var(--cai); background: var(--cai-bg); }
+  .pega { border-color: var(--pega); background: var(--pega-bg); }
+  .numero { border-color: var(--numero); background: var(--numero-bg); }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; font-size: .9rem; }
+  .legenda li { padding: 2px 10px; border-radius: 0 6px 6px 0; border-left: 5px solid; }
+  .indice { columns: 2 260px; padding-left: 1.2rem; }
+  .indice li { break-inside: avoid; margin: 2px 0; }
+  .indice a { display: inline-block; min-height: 32px; padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--linha); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--cartao); }
+  .tabela { overflow-x: auto; }
+  .mapa { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 8px; margin: 14px 0; }
+  .mapa svg { width: 100%; height: auto; display: block; }
+  .mapa svg text { font-family: system-ui, sans-serif; fill: var(--texto); }
+  .mapa .c-ramo { stroke-width: 3; fill: none; }
+  .mapa .no { stroke-width: 2; }
+  .mapa .t-titulo { font-weight: 700; font-size: 15px; }
+  .mapa .t-folha { font-size: 12.5px; }
+  .s-conceito { stroke: var(--conceito); } .f-conceito { fill: var(--conceito-bg); }
+  .s-dica { stroke: var(--dica); } .f-dica { fill: var(--dica-bg); }
+  .s-cai { stroke: var(--cai); } .f-cai { fill: var(--cai-bg); }
+  .s-pega { stroke: var(--pega); } .f-pega { fill: var(--pega-bg); }
+  .s-numero { stroke: var(--numero); } .f-numero { fill: var(--numero-bg); }
+  .s-centro { stroke: var(--texto); } .f-centro { fill: var(--cartao); }
+  .questao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+  .questao ol { list-style: upper-alpha; padding-left: 1.6rem; margin: 6px 0; }
+  .questao li { margin: 3px 0; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 6px; color: var(--conceito); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; display: inline-block; transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .certa { background: var(--dica-bg); border-left: 5px solid var(--dica); padding: 6px 10px; border-radius: 6px; margin: 6px 0; }
+  .errada { color: var(--suave); margin: 4px 0; }
+  .errada s { color: var(--pega); }
+  .grava { font-weight: 700; }
+  .respostas li { margin: 4px 0; }
+  .fontes li { margin: 3px 0; word-break: break-word; }
+  footer { padding: 32px 16px 48px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 1024px) { :root { font-size: 16.5px; } }
+  .mapa-dica { display: none; color: var(--suave); font-size: .9rem; margin: 0 0 4px; }
+  @media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .mapa { overflow-x: auto; }
+    .mapa svg { min-width: 900px; }
+    .mapa-dica { display: block; }
+    .indice a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+    th, td { padding: 6px; font-size: .9rem; }
+  }
+  @media (max-width: 480px) {
+    :root { font-size: 16px; }
+    .caixa, .questao { padding: 9px 10px; }
+  }
+  @media print {
+    details { display: block; } details > * { display: block; }
+    a { color: inherit; } .voltar { display: none; }
+    h2 { break-after: avoid; } .questao, .caixa, .mapa { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="voltar" href="../disciplinas/index.html#portugues">← Voltar às trilhas das disciplinas</a>
+  <h1>Língua Portuguesa</h1>
+  <p class="sub">Concurso de Barão de Cotegipe (RS), Odontólogo/PSF, Instituto DOM, prova em 22/11/2026</p>
+
+  <div class="caixa conceito">
+    <strong>O que é esta página</strong>
+    Uma apostila para estudar sozinho e offline. Ela percorre os 20 itens do programa de Língua Portuguesa do Nível Superior, do texto à gramática e à redação oficial. Cada assunto tem explicação curta, exemplo e a regra para gravar. No final há 20 questões comentadas de 4 alternativas. As fontes estão no fim da página.
+  </div>
+
+  <div class="caixa cai">
+    <strong>Quanto isso vale na prova</strong>
+    5 questões (10 pontos) de 30, o mesmo peso de cada uma das outras cinco matérias. Com tão poucas questões, o mais seguro é dominar o <b>método de leitura</b> (seção 2) e as regras que se aplicam em várias frases: <b>que/se</b>, <b>crase</b>, <b>concordância</b>, <b>regência</b> e <b>redação oficial</b>.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Sobre "o que mais cai"</strong>
+    O Instituto DOM não publica os cadernos de prova, então não há como medir o que a banca mais cobra. A ordem abaixo segue o programa do edital (Anexo III), agrupando itens vizinhos. Não existe aqui ranking, percentual ou "a banca costuma".
+  </div>
+
+  <ul class="legenda" aria-label="Legenda de cores">
+    <li class="conceito">Azul: conceito</li>
+    <li class="dica">Verde: dica ou resposta certa</li>
+    <li class="cai">Laranja: cai muito / prioridade</li>
+    <li class="pega">Vermelho: pegadinha</li>
+    <li class="numero">Roxo: número, prazo, percentual</li>
+  </ul>
+
+  <h2 id="indice" style="border-top:0">Ordem de estudo</h2>
+  <ol class="indice">
+    <li><a href="#mapa">Mapa geral</a></li>
+    <li><a href="#leitura">Leitura, discurso e coesão (itens 1 e 2)</a></li>
+    <li><a href="#coerencia">Coerência, informatividade e intertextualidade (item 3)</a></li>
+    <li><a href="#semantica">Semântica, vocabulário e classes de palavras (itens 4 e 5)</a></li>
+    <li><a href="#periodo">Período composto, orações reduzidas e paralelismo (item 6)</a></li>
+    <li><a href="#quese">Funções do "que" e do "se" (item 7)</a></li>
+    <li><a href="#vozes">Tempos, modos e vozes (item 8)</a></li>
+    <li><a href="#concordancia">Concordância avançada e silepse (item 9)</a></li>
+    <li><a href="#regencia">Regência verbal e nominal (item 10)</a></li>
+    <li><a href="#crase">Crase (item 11)</a></li>
+    <li><a href="#colocacao">Colocação pronominal (item 12)</a></li>
+    <li><a href="#pontuacao">Pontuação (item 13)</a></li>
+    <li><a href="#figuras">Figuras de pensamento e de sintaxe (item 14)</a></li>
+    <li><a href="#variacao">Variação linguística (item 15)</a></li>
+    <li><a href="#falacias">Falácias (item 16)</a></li>
+    <li><a href="#argumentacao">Argumentação, modalizadores e impessoalidade (item 17)</a></li>
+    <li><a href="#oficial">Redação oficial (itens 18, 19 e 20)</a></li>
+    <li><a href="#questoes">Questões comentadas</a></li>
+    <li><a href="#respostas">Respostas que a banca dá como certas</a></li>
+    <li><a href="#fontes">Fontes</a></li>
+  </ol>
+</header>
+
+<main>
+
+<h2 id="mapa">1. Mapa geral</h2>
+<p>Do centro para fora: cada ramo é um bloco do programa, com a regra que vira alternativa.</p>
+<p class="mapa-dica">No celular, arraste o mapa para o lado para ver tudo.</p>
+<div class="mapa" role="region" tabindex="0" aria-label="Mapa mental de Português (no celular, role para o lado)">
+<svg viewBox="0 0 960 620" role="img" aria-labelledby="mapa-tit mapa-desc">
+  <title id="mapa-tit">Mapa mental de Língua Portuguesa</title>
+  <desc id="mapa-desc">No centro, Português. Seis ramos: Texto, Semântica e estilo, Gramática da frase, Concordância e regência, Crase, colocação e pontuação, e Redação oficial.</desc>
+  <path class="c-ramo s-cai" d="M480 310 C 380 250, 330 140, 250 110"/>
+  <path class="c-ramo s-numero" d="M480 310 C 580 250, 630 140, 710 110"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 380 330, 320 320, 250 315"/>
+  <path class="c-ramo s-dica" d="M480 310 C 580 330, 640 320, 710 315"/>
+  <path class="c-ramo s-pega" d="M480 310 C 380 380, 330 480, 250 510"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 580 380, 630 480, 710 510"/>
+  <rect class="no s-centro f-centro" x="400" y="280" width="160" height="60" rx="30"/>
+  <text x="480" y="306" text-anchor="middle" class="t-titulo">Português</text>
+  <text x="480" y="325" text-anchor="middle" class="t-folha">5 questões</text>
+
+  <rect class="no s-cai f-cai" x="20" y="40" width="300" height="150" rx="12"/>
+  <text x="34" y="64" class="t-titulo">Texto</text>
+  <text x="34" y="88" class="t-folha">Pressuposto x subentendido</text>
+  <text x="34" y="108" class="t-folha">Coesão: anáfora e catáfora</text>
+  <text x="34" y="128" class="t-folha">Operadores: mas, embora, logo</text>
+  <text x="34" y="148" class="t-folha">Coerência e informatividade</text>
+  <text x="34" y="168" class="t-folha">Intertexto: citação, paródia</text>
+
+  <rect class="no s-numero f-numero" x="640" y="40" width="300" height="150" rx="12"/>
+  <text x="654" y="64" class="t-titulo">Semântica e estilo</text>
+  <text x="654" y="88" class="t-folha">Polissemia e ambiguidade</text>
+  <text x="654" y="108" class="t-folha">Ironia, paradoxo, zeugma</text>
+  <text x="654" y="128" class="t-folha">Anacoluto, elipse, hipérbato</text>
+  <text x="654" y="148" class="t-folha">Falácias e modalizadores</text>
+  <text x="654" y="168" class="t-folha">Variação: diatópica, diastrática</text>
+
+  <rect class="no s-conceito f-conceito" x="20" y="250" width="230" height="142" rx="12"/>
+  <text x="34" y="274" class="t-titulo">Gramática da frase</text>
+  <text x="34" y="298" class="t-folha">QUE: relativo ou integrante</text>
+  <text x="34" y="318" class="t-folha">SE: apassivador ou indeterm.</text>
+  <text x="34" y="338" class="t-folha">Reduzidas: gerúndio, infinitivo</text>
+  <text x="34" y="358" class="t-folha">Voz: ativa, passiva, reflexiva</text>
+  <text x="34" y="378" class="t-folha">Tempos: se + subjuntivo</text>
+
+  <rect class="no s-dica f-dica" x="710" y="250" width="230" height="142" rx="12"/>
+  <text x="724" y="274" class="t-titulo">Concordância e regência</text>
+  <text x="724" y="298" class="t-folha">Haver e fazer: singular</text>
+  <text x="724" y="318" class="t-folha">Silepse: "os brasileiros somos"</text>
+  <text x="724" y="338" class="t-folha">Porcentagem e partitivas</text>
+  <text x="724" y="358" class="t-folha">Relativo: a que, de que</text>
+  <text x="724" y="378" class="t-folha">Assistir a, aspirar a</text>
+
+  <rect class="no s-pega f-pega" x="20" y="440" width="300" height="160" rx="12"/>
+  <text x="34" y="464" class="t-titulo">Crase, colocação, pontuação</text>
+  <text x="34" y="488" class="t-folha">Crase: a + a (à, às, àquele)</text>
+  <text x="34" y="508" class="t-folha">Sem crase: masculino, verbo</text>
+  <text x="34" y="528" class="t-folha">Próclise: não, que, ninguém</text>
+  <text x="34" y="548" class="t-folha">Ênclise: nunca abre a frase</text>
+  <text x="34" y="568" class="t-folha">Vírgula: restritiva x explicativa</text>
+  <text x="34" y="588" class="t-folha">Tempo composto: pronome no auxiliar</text>
+
+  <rect class="no s-conceito f-conceito" x="640" y="440" width="300" height="160" rx="12"/>
+  <text x="654" y="464" class="t-titulo">Redação oficial</text>
+  <text x="654" y="488" class="t-folha">Ofício: cabeçalho até signatário</text>
+  <text x="654" y="508" class="t-folha">Respeitosamente: autoridade superior</text>
+  <text x="654" y="528" class="t-folha">Atenciosamente: igual ou inferior</text>
+  <text x="654" y="548" class="t-folha">Vossa Excelência: verbo na 3ª pessoa</text>
+  <text x="654" y="568" class="t-folha">Digníssimo e Ilustríssimo: abolidos</text>
+  <text x="654" y="588" class="t-folha">Memorando: extinto no Manual</text>
+</svg>
+</div>
+
+<h2 id="leitura">2. Leitura, discurso e coesão (itens 1 e 2)</h2>
+
+<h3>Método para qualquer questão de interpretação</h3>
+<ol>
+  <li><b>Leia o comando primeiro</b> (o que a questão pede: "segundo o texto", "pode-se inferir", "a expressão X indica").</li>
+  <li><b>Leia o texto sublinhando</b> os conectivos (mas, porque, embora) e as palavras de opinião.</li>
+  <li><b>Volte ao trecho</b> citado e leia a frase de antes e a de depois.</li>
+  <li><b>Teste cada alternativa</b> contra o texto. Resposta certa tem apoio num trecho; resposta errada tem um defeito que você consegue apontar.</li>
+</ol>
+<div class="caixa pega"><strong>Os quatro defeitos das alternativas erradas</strong>
+<b>Extrapolação</b> (vai além do que o texto diz), <b>redução</b> (aproveita só um pedaço), <b>inversão</b> (troca causa por consequência ou diz o contrário) e <b>troca de conectivo</b> (põe "porque" onde o texto diz "mas"). Dê nome ao defeito: isso evita a alternativa que "parece boa".</div>
+
+<h3>Intencionalidade, pressuposto e subentendido</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Conceito</th><th scope="col">O que é</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Intencionalidade</b></td><td>o que o autor quer conseguir com o texto: informar, convencer, criticar, pedir</td><td>Um ofício quer pedir ou informar; um artigo de opinião quer convencer</td></tr>
+  <tr><td><b>Pressuposto</b></td><td>informação que a <b>própria frase</b> deixa como verdadeira, marcada por palavras como "deixou de", "voltou a", "já", "ainda", "continua"</td><td>"A prefeitura <b>deixou de</b> enviar a equipe." Pressupõe: antes ela enviava.</td></tr>
+  <tr><td><b>Subentendido</b></td><td>conclusão que o <b>leitor</b> tira do contexto; o autor pode negar que disse</td><td>"Está abafado aqui." Subentende: abra a janela.</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Como separar</strong>
+Pressuposto: se você negar a frase ("A prefeitura <i>não</i> deixou de enviar"), a informação escondida continua valendo (ela enviava). Subentendido: depende de quem lê e de quando. Pressuposto é do texto; subentendido é da leitura.</div>
+
+<h3>Tese e argumentos</h3>
+<p><b>Tese</b> é a ideia que o autor defende. <b>Argumentos</b> são as razões que sustentam a tese (dados, exemplos, comparações, citações). Para achar a tese, pergunte: "se eu tivesse de resumir o que o autor quer que eu aceite, o que seria?". A tese costuma estar na introdução ou ser retomada na conclusão.</p>
+
+<h3>Coesão: como as frases se ligam</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Mecanismo</th><th scope="col">Como funciona</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Anáfora</b></td><td>palavra que <b>retoma</b> algo já dito</td><td>"O dentista atendeu a criança. <b>Ele</b> explicou a escovação."</td></tr>
+  <tr><td><b>Catáfora</b></td><td>palavra que <b>anuncia</b> algo que vem depois</td><td>"Eu sei <b>isto</b>: a prevenção custa menos."</td></tr>
+  <tr><td><b>Substituição lexical</b></td><td>troca por sinônimo, termo mais amplo ou expressão equivalente</td><td>"o ofício… <b>o documento</b>…"</td></tr>
+  <tr><td><b>Elipse</b></td><td>omissão de termo que se recupera pelo contexto</td><td>"O decreto regulamenta os casos gerais; a portaria, os particulares."</td></tr>
+  <tr><td><b>Conjunção / operador</b></td><td>palavra que liga orações, frases ou parágrafos e diz a relação entre elas</td><td>"mas", "porque", "portanto"</td></tr>
+</table></div>
+<p class="sub">O Manual de Redação da Presidência, item 3.4, também trata coesão e coerência por referência, substituição, elipse e conjunção (ver seção 17).</p>
+
+<h3>Operadores argumentativos: o que cada um diz</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Relação</th><th scope="col">Operadores</th><th scope="col">Ideia</th></tr>
+  <tr><td>Adição</td><td>e, também, além disso, ainda</td><td>soma argumentos na mesma direção</td></tr>
+  <tr><td>Oposição</td><td>mas, porém, contudo, entretanto, no entanto, todavia</td><td>o argumento que vem <b>depois</b> do "mas" costuma ser o que vale mais</td></tr>
+  <tr><td>Concessão</td><td>embora, ainda que, mesmo que, apesar de, conquanto</td><td>admite um fato contrário, que <b>não impede</b> o que se afirma</td></tr>
+  <tr><td>Causa</td><td>porque, já que, visto que, uma vez que, pois (antes do verbo)</td><td>motivo</td></tr>
+  <tr><td>Conclusão</td><td>logo, portanto, por isso, assim, pois (depois do verbo)</td><td>consequência</td></tr>
+  <tr><td>Condição</td><td>se, caso, desde que, a menos que</td><td>algo depende de outra coisa</td></tr>
+  <tr><td>Finalidade</td><td>para que, a fim de que</td><td>objetivo</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha: o "pois"</strong>
+"Não saiu, <b>pois</b> chovia" (antes do verbo: explica, é causa). "Chovia; devia, <b>pois</b>, ficar em casa" (depois do verbo, entre vírgulas: conclui). Já "embora" é <b>concessão</b>, não causa nem oposição direta: "<b>Embora</b> chovesse, saiu" admite a chuva, que não o impediu.</div>
+
+<h2 id="coerencia">3. Coerência, informatividade e intertextualidade (item 3)</h2>
+<div class="tabela"><table>
+  <tr><th scope="col">Fator</th><th scope="col">Em uma frase</th><th scope="col">Quando falha</th></tr>
+  <tr><td><b>Coerência</b></td><td>as ideias fazem sentido juntas e com o mundo</td><td>contradição: "A vacina é segura, por isso evite tomá-la"</td></tr>
+  <tr><td><b>Progressão temática</b></td><td>cada frase parte do <b>dado</b> (já conhecido) e traz algo <b>novo</b></td><td>o texto repete a mesma ideia sem avançar, ou muda de assunto sem aviso</td></tr>
+  <tr><td><b>Informatividade</b></td><td>quanto o texto traz de novo ou inesperado para o leitor</td><td>só o óbvio ("a saúde é importante") informa pouco; só o desconhecido, sem apoio, dificulta a leitura</td></tr>
+  <tr><td><b>Pragmática (situacionalidade)</b></td><td>o texto serve à <b>situação</b> e à intenção de quem fala</td><td>linguagem de rede social num ofício à Secretaria</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Coesão x coerência</strong>
+Coesão é a <b>costura</b> das palavras (pronomes, conjunções). Coerência é o <b>sentido</b>. Um texto pode ter muitos conectivos e ser incoerente; e pode ter pouca costura visível e ser coerente.</div>
+
+<h3>Intertextualidade: um texto conversando com outro</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Tipo</th><th scope="col">O que faz</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Citação</b></td><td>traz o trecho do outro texto, <b>explícito</b>, em geral com aspas e autoria</td><td>Como escreveu Shakespeare, "ser ou não ser, eis a questão".</td></tr>
+  <tr><td><b>Alusão</b></td><td>faz <b>referência indireta</b>, sem citar por inteiro nem dar a fonte</td><td>"Vacinar ou não vacinar: eis a questão." O leitor reconhece a frase de Shakespeare.</td></tr>
+  <tr><td><b>Paródia</b></td><td>retoma um texto conhecido para <b>transformar o sentido</b>, em geral com humor ou crítica</td><td>"Minha terra tem filas, onde espera o sabiá" (a partir do verso "Minha terra tem palmeiras", de Gonçalves Dias)</td></tr>
+  <tr><td><b>Paráfrase</b></td><td>diz o mesmo com outras palavras, <b>mantendo</b> o sentido</td><td>"Prevenir é melhor que remediar" = "evitar a doença vale mais que tratá-la"</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Como distinguir</strong>
+Tem aspas e fonte: <b>citação</b>. Lembra o original sem dizer de onde: <b>alusão</b>. Lembra o original e <b>muda o sentido</b> (humor, crítica): <b>paródia</b>. Lembra o original e <b>mantém o sentido</b>: <b>paráfrase</b>.</div>
+
+<h2 id="semantica">4. Semântica, vocabulário e classes de palavras (itens 4 e 5)</h2>
+
+<h3>Polissemia, homonímia e ambiguidade</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Conceito</th><th scope="col">O que é</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Polissemia</b></td><td>uma palavra com <b>vários sentidos ligados entre si</b></td><td>"cabeça": parte do corpo, chefe, topo do prego</td></tr>
+  <tr><td><b>Homonímia</b></td><td>palavras <b>diferentes</b> com a mesma forma</td><td>"manga" (fruta) e "manga" (da camisa)</td></tr>
+  <tr><td><b>Ambiguidade lexical</b></td><td>uma palavra deixa dois sentidos possíveis na frase</td><td>"O banco está cheio" (assento ou agência?)</td></tr>
+  <tr><td><b>Ambiguidade estrutural</b></td><td>a <b>construção</b> permite duas leituras</td><td>"O dentista examinou a menina com a lupa" (quem estava com a lupa?)</td></tr>
+</table></div>
+<p>A ambiguidade pode ser <b>defeito</b> (num ofício, a dúvida atrapalha) ou <b>recurso intencional</b> (humor, publicidade, poesia). Para desfazê-la, reordene a frase ou use pontuação: "Com a lupa, o dentista examinou a menina."</p>
+
+<h3>Campos semânticos e relações entre palavras</h3>
+<ul>
+  <li><b>Campo semântico:</b> grupo de palavras ligadas a um assunto. "Cárie, obturação, canal, anestesia" formam o campo da odontologia. Questões pedem a palavra que <b>não pertence</b> ao campo ou o campo que o texto cria.</li>
+  <li><b>Hiperônimo e hipônimo:</b> termo geral e termo específico ("profissional de saúde" e "dentista").</li>
+  <li><b>Parônimos</b> (pegadinha de vocabulário): <i>cumprimento</i> (saudação) e <i>comprimento</i> (medida); <i>ratificar</i> (confirmar) e <i>retificar</i> (corrigir); <i>infringir</i> (violar) e <i>infligir</i> (aplicar); <i>emigrar</i> (sair) e <i>imigrar</i> (entrar); <i>descrição</i> e <i>discrição</i>; <i>tráfego</i> e <i>tráfico</i>.</li>
+</ul>
+
+<h3>Adequação vocabular ao registro formal</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Evite (informal)</th><th scope="col">Prefira (formal)</th></tr>
+  <tr><td>a gente vai resolver</td><td>resolveremos / será resolvido</td></tr>
+  <tr><td>pra, tá, né</td><td>para, está</td></tr>
+  <tr><td>coisa, negócio</td><td>o termo exato (documento, procedimento)</td></tr>
+  <tr><td>chegar na unidade</td><td>chegar à unidade</td></tr>
+  <tr><td>tem vagas</td><td>há vagas</td></tr>
+</table></div>
+<p class="sub">O Manual de Redação (itens 3.1 e 3.6) manda usar a norma padrão, sem regionalismos nem neologismos, e evitar o jargão burocrático.</p>
+
+<h3>Valor discursivo das classes de palavras (item 5)</h3>
+<ul>
+  <li><b>Adjetivo:</b> não só descreve, <b>avalia</b>. "Servidor eficiente" e "servidor caro" mostram a opinião de quem escreve. A posição muda o sentido: "um homem pobre" (sem dinheiro) e "um pobre homem" (digno de pena); "notícia certa" (verdadeira) e "certa notícia" (alguma).</li>
+  <li><b>Preposição:</b> cria relações de sentido. <i>com</i> (companhia, instrumento: "com a broca"), <i>de</i> (origem, posse, causa: "morreu de febre"), <i>por</i> (causa, agente), <i>para</i> (finalidade), <i>em</i> (lugar, tempo), <i>sem</i> (ausência), <i>contra</i> (oposição).</li>
+  <li><b>Conjunção:</b> articula as ideias e dá a direção do argumento (tabela de operadores da seção 2).</li>
+</ul>
+
+<h2 id="periodo">5. Período composto, orações reduzidas e paralelismo (item 6)</h2>
+<p><b>Período simples</b> tem um verbo (ou locução). <b>Período composto</b> tem mais de um. As orações se ligam por <b>coordenação</b> (independentes, cada uma com sentido completo) ou por <b>subordinação</b> (uma depende da outra).</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Oração subordinada</th><th scope="col">Teste</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Substantiva</b> (faz papel de substantivo: sujeito, objeto…)</td><td>troque por "isso"</td><td>"Espero <b>que ele chegue</b>" (espero isso)</td></tr>
+  <tr><td><b>Adjetiva</b> (caracteriza um substantivo)</td><td>troque por "o qual"</td><td>"O exame <b>que fiz</b> foi rápido"</td></tr>
+  <tr><td><b>Adverbial</b> (circunstância: tempo, causa, condição…)</td><td>troque por um advérbio ou "nessa situação"</td><td>"<b>Quando chegou</b>, abriu a agenda"</td></tr>
+</table></div>
+<div class="caixa conceito"><strong>Adjetiva: restritiva x explicativa</strong>
+Sem vírgula (<b>restritiva</b>): limita o grupo. "Os pacientes que faltaram serão remarcados" (só os que faltaram). Com vírgulas (<b>explicativa</b>): vale para todos. "Os pacientes, que faltaram, serão remarcados" (todos faltaram).</div>
+
+<h3>Adverbiais: nove valores</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Valor</th><th scope="col">Conectivos</th></tr>
+  <tr><td>Causal</td><td>porque, já que, visto que, como (= porque)</td></tr>
+  <tr><td>Consecutiva</td><td>tão… que, tanto… que, de modo que</td></tr>
+  <tr><td>Comparativa</td><td>como, mais… (do) que, menos… (do) que</td></tr>
+  <tr><td>Concessiva</td><td>embora, ainda que, mesmo que, conquanto</td></tr>
+  <tr><td>Condicional</td><td>se, caso, desde que, a menos que</td></tr>
+  <tr><td>Conformativa</td><td>conforme, segundo, como (= de acordo com)</td></tr>
+  <tr><td>Final</td><td>para que, a fim de que</td></tr>
+  <tr><td>Proporcional</td><td>à medida que, quanto mais… mais</td></tr>
+  <tr><td>Temporal</td><td>quando, assim que, depois que, enquanto</td></tr>
+</table></div>
+
+<h3>Orações reduzidas: sem conectivo, com verbo em forma nominal</h3>
+<p>A oração <b>desenvolvida</b> começa com conectivo e tem verbo conjugado. A <b>reduzida</b> não tem conectivo e o verbo está no <b>infinitivo, gerúndio ou particípio</b>. Para identificar o valor, reescreva na forma desenvolvida.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Reduzida</th><th scope="col">Desenvolvida</th><th scope="col">Valor</th></tr>
+  <tr><td><b>Ao chegar</b> ao posto, abriu a agenda.</td><td>Quando chegou ao posto…</td><td>temporal</td></tr>
+  <tr><td><b>Estudando mais</b>, passaria.</td><td>Se estudasse mais…</td><td>condicional</td></tr>
+  <tr><td><b>Terminada a consulta</b>, o paciente saiu.</td><td>Depois que a consulta terminou…</td><td>temporal</td></tr>
+  <tr><td>Saiu <b>sem se despedir</b>.</td><td>Saiu sem que se despedisse.</td><td>modal</td></tr>
+  <tr><td>Estudou <b>para passar</b>.</td><td>Estudou para que passasse.</td><td>final</td></tr>
+  <tr><td>É importante <b>vacinar</b>.</td><td>É importante que se vacine.</td><td>substantiva (sujeito)</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha: gerúndio</strong>
+O gerúndio pode ser causa, condição, tempo ou modo. O sentido vem do <b>contexto</b>, não da forma. Faça sempre a reescrita para conferir.</div>
+
+<h3>Paralelismo sintático</h3>
+<p>Itens de uma série devem ter a <b>mesma estrutura</b>. Errado: "O curso ensina a <i>diagnosticar</i>, <i>tratamento</i> e a <i>prevenir</i>". Certo: "ensina a diagnosticar, a tratar e a prevenir". Vale também para pares como <b>"não só… mas também"</b> e <b>"tanto… quanto"</b>: o que vem depois de cada parte tem de ter a mesma forma.</p>
+
+<h2 id="quese">6. Funções do "que" e do "se" (item 7)</h2>
+<div class="caixa cai"><strong>Roteiro do QUE, nesta ordem</strong>
+1) Dá para trocar por <b>"o qual"</b>? É <b>pronome relativo</b>. 2) Dá para trocar por <b>"isso"</b>? É <b>conjunção integrante</b>. 3) Antes dele há <b>tão, tanto, tal</b>, ou <b>mais, menos</b>? Consecutiva ou comparativa. 4) Dá para <b>tirar</b> sem mudar o sentido? Partícula de realce. 5) Troca por <b>"pois"</b>? Explicativa.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Função do QUE</th><th scope="col">Exemplo</th><th scope="col">Pista</th></tr>
+  <tr><td>Pronome relativo</td><td>O exame <b>que</b> fiz foi rápido.</td><td>retoma "exame" e é objeto de "fiz"</td></tr>
+  <tr><td>Conjunção integrante</td><td>Os pacientes disseram <b>que</b> voltarão.</td><td>= disseram <i>isso</i></td></tr>
+  <tr><td>Conjunção consecutiva</td><td>Chorou tanto <b>que</b> adoeceu.</td><td>tanto… que</td></tr>
+  <tr><td>Conjunção comparativa</td><td>Ele é mais alto <b>que</b> o pai.</td><td>mais… que</td></tr>
+  <tr><td>Conjunção explicativa</td><td>Venha logo, <b>que</b> o filme vai começar.</td><td>= pois</td></tr>
+  <tr><td>Conjunção final</td><td>Fale alto <b>que</b> todos ouçam.</td><td>= para que</td></tr>
+  <tr><td>Partícula de realce</td><td>Foi ela <b>que</b> resolveu. / Ela é <b>que</b> sabe.</td><td>pode sair da frase</td></tr>
+  <tr><td>Interrogativo ou exclamativo</td><td><b>Que</b> horas são? <b>Que</b> lindo!</td><td>abre pergunta ou exclamação</td></tr>
+  <tr><td>Substantivo (quê)</td><td>Ela tem um <b>quê</b> de mistério.</td><td>vem com artigo e acento</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha: relativo x integrante</strong>
+"Eu sei <b>que</b> ele virá" (integrante, sem antecedente) x "o aluno <b>que</b> faltou" (relativo, retoma "aluno"). Sem termo anterior sendo retomado, em geral não é relativo.</div>
+
+<h3>As funções do SE</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Função</th><th scope="col">Como reconhecer</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Pronome reflexivo</td><td>a ação volta ao sujeito (= a si mesmo)</td><td>O paciente <b>se</b> feriu.</td></tr>
+  <tr><td>Pronome recíproco</td><td>ação trocada (= um ao outro)</td><td>Os dois <b>se</b> cumprimentaram.</td></tr>
+  <tr><td>Partícula apassivadora</td><td>verbo transitivo direto + se; <b>o verbo concorda</b> com o sujeito</td><td>Vendem-<b>se</b> casas. (= casas são vendidas)</td></tr>
+  <tr><td>Índice de indeterminação do sujeito</td><td>verbo sem objeto direto (intransitivo, transitivo indireto, de ligação) + se; verbo <b>sempre no singular</b></td><td>Precisa-<b>se</b> de auxiliares. Vive-<b>se</b> bem aqui.</td></tr>
+  <tr><td>Parte do verbo pronominal</td><td>o verbo só existe com o "se"</td><td>Ele <b>se</b> arrependeu. Ela <b>se</b> queixou.</td></tr>
+  <tr><td>Conjunção condicional</td><td>= caso</td><td><b>Se</b> chover, não irei.</td></tr>
+  <tr><td>Conjunção integrante</td><td>pergunta indireta (= isso)</td><td>Não sei <b>se</b> ele virá.</td></tr>
+  <tr><td>Partícula de realce</td><td>pode ser retirada</td><td>Foi-<b>se</b> embora.</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Macete do verbo</strong>
+"Vende-se": quem vende, vende <i>algo</i> (transitivo direto): apassivadora, plural se o sujeito for plural. "Precisa-se": quem precisa, precisa <i>de</i> algo (transitivo indireto): indeterminação, <b>singular sempre</b>. Daí: "Alugam-se salas", "Precisa-se de funcionários" (e nunca "Precisam-se de").</div>
+
+<h2 id="vozes">7. Tempos, modos e vozes (item 8)</h2>
+
+<h3>Correlação de tempos</h3>
+<p>Os tempos do texto combinam entre si. A correlação mais cobrada é a do "se":</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Se (oração condicional)</th><th scope="col">Oração principal</th><th scope="col">Exemplo</th></tr>
+  <tr><td>futuro do subjuntivo</td><td>futuro do presente</td><td>Se <b>estudar</b>, <b>passará</b>.</td></tr>
+  <tr><td>pretérito imperfeito do subjuntivo</td><td>futuro do pretérito</td><td>Se <b>estudasse</b>, <b>passaria</b>.</td></tr>
+  <tr><td>pretérito mais-que-perfeito do subjuntivo</td><td>futuro do pretérito composto</td><td>Se <b>tivesse estudado</b>, <b>teria passado</b>.</td></tr>
+</table></div>
+<ul>
+  <li><b>Uniformidade:</b> não misture tempos sem motivo no mesmo trecho (o Manual de Redação, item 3.1, pede uniformidade do tempo verbal).</li>
+  <li><b>Do discurso direto para o indireto</b>, o tempo "recua": "Disse: 'Chegarei amanhã'" vira "Disse que chegaria no dia seguinte" (futuro do presente vira futuro do pretérito).</li>
+  <li><b>Modo:</b> indicativo = fato; subjuntivo = dúvida, desejo, hipótese ("Espero que ele <i>venha</i>"); imperativo = ordem.</li>
+</ul>
+
+<h3>Vozes verbais</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Voz</th><th scope="col">Como é</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Ativa</b></td><td>o sujeito pratica a ação</td><td>A equipe realizou os exames.</td></tr>
+  <tr><td><b>Passiva analítica</b></td><td>verbo <b>ser</b> (ou estar, ficar) + particípio; o sujeito sofre; pode ter agente (por/de)</td><td>Os exames foram realizados <b>pela equipe</b>.</td></tr>
+  <tr><td><b>Passiva sintética</b></td><td>transitivo direto + <b>se</b>; verbo concorda com o sujeito; <b>sem agente</b></td><td>Realizaram-<b>se</b> os exames.</td></tr>
+  <tr><td><b>Reflexiva</b></td><td>o sujeito pratica e sofre a ação</td><td>O paciente <b>se</b> feriu.</td></tr>
+</table></div>
+
+<div class="caixa conceito"><strong>Como passar da ativa para a passiva analítica (4 passos)</strong>
+1) Ache o sujeito e o objeto direto. 2) O <b>objeto direto</b> vira o novo sujeito. 3) Escreva o verbo <b>ser no mesmo tempo e modo</b> do verbo original, mais o <b>particípio</b> concordando com o novo sujeito. 4) O antigo sujeito vira <b>agente da passiva</b> (por…). Exemplo: "A equipe <i>realizará</i> os exames" → "Os exames <i>serão realizados</i> pela equipe."</div>
+<div class="caixa pega"><strong>Pegadinhas da conversão</strong>
+(a) Só se passa para a voz passiva o verbo que tem <b>objeto direto</b>. "Precisa-se de" e "Assistiu-se ao jogo" não têm. (b) Tempos compostos: "tem feito" → "tem <b>sido</b> feito". (c) Mudar o tempo muda o sentido: "serão realizados" não é "foram realizados". (d) Passiva sintética não aceita agente: "Realizaram-se os exames pela equipe" é inadequado.</div>
+
+<h2 id="concordancia">8. Concordância avançada e silepse (item 9)</h2>
+<p>Método: ache o <b>sujeito</b> (pergunte "quem?" ao verbo), veja se é simples ou composto, singular ou plural, e só então escolha o verbo.</p>
+
+<div class="tabela"><table>
+  <tr><th scope="col">Caso</th><th scope="col">Regra</th><th scope="col">Exemplo certo</th></tr>
+  <tr><td><b>Haver</b> = existir ou tempo decorrido</td><td>impessoal: fica no <b>singular</b>, e o auxiliar que o acompanha também</td><td>Há vagas. <b>Deve haver</b> vagas. <b>Houve</b> falhas.</td></tr>
+  <tr><td><b>Fazer</b> indicando tempo</td><td>impessoal: singular</td><td><b>Faz</b> dois anos que a unidade abriu.</td></tr>
+  <tr><td><b>Ser</b> com hora, data, distância</td><td>concorda com o número</td><td><b>É</b> uma hora. <b>São</b> duas horas. Hoje <b>são</b> 10 de maio.</td></tr>
+  <tr><td>Sujeito composto <b>anteposto</b></td><td>plural</td><td>O dentista e a auxiliar <b>chegaram</b>.</td></tr>
+  <tr><td>Núcleos ligados por <b>ou</b></td><td>plural se a ação vale para todos; singular se exclui um</td><td>A direção ou a chefia <b>assinará</b> (só uma assina).</td></tr>
+  <tr><td><b>Mais de um</b>, <b>um ou outro</b></td><td>singular (plural se for recíproco ou repetido)</td><td><b>Mais de um</b> paciente <b>faltou</b>. <b>Mais de um</b> se <b>cumprimentaram</b>.</td></tr>
+  <tr><td><b>Um dos que</b></td><td>plural é a forma preferida</td><td>Ele é um dos pacientes que <b>faltaram</b>.</td></tr>
+  <tr><td>Sujeito <b>oracional</b></td><td>singular</td><td><b>Preocupa</b> a equipe que os pacientes faltem.</td></tr>
+  <tr><td>Expressão partitiva</td><td>concorda com o conjunto (singular) ou com a parte (plural); as duas são aceitas</td><td>A maioria dos pacientes <b>chegou</b> / <b>chegaram</b>.</td></tr>
+  <tr><td>Porcentagem</td><td>concorda com a <b>especificação</b> que vem depois</td><td>Vinte por cento dos pacientes <b>faltaram</b>. Vinte por cento da turma <b>faltou</b>.</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinhas</strong>
+"Houveram falhas", "Fazem dois anos" e "Devem haver vagas" são <b>erros</b>: o verbo impessoal não vai ao plural, e o auxiliar acompanha. Já "Existem vagas" está certo, porque <i>existir</i> tem sujeito (vagas).</div>
+
+<h3>Concordância nominal</h3>
+<ul>
+  <li><b>Anexo, obrigado, mesmo, próprio, incluso</b> concordam com o substantivo: "Seguem <b>anexos</b> os laudos"; "Ela disse: muito <b>obrigada</b>". A locução <b>"em anexo"</b> é invariável: "Seguem em anexo os laudos".</li>
+  <li><b>Meio</b> (= um pouco) e <b>menos</b> não variam: "Ela está <b>meio</b> cansada". <b>Bastante</b> concorda quando é adjetivo ("bastantes pacientes") e não varia quando é advérbio ("pacientes bastante cansados").</li>
+  <li><b>É proibido, é necessário, é bom</b> não variam quando o sujeito não tem artigo: "É proibido entrada" (genérico). Com artigo, varia: "É proibida <b>a</b> entrada".</li>
+</ul>
+
+<h3>Silepse: concordância com o sentido, não com a forma</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Tipo</th><th scope="col">O que acontece</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>De pessoa</b></td><td>o verbo vai para a 1ª pessoa do plural porque quem fala se inclui</td><td>Os brasileiros <b>somos</b> persistentes.</td></tr>
+  <tr><td><b>De número</b></td><td>sujeito singular que designa um grupo pede verbo no plural, concordando com a ideia</td><td>A multidão chegou e <b>gritaram</b> palavras de ordem.</td></tr>
+  <tr><td><b>De gênero</b></td><td>o adjetivo concorda com o <b>sexo</b> da pessoa, não com a palavra</td><td>Vossa Excelência está <b>atarefada</b> (a autoridade é mulher).</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Elo com a redação oficial</strong>
+O Manual de Redação (item 4.1.1) ensina exatamente a silepse de gênero: o adjetivo ligado a "Vossa Excelência" concorda com o sexo do interlocutor. Se a autoridade é mulher: "Vossa Excelência está atarefada".</div>
+
+<h2 id="regencia">9. Regência verbal e nominal (item 10)</h2>
+<p><b>Regência</b> é a relação entre o verbo (ou nome) e o complemento: pede preposição ou não? O mesmo verbo pode mudar de sentido conforme a regência.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Verbo</th><th scope="col">Sentido A</th><th scope="col">Sentido B</th></tr>
+  <tr><td><b>Assistir</b></td><td>ver, presenciar: <b>a</b> (assistiu <b>ao</b> jogo)</td><td>dar assistência, ajudar: sem preposição (o médico assistiu o paciente)</td></tr>
+  <tr><td><b>Aspirar</b></td><td>desejar, almejar: <b>a</b> (aspira <b>a</b> um cargo)</td><td>respirar, sugar: sem preposição (aspirou o ar)</td></tr>
+  <tr><td><b>Visar</b></td><td>ter como objetivo: <b>a</b> (visa <b>a</b> reduzir filas)</td><td>mirar; pôr visto: sem preposição (visou o documento)</td></tr>
+  <tr><td><b>Implicar</b></td><td>acarretar: sem preposição (a falta implica multa)</td><td>antipatizar: <b>com</b> (implica <b>com</b> o colega)</td></tr>
+  <tr><td><b>Custar</b></td><td>ser difícil: sujeito é a coisa difícil, e a pessoa leva <b>a</b> (custou-<b>lhe</b> aceitar)</td><td></td></tr>
+  <tr><td><b>Proceder</b></td><td>ter fundamento: sem preposição (a queixa procede)</td><td>executar: <b>a</b> (procedeu <b>à</b> leitura)</td></tr>
+</table></div>
+<div class="tabela"><table>
+  <tr><th scope="col">Verbo</th><th scope="col">Regência</th></tr>
+  <tr><td>Preferir</td><td>preferir <b>X a Y</b> (e não "do que", nem "mais")</td></tr>
+  <tr><td>Obedecer, desobedecer</td><td><b>a</b> alguém ou algo (obedece <b>ao</b> regulamento)</td></tr>
+  <tr><td>Chegar, ir</td><td><b>a</b> (chegou <b>ao</b> posto), não "em"</td></tr>
+  <tr><td>Informar, avisar</td><td>informar algo <b>a</b> alguém, ou alguém <b>de/sobre</b> algo</td></tr>
+  <tr><td>Agradecer, perdoar</td><td>algo <b>a</b> alguém (agradeço <b>a</b> você pela ajuda)</td></tr>
+  <tr><td>Lembrar, esquecer</td><td>sem preposição (lembrei o nome) ou pronominal com <b>de</b> (lembrei-<b>me</b> <b>do</b> nome)</td></tr>
+</table></div>
+<p><b>Regência nominal:</b> acesso <b>a</b>, contrário <b>a</b>, obediência <b>a</b>, necessidade <b>de</b>, orgulho <b>de</b>, preferência <b>por</b>, respeito <b>a/por</b>.</p>
+
+<div class="caixa cai"><strong>Pronome relativo precedido de preposição</strong>
+A preposição vem do <b>verbo</b> (ou nome) da oração do relativo e fica <b>antes</b> do pronome. Teste: monte a frase sem o relativo. "Refiro-me <i>à</i> unidade" → "a unidade <b>a que</b> me refiro". "Preciso <i>da</i> receita" → "a receita <b>de que</b> preciso". "Trabalho <i>na</i> clínica" → "a clínica <b>em que</b> trabalho". Com <b>cujo</b> (= de que o): "o paciente <b>cujo</b> prontuário li"; preposição antes dele quando o verbo pedir ("a cujo pedido atendi").</div>
+<div class="caixa pega"><strong>Pegadinha</strong>
+"A unidade <s>que</s> me refiro" é erro: falta a preposição. Certo: "a unidade <b>a que</b> me refiro" ou "à qual me refiro". E "a qual me refiro", sem crase e sem preposição, também é erro.</div>
+
+<h2 id="crase">10. Crase (item 11)</h2>
+<p><b>Crase</b> é a fusão da preposição <b>a</b> com o artigo ou pronome <b>a(s)</b>. Só há crase quando o verbo (ou nome) pede <b>a</b> <i>e</i> a palavra seguinte aceita <b>a</b>.</p>
+<div class="caixa conceito"><strong>Mapa de decisão (4 perguntas)</strong>
+1) A palavra seguinte é <b>feminina</b>? Se for masculina, não há crase (exceto "à moda de"). 2) O termo anterior <b>pede a</b>? (chegar a, ir a, entregar a). 3) Troque por um masculino: se aparecer <b>"ao"</b>, há crase. "Vou à clínica" → "Vou ao consultório". 4) Troque o verbo por <b>"voltar"</b>: "volto <b>da</b>" → crase; "volto <b>de</b>" → sem crase.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Crase obrigatória</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Horas determinadas</td><td>A consulta é <b>às</b> 14 horas. Chegou <b>à</b> uma hora.</td></tr>
+  <tr><td>Locuções adverbiais femininas</td><td>à noite, às vezes, à tarde, à vontade, à direita</td></tr>
+  <tr><td>Locuções prepositivas e conjuntivas femininas</td><td>à procura de, à custa de, à medida que</td></tr>
+  <tr><td>Antes de <b>aquele(a/s), aquilo</b> (a + aquele)</td><td>Refiro-me <b>àquele</b> exame. Assisti <b>àquilo</b>.</td></tr>
+  <tr><td>Antes de <b>a qual, as quais</b>, quando o verbo pede a</td><td>A reunião <b>à qual</b> compareci.</td></tr>
+  <tr><td>Antes de <b>a que / a de</b> (= aquela que / aquela de)</td><td>Refiro-me <b>à</b> que chegou primeiro.</td></tr>
+</table></div>
+<div class="tabela"><table>
+  <tr><th scope="col">Nunca há crase</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Antes de palavra masculina</td><td>Entregou o laudo <b>a</b> ele. Andou <b>a</b> pé.</td></tr>
+  <tr><td>Antes de verbo</td><td>Começou <b>a</b> trabalhar.</td></tr>
+  <tr><td>Antes de pronome pessoal, de tratamento (menos senhora/senhorita/dona) e indefinido</td><td>Falou <b>a</b> você. <b>A</b> Vossa Excelência. <b>A</b> toda pessoa.</td></tr>
+  <tr><td>Expressões com palavras repetidas</td><td>cara <b>a</b> cara, gota <b>a</b> gota</td></tr>
+  <tr><td>"a partir de"</td><td>A partir de segunda. ("à partir" é erro)</td></tr>
+  <tr><td>Antes de plural sem artigo</td><td>Refiro-me <b>a</b> pessoas assim.</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Casos que confundem</strong>
+<b>Cidades:</b> "Vou <b>a</b> Porto Alegre" (sem artigo), mas "Vou <b>à</b> Porto Alegre dos anos 50" (com adjunto que a determina). <b>Casa:</b> sem adjunto, "Voltei <b>a</b> casa"; com adjunto, "Voltei <b>à</b> casa dos meus pais". <b>Distância:</b> "a cinco metros" sem crase; "<b>à</b> distância de cinco metros" com crase quando a distância está determinada. <b>Facultativa:</b> antes de possessivo feminino (<i>a/à minha equipe</i>) e de nome próprio de mulher (<i>entreguei a/à Maria</i>).</div>
+
+<h2 id="colocacao">11. Colocação pronominal (item 12)</h2>
+<p>Pronomes oblíquos átonos (me, te, se, o, a, lhe, nos, vos) podem ficar <b>antes</b> do verbo (<b>próclise</b>), <b>depois</b> (<b>ênclise</b>, com hífen) ou <b>no meio</b> (<b>mesóclise</b>, só em futuro do presente e do pretérito).</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Posição</th><th scope="col">Quando</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Próclise</b></td><td>há <b>palavra atrativa</b>: negação, advérbio sem pausa, pronome relativo/indefinido/interrogativo, conjunção subordinativa, sujeito como "ninguém" e "todos"</td><td><b>Não</b> se esqueça. <b>Ninguém</b> lhe disse. O exame <b>que</b> me entregaram. Disse <b>que</b> se esforçava.</td></tr>
+  <tr><td><b>Ênclise</b></td><td>sem atrativo; <b>nunca abre a frase</b> na norma escrita; imperativo afirmativo</td><td>Entregou-<b>me</b> o laudo. Avise-<b>me</b> quando chegar.</td></tr>
+  <tr><td><b>Mesóclise</b></td><td>futuro do presente ou do pretérito, sem atrativo</td><td>Dar-<b>lhe</b>-ei a resposta. Far-<b>se</b>-ia o exame.</td></tr>
+</table></div>
+
+<h3>Locuções verbais e tempos compostos</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Estrutura</th><th scope="col">Posições aceitas</th><th scope="col">Proibido</th></tr>
+  <tr><td><b>Auxiliar + infinitivo ou gerúndio</b> (querer explicar, estar fazendo)</td><td>no infinitivo/gerúndio (<i>queria explicar-<b>nos</b></i>) ou no auxiliar (<i>queria-<b>nos</b> explicar</i>). Com atrativo: <i>não <b>nos</b> queria explicar</i>, ou <i>não queria explicar-<b>nos</b></i></td><td>ênclise ao auxiliar se houver atrativo (<s>não queria-nos explicar</s>)</td></tr>
+  <tr><td><b>Tempo composto</b> (ter ou haver + particípio)</td><td>ligado ao <b>auxiliar</b>: <i>tinha-<b>se</b> queixado</i>; com atrativo: <i>nunca <b>se</b> tinha queixado</i></td><td>ligado ao <b>particípio</b>: <s>tinha queixado-se</s>, <s>havia esforçado-se</s></td></tr>
+  <tr><td><b>Orações com mais de um atrator</b></td><td>qualquer atrator leva à próclise, e o pronome fica junto do verbo: <i>Disse que não <b>se</b> esquecera</i></td><td></td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinhas</strong>
+(1) Jamais ligue pronome ao <b>particípio</b>. (2) "Me avise" no começo da frase é de fala; na norma culta escrita: "Avise-me". (3) Após r, s, z, o pronome "o/a" vira "lo/la" (<i>entregá-<b>lo</b></i>, <i>fi-<b>lo</b></i>); após nasal, "no/na" (<i>deram-<b>no</b></i>). (4) Em locução com atrativo, a variante "não vou me esquecer" é muito usada no Brasil, mas a gramática normativa tradicional prefere a próclise ao auxiliar ("não me vou esquecer") ou a ênclise ao infinitivo ("não vou esquecer-me"); na prova, escolha uma dessas duas.</div>
+
+<h2 id="pontuacao">12. Pontuação (item 13)</h2>
+<p>A pontuação não é só regra: ela <b>muda o sentido</b>. Compare "Não, espere" (pare) com "Não espere" (vá embora), ou "Vamos comer, crianças!" com "Vamos comer crianças!".</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Sinal</th><th scope="col">Usos</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Vírgula obrigatória</b></td><td>vocativo; aposto explicativo; adjunto deslocado; orações adjetivas explicativas; elementos de uma lista; omissão do verbo (elipse); expressões como "isto é", "ou seja"</td><td>Dona Ana, a consulta foi remarcada. A equipe, que chegou cedo, saiu tarde.</td></tr>
+  <tr><td><b>Vírgula proibida</b></td><td>entre sujeito e verbo; entre verbo e objeto; antes de "que" integrante; antes de "e" ligando dois itens simples</td><td><s>Os pacientes, faltaram.</s> / <s>Disse, que viria.</s></td></tr>
+  <tr><td><b>Ponto e vírgula</b></td><td>separa itens longos de uma lista; separa orações que já têm vírgulas</td><td>itens de uma lista com explicação</td></tr>
+  <tr><td><b>Dois-pontos</b></td><td>introduz enumeração, citação ou explicação</td><td>Levei três itens: luvas, máscara e gaze.</td></tr>
+  <tr><td><b>Travessão e parênteses</b></td><td>isolam informação extra; o travessão destaca mais</td><td>O resultado — surpreendente — saiu hoje.</td></tr>
+  <tr><td><b>Reticências, aspas</b></td><td>suspensão do pensamento; citação, ironia, estrangeirismo</td><td>O "plantão tranquilo" durou até as 8h.</td></tr>
+</table></div>
+<div class="caixa conceito"><strong>Vírgula e efeito de sentido</strong>
+Adjetiva sem vírgula <b>restringe</b> (só alguns). Com vírgulas <b>explica</b> (todos). Adjunto adverbial deslocado pede vírgula: "Na sala de espera, os pacientes aguardavam". Para evitar ambiguidade: "Com a lupa, o dentista examinou a menina" deixa claro quem tinha a lupa.</div>
+
+<h2 id="figuras">13. Figuras de pensamento e de sintaxe (item 14)</h2>
+<h3>Figuras de pensamento</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Figura</th><th scope="col">O que é</th><th scope="col">Exemplo</th><th scope="col">Efeito</th></tr>
+  <tr><td><b>Ironia</b></td><td>dizer o contrário do que se pensa</td><td>"Que atendimento rápido: esperei quatro horas."</td><td>crítica</td></tr>
+  <tr><td><b>Paradoxo</b></td><td>união de ideias que parecem se excluir, mas fazem sentido</td><td>"Quanto mais ele aprendia, mais percebia que nada sabia."</td><td>reflexão</td></tr>
+</table></div>
+<h3>Figuras de sintaxe</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Figura</th><th scope="col">O que é</th><th scope="col">Exemplo</th><th scope="col">Efeito</th></tr>
+  <tr><td><b>Elipse</b></td><td>omissão de termo que se deduz do contexto</td><td>"Cheguei cedo e [eu] saí tarde."</td><td>concisão</td></tr>
+  <tr><td><b>Zeugma</b></td><td>elipse de termo <b>já expresso antes</b>, em geral o verbo</td><td>"Ele pediu café; ela, chá." (omitido: pediu)</td><td>concisão, ritmo</td></tr>
+  <tr><td><b>Hipérbato</b></td><td>inversão da ordem direta</td><td>"Leu o laudo com atenção o médico."</td><td>ênfase, ritmo</td></tr>
+  <tr><td><b>Anacoluto</b></td><td>quebra da construção: um termo começa a frase e fica solto</td><td>"Eu, as filas me cansam."</td><td>oralidade, emoção</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Macetes</strong>
+<b>Zeugma</b> é uma elipse especial: o termo omitido <i>já apareceu</i>. <b>Elipse</b> comum: o termo é deduzido pelo contexto, mas não apareceu. <b>Anacoluto</b>: o começo da frase fica "órfão" (o "eu" não tem verbo). <b>Hipérbato</b>: tudo está lá, só fora de lugar. Ironia, no texto: procure o <b>contraste</b> entre o elogio e a situação.</div>
+<p class="sub">O Manual de Redação (item 3.6) lembra que o padrão culto não significa usar figuras de linguagem próprias do estilo literário: num ofício, elas devem ser evitadas.</p>
+
+<h2 id="variacao">14. Variação linguística (item 15)</h2>
+<div class="tabela"><table>
+  <tr><th scope="col">Variação</th><th scope="col">Depende de</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Diatópica</b></td><td>o <b>lugar</b> (região)</td><td>guri (Sul), menino (outras regiões); aipim, mandioca, macaxeira</td></tr>
+  <tr><td><b>Diastrática</b></td><td>o grupo <b>social</b> (escolaridade, idade, profissão)</td><td>gíria de jovens; jargão de uma profissão</td></tr>
+  <tr><td><b>Diafásica (registro)</b></td><td>a <b>situação</b> (formal ou informal)</td><td>"Prezado Senhor" x "E aí, tudo bem?"</td></tr>
+  <tr><td><b>Diacrônica</b></td><td>o <b>tempo</b></td><td>"vosmecê" > "você"</td></tr>
+</table></div>
+<div class="caixa conceito"><strong>Variação não é erro</strong>
+Cada variedade serve a um contexto. O que existe é <b>adequação</b>: na linguagem profissional e acadêmica usa-se o <b>registro culto formal</b>. O Manual de Redação (itens 3.1 e 3.6) manda usar a norma padrão, sem regionalismos nem neologismos, sem modismos e sem jargão que o leitor não entenda.</div>
+
+<h2 id="falacias">15. Falácias e lógica argumentativa (item 16)</h2>
+<p><b>Falácia</b> (ou sofisma) é um raciocínio que <b>parece</b> bom, mas não prova o que afirma. Ela ataca o argumento por um caminho errado.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Falácia</th><th scope="col">Como funciona</th><th scope="col">Exemplo</th></tr>
+  <tr><td><b>Ad hominem</b></td><td>ataca a <b>pessoa</b>, não o argumento</td><td>"Não vou ouvir a proposta dele; já foi multado por estacionar errado."</td></tr>
+  <tr><td><b>Espantalho</b></td><td>distorce a posição do outro e ataca a versão distorcida</td><td>A: "Devemos ampliar a prevenção." B: "Você quer abandonar quem já está doente!"</td></tr>
+  <tr><td><b>Falsa dicotomia</b></td><td>apresenta só duas saídas quando existem outras</td><td>"Ou fechamos o posto, ou aceitamos filas eternas."</td></tr>
+  <tr><td><b>Apelo à autoridade</b></td><td>usa uma autoridade (ou "todo mundo diz") como prova, sem dados ou fora da área dela</td><td>"Um famoso ator garante que esse enxaguante cura cárie."</td></tr>
+  <tr><td><b>Generalização apressada</b></td><td>tira regra geral de poucos casos</td><td>"Dois pacientes reclamaram, logo o serviço é péssimo."</td></tr>
+  <tr><td><b>Post hoc</b></td><td>conclui que, porque B veio depois de A, A causou B</td><td>"Trocamos a recepcionista e o número de faltas caiu: ela resolveu o problema."</td></tr>
+  <tr><td><b>Ladeira escorregadia</b></td><td>diz que um passo levará, sem provas, a uma cadeia de desastres</td><td>"Se liberarmos um atestado, em breve ninguém mais trabalhará."</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Cuidado</strong>
+Citar um especialista <b>na sua área</b>, com fonte verificável, é argumento legítimo; vira falácia quando a autoridade é só enfeite. Criticar o histórico de alguém também pode ser válido se o assunto for exatamente a credibilidade dele; é falácia quando serve para fugir do argumento. Já a <b>contradição</b> (afirmar A e não-A ao mesmo tempo) é um defeito lógico de outro tipo: o texto se desmente.</div>
+
+<h2 id="argumentacao">16. Argumentação, modalizadores e impessoalidade (item 17)</h2>
+<p>Um texto argumentativo defende uma <b>tese</b> com <b>argumentos</b>, prevê <b>contra-argumentos</b> e fecha com uma <b>conclusão</b>. As estratégias de persuasão mais comuns são: dados e estatísticas, exemplos, comparação, relação de causa e consequência, citação de especialistas, pergunta retórica (pergunta que já traz a resposta) e apelo emocional.</p>
+<h3>Modalizadores: o autor mostra quanto acredita ou o que exige</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Ideia</th><th scope="col">Exemplos</th></tr>
+  <tr><td><b>Certeza</b></td><td>certamente, evidentemente, sem dúvida, é claro que</td></tr>
+  <tr><td><b>Dúvida ou possibilidade</b></td><td>talvez, possivelmente, provavelmente, parece que, pode ser que</td></tr>
+  <tr><td><b>Obrigatoriedade ou necessidade</b></td><td>é preciso, é obrigatório, é indispensável, deve-se, cabe a</td></tr>
+  <tr><td><b>Avaliação (opinião do autor)</b></td><td>infelizmente, felizmente, lamentavelmente</td></tr>
+  <tr><td><b>Delimitação</b></td><td>de certo modo, em parte, segundo o relatório</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha</strong>
+Trocar o modalizador muda o texto: "O posto <b>provavelmente</b> abrirá" é dúvida; "<b>certamente</b> abrirá" é certeza; "<b>deve</b> abrir" pode ser probabilidade ou obrigação, conforme o contexto.</div>
+<h3>Impessoalidade</h3>
+<p>Escrever sem marcas de opinião pessoal: <b>3ª pessoa</b> ("solicita-se", "informa-se"), <b>voz passiva</b> ("o pedido foi analisado"), <b>sujeito indeterminado</b> e <b>infinitivo</b>. Evite "eu acho", "na minha opinião", adjetivos carregados. É o oposto de uma carta a um amigo. O Manual de Redação (item 3.5) trata a impessoalidade como atributo da redação oficial.</p>
+
+<h2 id="oficial">17. Redação oficial (itens 18, 19 e 20)</h2>
+<div class="caixa conceito">
+  <strong>De onde vem esta seção</strong>
+  Tudo o que está aqui foi conferido no <b>Manual de Redação da Presidência da República, 3ª edição, 2018</b> (PDF oficial do Planalto, 189 páginas, obtido em 27/10/2026). Cada afirmação traz o <b>item do Manual</b> entre parênteses. O Manual trata da administração federal (item 2); o edital pede que ele sirva de base ("atualizado"). Onde a prática de um município pode diferir, a página avisa.
+</div>
+
+<h3>Item 18: princípios e atributos (Manual, itens 2 e 3)</h3>
+<p>Redação oficial é "a maneira pela qual o Poder Público redige comunicações oficiais e atos normativos" (item 2). Seus atributos (item 3) são sete:</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Atributo</th><th scope="col">Em uma frase (Manual)</th></tr>
+  <tr><td><b>Clareza e precisão</b> (3.1)</td><td>texto de compreensão imediata; palavras simples, frases curtas e ordem direta, pontuação adequada, sigla explicada na primeira vez, sem regionalismos nem neologismos; precisão = mesmas palavras para a mesma ideia, sem sinonímia só por estilo e sem duplo sentido</td></tr>
+  <tr><td><b>Objetividade</b> (3.2)</td><td>ir direto ao assunto, sem voltas e sem redundâncias; separar a ideia principal das secundárias</td></tr>
+  <tr><td><b>Concisão</b> (3.3)</td><td>máximo de informação com o mínimo de palavras; cortar palavras inúteis, adjetivos e advérbios desnecessários, subordinação excessiva</td></tr>
+  <tr><td><b>Coesão e coerência</b> (3.4)</td><td>ligação entre as partes por referência, substituição, elipse e conjunção</td></tr>
+  <tr><td><b>Impessoalidade</b> (3.5)</td><td>a comunicação é feita em nome do serviço público, sem impressões individuais; decorre do art. 37 da Constituição</td></tr>
+  <tr><td><b>Formalidade e padronização</b> (3.6)</td><td>regras de forma e formalidade de tratamento, em meio impresso ou eletrônico (inclusive e-mail)</td></tr>
+  <tr><td><b>Uso da norma padrão</b> (3 e 3.6)</td><td>padrão culto, sem rebuscamento nem figuras de estilo literário; evitar jargão burocrático</td></tr>
+</table></div>
+<div class="caixa cai"><strong>Princípio constitucional por trás</strong>
+O Manual (item 3) diz que esses atributos decorrem do art. 37 da Constituição: <b>legalidade, impessoalidade, moralidade, publicidade e eficiência</b>. Clareza liga-se à publicidade: o texto oficial tem de ser entendido pelo cidadão (item 3.1).</div>
+
+<h3>Pronomes de tratamento (Manual, item 4.1)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Quando o destinatário é…</th><th scope="col">Endereçamento</th><th scope="col">Vocativo</th><th scope="col">No texto</th></tr>
+  <tr><td>Chefe de Poder (Presidente da República, do Congresso, do STF)</td><td>A Sua Excelência o Senhor</td><td>Excelentíssimo Senhor Presidente…,</td><td>Vossa Excelência</td></tr>
+  <tr><td>Ministro, senador, deputado, embaixador e demais autoridades tratadas por Vossa Excelência</td><td>A Sua Excelência o Senhor (ou a Senhora)</td><td>Senhor Ministro, / Senhora Senadora,</td><td>Vossa Excelência (abrev. V. Exa.)</td></tr>
+  <tr><td>Demais casos (tratamento Vossa Senhoria)</td><td>Ao Senhor (ou À Senhora)</td><td>Senhor + cargo, / Prezado Senhor,</td><td>Vossa Senhoria (abrev. V. Sa.)</td></tr>
+</table></div>
+<ul>
+  <li><b>Vocativo</b> (item 4.4): sempre seguido de <b>vírgula</b>. "Excelentíssimo Senhor" fica para os <b>Chefes de Poder</b>; as demais autoridades, mesmo tratadas por Vossa Excelência, recebem "Senhor" ou "Senhora" seguido do cargo.</li>
+  <li><b>Abolidos</b> (item 4.4): "Em comunicações oficiais, está abolido o uso de <b>Digníssimo (DD)</b> e de <b>Ilustríssimo (Ilmo.)</b>."</li>
+  <li><b>"Doutor"</b> (item 4.4): o Manual não o proíbe de todo, mas diz: "Evite-se o uso de 'doutor' indiscriminadamente. O tratamento por meio de Senhor confere a formalidade desejada."</li>
+  <li><b>Concordância</b> (item 4.1.1): o pronome se refere à 2ª pessoa (com quem se fala), mas a concordância é na <b>3ª pessoa</b>: "Vossa Senhoria designará <b>seu</b> substituto" (e não "vosso"). O adjetivo concorda com o <b>sexo</b> do interlocutor: "Vossa Excelência está atarefada" (mulher).</li>
+  <li><b>Sua Excelência</b> (item 4.1.1) é usada para falar <b>da</b> autoridade, não <b>com</b> ela.</li>
+</ul>
+
+<h3>Item 19: o padrão ofício (Manual, item 5)</h3>
+<div class="caixa conceito"><strong>Ordem das partes do ofício (item 5.1)</strong>
+1) <b>Cabeçalho</b> (só na 1ª página; brasão, nome do órgão). 2) <b>Identificação do expediente</b> (tipo, número, ano, siglas). 3) <b>Local e data</b>. 4) <b>Endereçamento</b> (vocativo, nome, cargo, endereço). 5) <b>Assunto</b>. 6) <b>Texto</b>. 7) <b>Fecho</b>. 8) <b>Identificação do signatário</b>. 9) Numeração das páginas (a partir da 2ª).</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Parte</th><th scope="col">Regras do Manual</th></tr>
+  <tr><td>Cabeçalho (5.1.1)</td><td>centralizado, só na primeira página: brasão de Armas da República, nome do órgão principal e dos secundários, da maior para a menor hierarquia; evitar marca da instituição que se sobreponha ao brasão</td></tr>
+  <tr><td>Identificação (5.1.2)</td><td>nome do documento por extenso em <b>maiúsculas</b>, "Nº" para número, depois número, ano com 4 dígitos e siglas do setor (da menor para a maior hierarquia) separados por barra, à esquerda. Ex.: OFÍCIO Nº 652/2018/SAA/SE/MT</td></tr>
+  <tr><td>Local e data (5.1.3)</td><td>cidade seguida de vírgula, <b>sem a sigla do estado</b>; dia em ordinal só para o <b>primeiro</b> (1º), cardinal nos demais, sem zero à esquerda; mês em <b>minúscula</b>; ponto final; alinhado à <b>direita</b>. Ex.: Brasília, 2 de fevereiro de 2018.</td></tr>
+  <tr><td>Endereçamento (5.1.4)</td><td>vocativo, nome, cargo e endereço, à esquerda. "A Sua Excelência o Senhor" para quem recebe Vossa Excelência; "Ao Senhor" ou "À Senhora" para Vossa Senhoria</td></tr>
+  <tr><td>Assunto (5.1.5)</td><td>"Assunto:" seguido de frase curta, <b>sem verbos</b>, de quatro a cinco palavras, com inicial maiúscula, em <b>negrito</b>, com ponto final. Ex.: Assunto: Aquisição de computadores.</td></tr>
+  <tr><td>Texto (5.1.6)</td><td>introdução (objetivo), desenvolvimento (detalhes, um parágrafo por ideia) e conclusão. <b>Evitar</b> "Tenho a honra de", "Tenho o prazer de", "Cumpre-me informar que"; preferir a forma direta: <b>Informo, Solicito, Comunico</b>. Parágrafos <b>numerados</b> só quando o documento tem <b>três ou mais</b>; vocativo e fecho não se numeram</td></tr>
+  <tr><td>Fecho (5.1.7)</td><td>só <b>dois</b>: <b>Respeitosamente,</b> para autoridade de <b>hierarquia superior</b> à do remetente; <b>Atenciosamente,</b> para autoridades de mesma hierarquia, inferior ou demais casos. Excluem-se as autoridades estrangeiras</td></tr>
+  <tr><td>Signatário (5.1.8)</td><td>nome em <b>maiúsculas, sem negrito</b>, sem linha acima; cargo só com iniciais maiúsculas; <b>centralizado</b>; não deixar a assinatura sozinha em página isolada</td></tr>
+  <tr><td>Páginas (5.1.9)</td><td>numeração obrigatória apenas a partir da <b>segunda</b> página, centralizada no rodapé</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Formatação (item 5.2 e 5.1.6)</strong>
+Papel <b>A4</b>; margem esquerda no mínimo <b>3 cm</b>, direita <b>1,5 cm</b>, superior e inferior <b>2 cm</b>; fonte <b>Calibri ou Carlito</b>, corpo <b>12</b>; texto <b>justificado</b>, entrelinhas simples, recuo de parágrafo de <b>2,5 cm</b>, 6 pontos de espaço após cada parágrafo; texto preto em papel branco; destaque só com <b>negrito</b>, sem abuso; palavra estrangeira em <b>itálico</b>.</div>
+<div class="caixa pega"><strong>Pegadinhas do ofício</strong>
+(a) "OFÍCIO Nº 652/2018…" em maiúsculas, mas o <b>mês da data</b> em minúscula. (b) Dia 1º é ordinal; dia 2 é "2". (c) No assunto <b>não há verbo</b>. (d) "Respeitosamente" sobe, "Atenciosamente" fica no mesmo nível ou desce. (e) O signatário não leva negrito nem linha acima do nome.</div>
+
+<h3>Item 20: documentos específicos</h3>
+<h4>Ofício, aviso e memorando (Manual, item 5)</h4>
+<div class="tabela"><table>
+  <tr><th scope="col">Lado</th><th scope="col">O que diz</th></tr>
+  <tr><td><b>Manual (3ª ed., 2018), item 5</b></td><td>Até a 2ª edição havia três expedientes que se diferenciavam pela finalidade: <b>aviso</b> (só de Ministros de Estado a autoridades de mesma hierarquia), <b>ofício</b> (para e pelas demais autoridades) e <b>memorando</b> (entre unidades administrativas de um mesmo órgão). "Nesta nova edição ficou abolida aquela distinção e passou-se a utilizar o termo <b>ofício</b> nas três hipóteses." Todos seguem o <b>padrão ofício</b>.</td></tr>
+  <tr><td><b>O que o edital diz</b></td><td>O memorando é "extinto na nova nomenclatura federal, mas ainda cobrado em âmbito municipal". Quer dizer: o Manual (federal) não o usa mais como nome; um município pode manter o termo na rotina.</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Como responder na prova</strong>
+Se a questão disser "segundo o Manual de Redação (3ª edição)": o memorando <b>foi absorvido pelo ofício</b>. Se a questão pedir o conceito tradicional: memorando é a comunicação <b>entre unidades de um mesmo órgão</b>. Se ela perguntar o que mudou: a distinção entre aviso, ofício e memorando acabou e todos viraram ofício no padrão ofício. <b>Não verificado:</b> não tenho documento do Município de Barão de Cotegipe que mostre como ele usa o memorando hoje.</div>
+<p>Variações do ofício (item 6.1): <b>circular</b> (um órgão envia o mesmo expediente a vários), <b>conjunto</b> (vários órgãos enviam a um só) e <b>conjunto circular</b> (vários a vários). Ex.: OFÍCIO CIRCULAR Nº 652/2018/MEC.</p>
+
+<h4>Exposição de motivos (Manual, item 6.2)</h4>
+<ul>
+  <li><b>O que é:</b> expediente dirigido ao Presidente (ou Vice-Presidente) da República para <b>propor uma medida</b>, <b>submeter um projeto de ato normativo</b> ou <b>informar</b> um assunto. É assinada por um Ministro de Estado; se envolver mais de um ministério, por todos, e chama-se <b>interministerial</b> (6.2.1).</li>
+  <li><b>Estrutura obrigatória</b> (6.2.2): introdução (o <b>problema</b> que pede a medida, ou o assunto informado), desenvolvimento (por que a medida é a ideal e quais são as <b>alternativas</b>) e conclusão (propor a medida ou o ato; nas só informativas, as considerações finais).</li>
+  <li><b>Numeração</b> (6.2.1): a sequência numérica é única (vale para EM de um só ministro ou interministerial) e a numeração começa e termina dentro de um mesmo ano civil.</li>
+</ul>
+
+<h4>Correio eletrônico (Manual, item 6.4)</h4>
+<ul>
+  <li><b>Natureza</b> (6.4.1): como gênero textual, o e-mail pode ser documento oficial, como o ofício; evite linguagem incompatível. Endereço de servidor deve ser oficial (".gov.br").</li>
+  <li><b>Valor documental</b> (6.4.2): para ser aceito como original, exige certificação digital da ICP-Brasil. Sem ela, o destinatário pode reconhecer o e-mail como válido; se houver questionamento, repete-se o ato em documento físico assinado ou meio reconhecido pela ICP-Brasil.</li>
+  <li><b>Assunto</b> (6.4.3.1): claro e específico. Em vez de "Reunião", "Agendamento de reunião sobre a Reforma da Previdência". <b>Local e data</b> são desnecessários no corpo (6.4.3.2).</li>
+  <li><b>Vocativo</b> (6.4.3.3): saudação inicial obrigatória: "Senhor/Senhora + cargo", ou "Prezado Senhor", "Prezada Senhora".</li>
+  <li><b>Fecho</b> (6.4.3.4): <b>"Atenciosamente"</b> é o fecho padrão. "Att.", "Abraços" e "Saudações" não são fechos oficiais e não devem ser usados em e-mails profissionais.</li>
+  <li><b>Assinatura</b> (6.4.3.5): nome completo, cargo, unidade, órgão e telefone.</li>
+  <li><b>Recomendações</b> (6.4.5): fonte Calibri ou Carlito, tamanho 12, preta; sem fundo ou papel de parede; <b>sem emoticons</b>; sem abreviações de internet ("vc", "pq"); sem texto em <b>caixa alta</b> para destaque (denota agressividade); revisar como qualquer documento oficial; mensagem com anexo deve informar o conteúdo do anexo (6.4.4).</li>
+</ul>
+
+<div class="caixa pega"><strong>Ata e relatório: o que NÃO consegui confirmar</strong>
+O edital cita <b>ata</b> e <b>relatório</b> no item 20, mas o Manual de Redação (3ª ed.) <b>não tem um capítulo próprio</b> sobre esses dois documentos: as palavras aparecem só em exemplos. Por isso esta apostila <b>não afirma regras de forma de ata ou de relatório</b>. Para esses dois, o estudo fica raso: vale conferir, mais perto da prova, se o município ou a banca indicou outra referência.</div>
+
+<h2 id="questoes">18. Questões comentadas (formato da prova: 4 alternativas)</h2>
+<p>Responda antes de abrir o comentário. A resposta certa aparece em verde, como uma frase para gravar. As questões e os textos são originais desta apostila.</p>
+
+<div class="questao" id="q1">
+<p><b>1.</b> Leia: "A prefeitura deixou de oferecer o transporte para as consultas no bairro rural." A frase <b>pressupõe</b> que:</p>
+<ol><li>o bairro rural não tem nenhuma consulta.</li><li>a prefeitura oferecia, antes, o transporte para as consultas.</li><li>a prefeitura nunca mais oferecerá o transporte.</li><li>os moradores recusaram o transporte.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">"Deixou de oferecer" pressupõe que, antes, a prefeitura oferecia o transporte.</span></p>
+<p class="errada">A) <s>não tem consulta</s> → o texto fala de transporte para as consultas, que seguem existindo.</p>
+<p class="errada">C) <s>nunca mais oferecerá</s> → é previsão sobre o futuro; o texto só diz o que parou de acontecer.</p>
+<p class="errada">D) <s>moradores recusaram</s> → o texto não diz o motivo; seria invenção do leitor.</p>
+</details></div>
+
+<div class="questao" id="q2">
+<p><b>2.</b> Leia: "O dentista examinou a gestante. Ele orientou a mãe sobre a higiene do bebê. Isso tranquilizou a família." No texto, o pronome "Isso" funciona na coesão como:</p>
+<ol><li>catáfora, pois anuncia uma informação que vem na frase seguinte.</li><li>retomada apenas da palavra "dentista".</li><li>substituição lexical da palavra "bebê".</li><li>anáfora, pois retoma a ideia inteira da frase anterior (a orientação sobre a higiene).</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">"Isso" é anáfora: retoma a ideia inteira da frase anterior, a orientação sobre a higiene do bebê.</span></p>
+<p class="errada">A) <s>catáfora</s> → catáfora anuncia o que vem depois; "Isso" olha para trás.</p>
+<p class="errada">B) <s>só "dentista"</s> → quem retoma "dentista" é "Ele"; "Isso" retoma uma ação, não uma pessoa.</p>
+<p class="errada">C) <s>substituição de "bebê"</s> → "Isso" não é sinônimo de "bebê"; é pronome que resume a frase.</p>
+</details></div>
+
+<div class="questao" id="q3">
+<p><b>3.</b> Em "Embora a unidade tenha poucos dentistas, o atendimento melhorou", a conjunção "embora" expressa:</p>
+<ol><li>concessão: admite um fato contrário, que não impediu o que se afirma.</li><li>causa: a falta de dentistas é o motivo da melhora.</li><li>condição: o atendimento melhorou se houver poucos dentistas.</li><li>conclusão: por haver poucos dentistas, conclui-se que o atendimento melhorou.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">"Embora" expressa concessão: admite um fato contrário (poucos dentistas), que não impediu a melhora.</span></p>
+<p class="errada">B) <s>causa</s> → poucos dentistas não explicam a melhora; o texto contrasta os dois fatos.</p>
+<p class="errada">C) <s>condição</s> → condição seria "se" ou "caso".</p>
+<p class="errada">D) <s>conclusão</s> → conclusão seria "logo" ou "portanto"; aqui há contraste.</p>
+</details></div>
+
+<div class="questao" id="q4">
+<p><b>4.</b> Em qual das frases a palavra "que" é <b>conjunção integrante</b>?</p>
+<ol><li>O exame que fiz foi rápido.</li><li>Chorou tanto que adoeceu.</li><li>Os pacientes disseram que voltarão.</li><li>Ele é mais alto que o pai.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Em "disseram que voltarão", o "que" é conjunção integrante: dá para trocar por "isso" (disseram isso).</span></p>
+<p class="errada">A) <s>"que fiz"</s> → pronome relativo: retoma "exame" (= o qual).</p>
+<p class="errada">B) <s>"tanto que"</s> → conjunção consecutiva (intensidade + consequência).</p>
+<p class="errada">D) <s>"mais alto que"</s> → conjunção comparativa (vem depois de "mais").</p>
+</details></div>
+
+<div class="questao" id="q5">
+<p><b>5.</b> Em "Precisa-se de auxiliares de saúde bucal", o "se" é:</p>
+<ol><li>partícula apassivadora, e o verbo deveria ir ao plural ("Precisam-se").</li><li>índice de indeterminação do sujeito, e o verbo fica no singular.</li><li>pronome reflexivo: os auxiliares precisam de si mesmos.</li><li>conjunção condicional: precisa-se caso haja auxiliares.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">"Precisa-se de" tem o "se" como índice de indeterminação do sujeito, e o verbo fica sempre no singular.</span></p>
+<p class="errada">A) <s>apassivadora, "Precisam-se"</s> → "precisar" pede "de" (transitivo indireto); só o transitivo direto admite passiva com "se".</p>
+<p class="errada">C) <s>reflexivo</s> → ninguém "precisa de si mesmo" na frase.</p>
+<p class="errada">D) <s>condicional</s> → condicional equivale a "caso" e abre oração; aqui o "se" está junto do verbo.</p>
+</details></div>
+
+<div class="questao" id="q6">
+<p><b>6.</b> Em "Ao chegar ao posto, o dentista abriu a agenda", a oração reduzida de infinitivo equivale a:</p>
+<ol><li>"Quando chegou ao posto,", oração adverbial temporal.</li><li>"Embora chegasse ao posto,", oração adverbial concessiva.</li><li>"Para que chegasse ao posto,", oração adverbial final.</li><li>"Caso chegasse ao posto,", oração adverbial condicional.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">"Ao chegar" equivale a "Quando chegou": é oração adverbial temporal reduzida de infinitivo.</span></p>
+<p class="errada">B) <s>concessiva</s> → não há ideia de contraste.</p>
+<p class="errada">C) <s>final</s> → chegar não é o objetivo da abertura da agenda.</p>
+<p class="errada">D) <s>condicional</s> → o fato aconteceu, não é hipótese.</p>
+</details></div>
+
+<div class="questao" id="q7">
+<p><b>7.</b> A frase "A equipe realizará os exames" passa corretamente para a voz passiva analítica em:</p>
+<ol><li>Os exames serão realizado pela equipe.</li><li>Os exames realizarão a equipe.</li><li>Os exames serão realizados pela equipe.</li><li>Os exames foram realizados pela equipe.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Na passiva analítica, "realizará" vira "serão realizados": verbo ser no mesmo tempo (futuro) e particípio concordando com "os exames".</span></p>
+<p class="errada">A) <s>serão realizado</s> → o particípio concorda com o sujeito plural: realizados.</p>
+<p class="errada">B) <s>realizarão a equipe</s> → isso é voz ativa e inverte o sentido.</p>
+<p class="errada">D) <s>foram realizados</s> → passado; o original está no futuro.</p>
+</details></div>
+
+<div class="questao" id="q8">
+<p><b>8.</b> Está de acordo com a norma-padrão a concordância em:</p>
+<ol><li>Fazem dois anos que a unidade abriu.</li><li>Houveram muitas faltas no mês.</li><li>Devem haver vagas para dentistas.</li><li>Deve haver vagas para dentistas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">"Haver" no sentido de existir é impessoal: "Deve haver vagas", com o auxiliar também no singular.</span></p>
+<p class="errada">A) <s>Fazem</s> → "fazer" indicando tempo é impessoal: "Faz dois anos".</p>
+<p class="errada">B) <s>Houveram</s> → "houve", no singular.</p>
+<p class="errada">C) <s>Devem haver</s> → o auxiliar acompanha o verbo impessoal: "Deve haver".</p>
+</details></div>
+
+<div class="questao" id="q9">
+<p><b>9.</b> Há <b>silepse</b> (concordância com o sentido, não com a forma) em:</p>
+<ol><li>A equipe atendeu os pacientes.</li><li>Os brasileiros somos persistentes.</li><li>Os pacientes chegaram cedo.</li><li>Faz dois anos que a clínica abriu.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">"Os brasileiros somos persistentes" tem silepse de pessoa: o verbo vai à 1ª pessoa do plural porque quem fala se inclui.</span></p>
+<p class="errada">A e C) <s>concordância comum</s> → o verbo concorda com o sujeito expresso (equipe: singular; pacientes: plural).</p>
+<p class="errada">D) <s>impessoal</s> → "fazer" de tempo não tem sujeito; é regra de verbo impessoal, não silepse.</p>
+</details></div>
+
+<div class="questao" id="q10">
+<p><b>10.</b> Em qual frase o pronome relativo está corretamente precedido da preposição pedida pelo verbo?</p>
+<ol><li>A unidade que me refiro fica no centro.</li><li>A unidade de que me refiro fica no centro.</li><li>A unidade a que me refiro fica no centro.</li><li>A unidade onde me refiro fica no centro.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">"Referir-se" pede "a": a unidade a que me refiro (ou à qual me refiro).</span></p>
+<p class="errada">A) <s>que me refiro</s> → falta a preposição.</p>
+<p class="errada">B) <s>de que</s> → "referir-se" não pede "de".</p>
+<p class="errada">D) <s>onde</s> → "onde" indica lugar, e "referir-se" não exige lugar: o complemento é "a algo".</p>
+</details></div>
+
+<div class="questao" id="q11">
+<p><b>11.</b> O emprego do sinal indicativo de crase está correto em:</p>
+<ol><li>A consulta será às 14 horas.</li><li>Começou a trabalhar à partir de segunda.</li><li>Entregou o laudo à ele.</li><li>Referiu-se à todos os pacientes.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Antes de hora determinada há crase: "às 14 horas".</span></p>
+<p class="errada">B) <s>à partir</s> → "a partir de" nunca tem crase.</p>
+<p class="errada">C) <s>à ele</s> → pronome pessoal masculino não aceita artigo: "a ele".</p>
+<p class="errada">D) <s>à todos</s> → "todos" é masculino plural: "a todos".</p>
+</details></div>
+
+<div class="questao" id="q12">
+<p><b>12.</b> Quanto à colocação do pronome oblíquo, está de acordo com a norma-padrão:</p>
+<ol><li>Ninguém entregou-me o laudo.</li><li>Tinha esforçado-se para chegar cedo.</li><li>Me avise quando o resultado sair.</li><li>O dentista queria explicar-nos o caso.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Na locução "queria explicar", o pronome pode ficar junto do infinitivo: "queria explicar-nos".</span></p>
+<p class="errada">A) <s>entregou-me</s> → "ninguém" atrai o pronome: "Ninguém me entregou".</p>
+<p class="errada">B) <s>esforçado-se</s> → pronome nunca se liga ao particípio: "Tinha-se esforçado".</p>
+<p class="errada">C) <s>Me avise</s> → na norma escrita não se abre frase com pronome oblíquo: "Avise-me".</p>
+</details></div>
+
+<div class="questao" id="q13">
+<p><b>13.</b> Leia: "Os pacientes, que perderam a consulta, serão remarcados." O efeito das vírgulas é:</p>
+<ol><li>indicar que a oração é opcional e não muda o sentido da frase.</li><li>indicar que apenas alguns pacientes perderam a consulta.</li><li>indicar que todos os pacientes perderam a consulta; sem as vírgulas, só alguns.</li><li>separar o sujeito do verbo, o que é um erro de pontuação.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Com as vírgulas, a oração é explicativa e vale para todos os pacientes; sem elas, seria restritiva e valeria só para alguns.</span></p>
+<p class="errada">A) <s>não muda o sentido</s> → muda: a pontuação é que separa "todos" de "alguns".</p>
+<p class="errada">B) <s>só alguns</s> → inversão: "só alguns" é o sentido sem as vírgulas.</p>
+<p class="errada">D) <s>erro</s> → as vírgulas isolam a oração adjetiva explicativa, não separam sujeito e verbo.</p>
+</details></div>
+
+<div class="questao" id="q14">
+<p><b>14.</b> A figura está <b>corretamente</b> identificada em:</p>
+<ol><li>"O silêncio gritava na sala de espera." — zeugma.</li><li>"Que ótimo plantão: três faltas e nenhum café." — ironia.</li><li>"Os pacientes chegaram cedo; a equipe, tarde." — anacoluto.</li><li>"Leu o laudo com atenção o médico." — paradoxo.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Elogiar um plantão ruim ("que ótimo") é ironia: diz o contrário do que se pensa.</span></p>
+<p class="errada">A) <s>zeugma</s> → "silêncio gritava" une ideias opostas (paradoxo, ou prosopopeia); não há termo omitido.</p>
+<p class="errada">C) <s>anacoluto</s> → o verbo "chegaram" está omitido em "a equipe, tarde": isso é zeugma.</p>
+<p class="errada">D) <s>paradoxo</s> → o sujeito está depois do verbo, fora da ordem direta: hipérbato.</p>
+</details></div>
+
+<div class="questao" id="q15">
+<p><b>15.</b> Sobre variação linguística, é correto afirmar:</p>
+<ol><li>a variação diastrática é a que depende da região do país.</li><li>a linguagem formal é sempre melhor que as demais variedades, em qualquer situação.</li><li>em um ofício, os regionalismos são recomendados para aproximar o servidor do cidadão.</li><li>a variação diatópica depende do lugar (como "guri" e "menino"); a diastrática, do grupo social.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Variação diatópica é a regional ("guri" no Sul); variação diastrática é a social (escolaridade, idade, profissão).</span></p>
+<p class="errada">A) <s>diastrática = região</s> → troca de conceito: região é diatópica.</p>
+<p class="errada">B) <s>sempre melhor</s> → o que existe é adequação à situação, não ranking de variedades.</p>
+<p class="errada">C) <s>regionalismos recomendados</s> → o Manual de Redação (item 3.1) manda não utilizar regionalismos.</p>
+</details></div>
+
+<div class="questao" id="q16">
+<p><b>16.</b> Um vereador criticou a falta de dentistas no município. O colega respondeu: "Não vou discutir com quem já foi multado por estacionar errado." O raciocínio do colega é uma falácia chamada:</p>
+<ol><li>ad hominem, pois ataca a pessoa e não o argumento.</li><li>falsa dicotomia, pois só admite duas saídas.</li><li>espantalho, pois distorce a fala do vereador.</li><li>apelo à autoridade, pois cita um especialista.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Atacar a pessoa (a multa de trânsito) para fugir do argumento é falácia ad hominem.</span></p>
+<p class="errada">B) <s>falsa dicotomia</s> → não há "ou isto ou aquilo".</p>
+<p class="errada">C) <s>espantalho</s> → o colega não deformou o que foi dito; ignorou o argumento.</p>
+<p class="errada">D) <s>apelo à autoridade</s> → nenhum especialista foi citado.</p>
+</details></div>
+
+<div class="questao" id="q17">
+<p><b>17.</b> Em "É indispensável que o servidor registre o ponto", a expressão "é indispensável" funciona como modalizador de:</p>
+<ol><li>certeza, pois afirma que o fato já ocorreu.</li><li>dúvida, pois deixa o registro em aberto.</li><li>possibilidade, pois admite que o registro talvez ocorra.</li><li>obrigatoriedade, pois indica que o registro é necessário.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">"É indispensável que" expressa obrigatoriedade ou necessidade.</span></p>
+<p class="errada">A) <s>certeza</s> → certeza seria "certamente"; aqui não se afirma que ocorreu.</p>
+<p class="errada">B e C) <s>dúvida, possibilidade</s> → dúvida seria "talvez", "possivelmente"; "indispensável" exclui a opção de não registrar.</p>
+</details></div>
+
+<div class="questao" id="q18">
+<p><b>18.</b> Segundo o Manual de Redação da Presidência da República (3ª edição), o fecho de um ofício enviado por um chefe de seção a uma autoridade de <b>hierarquia superior</b> à sua é:</p>
+<ol><li>Atenciosamente,</li><li>Cordialmente,</li><li>Respeitosamente,</li><li>Abraços,</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Para autoridade de hierarquia superior, o fecho é "Respeitosamente," (Manual, item 5.1.7).</span></p>
+<p class="errada">A) <s>Atenciosamente</s> → é o fecho para autoridades de mesma hierarquia, inferior e demais casos.</p>
+<p class="errada">B e D) <s>Cordialmente, Abraços</s> → o Manual prevê só dois fechos (Respeitosamente e Atenciosamente); "Abraços" é citado como não oficial (item 6.4.3.4).</p>
+</details></div>
+
+<div class="questao" id="q19">
+<p><b>19.</b> Ao escrever a uma Senadora, segundo o Manual de Redação (item 4), está correto:</p>
+<ol><li>Vossa Excelência designará seu substituto.</li><li>Vossa Excelência designará vosso substituto.</li><li>Digníssima Senhora Senadora,</li><li>Vossa Excelência está atarefado.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Vossa Excelência leva a concordância na 3ª pessoa: "designará seu substituto" (item 4.1.1).</span></p>
+<p class="errada">B) <s>vosso</s> → o possessivo é de 3ª pessoa: "seu".</p>
+<p class="errada">C) <s>Digníssima</s> → "Digníssimo" está abolido; o vocativo para Senadora é "Senhora Senadora," (item 4.4).</p>
+<p class="errada">D) <s>atarefado</s> → o adjetivo concorda com o sexo da autoridade: "atarefada" (item 4.1.1).</p>
+</details></div>
+
+<div class="questao" id="q20">
+<p><b>20.</b> Sobre o ofício, o aviso e o memorando, segundo a 3ª edição do Manual de Redação (item 5), é correto afirmar:</p>
+<ol><li>o memorando continua sendo um tipo separado, usado entre unidades de um mesmo órgão.</li><li>a distinção entre os três foi abolida, e passou-se a usar o termo ofício nas três hipóteses.</li><li>o aviso passou a ser exclusivo de Ministros de Estado.</li><li>o ofício não pode ser usado entre unidades do mesmo órgão.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">No padrão ofício, a distinção entre aviso, ofício e memorando foi abolida, e todos passaram a se chamar ofício.</span></p>
+<p class="errada">A) <s>memorando separado</s> → era assim até a 2ª edição.</p>
+<p class="errada">C) <s>aviso exclusivo de Ministros</s> → essa era a regra antiga, agora abolida.</p>
+<p class="errada">D) <s>ofício proibido entre unidades</s> → ao contrário: o ofício passou a cobrir essa hipótese.</p>
+</details></div>
+
+<h2 id="respostas">19. Respostas que a banca dá como certas</h2>
+<p class="sub">São frases para gravar, tiradas das 20 questões.</p>
+<h3>Texto e coesão</h3>
+<ul class="respostas">
+  <li>"Deixou de oferecer" pressupõe que, antes, ofereciam.</li>
+  <li>"Isso" é anáfora: retoma a ideia inteira da frase anterior.</li>
+  <li>"Embora" expressa concessão.</li>
+</ul>
+<h3>Gramática da frase</h3>
+<ul class="respostas">
+  <li>"Disseram que voltarão": o "que" é conjunção integrante (troca por "isso").</li>
+  <li>"Precisa-se de": o "se" é índice de indeterminação, e o verbo fica no singular.</li>
+  <li>"Ao chegar" equivale a "Quando chegou": oração temporal reduzida.</li>
+  <li>Passiva analítica: verbo ser no mesmo tempo mais o particípio concordando: "serão realizados pela equipe".</li>
+</ul>
+<h3>Concordância, regência, crase, colocação, pontuação</h3>
+<ul class="respostas">
+  <li>Haver e fazer de tempo são impessoais: "Deve haver vagas", "Faz dois anos".</li>
+  <li>"Os brasileiros somos persistentes" é silepse de pessoa.</li>
+  <li>"A unidade a que me refiro": a preposição do verbo vem antes do relativo.</li>
+  <li>Crase em hora determinada: "às 14 horas"; nunca em "a partir de" nem antes de masculino.</li>
+  <li>"Queria explicar-nos": o pronome pode ficar junto do infinitivo da locução; nunca depois do particípio.</li>
+  <li>Vírgulas em torno da oração adjetiva a tornam explicativa (vale para todos); sem vírgulas, ela restringe.</li>
+</ul>
+<h3>Estilo, variação, lógica e argumentação</h3>
+<ul class="respostas">
+  <li>Ironia: dizer o contrário do que se pensa; zeugma: omitir o verbo já expresso; hipérbato: inverter a ordem.</li>
+  <li>Diatópica é regional; diastrática é social.</li>
+  <li>Atacar a pessoa em vez do argumento é ad hominem.</li>
+  <li>"É indispensável que" expressa obrigatoriedade.</li>
+</ul>
+<h3>Redação oficial (Manual, 3ª edição)</h3>
+<ul class="respostas">
+  <li>Fecho: "Respeitosamente" para autoridade superior; "Atenciosamente" para igual, inferior e demais casos.</li>
+  <li>Vossa Excelência e Vossa Senhoria levam verbo e possessivo na 3ª pessoa; o adjetivo concorda com o sexo da pessoa.</li>
+  <li>Digníssimo e Ilustríssimo estão abolidos; "doutor" deve ser evitado indiscriminadamente.</li>
+  <li>Aviso, ofício e memorando viraram "ofício", no padrão ofício.</li>
+  <li>Assunto: sem verbo, de quatro a cinco palavras, em negrito, com ponto final.</li>
+  <li>E-mail: fecho padrão "Atenciosamente"; sem emoticons, sem abreviações de internet, sem caixa alta.</li>
+</ul>
+
+<h2 id="fontes">20. Fontes</h2>
+<p>Conferido em 27/10/2026.</p>
+<ul class="fontes">
+  <li><b>Redação oficial:</b> Manual de Redação da Presidência da República, 3ª edição, 2018 (Casa Civil), PDF oficial de 189 páginas no site do Planalto (www4.planalto.gov.br, Centro de Estudos, "Manual de Redação"). Texto extraído e conferido item a item: itens 2 e 3 (atributos), 4.1 e 4.4 (tratamento e vocativo), 5 (padrão ofício), 6.1, 6.2 (exposição de motivos) e 6.4 (correio eletrônico).</li>
+  <li><b>Programa:</b> Anexo III do Edital 001/2026 de Barão de Cotegipe, Nível Superior, Língua Portuguesa (itens 1 a 20).</li>
+  <li><b>Gramática e estilística (itens 1 a 17):</b> explicação reescrita a partir do que as gramáticas normativas ensinam em comum e de uma apostila de estudo anterior de outro concurso, sem copiar texto nem questões. As regras não foram conferidas, uma a uma, em uma gramática impressa nesta sessão.</li>
+  <li><b>Textos e exemplos:</b> escritos para esta apostila. Citados apenas: "ser ou não ser" (Shakespeare) e "Minha terra tem palmeiras" (Gonçalves Dias), trechos curtos de domínio público.</li>
+</ul>
+<p class="sub">Ficaram rasos: <b>ata e relatório</b> (item 20), porque o Manual não tem capítulo sobre eles e esta apostila não afirma regras sem fonte; e o item 5 (valor das classes de palavras), que recebeu só um resumo. O Manual dá o modelo federal; a prática do município de Barão de Cotegipe (por exemplo, o uso do memorando) <b>não foi verificada</b>.</p>
+</main>
+
+<footer>
+  Material de estudo do concurso de Barão de Cotegipe. Prevalece sempre o texto oficial da norma e do edital.
+  <br><a class="voltar" href="../disciplinas/index.html#portugues">← Voltar às trilhas das disciplinas</a>
+</footer>
+<script>
+  // Na impressão, abre os comentários das questões para que saiam no papel.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+
+</body>
+</html>

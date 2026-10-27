@@ -152,3 +152,10 @@ O dono pediu que o Opus revisasse tudo o que outras IAs (Copilot/Codex/Gemini) f
 - Pegadinhas municipal x CF verificadas: disponibilidade integral (Estatuto) x proporcional (CF); 44 h (Estatuto, art. 53) x 40 h (CF após EC 141, aplicada aos servidores pelo art. 39, § 3º); Estatuto art. 128 com redação antiga da acumulação.
 - Revisão Sonnet: nenhum erro factual grave; 6 ajustes aplicados (veto/promulgação, rótulo de competência, mapa, frases sem fonte, item 10 do programa, Q4).
 - Não conferido no texto literal: Súmula 473 do STF (só resumo).
+
+## 8. Apostilas de Português e de Matemática/Lógica (27/10/2026)
+- O dono pediu para reaproveitar o material do HCPA. Inventário (Sonnet): o HCPA cobria por completo só 3 de 20 itens de Português e 3 de 20 de Matemática/RL do programa de Nível Superior de Barão; todas as questões do HCPA tinham 5 alternativas (FAURGS). Reaproveitada só a teoria neutra, reescrita e sem marcas da FAURGS (rankings, selos, questões de prova).
+- `edital/apostilas/portugues.html` (Sonnet escreveu, Opus revisou): gramática do HCPA reescrita e itens novos (coerência, semântica, vozes, silepse, colocação, figuras, variação, falácias, modalizadores) e **redação oficial pelo Manual de Redação da Presidência, 3ª ed. (2018)**, com a seção citada em cada regra. O Manual não tem capítulo de ata nem de relatório, e só recomenda evitar "doutor" (abole "Digníssimo" e "Ilustríssimo").
+- `edital/apostilas/matematica.html` (Sonnet escreveu, Opus revisou): lógica do HCPA reescrita e itens novos (financeira com SAC e Price, funções, matrizes, geometria, sólidos, estatística, Bayes, combinatória, probabilidade, congruência); 195 asserts em Python conferem contas e gabaritos (script em `scratch/mat/`, fora do Git).
+- Revisão do Opus: as 40 questões conferidas uma a uma; corrigidos uma frase truncada (colocação pronominal) e um comentário (Q1 de Matemática).
+- Ficaram rasos: ata e relatório (sem fonte no Manual); cônicas e programação linear só em reconhecimento.
