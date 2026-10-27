@@ -128,3 +128,18 @@ O dono pediu que o Opus revisasse tudo o que outras IAs (Copilot/Codex/Gemini) f
   - Legislação: faltava o item 10 (Regime estatutário e trabalhista/CLT) → tópico `regimes`.
   - Lei 8.142, Resolução CNS 453/2012, história do SUS e CF arts. 194-200 estão no programa de **Específicos** (linha ~1001 do Anexo III), não no bloco de Saúde → aviso no tópico de Saúde e novo tópico `sus-historia` em Odontologia.
   - Total passou de 60 para 63 tópicos; progresso já salvo continua válido (IDs antigos não mudaram).
+
+## 6. Provas antigas da DOM e apostila de Saúde (Opus, 27/10/2026)
+
+### A) Busca de provas antigas do Instituto DOM
+- O site da banca lista os concursos em `institutodom.com/informacoes/<N>/` (N de 1 a ~110; Barão é o 95). As páginas trazem editais, gabaritos e resultados, mas **nenhum caderno de questões**.
+- Baixados e lidos os 63 PDFs "Gabarito final e resposta dos recursos": trazem só letras e situações (alterado/anulado), sem o texto das questões. Há Odontólogo em Rio das Antas/SC (concurso 20, cód. 609 e ESF 610) e Calmon/SC (concurso 44, cód. 605), sem caderno.
+- PCI Concursos: nenhuma prova da DOM. QConcursos: bloqueou o acesso (HTTP 403). Buscas na web: nenhum caderno da DOM achado. **Conclusão: não há prova antiga da DOM acessível; o "o que vai cair" segue o programa do edital, e isso está dito na apostila.**
+- Fato útil confirmado no edital retificado (linha ~1176 do texto): a prova tem **4 alternativas (A a D)**. Nos 63 gabaritos, as letras certas se distribuem por igual (A 25%, B 25%, C 23%, D 23%).
+
+### B) Apostila de Saúde e SUS
+- Arquivo: `edital/apostilas/saude-sus.html` (publicado no GitHub Pages junto com o edital), ligado na trilha de Saúde.
+- Conteúdo: mapa mental SVG, CF arts. 194–200 (com a EC 140/2026), Lei 8.080 (com as mudanças de 2022–2026: saúde bucal, telessaúde, Ceis, atenção humanizada), Lei 8.142, Res. CNS 453/2012, Decreto 7.508, PNAB, PNH, NR-32, Lei 10.216 e RAPS, Lei 11.350, Pacto pela Saúde, PNEPS, LBI/TEA/infância/PNAISC; 20 questões de 4 alternativas com comentário por alternativa; lista "Respostas que a banca dá como certas".
+- Fontes: Planalto (leis, CF compilada) e cópias oficiais de secretarias de saúde para as portarias, porque a BVS do Ministério bloqueia acesso automático (HTTP 503).
+- Não coberto em detalhe (texto oficial não lido): Política de Educação Especial na Perspectiva Inclusiva (2008) e Diretrizes do MS para TEA; Portarias 699/2006 e 372/2007 só citadas pelo nome.
+- Testado no Edge headless: largura 1024, 768 (tema escuro) e 480; mapa legível, sem texto fora das caixas; no celular o mapa rola dentro da própria caixa.
