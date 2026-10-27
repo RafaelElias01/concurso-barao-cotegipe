@@ -23,3 +23,17 @@ ESTRUTURA DO PLANO DE 28 DIAS (25/10/2026 a 21/11/2026):
 - Fase 2 (09/11 a 14/11): Questões, Pegadinhas e Aprofundamento da Banca
 - Fase 3 (15/11 a 21/11): Revisão Geral e Simulados Finais
 - Prova Objetiva: 22/11/2026 (Domingo, 3 horas)
+
+BOTAO "ABRIR APOSTILA" EM CADA TAREFA:
+- Cada tarefa do dia tem um botao azul (ex.: "Abrir apostila: Legislacao - Lei Organica").
+- Ele abre a apostila HTML (pasta editalpostilas) direto na secao do assunto da tarefa.
+- Algumas tarefas tem mais de um botao (ex.: Crase e Regencia). So a tarefa de logistica
+  da vespera nao tem botao.
+- O mapa dos botoes fica em cronograma\gera_plano.py (APOSTILA_DA_TAREFA). Depois de
+  mudar algo ali, rode: python -I cronograma\gera_plano.py (ele confere se cada secao existe).
+
+DISTRIBUICAO DAS MATERIAS (de 28/10 a 21/11, 25 dias, 120 min/dia):
+- As 6 materias da prova (5 questoes cada) tem tempo parecido: Matematica 8 blocos de 1 h,
+  Especificos 8, Atualidades 7, Saude 7, Legislacao 7, Portugues 7 (+ 6 blocos de revisao).
+- 15/11: simulado com as questoes comentadas das apostilas. 20/11: releitura da lista
+  "Respostas que a banca da como certas" das 6 apostilas. 21/11: mapas e logistica.

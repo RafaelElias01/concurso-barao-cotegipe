@@ -284,6 +284,7 @@
       Object.keys(attrs).forEach(function (k) {
         if (k === 'text') elem.textContent = attrs[k];
         else if (k === 'html') elem.innerHTML = attrs[k];
+        else if (k === 'class') elem.className = attrs[k];
         else if (k.startsWith('data-')) elem.setAttribute(k, attrs[k]);
         else elem[k] = attrs[k];
       });
@@ -307,6 +308,13 @@
     var ico = ICONES[m.tipo] || '📄';
     return el('a', { href: m.link, target: '_blank', rel: 'noopener' }, [
       el('span', { text: ico + ' ' + m.nome })
+    ]);
+  }
+
+  function botaoApostila(a) {
+    if (!a || !a.link) return null;
+    return el('a', { class: 'btn-apostila', href: a.link, target: '_blank', rel: 'noopener' }, [
+      el('span', { text: '📖 ' + a.rotulo })
     ]);
   }
 
@@ -373,11 +381,13 @@
     });
 
     var mats = (t.materiais || []).map(linkMaterial).filter(Boolean);
+    var apos = (t.apostilas || []).map(botaoApostila).filter(Boolean);
     card.appendChild(el('div', { class: 't-topo' }, [
       cb,
       el('div', { class: 't-info' }, [
         el('div', { class: 't-titulo' }, [chipDisc(t.disciplina), t.titulo, statusEl]),
         el('div', { class: 't-detalhe', text: t.detalhe }),
+        apos.length ? el('div', { class: 't-apostilas' }, apos) : null,
         mats.length ? el('div', { class: 't-mats' }, mats) : null
       ])
     ]));
