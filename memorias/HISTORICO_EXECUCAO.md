@@ -118,3 +118,13 @@ O Gemini mexeu no projeto várias vezes nesta sessão; cada rodada teve problema
 - O progresso das caixas é salvo em `localStorage` neste navegador e dispositivo; não sincroniza com o cronograma nem com outros aparelhos. A página informa essa limitação.
 - Validação: 6 módulos e 60 tópicos; restauração/gravação local e mensagem de erro de armazenamento testadas; 12 links locais e os fragmentos internos verificados; visualização local e pública conferida; página, página inicial e PDF do conteúdo programático responderam com HTTP 200.
 - A alteração foi integrada pela PR #1 em `62a49da`; o workflow Pages `40428917585` terminou com sucesso. Endereço público: <https://rafaelelias01.github.io/concurso-barao-cotegipe/disciplinas/>.
+
+## 5. Revisão do Opus em 27/10/2026 (trabalho de outras IAs)
+
+O dono pediu que o Opus revisasse tudo o que outras IAs (Copilot/Codex/Gemini) fizeram entre as sessões.
+- `cronograma/app.js` (mesclagem e sincronização inicial) e `.github/workflows/pages.yml`: revisados, sem erro encontrado.
+- `edital/disciplinas/index.html` conferido contra o Anexo III (Nível Superior + bloco de Saúde + Odontólogo cód. 808/809). Lacunas corrigidas na branch `fix/trilhas-lacunas-anexo-iii`:
+  - Atualidades: faltava o item 7 do programa (Educação, Saúde e Indicadores Sociais) → tópico `indicadores-sociais`.
+  - Legislação: faltava o item 10 (Regime estatutário e trabalhista/CLT) → tópico `regimes`.
+  - Lei 8.142, Resolução CNS 453/2012, história do SUS e CF arts. 194-200 estão no programa de **Específicos** (linha ~1001 do Anexo III), não no bloco de Saúde → aviso no tópico de Saúde e novo tópico `sus-historia` em Odontologia.
+  - Total passou de 60 para 63 tópicos; progresso já salvo continua válido (IDs antigos não mudaram).
