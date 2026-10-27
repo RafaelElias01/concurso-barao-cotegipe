@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apostila de Legislação Municipal e Geral para o concurso de Odontólogo/PSF de Barão de Cotegipe: Lei Orgânica, Regime Jurídico dos servidores, Constituição e Direito Administrativo.">
+<title>Apostila de Legislação</title>
+<style>
+  :root {
+    --fundo: #fbfaf7; --texto: #1d2125; --suave: #5b6470; --linha: #d9dde2; --cartao: #ffffff;
+    --conceito: #1f6fb2; --conceito-bg: #e8f1fa;
+    --dica: #237a45; --dica-bg: #e7f5ec;
+    --cai: #b45f06; --cai-bg: #fdf0e1;
+    --pega: #b3261e; --pega-bg: #fbe9e7;
+    --numero: #6b4aa5; --numero-bg: #f1ecfa;
+    --foco: #1f6fb2;
+    color-scheme: light dark;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+      --conceito: #79b8ee; --conceito-bg: #182a3b;
+      --dica: #74cf95; --dica-bg: #17301f;
+      --cai: #f2b264; --cai-bg: #3a2814;
+      --pega: #f08a80; --pega-bg: #3b1d1a;
+      --numero: #bfa5f0; --numero-bg: #2a2140;
+      --foco: #79b8ee;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+    --conceito: #79b8ee; --conceito-bg: #182a3b;
+    --dica: #74cf95; --dica-bg: #17301f;
+    --cai: #f2b264; --cai-bg: #3a2814;
+    --pega: #f08a80; --pega-bg: #3b1d1a;
+    --numero: #bfa5f0; --numero-bg: #2a2140;
+    --foco: #79b8ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); }
+  main, header, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: .4rem 0; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.4rem 0 .6rem; padding-top: .6rem; border-top: 2px solid var(--linha); scroll-margin-top: 12px; }
+  h3 { font-size: 1.15rem; margin: 1.4rem 0 .4rem; }
+  a { color: var(--conceito); }
+  a:focus-visible, summary:focus-visible, button:focus-visible, .mapa:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .sub { color: var(--suave); margin: 0; }
+  .voltar { display: inline-flex; align-items: center; min-height: 44px; }
+  .caixa { border-left: 5px solid; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  .caixa > strong:first-child { display: block; margin-bottom: 2px; }
+  .conceito { border-color: var(--conceito); background: var(--conceito-bg); }
+  .dica { border-color: var(--dica); background: var(--dica-bg); }
+  .cai { border-color: var(--cai); background: var(--cai-bg); }
+  .pega { border-color: var(--pega); background: var(--pega-bg); }
+  .numero { border-color: var(--numero); background: var(--numero-bg); }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; font-size: .9rem; }
+  .legenda li { padding: 2px 10px; border-radius: 0 6px 6px 0; border-left: 5px solid; }
+  .indice { columns: 2 260px; padding-left: 1.2rem; }
+  .indice li { break-inside: avoid; margin: 2px 0; }
+  .indice a { display: inline-block; min-height: 32px; padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--linha); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--cartao); }
+  .tabela { overflow-x: auto; }
+  .mapa { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 8px; margin: 14px 0; }
+  .mapa svg { width: 100%; height: auto; display: block; }
+  .mapa svg text { font-family: system-ui, sans-serif; fill: var(--texto); }
+  .mapa .c-ramo { stroke-width: 3; fill: none; }
+  .mapa .no { stroke-width: 2; }
+  .mapa .t-titulo { font-weight: 700; font-size: 15px; }
+  .mapa .t-folha { font-size: 12.5px; }
+  .s-conceito { stroke: var(--conceito); } .f-conceito { fill: var(--conceito-bg); }
+  .s-dica { stroke: var(--dica); } .f-dica { fill: var(--dica-bg); }
+  .s-cai { stroke: var(--cai); } .f-cai { fill: var(--cai-bg); }
+  .s-pega { stroke: var(--pega); } .f-pega { fill: var(--pega-bg); }
+  .s-numero { stroke: var(--numero); } .f-numero { fill: var(--numero-bg); }
+  .s-centro { stroke: var(--texto); } .f-centro { fill: var(--cartao); }
+  .questao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+  .questao ol { list-style: upper-alpha; padding-left: 1.6rem; margin: 6px 0; }
+  .questao li { margin: 3px 0; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 6px; color: var(--conceito); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; display: inline-block; transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .certa { background: var(--dica-bg); border-left: 5px solid var(--dica); padding: 6px 10px; border-radius: 6px; margin: 6px 0; }
+  .errada { color: var(--suave); margin: 4px 0; }
+  .errada s { color: var(--pega); }
+  .grava { font-weight: 700; }
+  .respostas li { margin: 4px 0; }
+  .fontes li { margin: 3px 0; word-break: break-word; }
+  footer { padding: 32px 16px 48px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 1024px) { :root { font-size: 16.5px; } }
+  .mapa-dica { display: none; color: var(--suave); font-size: .9rem; margin: 0 0 4px; }
+  @media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .mapa { overflow-x: auto; }
+    .mapa svg { min-width: 900px; }
+    .mapa-dica { display: block; }
+    .indice a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+    th, td { padding: 6px; font-size: .9rem; }
+  }
+  @media (max-width: 480px) {
+    :root { font-size: 16px; }
+    .caixa, .questao { padding: 9px 10px; }
+  }
+  @media print {
+    details { display: block; } details > * { display: block; }
+    a { color: inherit; } .voltar { display: none; }
+    h2 { break-after: avoid; } .questao, .caixa, .mapa { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="voltar" href="../disciplinas/index.html#legislacao">← Voltar às trilhas das disciplinas</a>
+  <h1>Legislação Municipal e Geral</h1>
+  <p class="sub">Concurso de Barão de Cotegipe (RS), Odontólogo/PSF, Instituto DOM, prova em 22/11/2026</p>
+
+  <div class="caixa conceito">
+    <strong>O que é esta página</strong>
+    Uma apostila para estudar sozinho e offline. Ela percorre os 10 itens do programa de Legislação do Nível Superior: a Lei Orgânica de Barão de Cotegipe, a Constituição (arts. 1º a 13 e 37 a 41), Direito Administrativo e o Regime Jurídico dos servidores do município. As fontes estão no final da página.
+  </div>
+
+  <div class="caixa cai">
+    <strong>Quanto isso vale na prova</strong>
+    5 questões (10 pontos), o mesmo que cada uma das outras cinco matérias da prova. A parte <b>municipal</b> (Lei Orgânica e Estatuto) só se aprende lendo a lei do município; por isso ela vem primeiro.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Sobre "o que mais cai"</strong>
+    O Instituto DOM não publica os cadernos de prova, então não há como medir o que a banca mais cobra. A ordem abaixo segue o programa do edital. Onde o conteúdo é <b>doutrina</b> (explicação dos autores de Direito Administrativo, sem um artigo de lei por trás), isso vem indicado.
+  </div>
+
+  <ul class="legenda" aria-label="Legenda de cores">
+    <li class="conceito">Azul: conceito</li>
+    <li class="dica">Verde: dica ou resposta certa</li>
+    <li class="cai">Laranja: cai muito / prioridade</li>
+    <li class="pega">Vermelho: pegadinha</li>
+    <li class="numero">Roxo: número, prazo, percentual</li>
+  </ul>
+
+  <h2 id="indice" style="border-top:0">Ordem de estudo</h2>
+  <ol class="indice">
+    <li><a href="#mapa">Mapa geral</a></li>
+    <li><a href="#lom">Lei Orgânica de Barão de Cotegipe</a></li>
+    <li><a href="#estatuto">Regime Jurídico dos servidores (Lei 1.867/2008)</a></li>
+    <li><a href="#cf1">CF, arts. 1º a 4º: princípios fundamentais</a></li>
+    <li><a href="#cf5">CF, art. 5º: direitos e remédios</a></li>
+    <li><a href="#cf6">CF, arts. 6º a 13: direitos sociais e nacionalidade</a></li>
+    <li><a href="#cf37">CF, arts. 37 a 41: Administração e servidores</a></li>
+    <li><a href="#poderes">Poderes administrativos</a></li>
+    <li><a href="#atos">Atos administrativos</a></li>
+    <li><a href="#orgaos">Órgãos e agentes públicos</a></li>
+    <li><a href="#questoes">Questões comentadas</a></li>
+    <li><a href="#respostas">Respostas que a banca dá como certas</a></li>
+    <li><a href="#fontes">Fontes</a></li>
+  </ol>
+</header>
+
+<main>
+
+<h2 id="mapa">1. Mapa geral</h2>
+<p>Do centro para fora: cada ramo é uma parte do programa, com os números que viram alternativa.</p>
+<p class="mapa-dica">No celular, arraste o mapa para o lado para ver tudo.</p>
+<div class="mapa" role="region" tabindex="0" aria-label="Mapa mental de Legislação (no celular, role para o lado)">
+<svg viewBox="0 0 960 620" role="img" aria-labelledby="mapa-tit mapa-desc">
+  <title id="mapa-tit">Mapa mental de Legislação Municipal e Geral</title>
+  <desc id="mapa-desc">No centro, Legislação. Seis ramos: Lei Orgânica, Estatuto dos servidores, Constituição arts. 1º a 13, Constituição arts. 37 a 41, poderes administrativos e atos administrativos.</desc>
+  <path class="c-ramo s-cai" d="M480 310 C 380 250, 330 140, 250 110"/>
+  <path class="c-ramo s-numero" d="M480 310 C 580 250, 630 140, 710 110"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 380 330, 320 320, 250 315"/>
+  <path class="c-ramo s-dica" d="M480 310 C 580 330, 640 320, 710 315"/>
+  <path class="c-ramo s-pega" d="M480 310 C 380 380, 330 480, 250 510"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 580 380, 630 480, 710 510"/>
+  <rect class="no s-centro f-centro" x="400" y="280" width="160" height="60" rx="30"/>
+  <text x="480" y="306" text-anchor="middle" class="t-titulo">Legislação</text>
+  <text x="480" y="325" text-anchor="middle" class="t-folha">municipal e geral</text>
+
+  <rect class="no s-cai f-cai" x="20" y="40" width="300" height="150" rx="12"/>
+  <text x="34" y="64" class="t-titulo">Lei Orgânica (2020)</text>
+  <text x="34" y="88" class="t-folha">Poderes: Legislativo e Executivo</text>
+  <text x="34" y="108" class="t-folha">Câmara: 9 vereadores</text>
+  <text x="34" y="128" class="t-folha">Emenda: 1/3 propõe, 2 turnos, 2/3</text>
+  <text x="34" y="148" class="t-folha">Símbolos: bandeira, brasão, hino</text>
+  <text x="34" y="168" class="t-folha">Servidor aposenta pelo RGPS</text>
+
+  <rect class="no s-numero f-numero" x="640" y="40" width="300" height="150" rx="12"/>
+  <text x="654" y="64" class="t-titulo">Estatuto (Lei 1.867/2008)</text>
+  <text x="654" y="88" class="t-folha">Posse: 10 dias (+10) · exercício: 5</text>
+  <text x="654" y="108" class="t-folha">Estágio: 3 anos, avaliação trimestral</text>
+  <text x="654" y="128" class="t-folha">6 formas de provimento</text>
+  <text x="654" y="148" class="t-folha">Suspensão: máximo 60 dias</text>
+  <text x="654" y="168" class="t-folha">Férias: 30 dias se até 5 faltas</text>
+
+  <rect class="no s-conceito f-conceito" x="20" y="250" width="230" height="142" rx="12"/>
+  <text x="34" y="274" class="t-titulo">CF, arts. 1º a 4º</text>
+  <text x="34" y="298" class="t-folha">Fundamentos: SO-CI-DI-VA-PLU</text>
+  <text x="34" y="318" class="t-folha">Poderes: independentes</text>
+  <text x="34" y="336" class="t-folha">  e harmônicos</text>
+  <text x="34" y="356" class="t-folha">Objetivos: verbos (construir,</text>
+  <text x="34" y="374" class="t-folha">  garantir, erradicar, promover)</text>
+
+  <rect class="no s-dica f-dica" x="710" y="250" width="230" height="142" rx="12"/>
+  <text x="724" y="274" class="t-titulo">CF, arts. 5º a 13</text>
+  <text x="724" y="298" class="t-folha">Remédios: HC, MS, MI, HD,</text>
+  <text x="724" y="316" class="t-folha">  ação popular</text>
+  <text x="724" y="336" class="t-folha">Jornada: 8 h/dia, 40 h/semana</text>
+  <text x="724" y="354" class="t-folha">  (EC 141/2026)</text>
+  <text x="724" y="374" class="t-folha">Símbolos: bandeira, hino, armas, selo</text>
+
+  <rect class="no s-pega f-pega" x="20" y="440" width="300" height="160" rx="12"/>
+  <text x="34" y="464" class="t-titulo">CF, arts. 37 a 41</text>
+  <text x="34" y="488" class="t-folha">LIMPE: legalidade, impessoalidade,</text>
+  <text x="34" y="506" class="t-folha">  moralidade, publicidade, eficiência</text>
+  <text x="34" y="526" class="t-folha">Concurso: até 2 anos + 2 anos</text>
+  <text x="34" y="546" class="t-folha">Acumular: 2 cargos de saúde</text>
+  <text x="34" y="566" class="t-folha">Estabilidade: 3 anos + avaliação</text>
+  <text x="34" y="586" class="t-folha">Disponibilidade CF: proporcional</text>
+
+  <rect class="no s-conceito f-conceito" x="640" y="440" width="300" height="160" rx="12"/>
+  <text x="654" y="464" class="t-titulo">Direito Administrativo</text>
+  <text x="654" y="488" class="t-folha">Poderes: vinculado, discricionário,</text>
+  <text x="654" y="506" class="t-folha">  hierárquico, disciplinar,</text>
+  <text x="654" y="524" class="t-folha">  regulamentar, de polícia</text>
+  <text x="654" y="546" class="t-folha">Ato: COmpetência FInalidade FOrma</text>
+  <text x="654" y="564" class="t-folha">  MOtivo OBjeto</text>
+  <text x="654" y="586" class="t-folha">Anula (ilegal) x revoga (conveniência)</text>
+</svg>
+</div>
+
+<h2 id="lom">2. Lei Orgânica de Barão de Cotegipe</h2>
+<p>É a "constituição do município". A versão em vigor foi promulgada em <b>17/11/2020</b> e recebeu a <b>Emenda nº 001, de 03/03/2026</b>, que mudou a licença dos vereadores (art. 16, II).</p>
+
+<h3>Organização do município (arts. 1º a 8º)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Tema</th><th scope="col">Lei Orgânica</th><th scope="col">Compare com a CF</th></tr>
+  <tr><td>Fundamentos (art. 1º)</td><td>I <b>autonomia político-econômica-administrativa</b>; II cidadania; III dignidade da pessoa humana; IV valores sociais do trabalho e da livre iniciativa; V pluralismo político</td><td>Na CF o inciso I é <b>soberania</b></td></tr>
+  <tr><td>Poderes (art. 2º)</td><td><b>Legislativo e Executivo</b>, independentes e harmônicos; é vedada a delegação de atribuições entre eles</td><td>Na União também há o Judiciário</td></tr>
+  <tr><td>Símbolos (art. 4º)</td><td><b>bandeira, brasão e hino</b></td><td>Nacionais: bandeira, hino, armas e selo (CF, art. 13, § 1º)</td></tr>
+  <tr><td>Natureza (art. 5º)</td><td>pessoa jurídica de direito público interno, com autonomia política, administrativa e financeira</td><td></td></tr>
+  <tr><td>Distritos</td><td>criação, organização e supressão por <b>lei municipal</b>, observada a legislação estadual</td><td></td></tr>
+  <tr><td>Alteração territorial</td><td>lei complementar <b>estadual</b> e <b>plebiscito</b> da população interessada</td><td></td></tr>
+</table></div>
+<ul>
+  <li><b>Competências do Município (art. 7º):</b> legislar sobre assuntos de interesse local; suplementar a legislação federal e estadual; instituir e arrecadar seus tributos; organizar os serviços públicos locais, inclusive o <b>transporte coletivo</b>, que tem caráter essencial; manter, com cooperação da União e do Estado, a educação pré-escolar, o ensino fundamental e os <b>serviços de atendimento à saúde</b>; elaborar o Plano Diretor, o Plano Plurianual, as Diretrizes Orçamentárias e os Orçamentos.</li>
+  <li><b>Competência comum com União e Estado (art. 8º):</b> cuidar da saúde pública e da assistência social e da proteção às pessoas com deficiência; proteger o meio ambiente e o patrimônio histórico; fomentar a agropecuária; combater a pobreza; educação para o trânsito.</li>
+</ul>
+
+<h3>Poder Legislativo: a Câmara</h3>
+<div class="caixa numero"><strong>Números da Câmara</strong>
+<b>9 vereadores</b>, eleitos pelo sistema proporcional (art. 9º). Sessão legislativa de <b>15 de janeiro a 15 de dezembro</b>, com reuniões <b>duas vezes por mês</b>; a posse dos eleitos é em <b>1º de janeiro</b> (art. 17). A Mesa (Presidente, Vice e 1º e 2º Secretários) tem mandato de <b>1 ano</b>, com recondução permitida para a eleição seguinte (art. 18). CPI: requerimento de <b>1/3</b> dos vereadores (art. 19, § 2º).</div>
+<ul>
+  <li><b>Câmara com sanção do Prefeito (art. 10):</b> tributos, orçamentos, criação de cargos, criação de distritos, remuneração dos servidores, alienação de imóveis, entre outras.</li>
+  <li><b>Exclusiva da Câmara (art. 11):</b> dar posse a vereadores, Prefeito e Vice; elaborar o regimento interno; <b>autorizar o Prefeito a se ausentar por mais de 15 dias</b>; sustar atos normativos do Executivo que exorbitem do poder regulamentar; fixar o subsídio de vereadores, Prefeito, Vice e Secretários; tomar as contas do Prefeito não apresentadas até <b>31 de março</b>; fiscalizar os atos do Executivo.</li>
+  <li><b>Vereadores:</b> são invioláveis por opiniões, palavras e votos no exercício do mandato e <b>na circunscrição do Município</b> (art. 13). Perdem o mandato, entre outros casos, se faltarem a <b>1/3</b> das sessões ordinárias do ano sem licença e se fixarem residência fora do município (art. 15).</li>
+  <li><b>Licença do vereador (art. 16, II, Emenda 001/2026):</b> para interesse particular ou saúde, até <b>120 dias por sessão legislativa</b>, sem convocação de suplente. Vaga sem suplente com mais de <b>15 meses</b> para o fim do mandato: a Câmara pede nova eleição à Justiça Eleitoral.</li>
+</ul>
+
+<h3>Processo legislativo</h3>
+<div class="caixa cai"><strong>Emenda à Lei Orgânica (art. 22)</strong>
+Proposta por <b>1/3, no mínimo, dos vereadores</b> ou pelo <b>Prefeito</b>. Votação em <b>dois turnos</b>, com intervalo mínimo de <b>10 dias</b>, aprovada por <b>2/3</b> dos membros em cada turno. Quem promulga é a <b>Mesa da Câmara</b>.</div>
+<ul>
+  <li><b>Iniciativa popular:</b> projeto assinado por no mínimo <b>3% do eleitorado</b> (art. 23, § 2º).</li>
+  <li><b>Iniciativa privativa do Prefeito:</b> criação da Guarda Municipal, de cargos e aumento de remuneração na administração direta e autárquica, de empresas públicas e a organização administrativa (art. 23, § 1º).</li>
+  <li><b>Veto (art. 25):</b> o Prefeito veta em <b>15 dias úteis</b> e comunica os motivos em <b>48 horas</b>; passados os 15 dias, o silêncio do Prefeito importa em <b>promulgação pelo Presidente (ou Vice-Presidente) da Câmara em 48 horas</b> (§§ 3º e 7º). A Câmara aprecia o veto em <b>30 dias</b> e só o derruba por <b>maioria absoluta</b>, em votação aberta. O veto parcial só pode abranger artigo, parágrafo, inciso ou alínea inteiros.</li>
+  <li><b>Contas (art. 27):</b> o Prefeito e a Mesa prestam contas até <b>31 de março</b>; o parecer prévio do Tribunal de Contas do Estado só deixa de prevalecer por decisão de <b>2/3</b> da Câmara; as contas ficam <b>60 dias</b> à disposição de qualquer munícipe.</li>
+</ul>
+
+<h3>Poder Executivo: Prefeito, Vice e Secretários</h3>
+<ul>
+  <li>Posse em <b>1º de janeiro</b> do ano seguinte à eleição. Se não assumir em <b>10 dias</b> sem justo motivo, o cargo é declarado vago (art. 31).</li>
+  <li>O <b>Vice</b> substitui o Prefeito nas ausências e impedimentos e o <b>sucede</b> na vaga (art. 32).</li>
+  <li>Faltando os dois, assume o <b>Presidente da Câmara</b>, que promove nova eleição em <b>90 dias</b>. Se a vacância for nos <b>últimos dois anos</b>, a eleição é feita <b>pela Câmara</b>, 30 dias depois da última vaga. Os eleitos completam o mandato dos antecessores (art. 33).</li>
+  <li>Perde o mandato o Prefeito que assumir outro cargo (salvo por concurso) ou se ausentar do município por <b>mais de 15 dias</b> sem licença da Câmara (art. 34).</li>
+  <li>Crimes comuns e de responsabilidade do Prefeito são julgados pelo <b>Tribunal de Justiça do Estado</b>; as infrações político-administrativas, pela <b>Câmara</b> (arts. 36 e 37).</li>
+  <li>Secretários: brasileiros <b>maiores de 18 anos</b>, no exercício dos direitos políticos, de livre nomeação e exoneração (art. 38).</li>
+  <li>Até <b>30 dias</b> antes do fim do mandato, o Prefeito entrega ao sucessor um relatório da situação da administração (art. 35, parágrafo único).</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: mandato de 4 anos</strong>
+A Lei Orgânica não diz a duração do mandato; isso vem da Constituição Federal (art. 29). Se a questão perguntar "segundo a Lei Orgânica", o que ela fixa é a <b>data da posse</b> (1º de janeiro).</div>
+
+<h3>Servidores e saúde na Lei Orgânica</h3>
+<ul>
+  <li><b>Regime jurídico único</b> e planos de carreira para a administração direta, autarquias e fundações (art. 59). Aplicam-se aos servidores, no que couber, os direitos do art. 7º da CF.</li>
+  <li>Para aposentadoria, os servidores municipais ficam no <b>Regime Geral de Previdência Social</b> (art. 60, parágrafo único).</li>
+  <li><b>Estáveis após 3 anos</b> de efetivo exercício (art. 61). Extinto o cargo, o estável fica em disponibilidade remunerada.</li>
+  <li>O direito de greve <b>não se aplica</b> a quem exerce funções em serviços ou atividades essenciais definidos em lei (art. 62).</li>
+  <li>Os órgãos municipais prestam informações em <b>15 dias úteis</b> (art. 64).</li>
+  <li><b>Saúde (arts. 100 e 101):</b> direito de todos e dever do Poder Público; o direito à saúde implica dignidade, <b>gratuidade</b> e qualidade das ações e participação da comunidade nas decisões; é garantido o acesso à medicina <b>preventiva, curativa e de reabilitação</b>.</li>
+</ul>
+
+<h2 id="estatuto">3. Regime Jurídico dos servidores (Lei Municipal 1.867/2008)</h2>
+<p>É o "estatuto" que vai reger a sua vida de servidor se você for nomeado. É a mesma lei que o programa chama de "regime estatutário".</p>
+<div class="caixa conceito"><strong>Conceitos da lei</strong>
+Servidor público é a pessoa legalmente investida em <b>cargo público</b> (art. 2º). Cargo público é criado <b>em lei</b>, em número certo, com denominação própria e pago pelos cofres municipais; pode ser de provimento <b>efetivo</b> ou <b>em comissão</b> (art. 3º). <b>Função gratificada</b> é só para direção, chefia ou assessoramento e é privativa de quem tem cargo efetivo (art. 5º).</div>
+<ul>
+  <li><b>Requisitos para investidura (art. 7º):</b> brasileiro (ou estrangeiro na forma da lei), <b>18 anos</b>, quite com obrigações militares e eleitorais, boa saúde comprovada em inspeção médica oficial e a escolaridade do cargo. Pessoas com deficiência: reserva de <b>até 20%</b> das vagas.</li>
+  <li><b>Formas de provimento (art. 8º), 6 ao todo:</b> nomeação, recondução, readaptação, reversão, reintegração e aproveitamento.</li>
+  <li><b>Validade do concurso:</b> até <b>2 anos</b>, prorrogável uma vez por igual prazo (art. 11).</li>
+</ul>
+<div class="caixa numero"><strong>Prazos do Estatuto municipal</strong>
+<b>Posse:</b> até <b>10 dias</b> da publicação da nomeação, prorrogável a pedido por mais 10 (art. 14). <b>Exercício:</b> <b>5 dias</b> após a posse (art. 15). Sem posse ou exercício no prazo, a nomeação fica <b>sem efeito</b>. <b>Estágio probatório:</b> <b>3 anos</b>, com avaliação a cada <b>trimestre</b> (art. 21). <b>Suspensão:</b> no máximo <b>60 dias</b> (art. 139). <b>Reversão:</b> não pode reverter quem tem <b>70 anos</b> (art. 27).</div>
+<div class="caixa pega"><strong>Pegadinha: municipal x federal</strong>
+Na Lei federal 8.112 a posse é em 30 dias e o exercício em 15 (arts. 13, § 1º, e 15, § 1º). Em Barão de Cotegipe é <b>10 + 10</b> para a posse e <b>5</b> para o exercício. Questão de concurso municipal cobra a lei do município.</div>
+
+<h3>Estágio probatório (art. 21)</h3>
+<p>Quesitos avaliados: <b>assiduidade, pontualidade, disciplina, eficiência, responsabilidade e relacionamento</b>. A avaliação é <b>trimestral</b>; só as férias não prejudicam o trimestre, os demais afastamentos suspendem a contagem. <b>Três avaliações insatisfatórias consecutivas</b> levam à exoneração, com vista do processo por <b>5 dias úteis</b> para defesa. A comissão tem <b>3 membros estáveis</b>: 1/3 indicado pelo sindicato dos municipários e 2/3 pelo Executivo.</p>
+
+<h3>Formas de provimento derivado</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Forma</th><th scope="col">O que é (Lei 1.867/2008)</th></tr>
+  <tr><td>Recondução (art. 23)</td><td>retorno do servidor <b>estável</b> ao cargo anterior, por inabilitação no estágio de outro cargo ou por reintegração do antigo ocupante</td></tr>
+  <tr><td>Readaptação (art. 24)</td><td>cargo compatível com a <b>limitação física ou mental</b> verificada em inspeção médica, de padrão igual ou inferior, sem reduzir a remuneração</td></tr>
+  <tr><td>Reversão (art. 25)</td><td>retorno do <b>aposentado por invalidez</b> quando cessam os motivos da aposentadoria; depende de vaga; o tempo aposentado não conta</td></tr>
+  <tr><td>Reintegração (art. 29)</td><td>volta do <b>estável</b> ao cargo quando a <b>demissão é invalidada por decisão judicial</b></td></tr>
+  <tr><td>Aproveitamento (art. 31)</td><td>retorno do servidor em <b>disponibilidade</b> em cargo equivalente</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha: disponibilidade</strong>
+No Estatuto municipal (art. 30), o estável cujo cargo foi extinto fica em disponibilidade com remuneração <b>integral</b>. Na CF (art. 41, § 3º), a remuneração é <b>proporcional ao tempo de serviço</b>. Leia o enunciado: "segundo o Regime Jurídico do Município" ou "segundo a Constituição".</div>
+
+<h3>Regime de trabalho: horário, ponto, horas extras e repouso (arts. 52 a 61)</h3>
+<p>É o que o programa chama de "organização funcional do expediente administrativo".</p>
+<ul>
+  <li>O <b>Prefeito</b> fixa o horário de expediente das repartições, quando a lei não o fizer (art. 52).</li>
+  <li>Podem ser criadas escalas de <b>12 x 36</b> e de <b>6 horas corridas</b>, temporárias, justificadas pelo Secretário e implantadas por <b>decreto</b> (art. 53, §§ 1º a 4º). Por acordo escrito, pode haver compensação de horário (art. 54).</li>
+  <li>A frequência é controlada pelo <b>ponto</b>, registro diário de entrada e saída; é vedado dispensar o servidor do ponto e abonar faltas, salvo os não sujeitos a ele (art. 55).</li>
+  <li><b>Serviço extraordinário</b> só por determinação expressa da autoridade; acréscimo de <b>50%</b> em dias de semana e sábados e de <b>100%</b> em domingos e feriados; em regra, no máximo <b>2 horas por dia</b> (art. 56). Cargo em comissão ou função gratificada sem ponto não recebe hora extra (art. 58).</li>
+  <li><b>Repouso semanal</b> remunerado, preferencialmente aos domingos, e nos feriados; perde a remuneração do repouso quem faltar sem justificativa na semana, mesmo que um só turno (arts. 59 e 60).</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: 44 ou 40 horas?</strong>
+O art. 53 do Estatuto ainda fala em no máximo <b>8 horas diárias e 44 semanais</b> (redação de 2013). Mas a CF, depois da <b>EC 141/2026</b>, limita a jornada a <b>40 horas semanais</b>, e o art. 39, § 3º, da CF aplica esse inciso aos servidores públicos. Se a questão citar a Constituição, a resposta é 40; se citar o texto do Estatuto, é 44.</div>
+
+<h3>Vacância, acumulação e penalidades</h3>
+<ul>
+  <li><b>Vacância (art. 34):</b> exoneração, demissão, readaptação, recondução, aposentadoria e falecimento. <b>Exoneração</b> não é pena: pode ser a pedido ou de ofício (cargo em comissão, reprovação no estágio, posse do não estável em outro cargo inacumulável). <b>Demissão</b> é penalidade.</li>
+  <li><b>Penalidades (art. 135):</b> advertência, suspensão, demissão e destituição de cargo ou função de confiança, sempre com direito de defesa. Não se aplica mais de uma pena pela mesma infração (art. 137). A suspensão pode virar <b>multa de 50%</b> por dia, com o servidor trabalhando (art. 139).</li>
+  <li><b>Demissão (art. 140), exemplos:</b> crime contra a administração, abandono de cargo, inassiduidade habitual, improbidade, ofensa física em serviço (salvo legítima defesa), aplicação irregular de dinheiro público, revelação de segredo do cargo.</li>
+  <li><b>Férias (art. 96):</b> 30 dias corridos com até 5 faltas; 24 dias com 6 a 14 faltas; 18 dias com 15 a 23; 12 dias com 24 a 32. É vedado descontar as faltas do período de férias.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: acumulação de cargos</strong>
+O art. 128 do Estatuto ainda traz a redação antiga: professor com outro cargo "técnico ou científico". A CF foi alterada pela <b>EC 138/2025</b> e hoje permite professor com outro cargo <b>de qualquer natureza</b>. A Constituição prevalece. Para você, dentista, vale a alínea c: <b>dois cargos ou empregos privativos de profissionais de saúde</b>, com profissões regulamentadas, desde que haja <b>compatibilidade de horários</b>.</div>
+
+<h2 id="cf1">4. CF, arts. 1º a 4º: princípios fundamentais</h2>
+<div class="tabela"><table>
+  <tr><th scope="col">Artigo</th><th scope="col">Conteúdo</th><th scope="col">Como lembrar</th></tr>
+  <tr><td>Art. 1º, fundamentos</td><td><b>so</b>berania, <b>ci</b>dadania, <b>di</b>gnidade da pessoa humana, <b>va</b>lores sociais do trabalho e da livre iniciativa, <b>plu</b>ralismo político</td><td>SO-CI-DI-VA-PLU (substantivos)</td></tr>
+  <tr><td>Art. 1º, parágrafo único</td><td>todo o poder emana do <b>povo</b>, que o exerce por representantes eleitos ou diretamente</td><td></td></tr>
+  <tr><td>Art. 2º</td><td>Poderes da União, <b>independentes e harmônicos</b>: Legislativo, Executivo e Judiciário</td><td></td></tr>
+  <tr><td>Art. 3º, objetivos</td><td><b>construir</b> sociedade livre, justa e solidária; <b>garantir</b> o desenvolvimento nacional; <b>erradicar</b> a pobreza e a marginalização e <b>reduzir</b> as desigualdades; <b>promover</b> o bem de todos, sem preconceitos</td><td>Objetivos começam com <b>verbo</b></td></tr>
+  <tr><td>Art. 4º, relações internacionais</td><td>independência nacional, prevalência dos direitos humanos, autodeterminação dos povos, não intervenção, igualdade entre os Estados, defesa da paz, solução pacífica dos conflitos, repúdio ao terrorismo e ao racismo, cooperação entre os povos, concessão de asilo político</td><td>parágrafo único: integração da <b>América Latina</b></td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha clássica</strong>
+"Erradicar a pobreza" é <b>objetivo</b> (art. 3º), não fundamento. "Soberania" é <b>fundamento</b> (art. 1º); "independência nacional" é princípio das <b>relações internacionais</b> (art. 4º). A CF manda "erradicar" a pobreza e "reduzir" as desigualdades, e não o contrário.</div>
+
+<h2 id="cf5">5. CF, art. 5º: direitos e deveres individuais e coletivos</h2>
+<p>O caput garante a brasileiros e estrangeiros residentes a inviolabilidade do direito à <b>vida, liberdade, igualdade, segurança e propriedade</b>. O art. 5º vai até o inciso LXXIX; os mais cobrados:</p>
+<ul>
+  <li>II: ninguém é obrigado a fazer ou deixar de fazer algo senão em virtude de <b>lei</b> (legalidade para o particular).</li>
+  <li>IV: livre manifestação do pensamento, <b>vedado o anonimato</b>.</li>
+  <li>X: são invioláveis a intimidade, a vida privada, a honra e a imagem, com direito a indenização por dano material ou moral.</li>
+  <li>XI: a casa é asilo inviolável; pode-se entrar sem consentimento em flagrante delito, desastre, para prestar socorro ou, <b>durante o dia</b>, por ordem judicial.</li>
+  <li>XII: sigilo de correspondência e comunicações; o das comunicações <b>telefônicas</b> pode ser quebrado por ordem judicial, para investigação criminal ou instrução processual penal.</li>
+  <li>XVI: reunião pacífica, sem armas, em local aberto ao público, <b>sem autorização</b>, exigido apenas <b>prévio aviso</b>.</li>
+  <li>XXXIII: direito de receber dos órgãos públicos informações de interesse particular ou coletivo, salvo sigilo imprescindível à segurança da sociedade e do Estado.</li>
+  <li>XXXV: a lei não excluirá do Judiciário lesão ou ameaça a direito. XXXVI: a lei não prejudica o direito adquirido, o ato jurídico perfeito e a coisa julgada.</li>
+  <li>XLII: <b>racismo</b> é crime inafiançável e <b>imprescritível</b>. XLIII: tortura, tráfico, terrorismo e hediondos são inafiançáveis e insuscetíveis de graça ou anistia. XLIV: ação de grupos armados contra a ordem constitucional é inafiançável e imprescritível.</li>
+  <li>LIV e LV: devido processo legal; contraditório e ampla defesa em processo judicial <b>ou administrativo</b>. LVII: presunção de inocência até o trânsito em julgado.</li>
+  <li>LXXVIII: razoável duração do processo (EC 45/2004). <b>LXXIX: proteção dos dados pessoais, inclusive nos meios digitais (EC 115/2022).</b></li>
+</ul>
+<div class="tabela"><table>
+  <caption style="text-align:left;font-weight:600;padding-bottom:4px">Remédios constitucionais</caption>
+  <tr><th scope="col">Remédio</th><th scope="col">Protege</th></tr>
+  <tr><td>Habeas corpus (LXVIII)</td><td>liberdade de <b>locomoção</b> contra violência ou coação por ilegalidade ou abuso de poder</td></tr>
+  <tr><td>Mandado de segurança (LXIX)</td><td>direito <b>líquido e certo</b> não amparado por HC ou HD, contra ilegalidade de autoridade pública</td></tr>
+  <tr><td>Mandado de injunção (LXXI)</td><td>quando a <b>falta de norma regulamentadora</b> impede exercer direito constitucional</td></tr>
+  <tr><td>Habeas data (LXXII)</td><td>conhecer ou retificar <b>informações sobre a própria pessoa</b> em registros públicos</td></tr>
+  <tr><td>Ação popular (LXXIII)</td><td>proposta por <b>qualquer cidadão</b> para anular ato lesivo ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio histórico; autor isento de custas, salvo má-fé</td></tr>
+</table></div>
+<p>São <b>gratuitas</b> as ações de habeas corpus e habeas data (LXXVII). Os tratados de direitos humanos aprovados em cada Casa do Congresso, em <b>dois turnos</b>, por <b>3/5</b> dos votos, equivalem a emendas constitucionais (§ 3º).</p>
+
+<h2 id="cf6">6. CF, arts. 6º a 13: direitos sociais e nacionalidade</h2>
+<p><b>Art. 6º, direitos sociais:</b> educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados. Desde a EC 114/2021, quem está em vulnerabilidade social tem direito a uma <b>renda básica familiar</b>.</p>
+<div class="caixa cai"><strong>Mudança de 2026 no art. 7º (EC 141/2026), forte candidata a questão</strong>
+Inciso XIII: duração do trabalho normal de no máximo <b>8 horas diárias e 40 horas semanais</b>, com compensação e redução por acordo ou convenção coletiva. Antes eram 44 horas semanais. A emenda também incluiu o § 2º: por convenção ou acordo coletivo, regime que assegure, na média, <b>2 dias de repouso semanal</b> remunerado no mês, com pelo menos 1 deles dentro de cada semana de trabalho.</div>
+<ul>
+  <li>Outros incisos do art. 7º: hora extra com no mínimo <b>50%</b> a mais (XVI); férias com <b>1/3</b> a mais (XVII); licença-gestante de <b>120 dias</b> (XVIII); aviso prévio de no mínimo <b>30 dias</b> (XXI); creche e pré-escola até <b>5 anos</b> (XXV); prescrição de <b>5 anos</b>, até o limite de <b>2 anos</b> após o fim do contrato (XXIX); trabalho noturno, perigoso ou insalubre proibido a menores de <b>18</b>, e qualquer trabalho a menores de <b>16</b>, salvo aprendiz a partir de <b>14</b> (XXXIII).</li>
+  <li><b>Art. 8º:</b> livre associação sindical; ninguém é obrigado a se filiar; sindicato único por categoria na mesma base territorial, que não pode ser menor que <b>um Município</b>; dirigente sindical tem estabilidade desde a candidatura até <b>1 ano</b> após o fim do mandato.</li>
+  <li><b>Art. 9º:</b> direito de greve. <b>Art. 11:</b> empresas com mais de <b>200 empregados</b> elegem um representante.</li>
+</ul>
+<h3>Nacionalidade (arts. 12 e 13)</h3>
+<ul>
+  <li><b>Natos:</b> nascidos no Brasil (salvo filhos de estrangeiros a serviço do seu país); nascidos no exterior de pai ou mãe brasileiros a serviço do Brasil; ou registrados em repartição brasileira ou que venham morar no Brasil e optem pela nacionalidade depois da maioridade.</li>
+  <li><b>Naturalizados:</b> originários de países de língua portuguesa com <b>1 ano</b> de residência ininterrupta e idoneidade moral; estrangeiros com mais de <b>15 anos</b> de residência ininterrupta e sem condenação penal, que requeiram.</li>
+  <li><b>Cargos privativos de brasileiro nato (§ 3º):</b> Presidente e Vice da República, Presidentes da Câmara e do Senado, Ministro do STF, carreira diplomática, oficial das Forças Armadas e Ministro da Defesa.</li>
+  <li><b>Perda (§ 4º, EC 131/2023):</b> naturalização cancelada por sentença, por fraude ou atentado contra a ordem constitucional; ou <b>pedido expresso</b> de perda, salvo se gerar apatridia. Quem renuncia pode readquirir a nacionalidade originária (§ 5º).</li>
+  <li><b>Art. 13:</b> o português é o idioma oficial; símbolos nacionais: <b>bandeira, hino, armas e selo</b>. Estados, DF e Municípios podem ter símbolos próprios.</li>
+</ul>
+
+<h2 id="cf37">7. CF, arts. 37 a 41: Administração Pública e servidores</h2>
+<div class="caixa cai"><strong>Art. 37, caput: os princípios expressos (LIMPE)</strong>
+<b>L</b>egalidade, <b>I</b>mpessoalidade, <b>M</b>oralidade, <b>P</b>ublicidade e <b>E</b>ficiência. Valem para a administração <b>direta e indireta</b> de <b>qualquer dos Poderes</b> da União, dos Estados, do DF e dos <b>Municípios</b>. A eficiência foi incluída pela EC 19/1998.</div>
+<p><b>Princípios implícitos</b> (doutrina e jurisprudência): supremacia e indisponibilidade do interesse público, razoabilidade, proporcionalidade, motivação, autotutela, continuidade do serviço público e segurança jurídica. A Lei 9.784/1999 lista vários deles no art. 2º.</p>
+<ul>
+  <li><b>I:</b> cargos acessíveis aos brasileiros que preencham os requisitos da lei e aos estrangeiros, na forma da lei.</li>
+  <li><b>II:</b> investidura depende de <b>concurso público</b> de provas ou de provas e títulos, salvo cargo em comissão de livre nomeação e exoneração.</li>
+  <li><b>III:</b> validade do concurso de <b>até 2 anos</b>, prorrogável <b>uma vez</b>, por igual período. <b>IV:</b> durante o prazo improrrogável do edital, o aprovado tem <b>prioridade</b> sobre novos concursados.</li>
+  <li><b>V:</b> <b>funções de confiança</b> só para ocupantes de cargo <b>efetivo</b>; <b>cargos em comissão</b> preenchidos por servidores de carreira nos percentuais mínimos da lei; ambos só para <b>direção, chefia e assessoramento</b>.</li>
+  <li><b>XVI e XVII:</b> é vedado acumular cargos remunerados, salvo, com compatibilidade de horários: a) dois de professor; b) um de professor com outro <b>de qualquer natureza</b> (EC 138/2025); c) <b>dois cargos ou empregos privativos de profissionais de saúde</b>, com profissões regulamentadas. A proibição vale também para empregos, funções e toda a administração indireta.</li>
+  <li><b>§ 1º:</b> a publicidade oficial deve ser educativa, informativa ou de orientação social, <b>sem nomes, símbolos ou imagens</b> que caracterizem promoção pessoal.</li>
+  <li><b>§ 4º:</b> a improbidade leva a suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário, sem prejuízo da ação penal.</li>
+  <li><b>§ 6º:</b> as pessoas jurídicas de direito público e as privadas prestadoras de serviço público respondem pelos danos que seus agentes causarem a terceiros (<b>responsabilidade objetiva</b>), com direito de regresso contra o agente em caso de <b>dolo ou culpa</b>.</li>
+</ul>
+<div class="caixa numero"><strong>Art. 41: estabilidade</strong>
+Estáveis após <b>3 anos</b> de efetivo exercício os nomeados para cargo efetivo por concurso; exige-se <b>avaliação especial de desempenho</b> por comissão (§ 4º). O estável só perde o cargo por: sentença judicial transitada em julgado; processo administrativo com ampla defesa; avaliação periódica de desempenho, na forma de lei complementar, com ampla defesa (§ 1º). Demissão invalidada por sentença: o servidor é <b>reintegrado</b> (§ 2º). Cargo extinto: <b>disponibilidade com remuneração proporcional</b> ao tempo de serviço (§ 3º).</div>
+
+<h2 id="poderes">8. Poderes administrativos</h2>
+<p>São instrumentos que a Administração tem para cumprir o interesse público. O conteúdo desta seção é <b>doutrina</b>, com exceção do poder de polícia, definido em lei.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Poder</th><th scope="col">Ideia central</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Vinculado</td><td>a lei fixa todos os elementos; <b>não há escolha</b></td><td>conceder aposentadoria a quem cumpre os requisitos</td></tr>
+  <tr><td>Discricionário</td><td>a lei deixa margem de <b>conveniência e oportunidade</b>, dentro dos limites legais</td><td>escolher a data das férias coletivas de um setor</td></tr>
+  <tr><td>Hierárquico</td><td>organizar, <b>dar ordens</b>, fiscalizar, rever, delegar e avocar <b>dentro da mesma pessoa jurídica</b></td><td>secretário que revê ato de um chefe de setor</td></tr>
+  <tr><td>Disciplinar</td><td>apurar infrações e <b>punir servidores</b> e quem tem vínculo especial com a Administração</td><td>suspensão de servidor após processo</td></tr>
+  <tr><td>Regulamentar (normativo)</td><td>editar decretos e regulamentos para a <b>fiel execução</b> da lei, sem inovar</td><td>decreto do Prefeito que regulamenta uma lei municipal</td></tr>
+  <tr><td>De polícia</td><td>limitar ou disciplinar direito, interesse ou liberdade <b>do particular</b> em razão do interesse público</td><td>vigilância sanitária interditando um consultório irregular</td></tr>
+</table></div>
+<div class="caixa conceito" id="policia-def"><strong>Poder de polícia na lei (CTN, art. 78)</strong>
+"Atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público concernente à segurança, à higiene, à ordem, aos costumes, à disciplina da produção e do mercado, ao exercício de atividades econômicas dependentes de concessão ou autorização do Poder Público, à tranquilidade pública ou ao respeito à propriedade e aos direitos individuais ou coletivos." Atributos (doutrina): <b>discricionariedade</b>, <b>autoexecutoriedade</b> e <b>coercibilidade</b>.</div>
+<div class="caixa pega"><strong>Disciplinar x polícia; abuso de poder</strong>
+Punir <b>servidor</b> é poder <b>disciplinar</b>; multar um <b>particular</b> que descumpre norma sanitária é poder <b>de polícia</b>. O <b>abuso de poder</b> tem duas espécies: <b>excesso de poder</b> (o agente vai além da sua <b>competência</b>) e <b>desvio de finalidade</b> (age dentro da competência, mas para fim diverso do interesse público). A <b>omissão</b> ilegal também é abuso.</div>
+
+<h2 id="atos">9. Atos administrativos</h2>
+<div class="caixa cai"><strong>Requisitos de validade (o próprio edital os lista)</strong>
+<b>CO</b>mpetência, <b>FI</b>nalidade, <b>FO</b>rma, <b>MO</b>tivo e <b>OB</b>jeto. Competência, finalidade e forma são, em regra, <b>vinculados</b>; motivo e objeto formam o <b>mérito</b> no ato discricionário.</div>
+<ul>
+  <li><b>Competência:</b> poder atribuído por lei ao agente. É irrenunciável, mas pode ser <b>delegada</b> ou <b>avocada</b> nos limites da lei.</li>
+  <li><b>Finalidade:</b> sempre o interesse público; o desvio dela torna o ato nulo.</li>
+  <li><b>Forma:</b> em regra escrita, como a lei exigir.</li>
+  <li><b>Motivo:</b> a situação de fato e de direito que justifica o ato. Pela <b>teoria dos motivos determinantes</b> (doutrina), o motivo declarado vincula: se for falso, o ato é inválido.</li>
+  <li><b>Objeto:</b> o efeito jurídico do ato (o que ele cria, modifica ou extingue).</li>
+</ul>
+<p><b>Atributos (doutrina), "PATI":</b> <b>P</b>resunção de legitimidade e veracidade; <b>A</b>utoexecutoriedade; <b>T</b>ipicidade; <b>I</b>mperatividade.</p>
+<p><b>Espécies (doutrina):</b> normativos (decretos, regulamentos), ordinatórios (portarias, circulares, ordens de serviço), negociais (licença, autorização, permissão), enunciativos (certidões, atestados, pareceres) e punitivos (multas, interdições).</p>
+<h3>Extinção: anular ou revogar?</h3>
+<div class="tabela"><table>
+  <tr><th scope="col"></th><th scope="col">Anulação</th><th scope="col">Revogação</th></tr>
+  <tr><td>Motivo</td><td><b>ilegalidade</b></td><td><b>conveniência e oportunidade</b> (ato legal)</td></tr>
+  <tr><td>Quem faz</td><td>a <b>Administração</b> (autotutela) ou o <b>Judiciário</b></td><td><b>só a Administração</b></td></tr>
+  <tr><td>Efeitos</td><td>retroagem (<i>ex tunc</i>)</td><td>daqui para frente (<i>ex nunc</i>), respeitados os direitos adquiridos</td></tr>
+</table></div>
+<div class="caixa dica" id="autotutela"><strong>Base legal da autotutela</strong>
+Lei 9.784/1999, art. 53: "A Administração <b>deve anular</b> seus próprios atos, quando eivados de vício de legalidade, e <b>pode revogá-los</b> por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos." Art. 54: o direito de anular atos que trazem efeitos favoráveis ao destinatário <b>decai em 5 anos</b>, contados da data em que foram praticados, salvo comprovada <b>má-fé</b>. Art. 55: atos com defeitos sanáveis podem ser <b>convalidados</b> pela própria Administração, se não houver lesão ao interesse público nem prejuízo a terceiros. A Súmula 473 do STF vai no mesmo sentido.</div>
+<div class="caixa numero"><strong>Delegação (Lei 9.784/1999, art. 13)</strong>
+Não podem ser delegados: I a edição de atos de caráter <b>normativo</b>; II a decisão de <b>recursos</b> administrativos; III as matérias de competência <b>exclusiva</b>. O art. 2º da mesma lei lista os princípios: legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência.</div>
+<p>Outras formas de extinção (doutrina): <b>cassação</b> (o beneficiário descumpre as condições), <b>caducidade</b> (lei nova torna o ato incompatível) e <b>contraposição</b> (ato posterior com efeito oposto).</p>
+
+<h2 id="orgaos">10. Órgãos e agentes públicos</h2>
+<div class="caixa conceito"><strong>Órgão x entidade</strong>
+Lei 9.784/1999, art. 1º, § 2º: <b>órgão</b> é "a unidade de atuação integrante da estrutura da Administração direta e da estrutura da Administração indireta"; <b>entidade</b> é "a unidade de atuação dotada de <b>personalidade jurídica</b>". Daí a doutrina conclui que o órgão <b>não tem personalidade jurídica</b> própria (ex.: Secretaria Municipal de Saúde), e a entidade tem (ex.: uma autarquia).</div>
+<ul>
+  <li><b>Teoria do órgão ou da imputação (doutrina):</b> o que o agente faz é <b>atribuído (imputado) à pessoa jurídica</b>, como se ela mesma agisse. Substituiu as teorias do <b>mandato</b> e da <b>representação</b>, que tratavam o agente como procurador ou representante do Estado.</li>
+  <li><b>Classificação pela posição (doutrina):</b> independentes (chefias dos Poderes, como a Prefeitura e a Câmara), autônomos (Secretarias), superiores (diretorias) e subalternos (seções de execução). Pela composição: <b>simples</b> ou <b>compostos</b>. Pela atuação: <b>singulares</b> (decisão de uma pessoa) ou <b>colegiados</b> (decisão do grupo, como o Conselho Municipal de Saúde).</li>
+</ul>
+<h3>Agentes públicos (doutrina)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Espécie</th><th scope="col">Quem é</th></tr>
+  <tr><td>Agentes políticos</td><td>Prefeito, Vice, vereadores, Secretários</td></tr>
+  <tr><td>Servidores estatutários</td><td>ocupam <b>cargo</b>; regime da lei (em Barão, a Lei 1.867/2008)</td></tr>
+  <tr><td>Empregados públicos</td><td>ocupam <b>emprego</b>; regime da <b>CLT</b></td></tr>
+  <tr><td>Temporários</td><td>contratados por tempo determinado para necessidade temporária de excepcional interesse público (CF, art. 37, IX); o Estatuto municipal trata disso no Título VIII</td></tr>
+  <tr><td>Particulares em colaboração</td><td>honoríficos (jurados, mesários), delegados (concessionários) e credenciados</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Estatutário x celetista</strong>
+<b>Cargo</b> → regime <b>estatutário</b>: direitos e deveres vêm da <b>lei</b> do ente (em Barão, a Lei 1.867/2008), que pode ser mudada pelo próprio ente; há estabilidade após 3 anos. <b>Emprego</b> → regime <b>trabalhista (CLT)</b>: relação <b>contratual</b>, regida pela legislação federal do trabalho, com FGTS e sem a estabilidade do art. 41. <b>Função</b> → conjunto de atribuições sem cargo (função de confiança ou temporária). Na Lei Orgânica, o município adota o <b>regime jurídico único</b> (art. 59).</div>
+
+<h2 id="questoes">11. Questões comentadas (formato da prova: 4 alternativas)</h2>
+<p>Responda antes de abrir o comentário. A resposta certa aparece em verde, como uma frase para gravar.</p>
+
+<div class="questao" id="q1">
+<p><b>1.</b> Segundo a Lei Orgânica do Município de Barão de Cotegipe, são Poderes do Município:</p>
+<ol><li>o Legislativo, o Executivo e o Judiciário.</li><li>o Executivo e o Conselho Municipal.</li><li>o Legislativo e o Executivo, independentes e harmônicos entre si.</li><li>a Câmara, a Prefeitura e o Tribunal de Contas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">São Poderes do Município o Legislativo e o Executivo, independentes e harmônicos entre si (LOM, art. 2º).</span></p>
+<p class="errada">A) <s>Judiciário</s> → município não tem Poder Judiciário.</p>
+<p class="errada">B e D) <s>Conselho, Tribunal de Contas</s> → não são Poderes; o TCE auxilia a Câmara no controle externo.</p>
+</details></div>
+
+<div class="questao" id="q2">
+<p><b>2.</b> A Câmara Municipal de Barão de Cotegipe, segundo sua Lei Orgânica, é composta de:</p>
+<ol><li>9 vereadores, eleitos pelo sistema proporcional.</li><li>11 vereadores, eleitos pelo sistema majoritário.</li><li>7 vereadores, eleitos pelo sistema proporcional.</li><li>13 vereadores, eleitos por distrito.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A Câmara de Barão de Cotegipe tem 9 vereadores, eleitos pelo sistema proporcional (art. 9º).</span></p>
+</details></div>
+
+<div class="questao" id="q3">
+<p><b>3.</b> Sobre a emenda à Lei Orgânica de Barão de Cotegipe, é correto afirmar:</p>
+<ol><li>pode ser proposta por qualquer vereador isoladamente e é aprovada por maioria simples.</li><li>é promulgada pelo Prefeito após sanção.</li><li>é votada em turno único, com quórum de maioria absoluta.</li><li>é proposta por, no mínimo, 1/3 dos vereadores ou pelo Prefeito e aprovada por 2/3 dos membros da Câmara, em dois turnos.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A emenda à Lei Orgânica é proposta por 1/3 dos vereadores ou pelo Prefeito e aprovada em dois turnos, com intervalo de 10 dias, por 2/3 dos membros (art. 22).</span></p>
+<p class="errada">A) <s>vereador isolado, maioria simples</s> → <b>1/3</b> no mínimo; quórum de <b>2/3</b>.</p>
+<p class="errada">B) <s>promulgada pelo Prefeito</s> → promulgada pela <b>Mesa da Câmara</b>.</p>
+<p class="errada">C) <s>turno único, maioria absoluta</s> → <b>dois turnos</b>, <b>2/3</b>.</p>
+</details></div>
+
+<div class="questao" id="q4">
+<p><b>4.</b> De acordo com a Lei Orgânica, ocorrendo a vacância dos cargos de Prefeito e Vice-Prefeito nos dois últimos anos do mandato:</p>
+<ol><li>assume o Juiz de Direito da comarca até o fim do mandato.</li><li>a eleição para ambos os cargos será feita pela Câmara Municipal, 30 dias depois de aberta a última vaga.</li><li>o Presidente da Câmara completa o mandato, sem eleição.</li><li>há nova eleição direta em 90 dias.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Vacância nos dois últimos anos: a Câmara elege Prefeito e Vice 30 dias depois da última vaga, e os eleitos completam o mandato (art. 33, § 1º).</span></p>
+<p class="errada">D) <s>nova eleição em 90 dias</s> → essa é a regra quando a vacância <b>não</b> ocorre nos dois últimos anos.</p>
+<p class="errada">A e C) <s>Juiz assume / Presidente completa sem eleição</s> → o Presidente da Câmara assume a Prefeitura e <b>promove a eleição</b>.</p>
+</details></div>
+
+<div class="questao" id="q5">
+<p><b>5.</b> Segundo o Regime Jurídico dos Servidores de Barão de Cotegipe (Lei 1.867/2008), a posse e o exercício devem ocorrer, respectivamente, em:</p>
+<ol><li>30 dias e 15 dias.</li><li>15 dias e 30 dias.</li><li>até 10 dias da publicação da nomeação, prorrogáveis por igual período, e 5 dias após a posse.</li><li>5 dias e 10 dias.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">No Estatuto municipal, a posse é em até 10 dias da nomeação (prorrogáveis por mais 10) e o exercício em 5 dias após a posse (arts. 14 e 15).</span></p>
+<p class="errada">A) <s>30 e 15</s> → prazos da <b>Lei federal 8.112</b>, não do município.</p>
+</details></div>
+
+<div class="questao" id="q6">
+<p><b>6.</b> No Regime Jurídico dos Servidores de Barão de Cotegipe, o servidor estável cujo cargo foi extinto:</p>
+<ol><li>fica em disponibilidade com remuneração integral, até seu adequado aproveitamento.</li><li>é exonerado de ofício.</li><li>fica em disponibilidade sem remuneração.</li><li>é aposentado compulsoriamente.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Pelo Estatuto municipal, o estável fica em disponibilidade com remuneração integral até o aproveitamento (art. 30).</span></p>
+<p class="errada">Atenção: na CF (art. 41, § 3º) a remuneração na disponibilidade é <b>proporcional ao tempo de serviço</b>. A questão cita o Estatuto do município.</p>
+</details></div>
+
+<div class="questao" id="q7">
+<p><b>7.</b> São formas de provimento de cargo previstas no Regime Jurídico municipal:</p>
+<ol><li>nomeação, promoção, transferência e ascensão.</li><li>exoneração, demissão e falecimento.</li><li>nomeação, recondução, readaptação, reversão, reintegração e aproveitamento.</li><li>remoção, redistribuição e substituição.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Formas de provimento: nomeação, recondução, readaptação, reversão, reintegração e aproveitamento (art. 8º).</span></p>
+<p class="errada">B) <s>exoneração, demissão, falecimento</s> → são formas de <b>vacância</b>.</p>
+<p class="errada">D) <s>remoção, substituição</s> → são <b>mutações funcionais</b> (Título III).</p>
+</details></div>
+
+<div class="questao" id="q8">
+<p><b>8.</b> Reintegração, segundo o Regime Jurídico municipal, é:</p>
+<ol><li>o retorno do aposentado por invalidez quando cessam os motivos da aposentadoria.</li><li>a investidura do servidor estável no cargo anteriormente ocupado, quando invalidada a sua demissão por decisão judicial.</li><li>o retorno do servidor em disponibilidade.</li><li>a mudança de cargo por limitação física ou mental.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Reintegração é a volta do servidor estável ao cargo quando a demissão é invalidada por decisão judicial (art. 29).</span></p>
+<p class="errada">A) → <b>reversão</b>. C) → <b>aproveitamento</b>. D) → <b>readaptação</b>.</p>
+</details></div>
+
+<div class="questao" id="q9">
+<p><b>9.</b> São fundamentos da República Federativa do Brasil (CF, art. 1º):</p>
+<ol><li>erradicar a pobreza e reduzir as desigualdades sociais.</li><li>independência nacional e prevalência dos direitos humanos.</li><li>construir uma sociedade livre, justa e solidária.</li><li>soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Fundamentos: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político.</span></p>
+<p class="errada">A e C) → <b>objetivos</b> (art. 3º). B) → princípios das <b>relações internacionais</b> (art. 4º).</p>
+</details></div>
+
+<div class="questao" id="q10">
+<p><b>10.</b> O remédio constitucional cabível quando a falta de norma regulamentadora torna inviável o exercício de um direito constitucional é:</p>
+<ol><li>o mandado de injunção.</li><li>o habeas data.</li><li>a ação popular.</li><li>o habeas corpus.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Mandado de injunção: falta de norma regulamentadora que inviabiliza direito constitucional (art. 5º, LXXI).</span></p>
+<p class="errada">B) → informações sobre a <b>própria pessoa</b>. C) → anular ato <b>lesivo ao patrimônio público</b>. D) → liberdade de <b>locomoção</b>.</p>
+</details></div>
+
+<div class="questao" id="q11">
+<p><b>11.</b> Com a Emenda Constitucional 141/2026, a duração do trabalho normal prevista no art. 7º, XIII, da Constituição passou a ser de, no máximo:</p>
+<ol><li>8 horas diárias e 44 horas semanais.</li><li>8 horas diárias e 40 horas semanais.</li><li>6 horas diárias e 36 horas semanais.</li><li>10 horas diárias e 48 horas semanais.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Depois da EC 141/2026, a jornada normal máxima é de 8 horas diárias e 40 horas semanais.</span></p>
+<p class="errada">A) <s>44 horas</s> → era a redação <b>antiga</b>, anterior à emenda.</p>
+<p class="errada">C) <s>6 horas</s> → 6 horas é a jornada para <b>turnos ininterruptos de revezamento</b> (XIV).</p>
+</details></div>
+
+<div class="questao" id="q12">
+<p><b>12.</b> São princípios expressos da Administração Pública no caput do art. 37 da Constituição:</p>
+<ol><li>legalidade, impessoalidade, moralidade, publicidade e eficiência.</li><li>legalidade, razoabilidade, proporcionalidade, motivação e eficiência.</li><li>supremacia do interesse público e indisponibilidade do interesse público.</li><li>legalidade, igualdade, moralidade, publicidade e economicidade.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Princípios expressos do art. 37: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE).</span></p>
+<p class="errada">B e C) <s>razoabilidade, supremacia</s> → são princípios <b>implícitos</b> (ou da Lei 9.784).</p>
+<p class="errada">D) <s>igualdade, economicidade</s> → não estão no caput.</p>
+</details></div>
+
+<div class="questao" id="q13">
+<p><b>13.</b> Um odontólogo concursado do município pode acumular outro cargo público remunerado, segundo a Constituição, quando:</p>
+<ol><li>o outro cargo for de qualquer natureza, mesmo sem compatibilidade de horários.</li><li>nunca, pois a acumulação é vedada em qualquer caso.</li><li>se tratar de dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas, havendo compatibilidade de horários.</li><li>o segundo cargo for em comissão, mesmo sem compatibilidade de horários.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">É permitido acumular dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas, havendo compatibilidade de horários (art. 37, XVI, c).</span></p>
+<p class="errada">A) <s>qualquer natureza</s> → "qualquer natureza" vale para quem tem um cargo de <b>professor</b> (alínea b, EC 138/2025), e sempre com compatibilidade de horários.</p>
+<p class="errada">B) <s>nunca</s> → há exceções. D) → a compatibilidade de horários é sempre exigida.</p>
+</details></div>
+
+<div class="questao" id="q14">
+<p><b>14.</b> Sobre a estabilidade do servidor público, prevista no art. 41 da Constituição, é correto afirmar:</p>
+<ol><li>é adquirida após dois anos de efetivo exercício.</li><li>é adquirida após três anos de efetivo exercício, sendo obrigatória a avaliação especial de desempenho por comissão instituída para essa finalidade.</li><li>alcança também os ocupantes de cargo em comissão.</li><li>impede a perda do cargo mesmo por sentença judicial transitada em julgado.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">A estabilidade vem após 3 anos de efetivo exercício, com avaliação especial de desempenho obrigatória por comissão (art. 41, caput e § 4º).</span></p>
+<p class="errada">A) <s>dois anos</s> → <b>três</b> (EC 19/1998).</p>
+<p class="errada">C) <s>cargo em comissão</s> → só o nomeado para cargo <b>efetivo</b> por concurso.</p>
+<p class="errada">D) <s>impede a perda</s> → o estável perde o cargo por sentença transitada em julgado, por processo administrativo ou por avaliação periódica de desempenho.</p>
+</details></div>
+
+<div class="questao" id="q15">
+<p><b>15.</b> O fiscal da vigilância sanitária municipal interdita um consultório odontológico particular que funcionava sem condições de biossegurança. A Administração exerceu o poder:</p>
+<ol><li>hierárquico.</li><li>disciplinar.</li><li>regulamentar.</li><li>de polícia.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Limitar a atividade do particular em nome do interesse público, como a interdição sanitária, é poder de polícia.</span></p>
+<p class="errada">A) → hierarquia é <b>dentro</b> da Administração. B) → disciplinar pune <b>servidores</b> ou quem tem vínculo especial. C) → regulamentar é <b>editar decretos</b>.</p>
+</details></div>
+
+<div class="questao" id="q16">
+<p><b>16.</b> A revogação de um ato administrativo:</p>
+<ol><li>decorre de ilegalidade e pode ser feita pelo Poder Judiciário.</li><li>tem efeitos retroativos (ex tunc).</li><li>decorre de conveniência e oportunidade, é feita pela própria Administração e tem efeitos a partir de então (ex nunc).</li><li>pode atingir direitos adquiridos.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">A revogação retira ato legal por conveniência e oportunidade, é feita só pela Administração e produz efeitos ex nunc, respeitando direitos adquiridos.</span></p>
+<p class="errada">A e B) → descrevem a <b>anulação</b>. D) → a revogação <b>respeita</b> direitos adquiridos.</p>
+</details></div>
+
+<div class="questao" id="q17">
+<p><b>17.</b> São requisitos (elementos) de validade do ato administrativo:</p>
+<ol><li>presunção de legitimidade, autoexecutoriedade, tipicidade e imperatividade.</li><li>competência, finalidade, forma, motivo e objeto.</li><li>legalidade, impessoalidade, moralidade, publicidade e eficiência.</li><li>discricionariedade, coercibilidade e autoexecutoriedade.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Requisitos do ato administrativo: competência, finalidade, forma, motivo e objeto.</span></p>
+<p class="errada">A) → <b>atributos</b> do ato (PATI). C) → <b>princípios</b> do art. 37. D) → atributos do <b>poder de polícia</b>.</p>
+</details></div>
+
+<div class="questao" id="q18">
+<p><b>18.</b> O Secretário Municipal de Saúde, agindo dentro de sua competência, remove um servidor para local distante apenas para puni-lo, sem processo. Ocorreu:</p>
+<ol><li>desvio de finalidade.</li><li>excesso de poder.</li><li>exercício regular do poder hierárquico.</li><li>exercício regular do poder disciplinar.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Agir dentro da competência, mas para fim diverso do previsto em lei, é desvio de finalidade.</span></p>
+<p class="errada">B) <s>excesso de poder</s> → é quando o agente vai <b>além da competência</b>.</p>
+<p class="errada">C e D) <s>exercício regular</s> → a remoção não é punição; punir exige processo com ampla defesa.</p>
+</details></div>
+
+<div class="questao" id="q19">
+<p><b>19.</b> A Secretaria Municipal de Saúde, em relação ao Município, é:</p>
+<ol><li>uma entidade com personalidade jurídica própria.</li><li>uma autarquia.</li><li>uma empresa pública.</li><li>um órgão público, sem personalidade jurídica.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A Secretaria é órgão: unidade de atuação sem personalidade jurídica, integrante da estrutura do Município.</span></p>
+<p class="errada">A, B e C) → entidades da administração indireta têm personalidade jurídica; a Secretaria não.</p>
+</details></div>
+
+<div class="questao" id="q20">
+<p><b>20.</b> São cargos privativos de brasileiro nato, segundo a Constituição:</p>
+<ol><li>Senador e Deputado Federal.</li><li>Ministro de qualquer Tribunal Superior.</li><li>Governador de Estado e Prefeito.</li><li>Presidente da Câmara dos Deputados e Ministro do Supremo Tribunal Federal.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">São privativos de brasileiro nato, entre outros, os cargos de Presidente da Câmara dos Deputados e de Ministro do STF (art. 12, § 3º).</span></p>
+<p class="errada">A) <s>Senador, Deputado</s> → só os <b>Presidentes</b> das Casas. B) <s>qualquer Tribunal Superior</s> → só o <b>STF</b>. C) → não constam do § 3º.</p>
+</details></div>
+
+<h2 id="respostas">12. Respostas que a banca dá como certas</h2>
+<h3>Município</h3>
+<ul class="respostas">
+  <li>Os Poderes do Município são o Legislativo e o Executivo, sem Judiciário.</li>
+  <li>A Câmara de Barão de Cotegipe tem 9 vereadores.</li>
+  <li>Emenda à Lei Orgânica: 1/3 dos vereadores ou Prefeito propõe; dois turnos; 2/3; promulga a Mesa.</li>
+  <li>O Prefeito precisa de licença da Câmara para se ausentar por mais de 15 dias.</li>
+  <li>Os servidores municipais se aposentam pelo Regime Geral de Previdência Social.</li>
+  <li>Símbolos do Município: bandeira, brasão e hino.</li>
+</ul>
+<h3>Estatuto municipal</h3>
+<ul class="respostas">
+  <li>Posse em até 10 dias (prorrogáveis por 10) e exercício em 5 dias.</li>
+  <li>Estágio probatório de 3 anos, com avaliação trimestral.</li>
+  <li>Disponibilidade com remuneração integral (no Estatuto); proporcional (na CF).</li>
+  <li>Suspensão de no máximo 60 dias, conversível em multa de 50% por dia.</li>
+</ul>
+<h3>Constituição</h3>
+<ul class="respostas">
+  <li>Fundamentos: soberania, cidadania, dignidade, valores sociais do trabalho e da livre iniciativa, pluralismo político.</li>
+  <li>Jornada máxima: 8 horas diárias e 40 semanais (EC 141/2026).</li>
+  <li>Princípios do art. 37: legalidade, impessoalidade, moralidade, publicidade e eficiência.</li>
+  <li>Validade do concurso: até 2 anos, prorrogável uma vez por igual período.</li>
+  <li>Profissionais de saúde podem acumular dois cargos privativos da saúde, com compatibilidade de horários.</li>
+  <li>Estabilidade após 3 anos, com avaliação especial de desempenho.</li>
+</ul>
+<h3>Direito Administrativo</h3>
+<ul class="respostas">
+  <li>Requisitos do ato: competência, finalidade, forma, motivo e objeto.</li>
+  <li>Anulação por ilegalidade (ex tunc); revogação por conveniência (ex nunc), só pela Administração.</li>
+  <li>Excesso de poder: fora da competência. Desvio de finalidade: fim diverso do interesse público.</li>
+  <li>Poder de polícia limita a atividade do particular; poder disciplinar pune o servidor.</li>
+  <li>Órgão não tem personalidade jurídica; entidade tem.</li>
+</ul>
+
+<h2 id="fontes">13. Fontes</h2>
+<p>Conferido em 27/10/2026.</p>
+<ul class="fontes">
+  <li>Lei Orgânica do Município de Barão de Cotegipe (17/11/2020), versão consolidada com a Emenda 001/2026: portal CESPRO indicado pela Prefeitura (cespro.com.br, município 7259).</li>
+  <li>Lei Municipal 1.867/2008 (Regime Jurídico dos Servidores), versão consolidada até a Lei 3.227/2026: portal CESPRO.</li>
+  <li>Constituição Federal, texto compilado: planalto.gov.br (arts. 1º a 13, 37 a 41).</li>
+  <li>Lei 9.784/1999 (arts. 1º, 2º, 13, 53, 54 e 55), CTN (Lei 5.172/1966), art. 78, e Lei 8.112/1990 (arts. 13 e 15, só para comparação): planalto.gov.br.</li>
+  <li>Súmula 473 do STF: consultada só em resumo no portal do STF (o texto literal não foi baixado).</li>
+</ul>
+<p class="sub">Os temas marcados como <b>doutrina</b> (classificações de poderes, atributos e espécies de atos, teorias e classificação de órgãos, espécies de agentes) seguem o que os manuais de Direito Administrativo ensinam e não estão num artigo de lei.</p>
+</main>
+
+<footer>
+  Material de estudo do concurso de Barão de Cotegipe. Prevalece sempre o texto oficial da norma e do edital.
+  <br><a class="voltar" href="../disciplinas/index.html#legislacao">← Voltar às trilhas das disciplinas</a>
+</footer>
+<script>
+  // Na impressão, abre os comentários das questões para que saiam no papel.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+
+</body>
+</html>

@@ -143,3 +143,12 @@ O dono pediu que o Opus revisasse tudo o que outras IAs (Copilot/Codex/Gemini) f
 - Fontes: Planalto (leis, CF compilada) e cópias oficiais de secretarias de saúde para as portarias, porque a BVS do Ministério bloqueia acesso automático (HTTP 503).
 - Não coberto em detalhe (texto oficial não lido): Política de Educação Especial na Perspectiva Inclusiva (2008) e Diretrizes do MS para TEA; Portarias 699/2006 e 372/2007 só citadas pelo nome.
 - Testado no Edge headless: largura 1024, 768 (tema escuro) e 480; mapa legível, sem texto fora das caixas; no celular o mapa rola dentro da própria caixa.
+
+## 7. Apostila de Legislação (Opus + Sonnets, 27/10/2026)
+- Divisão nova pedida pelo dono: Sonnets fazem coleta de fontes, extração e revisão mecânica; o Opus só escreve e confere conteúdo.
+- Fontes municipais obtidas no portal CESPRO (cespro.com.br, município 7259, API `_data/api.php` com Referer): **Lei Orgânica de 17/11/2020** consolidada com a **Emenda 001/2026** (licença de vereador até 120 dias) e **Lei 1.867/2008** (Regime Jurídico dos Servidores) consolidada até a Lei 3.227/2026. Textos em `scratch/leg/` (fora do Git).
+- Arquivo: `edital/apostilas/legislacao.html`, ligado na trilha de Legislação. Conteúdo: Lei Orgânica, Estatuto, CF arts. 1º–13 e 37–41, poderes, atos, órgãos e agentes; 20 questões A–D (5 por letra).
+- Mudanças constitucionais recentes destacadas: EC 141/2026 (jornada de 40 h semanais), EC 138/2025 (acumulação: professor + qualquer natureza), EC 131/2023 (nacionalidade).
+- Pegadinhas municipal x CF verificadas: disponibilidade integral (Estatuto) x proporcional (CF); 44 h (Estatuto, art. 53) x 40 h (CF após EC 141, aplicada aos servidores pelo art. 39, § 3º); Estatuto art. 128 com redação antiga da acumulação.
+- Revisão Sonnet: nenhum erro factual grave; 6 ajustes aplicados (veto/promulgação, rótulo de competência, mapa, frases sem fonte, item 10 do programa, Q4).
+- Não conferido no texto literal: Súmula 473 do STF (só resumo).
