@@ -84,7 +84,7 @@ O Gemini mexeu no projeto várias vezes nesta sessão; cada rodada teve problema
 
 ---
 
-## 3. Próximas Entregas Planejadas (nada começado ainda)
+## 3. Próximas Entregas Planejadas (estado atualizado em 26/10/2026)
 
 1. **Apostila e Mapa Mental de Conhecimentos sobre Saúde (SUS):**
    - CF/88 Arts. 196 a 200 + Lei 8.080/90 (princípios do art. 7º) + Decreto 7.508/11 + PNAB (Portaria 2.436/17) + HumanizaSUS (PNH). PDFs já baixados localmente (seção D) — conferir conteúdo antes de citar.
@@ -93,3 +93,28 @@ O Gemini mexeu no projeto várias vezes nesta sessão; cada rodada teve problema
 3. **Resumos e Mapas de Português e Matemática/RL Nível Superior.**
 4. **Conhecimentos Específicos de Odontologia:**
    - Código de Ética CFO + ART + Anestesiologia + Farmacologia + Biossegurança.
+
+**Observação:** as trilhas públicas criadas em 26/10 organizam e resumem os tópicos do Anexo III, mas não substituem as apostilas didáticas completas nem mapas mentais por matéria planejados acima. Não foi produzido ranking de incidência da DOM, pois esta entrega não incluiu análise de provas anteriores.
+
+---
+
+## 4. Entregas e verificações de 26/10/2026
+
+### A) Validação do projeto e sincronização do cronograma
+- `python -m py_compile cronograma\servidor.py` passou; o servidor local respondeu com HTTP 200 na página do cronograma e entregou JSON válido em `/api/progresso`.
+- Foi corrigida em `cronograma/app.js` a sincronização inicial: progresso existente apenas no navegador agora é enviado ao servidor depois da mesclagem, sem enfileirar uma gravação quando o estado remoto já contém os mesmos dados.
+- O fluxo foi testado com Node.js: dados locais-only geram um PUT com tarefas, anotações e minutos; estado já sincronizado não gera gravação adicional.
+
+### B) Publicação dos documentos do edital
+- Criada `edital/index.html` como índice público dos PDFs, textos extraídos e mapa do programa, destacando o edital retificado.
+- Configurado GitHub Pages por GitHub Actions e validada a publicação em <https://rafaelelias01.github.io/concurso-barao-cotegipe/>.
+- Incluída busca de documentos que ignora acentos e filtra os arquivos em tempo real. Testados busca com acentos, busca sem resultados e limpeza do campo; os links locais foram verificados.
+- As publicações do edital e da busca foram concluídas, respectivamente, nos commits `ca685b5` e `c7294a7`.
+
+### C) Trilhas de estudo das seis disciplinas
+- A pedido do dono, depois de ler todas as memórias locais e externas do projeto, foi criada `edital/disciplinas/index.html` e adicionada sua entrada em `edital/index.html`.
+- A página contém Português, Matemática/Raciocínio Lógico, Atualidades/Realidade Municipal, Legislação Municipal/Geral, Conhecimentos sobre Saúde e Conhecimentos Específicos de Odontologia: 6 trilhas, 60 tópicos para acompanhar, mapas visuais resumidos, explicações de estudo e fontes.
+- A seleção dos tópicos foi conferida com o Anexo III retificado; dados municipais usados no resumo foram confrontados com a página da Prefeitura e com a API oficial do IBGE. A página declara que não é um ranking de frequência da banca.
+- O progresso das caixas é salvo em `localStorage` neste navegador e dispositivo; não sincroniza com o cronograma nem com outros aparelhos. A página informa essa limitação.
+- Validação: 6 módulos e 60 tópicos; restauração/gravação local e mensagem de erro de armazenamento testadas; 12 links locais e os fragmentos internos verificados; visualização local e pública conferida; página, página inicial e PDF do conteúdo programático responderam com HTTP 200.
+- A alteração foi integrada pela PR #1 em `62a49da`; o workflow Pages `40428917585` terminou com sucesso. Endereço público: <https://rafaelelias01.github.io/concurso-barao-cotegipe/disciplinas/>.
