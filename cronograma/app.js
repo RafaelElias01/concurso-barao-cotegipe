@@ -144,25 +144,38 @@
     var rt = r.tarefas || {}, rd = r.dias || {};
     var lt = estado.tarefas, ld = estado.dias;
     var outT = {}, outD = {};
+    var dadosLocaisPendentes = false;
     var idsT = Object.keys(lt).concat(Object.keys(rt));
     idsT.forEach(function (k) {
       var a = lt[k] || {}, b = rt[k] || {};
+      var feito = !!(a.feito || b.feito);
+      var pareiEm = a.pareiEm || b.pareiEm || '';
       outT[k] = {
-        feito: !!(a.feito || b.feito),
-        pareiEm: a.pareiEm || b.pareiEm || ''
+        feito: feito,
+        pareiEm: pareiEm
       };
+      if ((feito && !b.feito) || (pareiEm && pareiEm !== (b.pareiEm || ''))) {
+        dadosLocaisPendentes = true;
+      }
     });
     var idsD = Object.keys(ld).concat(Object.keys(rd));
     idsD.forEach(function (k) {
       var a = ld[k] || {}, b = rd[k] || {};
+      var notas = a.notas || b.notas || '';
+      var minutos = a.minutosEstudados !== undefined ? a.minutosEstudados : b.minutosEstudados;
       outD[k] = {
-        notas: a.notas || b.notas || '',
-        minutosEstudados: a.minutosEstudados !== undefined ? a.minutosEstudados : b.minutosEstudados
+        notas: notas,
+        minutosEstudados: minutos
       };
+      if ((notas && notas !== (b.notas || ''))
+          || (a.minutosEstudados !== undefined && a.minutosEstudados !== b.minutosEstudados)) {
+        dadosLocaisPendentes = true;
+      }
     });
     estado.tarefas = outT;
     estado.dias = outD;
     try { localStorage.setItem(CHAVE, JSON.stringify(estado)); } catch (e) {}
+    return dadosLocaisPendentes;
   }
 
   function carregarDoServidor(cb) {
@@ -176,10 +189,11 @@
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     }).then(function (dados) {
-      mesclar(dados);
+      var dadosLocaisPendentes = mesclar(dados);
       sync.pronto = true;
       sync.ultimo = new Date();
       setStatus('salvo');
+      if (dadosLocaisPendentes) pedirSync();
       cb();
     }).catch(function () {
       sync.pronto = true;

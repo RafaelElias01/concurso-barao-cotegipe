@@ -6,6 +6,8 @@
 **Remuneração:** R$ 7.499,45 (40h semanais) | **Vagas:** 1 vaga imediata (ampla concorrência)  
 **Regra de ouro:** **SEM Prova de Títulos** para o cargo de Odontólogo/PSF. Sua pontuação e classificação dependem 100% da sua nota na Prova Objetiva!
 
+**Edital e documentos em endereço web:** https://rafaelelias01.github.io/concurso-barao-cotegipe/
+
 ---
 
 ## Os 3 passos simples para estudar
