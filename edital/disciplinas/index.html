@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trilhas de estudo e acompanhamento das seis disciplinas do concurso de Odontólogo/PSF de Barão de Cotegipe.">
+  <title>Disciplinas — Concurso Barão de Cotegipe</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font: 16px/1.55 system-ui, sans-serif;
+      --linha: color-mix(in srgb, CanvasText 20%, Canvas);
+      --cartao: color-mix(in srgb, CanvasText 4%, Canvas);
+      --destaque: #287a4b;
+    }
+    * { box-sizing: border-box; }
+    body { max-width: 1000px; margin: 0 auto; padding: 24px 16px 48px; }
+    a { color: LinkText; }
+    h1 { line-height: 1.2; }
+    h2 { margin: 0; line-height: 1.3; }
+    .voltar { display: inline-block; margin-bottom: 1rem; }
+    .intro, .disciplina { padding: 16px; border: 1px solid var(--linha); border-radius: 12px; background: var(--cartao); }
+    .intro { margin: 1.25rem 0; }
+    .intro p:last-child { margin-bottom: 0; }
+    .atalhos { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; padding: 0; list-style: none; }
+    .atalhos a { display: block; height: 100%; padding: 12px; border: 1px solid var(--linha); border-radius: 8px; text-decoration: none; }
+    .atalhos a:hover, .atalhos a:focus-visible { outline: 2px solid var(--destaque); outline-offset: 2px; }
+    .atalhos small { display: block; color: GrayText; }
+    .disciplina { margin: 18px 0; scroll-margin-top: 16px; }
+    .disciplina-topo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+    .peso { color: GrayText; font-size: .9rem; }
+    .mapa { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 8px; margin: 14px 0; }
+    .ramo { padding: 9px 10px; border-left: 4px solid; border-radius: 5px; background: color-mix(in srgb, CanvasText 5%, Canvas); }
+    .ramo strong { display: block; }
+    .conceito { border-color: #287aab; }
+    .dica { border-color: #287a4b; }
+    .foco { border-color: #bd7418; }
+    .numero { border-color: #7354a5; }
+    .explicacao { margin: 12px 0; }
+    .progresso-linha { display: flex; align-items: center; gap: 10px; margin: 12px 0 16px; }
+    progress { width: min(100%, 400px); height: 14px; accent-color: var(--destaque); }
+    .topicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 8px 20px; padding: 0; list-style: none; }
+    .topicos li { min-width: 0; }
+    .topicos label { display: flex; align-items: flex-start; gap: 9px; height: 100%; padding: 8px; border-radius: 6px; }
+    .topicos label:hover { background: color-mix(in srgb, CanvasText 6%, Canvas); }
+    .topicos input { flex: 0 0 auto; width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--destaque); }
+    .fontes { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--linha); }
+    .fontes ul { display: flex; flex-wrap: wrap; gap: 8px 22px; padding-left: 20px; }
+    .nota { color: GrayText; font-size: .9rem; }
+    .aviso { min-height: 1.5em; color: GrayText; }
+    @media (prefers-color-scheme: dark) {
+      :root { --destaque: #76d39a; }
+      .conceito { border-color: #68b9e8; }
+      .dica { border-color: #76d39a; }
+      .foco { border-color: #f0b660; }
+      .numero { border-color: #bea2ed; }
+    }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="voltar" href="../index.html">← Voltar aos editais</a>
+    <h1>Trilhas das disciplinas</h1>
+    <p>Concurso de Barão de Cotegipe (RS) · Odontólogo/PSF · Instituto DOM</p>
+    <div class="intro">
+      <strong>Como usar</strong>
+      <p>Marque cada tópico depois de estudá-lo. O progresso é salvo neste navegador e neste dispositivo; não é sincronizado com o cronograma nem com outros aparelhos. As trilhas resumem o conteúdo: confira o programa oficial completo antes da prova.</p>
+      <p>A prova tem 30 questões e exige 36 pontos para aprovação. As cinco matérias gerais somam 25 questões (50 pontos); Odontologia específica tem 5 questões (10 pontos). O cargo não tem prova de títulos. A trilha organiza o programa: não estima frequência de temas sem análise de provas anteriores da banca.</p>
+      <p id="progresso-geral" class="aviso" role="status" aria-live="polite">Progresso: carregando…</p>
+      <p id="status-progresso" class="aviso" aria-live="polite"></p>
+    </div>
+    <h2>Escolha uma matéria</h2>
+    <nav aria-label="Disciplinas da prova">
+      <ul class="atalhos">
+        <li><a href="#portugues"><strong>Português</strong><small>5 questões · 10 pontos</small></a></li>
+        <li><a href="#matematica"><strong>Matemática e Raciocínio Lógico</strong><small>5 questões · 10 pontos</small></a></li>
+        <li><a href="#atualidades"><strong>Atualidades e Realidade Municipal</strong><small>5 questões · 10 pontos</small></a></li>
+        <li><a href="#legislacao"><strong>Legislação Municipal e Geral</strong><small>5 questões · 10 pontos</small></a></li>
+        <li><a href="#saude"><strong>Conhecimentos sobre Saúde</strong><small>5 questões · 10 pontos</small></a></li>
+        <li><a href="#odontologia"><strong>Conhecimentos Específicos — Odontologia</strong><small>5 questões · 10 pontos</small></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="disciplina" id="portugues" data-disciplina="portugues">
+      <div class="disciplina-topo">
+        <h2>Língua Portuguesa — Nível Superior</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="10" value="0" aria-label="Progresso em Língua Portuguesa"></progress><span class="contagem">0 de 10 tópicos</span></div>
+      <p class="explicacao">Comece pelo sentido do texto: identifique assunto, intenção e ponto de vista antes de analisar a gramática. Depois observe como conectivos, pronomes e pontuação organizam as ideias. Na redação oficial, priorize clareza, objetividade, concisão e impessoalidade, conforme o programa.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Português">
+        <div class="ramo conceito"><strong>Texto</strong>tema → intenção → tese</div>
+        <div class="ramo dica"><strong>Construção</strong>coesão → coerência → progressão</div>
+        <div class="ramo foco"><strong>Gramática em contexto</strong>orações → “que/se” → concordância e regência</div>
+        <div class="ramo numero"><strong>Uso formal</strong>crase e pontuação → redação oficial</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="interpretacao"><span>Leitura, intencionalidade, pressupostos, subentendidos, teses e argumentos.</span></label></li>
+        <li><label><input type="checkbox" data-topico="coesao"><span>Coesão e coerência: referência, elipse, operadores argumentativos, progressão temática e intertextualidade.</span></label></li>
+        <li><label><input type="checkbox" data-topico="semantica"><span>Semântica e vocabulário: polissemia, ambiguidade, campos semânticos e adequação ao registro formal.</span></label></li>
+        <li><label><input type="checkbox" data-topico="morfossintaxe"><span>Morfossintaxe: classes de palavras, conjunções, preposições e valores de sentido no texto.</span></label></li>
+        <li><label><input type="checkbox" data-topico="periodo"><span>Período complexo: orações reduzidas e desenvolvidas, relações sintáticas e paralelismo.</span></label></li>
+        <li><label><input type="checkbox" data-topico="que-se"><span>Funções morfológicas e sintáticas de “que” e “se”; tempos, modos e vozes verbais.</span></label></li>
+        <li><label><input type="checkbox" data-topico="concordancia"><span>Concordância verbal e nominal, casos especiais, expressões partitivas e porcentagens.</span></label></li>
+        <li><label><input type="checkbox" data-topico="regencia-crase"><span>Regência verbal e nominal, mudança de sentido, colocação pronominal e crase.</span></label></li>
+        <li><label><input type="checkbox" data-topico="pontuacao"><span>Pontuação, figuras de linguagem, ironia, paradoxo e efeitos de sentido.</span></label></li>
+        <li><label><input type="checkbox" data-topico="redacao-oficial"><span>Argumentação, falácias, variação linguística e redação oficial: princípios, padrão ofício e documentos.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="../oficial/12-anexo-III-conteudo-programatico.pdf">Anexo III — conteúdo programático (PDF)</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disciplina" id="matematica" data-disciplina="matematica">
+      <div class="disciplina-topo">
+        <h2>Matemática e Raciocínio Lógico — Nível Superior</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="12" value="0" aria-label="Progresso em Matemática e Raciocínio Lógico"></progress><span class="contagem">0 de 12 tópicos</span></div>
+      <p class="explicacao">Em cada questão, traduza o enunciado em dados e relações antes de calcular. Em lógica, confira quando uma proposição composta é verdadeira; em contagem, defina se a ordem importa; em probabilidade, determine primeiro o espaço amostral. Ao final, confira unidades e se a resposta faz sentido.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Matemática e Raciocínio Lógico">
+        <div class="ramo conceito"><strong>Problema</strong>dados → relações → modelo</div>
+        <div class="ramo foco"><strong>Ferramenta</strong>álgebra, geometria ou contagem</div>
+        <div class="ramo dica"><strong>Verificação</strong>cálculo → unidade → coerência</div>
+        <div class="ramo numero"><strong>Lógica</strong>proposição → conectivo → conclusão</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="financeira"><span>Matemática financeira: juros simples e compostos, taxas, descontos e sistemas de amortização.</span></label></li>
+        <li><label><input type="checkbox" data-topico="funcoes"><span>Funções polinomiais, exponenciais e logarítmicas; equações, gráficos e modelagem.</span></label></li>
+        <li><label><input type="checkbox" data-topico="pa-pg"><span>Progressões aritméticas e geométricas: termo geral, soma e aplicações.</span></label></li>
+        <li><label><input type="checkbox" data-topico="matrizes"><span>Matrizes, determinantes e sistemas lineares: operações, classificação e resolução.</span></label></li>
+        <li><label><input type="checkbox" data-topico="geometrias"><span>Geometria plana, analítica e espacial; trigonometria, áreas e volumes.</span></label></li>
+        <li><label><input type="checkbox" data-topico="estatistica"><span>Estatística descritiva: frequências, dispersão, tabelas, gráficos e leitura crítica de dados.</span></label></li>
+        <li><label><input type="checkbox" data-topico="combinatoria"><span>Análise combinatória: princípios de contagem, permutações, combinações e restrições.</span></label></li>
+        <li><label><input type="checkbox" data-topico="probabilidade"><span>Probabilidade: eventos, dependência, independência, probabilidade condicional e Bayes.</span></label></li>
+        <li><label><input type="checkbox" data-topico="logica"><span>Lógica proposicional e de primeira ordem: conectivos, tabelas-verdade, equivalências e quantificadores.</span></label></li>
+        <li><label><input type="checkbox" data-topico="conjuntos"><span>Conjuntos, diagramas de Venn, relações e funções.</span></label></li>
+        <li><label><input type="checkbox" data-topico="discreta"><span>Matemática discreta: divisibilidade, congruência modular e princípios de contagem.</span></label></li>
+        <li><label><input type="checkbox" data-topico="modelagem"><span>Modelagem, raciocínio crítico, falácias, otimização e problemas de lógica espacial.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="../oficial/12-anexo-III-conteudo-programatico.pdf">Anexo III — conteúdo programático (PDF)</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disciplina" id="atualidades" data-disciplina="atualidades">
+      <div class="disciplina-topo">
+        <h2>Atualidades e Realidade Municipal</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="8" value="0" aria-label="Progresso em Atualidades e Realidade Municipal"></progress><span class="contagem">0 de 8 tópicos</span></div>
+      <p class="explicacao">Separe os assuntos nacionais e globais dos dados locais. Para o município, memorize apenas informações conferidas em fontes oficiais: a lei de criação é de 1964 e a instalação ocorreu em 1965; o Censo 2022 registrou 7.144 habitantes. Não confunda as duas datas nem trate estimativas sem fonte como fatos.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Atualidades e Realidade Municipal">
+        <div class="ramo conceito"><strong>Mundo</strong>geopolítica → economia → ciência</div>
+        <div class="ramo foco"><strong>Sociedade</strong>ambiente → direitos → cultura</div>
+        <div class="ramo dica"><strong>Município</strong>história → território → economia</div>
+        <div class="ramo numero"><strong>Dados locais</strong>IBGE → Censo 2022 → indicadores</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="geopolitica"><span>Geopolítica: blocos econômicos, conflitos, acordos e organismos multilaterais.</span></label></li>
+        <li><label><input type="checkbox" data-topico="economia"><span>Economia global e brasileira: inflação, PIB, juros, câmbio, cadeias produtivas e trabalho.</span></label></li>
+        <li><label><input type="checkbox" data-topico="ciencia"><span>Ciência e tecnologia: inteligência artificial, transição energética e transformação digital.</span></label></li>
+        <li><label><input type="checkbox" data-topico="ambiente"><span>Meio ambiente: mudanças climáticas, segurança hídrica, preservação e biomas brasileiros.</span></label></li>
+        <li><label><input type="checkbox" data-topico="cidadania"><span>Sociedade e cidadania: direitos humanos, desigualdades, demografia e diversidade cultural.</span></label></li>
+        <li><label><input type="checkbox" data-topico="cultura"><span>Manifestações artísticas e identidades culturais no Brasil e no mundo.</span></label></li>
+        <li><label><input type="checkbox" data-topico="municipio"><span>Barão de Cotegipe: formação histórica, localização, paisagem e relevância regional.</span></label></li>
+        <li><label><input type="checkbox" data-topico="ibge"><span>Dados municipais do IBGE: população, território, economia, trabalho, educação e saneamento.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="https://servicodados.ibge.gov.br/api/v3/agregados/4709/periodos/2022/variaveis/93?localidades=N6%5B4301701%5D" target="_blank" rel="noopener">IBGE — população no Censo 2022 (dados em JSON)</a></li>
+          <li><a href="https://baraodecotegipe.rs.gov.br/site/historia" target="_blank" rel="noopener">História do município — Prefeitura</a></li>
+          <li><a href="../MAPA-DO-PROGRAMA.md">Mapa do conteúdo programático</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disciplina" id="legislacao" data-disciplina="legislacao">
+      <div class="disciplina-topo">
+        <h2>Legislação Municipal e Geral</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="8" value="0" aria-label="Progresso em Legislação Municipal e Geral"></progress><span class="contagem">0 de 8 tópicos</span></div>
+      <p class="explicacao">Estude a Constituição por blocos de artigos e diferencie o que é direito fundamental, princípio administrativo, competência do município e regra de servidor. Em atos administrativos, saiba distinguir anulação (ilegalidade) de revogação (conveniência e oportunidade), sem confundir a atuação da Prefeitura com a da Câmara Municipal.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Legislação">
+        <div class="ramo numero"><strong>Constituição</strong>arts. 1º–4º → art. 5º → arts. 6º–13</div>
+        <div class="ramo foco"><strong>Município</strong>Lei Orgânica → competências → poderes</div>
+        <div class="ramo conceito"><strong>Administração</strong>princípios → agentes → órgãos</div>
+        <div class="ramo dica"><strong>Atuação</strong>poderes → atos → controle de legalidade</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="lei-organica"><span>Lei Orgânica de Barão de Cotegipe: organização municipal, competências e poderes.</span></label></li>
+        <li><label><input type="checkbox" data-topico="fundamentos"><span>Constituição Federal, arts. 1º a 4º: fundamentos, objetivos e relações internacionais.</span></label></li>
+        <li><label><input type="checkbox" data-topico="artigo5"><span>Constituição Federal, art. 5º: direitos, deveres e garantias individuais e coletivas.</span></label></li>
+        <li><label><input type="checkbox" data-topico="direitos-sociais"><span>Constituição Federal, arts. 6º a 13: direitos sociais e nacionalidade.</span></label></li>
+        <li><label><input type="checkbox" data-topico="limpe"><span>Administração Pública: princípios expressos e implícitos, com foco no art. 37 (LIMPE).</span></label></li>
+        <li><label><input type="checkbox" data-topico="poderes"><span>Poderes administrativos, limites, abuso de poder e poder de polícia.</span></label></li>
+        <li><label><input type="checkbox" data-topico="atos"><span>Atos administrativos: requisitos, atributos, espécies, anulação, revogação e extinção.</span></label></li>
+        <li><label><input type="checkbox" data-topico="agentes"><span>Órgãos e agentes públicos, cargos, regimes, provimento, vacância e acumulação.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener">Constituição Federal — Planalto</a></li>
+          <li><a href="https://cespro.com.br/pesquisaLegislacao.php?cdMunicipio=7259&amp;cdTipo=0" target="_blank" rel="noopener">Leis e atos municipais (portal indicado pela Prefeitura)</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disciplina" id="saude" data-disciplina="saude">
+      <div class="disciplina-topo">
+        <h2>Conhecimentos sobre Saúde</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="10" value="0" aria-label="Progresso em Conhecimentos sobre Saúde"></progress><span class="contagem">0 de 10 tópicos</span></div>
+      <p class="explicacao">Organize o SUS como uma sequência: o direito à saúde e as diretrizes constitucionais dão base ao sistema; as Leis 8.080 e 8.142 tratam de organização e participação social; o Decreto 7.508 detalha a organização regional e a articulação entre entes. Na Lei 8.080, atenção à redação do art. 7º: universalidade, integralidade e igualdade da assistência são conceitos cobrados no texto legal.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Conhecimentos sobre Saúde">
+        <div class="ramo numero"><strong>Base legal</strong>CF/88 → Leis 8.080 e 8.142</div>
+        <div class="ramo conceito"><strong>Organização</strong>regiões → portas de entrada → redes</div>
+        <div class="ramo dica"><strong>Cuidado</strong>atenção básica → acolhimento → equipe</div>
+        <div class="ramo foco"><strong>Políticas</strong>saúde mental → inclusão → proteção</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="sus-constituicao"><span>Constituição Federal, arts. 194 a 200: seguridade social e direito à saúde.</span></label></li>
+        <li><label><input type="checkbox" data-topico="lei-8080"><span>Lei 8.080/1990: princípios, diretrizes, organização e competências do SUS.</span></label></li>
+        <li><label><input type="checkbox" data-topico="lei-8142"><span>Lei 8.142/1990 e Resolução CNS 453/2012: conselhos, conferências e controle social.</span></label></li>
+        <li><label><input type="checkbox" data-topico="decreto"><span>Decreto 7.508/2011: regiões de saúde, portas de entrada, redes, RENAME e RENASES.</span></label></li>
+        <li><label><input type="checkbox" data-topico="pacto"><span>Pacto pela Saúde: Portarias 399/2006, 699/2006 e 372/2007 e suas três dimensões.</span></label></li>
+        <li><label><input type="checkbox" data-topico="atencao-basica"><span>PNAB (Portaria 2.436/2017), Estratégia Saúde da Família e Lei 11.350/2006 (agentes comunitários e de endemias).</span></label></li>
+        <li><label><input type="checkbox" data-topico="humanizacao"><span>HumanizaSUS (PNH) e Política Nacional de Educação Permanente em Saúde.</span></label></li>
+        <li><label><input type="checkbox" data-topico="seguranca"><span>NR-32: prevenção de riscos, biossegurança e saúde do trabalhador em serviços de saúde.</span></label></li>
+        <li><label><input type="checkbox" data-topico="inclusao"><span>Saúde mental (Lei 10.216/2001 e RAPS), inclusão (Lei 13.146/2015) e proteção da pessoa com TEA (Lei 12.764/2012).</span></label></li>
+        <li><label><input type="checkbox" data-topico="politicas"><span>Saúde e desenvolvimento infantil: PNAISC, Leis 13.438/2017, 13.935/2019 e 14.254/2021, educação inclusiva e diretrizes para TEA.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8080.htm" target="_blank" rel="noopener">Lei 8.080/1990 — Planalto</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8142.htm" target="_blank" rel="noopener">Lei 8.142/1990 — Planalto</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm" target="_blank" rel="noopener">Decreto 7.508/2011 — Planalto</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="disciplina" id="odontologia" data-disciplina="odontologia">
+      <div class="disciplina-topo">
+        <h2>Conhecimentos Específicos — Odontólogo/PSF</h2>
+        <span class="peso">5 questões · 10 pontos · 16,7% da prova</span>
+      </div>
+      <div class="progresso-linha"><progress max="12" value="0" aria-label="Progresso em Conhecimentos Específicos de Odontologia"></progress><span class="contagem">0 de 12 tópicos</span></div>
+      <p class="explicacao">Revisite os assuntos clínicos seguindo o raciocínio profissional: avaliação e diagnóstico, escolha do cuidado adequado, prevenção de riscos e acompanhamento. Relacione saúde bucal à atenção básica e ao SUS. Para doses, contraindicações e condutas clínicas, use protocolos oficiais atualizados; esta trilha não substitui esses protocolos.</p>
+      <div class="mapa" aria-label="Mapa de estudo de Odontologia">
+        <div class="ramo conceito"><strong>Avaliar</strong>anamnese → exame → diagnóstico</div>
+        <div class="ramo foco"><strong>Tratar</strong>dentística → farmacologia → cirurgia</div>
+        <div class="ramo dica"><strong>Prevenir</strong>promoção → flúor → acompanhamento</div>
+        <div class="ramo numero"><strong>Proteger</strong>ética → biossegurança → ergonomia</div>
+      </div>
+      <ul class="topicos">
+        <li><label><input type="checkbox" data-topico="etica"><span>Código de Ética Odontológica, resoluções, responsabilidade e sigilo profissional.</span></label></li>
+        <li><label><input type="checkbox" data-topico="anatomia"><span>Anatomia e escultura dental; oclusão, aparelho ortodôntico e prevenção de más oclusões.</span></label></li>
+        <li><label><input type="checkbox" data-topico="materiais"><span>Materiais odontológicos, moldagem, prótese, restauração e proteção dentinopulpar.</span></label></li>
+        <li><label><input type="checkbox" data-topico="diagnostico"><span>Semiologia e diagnóstico de cárie, doença periodontal e afecções pulpares e de tecidos orais.</span></label></li>
+        <li><label><input type="checkbox" data-topico="radiologia"><span>Radiologia odontológica: técnicas, cuidados e interpretação radiográfica.</span></label></li>
+        <li><label><input type="checkbox" data-topico="anestesia"><span>Anestesiologia: mecanismos, fármacos, técnicas, cuidados e acidentes anestésicos.</span></label></li>
+        <li><label><input type="checkbox" data-topico="dentistica"><span>Dentística restauradora, preparo cavitário, ART e adequação do meio bucal.</span></label></li>
+        <li><label><input type="checkbox" data-topico="farmacologia"><span>Farmacologia clínica odontológica e uso racional de medicamentos.</span></label></li>
+        <li><label><input type="checkbox" data-topico="cirurgia"><span>Cirurgia oral menor e exodontias: indicações, contraindicações e cuidados pré e pós-operatórios.</span></label></li>
+        <li><label><input type="checkbox" data-topico="urgencias"><span>Traumatologia, urgências e emergências em odontologia.</span></label></li>
+        <li><label><input type="checkbox" data-topico="prevencao"><span>Epidemiologia e prevenção de cárie e doenças periodontais; uso tópico e sistêmico de flúor.</span></label></li>
+        <li><label><input type="checkbox" data-topico="biosseguranca"><span>Biossegurança, ergonomia, SUS, determinantes sociais e sistemas de informação em saúde.</span></label></li>
+      </ul>
+      <div class="fontes">
+        <strong>Fontes para estudar</strong>
+        <ul>
+          <li><a href="../texto/12-anexo-III-conteudo-programatico.txt">Programa oficial — Anexo III (texto)</a></li>
+          <li><a href="https://transparencia.cfo.org.br/ato-normativo/?id=2081" target="_blank" rel="noopener">Código de Ética Odontológica — CFO</a></li>
+          <li><a href="https://www.gov.br/saude/pt-br/composicao/saps/brasil-sorridente" target="_blank" rel="noopener">Saúde Bucal — Ministério da Saúde</a></li>
+          <li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/norma-regulamentadora-no-32-nr-32" target="_blank" rel="noopener">NR-32 — Ministério do Trabalho e Emprego</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p class="nota">Programa resumido para orientar os estudos. O conteúdo oficial vigente é o edital retificado e seus atos posteriores.</p>
+    <p><a href="../index.html">Voltar à página de editais</a> · <a href="../oficial/01-edital-001-2026-RETIFICADO.pdf">Abrir edital retificado (PDF)</a></p>
+  </footer>
+
+  <script>
+    (function () {
+      var chave = 'barao-cotegipe-disciplinas-v1';
+      var caixas = Array.prototype.slice.call(document.querySelectorAll('.topicos input[type="checkbox"]'));
+      var disciplinas = Array.prototype.slice.call(document.querySelectorAll('[data-disciplina]'));
+      var geral = document.getElementById('progresso-geral');
+      var status = document.getElementById('status-progresso');
+      var estado = {};
+
+      function atualizarProgresso() {
+        var feitas = 0;
+        caixas.forEach(function (caixa) {
+          if (caixa.checked) feitas++;
+        });
+        disciplinas.forEach(function (disciplina) {
+          var itens = disciplina.querySelectorAll('.topicos input[type="checkbox"]');
+          var concluidos = 0;
+          itens.forEach(function (caixa) {
+            if (caixa.checked) concluidos++;
+          });
+          disciplina.querySelector('progress').value = concluidos;
+          disciplina.querySelector('.contagem').textContent = concluidos + ' de ' + itens.length + ' tópicos';
+        });
+        geral.textContent = 'Progresso geral: ' + feitas + ' de ' + caixas.length + ' tópicos concluídos.';
+      }
+
+      try {
+        var salvo = localStorage.getItem(chave);
+        if (salvo) {
+          var dados = JSON.parse(salvo);
+          if (!dados || typeof dados !== 'object' || Array.isArray(dados)) {
+            throw new Error('formato de progresso inválido');
+          }
+          estado = dados;
+        }
+      } catch (erro) {
+        status.textContent = 'Não foi possível carregar o progresso salvo neste navegador.';
+      }
+
+      caixas.forEach(function (caixa) {
+        var disciplina = caixa.closest('[data-disciplina]').getAttribute('data-disciplina');
+        var id = disciplina + ':' + caixa.getAttribute('data-topico');
+        caixa.checked = estado[id] === true;
+        caixa.addEventListener('change', function () {
+          estado[id] = caixa.checked;
+          try {
+            localStorage.setItem(chave, JSON.stringify(estado));
+            status.textContent = 'Alteração salva neste navegador.';
+          } catch (erro) {
+            status.textContent = 'Não foi possível salvar. Verifique as configurações de armazenamento do navegador.';
+          }
+          atualizarProgresso();
+        });
+      });
+
+      atualizarProgresso();
+    })();
+  </script>
+</body>
+</html>
