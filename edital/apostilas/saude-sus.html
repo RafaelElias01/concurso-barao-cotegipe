@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apostila de Conhecimentos sobre Saúde (SUS) para o concurso de Odontólogo/PSF de Barão de Cotegipe, conferida no texto oficial de cada norma.">
+<title>Apostila de Saúde e SUS</title>
+<style>
+  :root {
+    --fundo: #fbfaf7; --texto: #1d2125; --suave: #5b6470; --linha: #d9dde2; --cartao: #ffffff;
+    --conceito: #1f6fb2; --conceito-bg: #e8f1fa;
+    --dica: #237a45; --dica-bg: #e7f5ec;
+    --cai: #b45f06; --cai-bg: #fdf0e1;
+    --pega: #b3261e; --pega-bg: #fbe9e7;
+    --numero: #6b4aa5; --numero-bg: #f1ecfa;
+    --foco: #1f6fb2;
+    color-scheme: light dark;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+      --conceito: #79b8ee; --conceito-bg: #182a3b;
+      --dica: #74cf95; --dica-bg: #17301f;
+      --cai: #f2b264; --cai-bg: #3a2814;
+      --pega: #f08a80; --pega-bg: #3b1d1a;
+      --numero: #bfa5f0; --numero-bg: #2a2140;
+      --foco: #79b8ee;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+    --conceito: #79b8ee; --conceito-bg: #182a3b;
+    --dica: #74cf95; --dica-bg: #17301f;
+    --cai: #f2b264; --cai-bg: #3a2814;
+    --pega: #f08a80; --pega-bg: #3b1d1a;
+    --numero: #bfa5f0; --numero-bg: #2a2140;
+    --foco: #79b8ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); }
+  main, header, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: .4rem 0; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.4rem 0 .6rem; padding-top: .6rem; border-top: 2px solid var(--linha); scroll-margin-top: 12px; }
+  h3 { font-size: 1.15rem; margin: 1.4rem 0 .4rem; }
+  a { color: var(--conceito); }
+  a:focus-visible, summary:focus-visible, button:focus-visible, .mapa:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .sub { color: var(--suave); margin: 0; }
+  .voltar { display: inline-flex; align-items: center; min-height: 44px; }
+  .caixa { border-left: 5px solid; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  .caixa > strong:first-child { display: block; margin-bottom: 2px; }
+  .conceito { border-color: var(--conceito); background: var(--conceito-bg); }
+  .dica { border-color: var(--dica); background: var(--dica-bg); }
+  .cai { border-color: var(--cai); background: var(--cai-bg); }
+  .pega { border-color: var(--pega); background: var(--pega-bg); }
+  .numero { border-color: var(--numero); background: var(--numero-bg); }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; font-size: .9rem; }
+  .legenda li { padding: 2px 10px; border-radius: 0 6px 6px 0; border-left: 5px solid; }
+  .indice { columns: 2 260px; padding-left: 1.2rem; }
+  .indice li { break-inside: avoid; margin: 2px 0; }
+  .indice a { display: inline-block; min-height: 32px; padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--linha); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--cartao); }
+  .tabela { overflow-x: auto; }
+  .mapa { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 8px; margin: 14px 0; }
+  .mapa svg { width: 100%; height: auto; display: block; }
+  .mapa svg text { font-family: system-ui, sans-serif; fill: var(--texto); }
+  .mapa .c-ramo { stroke-width: 3; fill: none; }
+  .mapa .no { stroke-width: 2; }
+  .mapa .t-titulo { font-weight: 700; font-size: 15px; }
+  .mapa .t-folha { font-size: 12.5px; }
+  .s-conceito { stroke: var(--conceito); } .f-conceito { fill: var(--conceito-bg); }
+  .s-dica { stroke: var(--dica); } .f-dica { fill: var(--dica-bg); }
+  .s-cai { stroke: var(--cai); } .f-cai { fill: var(--cai-bg); }
+  .s-pega { stroke: var(--pega); } .f-pega { fill: var(--pega-bg); }
+  .s-numero { stroke: var(--numero); } .f-numero { fill: var(--numero-bg); }
+  .s-centro { stroke: var(--texto); } .f-centro { fill: var(--cartao); }
+  .questao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+  .questao ol { list-style: upper-alpha; padding-left: 1.6rem; margin: 6px 0; }
+  .questao li { margin: 3px 0; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 6px; color: var(--conceito); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; display: inline-block; transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .certa { background: var(--dica-bg); border-left: 5px solid var(--dica); padding: 6px 10px; border-radius: 6px; margin: 6px 0; }
+  .errada { color: var(--suave); margin: 4px 0; }
+  .errada s { color: var(--pega); }
+  .grava { font-weight: 700; }
+  .respostas li { margin: 4px 0; }
+  .fontes li { margin: 3px 0; word-break: break-word; }
+  footer { padding: 32px 16px 48px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 1024px) { :root { font-size: 16.5px; } }
+  .mapa-dica { display: none; color: var(--suave); font-size: .9rem; margin: 0 0 4px; }
+  @media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .mapa { overflow-x: auto; }
+    .mapa svg { min-width: 900px; }
+    .mapa-dica { display: block; }
+    .indice a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+    th, td { padding: 6px; font-size: .9rem; }
+  }
+  @media (max-width: 480px) {
+    :root { font-size: 16px; }
+    .caixa, .questao { padding: 9px 10px; }
+  }
+  @media print {
+    details { display: block; } details > * { display: block; }
+    a { color: inherit; } .voltar { display: none; }
+    h2 { break-after: avoid; } .questao, .caixa, .mapa { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="voltar" href="../disciplinas/index.html#saude">← Voltar às trilhas das disciplinas</a>
+  <h1>Conhecimentos sobre Saúde: o SUS na prova</h1>
+  <p class="sub">Concurso de Barão de Cotegipe (RS), Odontólogo/PSF, Instituto DOM, prova em 22/11/2026</p>
+
+  <div class="caixa conceito">
+    <strong>O que é esta página</strong>
+    Uma apostila para estudar sozinho e offline. As normas foram lidas no texto oficial indicado na lista de fontes, no final da página, e o que ficou de fora também está dito lá. Primeiro vem a explicação, depois o mapa, as pegadinhas e as questões no formato da prova: 4 alternativas, de A a D.
+  </div>
+
+  <div class="caixa cai">
+    <strong>Quanto isso vale na prova</strong>
+    "Conhecimentos sobre Saúde" tem 5 questões (10 pontos). Mas o SUS também aparece em <b>Conhecimentos Específicos</b>: o programa de Odontólogo cita a CF "nos artigos 194 e 200", a Lei 8.080, a Lei 8.142, o Decreto 7.508 e a Resolução CNS 453/2012. Estudar esta apostila serve para as duas matérias.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Sobre "o que mais cai" na banca</strong>
+    O Instituto DOM publica no site só os gabaritos, não os cadernos com as questões. Foram consultados 63 gabaritos oficiais da banca. Nenhuma prova antiga dela foi encontrada em sites públicos. Por isso, a ordem abaixo segue o programa do edital e o peso de cada norma para quem trabalha na Saúde da Família. Ela <b>não</b> é um ranking de frequência. Nos 63 gabaritos, as letras certas aparecem em proporção quase igual: não existe "letra preferida" para chutar.
+  </div>
+
+  <ul class="legenda" aria-label="Legenda de cores">
+    <li class="conceito">Azul: conceito</li>
+    <li class="dica">Verde: dica ou resposta certa</li>
+    <li class="cai">Laranja: cai muito / prioridade</li>
+    <li class="pega">Vermelho: pegadinha</li>
+    <li class="numero">Roxo: número, prazo, percentual</li>
+  </ul>
+
+  <h2 id="indice" style="border-top:0">Ordem de estudo</h2>
+  <ol class="indice">
+    <li><a href="#mapa">Mapa geral do SUS</a></li>
+    <li><a href="#sus-historia">Como o SUS foi construído</a></li>
+    <li><a href="#cf">Constituição, arts. 194 a 200</a></li>
+    <li><a href="#l8080">Lei 8.080/1990</a></li>
+    <li><a href="#l8142">Lei 8.142/1990 e Resolução CNS 453/2012</a></li>
+    <li><a href="#d7508">Decreto 7.508/2011</a></li>
+    <li><a href="#pnab">PNAB (Portaria 2.436/2017)</a></li>
+    <li><a href="#pnh">Humanização (PNH)</a></li>
+    <li><a href="#nr32">NR-32 e biossegurança</a></li>
+    <li><a href="#mental">Saúde mental: Lei 10.216 e RAPS</a></li>
+    <li><a href="#acs">Lei 11.350/2006 (ACS e ACE)</a></li>
+    <li><a href="#pacto">Pacto pela Saúde (2006)</a></li>
+    <li><a href="#pneps">Educação Permanente (PNEPS)</a></li>
+    <li><a href="#inclusao">Inclusão, TEA e infância</a></li>
+    <li><a href="#questoes">Questões comentadas</a></li>
+    <li><a href="#respostas">Respostas que a banca dá como certas</a></li>
+    <li><a href="#fontes">Fontes oficiais</a></li>
+  </ol>
+</header>
+
+<main>
+
+<h2 id="mapa">1. Mapa geral do SUS</h2>
+<p>Leia o mapa do centro para fora. Cada ramo é uma norma, e cada folha traz o dado exato que costuma virar alternativa.</p>
+<p class="mapa-dica">No celular, arraste o mapa para o lado para ver tudo.</p>
+<div class="mapa" role="region" tabindex="0" aria-label="Mapa mental do SUS (no celular, role para o lado)">
+<svg viewBox="0 0 960 620" role="img" aria-labelledby="mapa-tit mapa-desc">
+  <title id="mapa-tit">Mapa mental do SUS</title>
+  <desc id="mapa-desc">No centro, o SUS. Seis ramos: Constituição, Lei 8.080, Lei 8.142, Decreto 7.508, PNAB e políticas de cuidado, cada um com seus dados principais.</desc>
+  <path class="c-ramo s-numero" d="M480 310 C 380 250, 330 140, 250 110"/>
+  <path class="c-ramo s-cai" d="M480 310 C 580 250, 630 140, 710 110"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 380 330, 320 320, 250 315"/>
+  <path class="c-ramo s-dica" d="M480 310 C 580 330, 640 320, 710 315"/>
+  <path class="c-ramo s-pega" d="M480 310 C 380 380, 330 480, 250 510"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 580 380, 630 480, 710 510"/>
+  <rect class="no s-centro f-centro" x="400" y="280" width="160" height="60" rx="30"/>
+  <text x="480" y="306" text-anchor="middle" class="t-titulo">SUS</text>
+  <text x="480" y="325" text-anchor="middle" class="t-folha">direito de todos</text>
+
+  <rect class="no s-numero f-numero" x="20" y="40" width="300" height="150" rx="12"/>
+  <text x="34" y="64" class="t-titulo">CF, arts. 194 a 200</text>
+  <text x="34" y="88" class="t-folha">196: direito de todos, dever do Estado</text>
+  <text x="34" y="108" class="t-folha">198: descentralização, integralidade,</text>
+  <text x="34" y="126" class="t-folha">  participação + IV ACS/ACE (EC 140/2026)</text>
+  <text x="34" y="146" class="t-folha">199: privado complementar, prefere</text>
+  <text x="34" y="164" class="t-folha">  filantrópicas e sem fins lucrativos</text>
+  <text x="34" y="182" class="t-folha">União aplica no mínimo 15% da RCL</text>
+
+  <rect class="no s-cai f-cai" x="640" y="40" width="300" height="150" rx="12"/>
+  <text x="654" y="64" class="t-titulo">Lei 8.080/1990</text>
+  <text x="654" y="88" class="t-folha">art. 3º: determinantes e condicionantes</text>
+  <text x="654" y="108" class="t-folha">art. 6º: campo de atuação, inclui</text>
+  <text x="654" y="126" class="t-folha">  saúde bucal (Lei 14.572/2023)</text>
+  <text x="654" y="146" class="t-folha">art. 7º: universalidade, integralidade,</text>
+  <text x="654" y="164" class="t-folha">  IGUALDADE... XVI atenção humanizada</text>
+  <text x="654" y="182" class="t-folha">art. 9º: direção única em cada esfera</text>
+
+  <rect class="no s-conceito f-conceito" x="20" y="250" width="230" height="130" rx="12"/>
+  <text x="34" y="274" class="t-titulo">Lei 8.142/1990</text>
+  <text x="34" y="298" class="t-folha">Conferência: a cada 4 anos</text>
+  <text x="34" y="318" class="t-folha">Conselho: permanente</text>
+  <text x="34" y="336" class="t-folha">  e deliberativo</text>
+  <text x="34" y="356" class="t-folha">usuários = 50% (paridade)</text>
+  <text x="34" y="374" class="t-folha">70% dos recursos: municípios</text>
+
+  <rect class="no s-dica f-dica" x="710" y="250" width="230" height="130" rx="12"/>
+  <text x="724" y="274" class="t-titulo">Decreto 7.508/2011</text>
+  <text x="724" y="298" class="t-folha">Região de Saúde: mínimo</text>
+  <text x="724" y="316" class="t-folha">  5 tipos de serviço</text>
+  <text x="724" y="336" class="t-folha">4 Portas de Entrada</text>
+  <text x="724" y="356" class="t-folha">RENASES, RENAME, COAP</text>
+  <text x="724" y="374" class="t-folha">CIT, CIB e CIR</text>
+
+  <rect class="no s-pega f-pega" x="20" y="440" width="300" height="160" rx="12"/>
+  <text x="34" y="464" class="t-titulo">PNAB (Portaria 2.436/2017)</text>
+  <text x="34" y="488" class="t-folha">princípios: universalidade, EQUIDADE,</text>
+  <text x="34" y="506" class="t-folha">  integralidade</text>
+  <text x="34" y="526" class="t-folha">2.000 a 3.500 pessoas por equipe</text>
+  <text x="34" y="546" class="t-folha">máx. 750 por ACS (áreas de risco)</text>
+  <text x="34" y="566" class="t-folha">40 h semanais na eSF</text>
+  <text x="34" y="586" class="t-folha">eSB: modalidades I e II</text>
+
+  <rect class="no s-conceito f-conceito" x="640" y="440" width="300" height="160" rx="12"/>
+  <text x="654" y="464" class="t-titulo">Políticas de cuidado</text>
+  <text x="654" y="488" class="t-folha">PNH: transversalidade, atenção+gestão,</text>
+  <text x="654" y="506" class="t-folha">  protagonismo</text>
+  <text x="654" y="526" class="t-folha">NR-32: proibido reencapar agulha</text>
+  <text x="654" y="546" class="t-folha">Lei 10.216: internação só quando</text>
+  <text x="654" y="564" class="t-folha">  o extra-hospitalar não basta</text>
+  <text x="654" y="586" class="t-folha">RAPS: 7 componentes</text>
+</svg>
+</div>
+
+<h2 id="sus-historia">2. Como o SUS foi construído</h2>
+<p>O programa pede a evolução histórica da organização do sistema de saúde no Brasil e a construção do SUS. Guarde a ordem dos fatos e o que cada marco mudou.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Quando</th><th scope="col">Marco</th><th scope="col">O que mudou</th></tr>
+  <tr><td>Antes de 1988</td><td>INAMPS</td><td>atendia só os <b>trabalhadores com carteira assinada</b> (contribuintes da previdência). Quem não contribuía dependia de filantropia ou pagava</td></tr>
+  <tr><td>Anos 1970 e 1980</td><td>Movimento da Reforma Sanitária</td><td>defendeu saúde como direito de todos e um sistema único, público e descentralizado</td></tr>
+  <tr><td>1986</td><td><b>8ª Conferência Nacional de Saúde</b></td><td>base das propostas que deram origem ao SUS</td></tr>
+  <tr><td>1987</td><td>SUDS</td><td>Sistemas Unificados e Descentralizados de Saúde, etapa de transição para o SUS</td></tr>
+  <tr><td>1988</td><td><b>Constituição Federal, arts. 196 a 200</b></td><td>cria o SUS e afirma que a saúde é direito de todos e dever do Estado</td></tr>
+  <tr><td>1990</td><td><b>Leis 8.080 e 8.142</b></td><td>regulamentam o SUS: organização e funcionamento (8.080); participação da comunidade e transferências de recursos (8.142)</td></tr>
+  <tr><td>1991, 1993 e 1996</td><td>NOB 91, NOB 93 e NOB 96</td><td>descentralização e municipalização da gestão; a NOB 96 criou o <b>PAB</b> (Piso da Atenção Básica)</td></tr>
+  <tr><td>2001 e 2002</td><td>NOAS 2001 e NOAS 2002</td><td>ênfase na <b>regionalização</b></td></tr>
+  <tr><td>2006</td><td>Pacto pela Saúde (Portaria 399)</td><td>Pactos pela Vida, em Defesa do SUS e de Gestão</td></tr>
+  <tr><td>2011</td><td>Decreto 7.508</td><td>Regiões de Saúde, COAP, RENASES e RENAME</td></tr>
+  <tr><td>2017</td><td>PNAB (Portaria 2.436)</td><td>política atual da Atenção Básica</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinhas da história</strong>
+"Saúde, direito de todos e dever do Estado" vem da <b>Constituição de 1988</b> (art. 196), e não da Lei 8.080. O <b>INAMPS</b> foi extinto em <b>1993</b> (Lei 8.689/1993), depois da criação do SUS: a Constituição de 1988 e as leis de 1990 vieram antes do fim do INAMPS.</div>
+
+<h2 id="cf">3. Constituição Federal, arts. 194 a 200</h2>
+<p>O programa pede o Título VIII (Da Ordem Social), Capítulos I e II, Seções I e II. Isso vai do art. 193 ao art. 200. A Seção I trata da <b>seguridade social</b> e a Seção II, da <b>saúde</b>.</p>
+
+<h3>Seguridade social (art. 194)</h3>
+<div class="caixa conceito"><strong>Definição</strong>A seguridade social é um conjunto integrado de ações dos Poderes Públicos e da sociedade para assegurar três direitos: <b>saúde, previdência e assistência social</b>.</div>
+<p>Objetivos (parágrafo único): I universalidade da cobertura e do atendimento; II uniformidade e equivalência dos benefícios às populações urbanas e rurais; III seletividade e distributividade; IV irredutibilidade do valor dos benefícios; V equidade na forma de participação no custeio; VI diversidade da base de financiamento; VII caráter democrático e descentralizado da administração, com <b>gestão quadripartite</b> (trabalhadores, empregadores, aposentados e Governo).</p>
+<div class="caixa pega"><strong>Pegadinha</strong>Na seguridade, a gestão é <b>quadripartite</b> (4 partes). Não confunda com a paridade do Conselho de Saúde (usuários = 50%).</div>
+
+<h3>Financiamento da seguridade (art. 195)</h3>
+<p>A seguridade é financiada <b>por toda a sociedade</b>, de forma direta e indireta, com recursos dos orçamentos da União, dos Estados, do DF e dos Municípios e com contribuições sociais (do empregador, do trabalhador, sobre concursos de prognósticos, do importador e, desde a EC 132/2023, sobre bens e serviços). Pontos que caem:</p>
+<ul>
+  <li>As receitas dos Estados, do DF e dos Municípios para a seguridade ficam nos <b>orçamentos deles</b>, e não no da União (§ 1º).</li>
+  <li>Nenhum benefício ou serviço da seguridade pode ser criado, aumentado ou estendido <b>sem a fonte de custeio total</b> (§ 5º).</li>
+  <li>As contribuições só podem ser cobradas <b>90 dias</b> depois da publicação da lei que as criou ou modificou (§ 6º).</li>
+  <li>A lei define os critérios de transferência de recursos para o SUS da União para Estados, DF e Municípios, e dos Estados para os Municípios, <b>com contrapartida</b> (§ 10).</li>
+</ul>
+
+<h3>Saúde (arts. 196 a 200)</h3>
+<div class="caixa cai"><strong>Art. 196, para ler até decorar</strong>"A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso <b>universal e igualitário</b> às ações e serviços para sua <b>promoção, proteção e recuperação</b>."</div>
+<ul>
+  <li><b>Art. 197:</b> as ações e serviços de saúde são de <b>relevância pública</b>. A execução pode ser direta, por terceiros ou por pessoa física ou jurídica de direito privado.</li>
+  <li><b>Art. 198:</b> rede regionalizada e hierarquizada, sistema único, com as diretrizes:
+    <ol style="list-style:upper-roman">
+      <li>descentralização, com direção única em cada esfera de governo;</li>
+      <li>atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais;</li>
+      <li>participação da comunidade;</li>
+      <li>atuação obrigatória e permanente de agentes comunitários de saúde e de agentes de combate às endemias, atividade essencial ao SUS e exclusiva de Estado (<b>incluído pela EC 140/2026</b>).</li>
+    </ol>
+  </li>
+</ul>
+<div class="caixa cai"><strong>Novidade de 2026 (EC 140/2026), boa candidata a questão</strong>
+Além do inciso IV, a emenda incluiu no art. 198: § 4º-A, que proíbe contratar ACS e ACE de forma temporária ou terceirizada, salvo em emergência em saúde pública; § 4º-B, que submete esses agentes ao regime dos servidores de cargo efetivo; e nova redação do § 10, com aposentadoria por requisitos diferenciados e adicional de insalubridade. A EC 140 é de 16/10/2026, posterior ao edital (15/09/2026), e vale desde a publicação. Os vínculos temporários ou terceirizados que já existiam devem ser regularizados até 31/12/2028. Se a questão parecer escrita com o texto antigo do art. 198 (só três diretrizes), responda pelo texto antigo.</div>
+<div class="caixa numero"><strong>Números do art. 198</strong>
+§ 2º, I: a União aplica em saúde no mínimo <b>15% da receita corrente líquida</b> (EC 86/2015). Para Estados e Municípios, a CF manda a lei complementar fixar os percentuais (§ 3º); esse número não está na Constituição. § 9º: o vencimento de ACS e ACE não pode ser menor que <b>2 salários mínimos</b>, repassados pela União (EC 120/2022).</div>
+<ul>
+  <li><b>Art. 199:</b> a assistência à saúde é livre à iniciativa privada. As instituições privadas participam do SUS de forma <b>complementar</b>, por <b>contrato de direito público ou convênio</b>, com <b>preferência para as filantrópicas e as sem fins lucrativos</b>. É vedado destinar recursos públicos para auxílios ou subvenções a instituições privadas <b>com fins lucrativos</b>, e também a participação de empresas ou capitais estrangeiros, salvo nos casos previstos em lei. É vedada a comercialização de órgãos, tecidos, sangue e derivados.</li>
+  <li><b>Art. 200:</b> compete ao SUS, além de outras atribuições: I controlar e fiscalizar procedimentos, produtos e substâncias e participar da produção de medicamentos e insumos; II executar vigilância sanitária, epidemiológica e saúde do trabalhador; III <b>ordenar a formação de recursos humanos</b>; IV participar da política e da execução do saneamento básico; V incrementar o desenvolvimento científico, tecnológico e a inovação; VI fiscalizar alimentos, bebidas e águas; VII participar do controle de substâncias psicoativas, tóxicas e radioativas; VIII colaborar na proteção do meio ambiente, incluído o do trabalho.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinhas da CF</strong>
+"Atendimento integral, com prioridade para as atividades <b>preventivas</b>", e não para as assistenciais. Participação privada só <b>complementar</b>, nunca substitutiva. "Direção única em <b>cada</b> esfera", e não direção única nacional.</div>
+
+<h2 id="l8080">4. Lei 8.080/1990 (Lei Orgânica da Saúde)</h2>
+<p>É a lei mais importante do bloco: aparece no programa de Saúde e no de Específicos. Ela regula as ações e serviços de saúde em todo o país.</p>
+
+<h3>Arts. 2º a 4º: o que é saúde e o que é o SUS</h3>
+<ul>
+  <li><b>Art. 2º:</b> a saúde é direito fundamental do ser humano. O dever do Estado <b>não exclui</b> o das pessoas, da família, das empresas e da sociedade (§ 2º).</li>
+  <li><b>Art. 3º:</b> são determinantes e condicionantes da saúde, entre outros: alimentação, moradia, saneamento básico, meio ambiente, trabalho, renda, educação, <b>atividade física</b>, transporte, lazer e acesso aos bens e serviços essenciais (redação da Lei 12.864/2013). É aqui que o programa de Específicos cobra "determinantes sociais da saúde".</li>
+  <li><b>Art. 4º:</b> o SUS é o conjunto de ações e serviços prestados por órgãos e instituições públicas federais, estaduais e municipais, da administração direta e indireta e das fundações mantidas pelo Poder Público. A iniciativa privada participa em caráter <b>complementar</b> (§ 2º).</li>
+</ul>
+
+<h3>Art. 6º: campo de atuação (atenção às mudanças recentes)</h3>
+<p>Inclui a execução de ações de: a) vigilância sanitária; b) vigilância epidemiológica; c) saúde do trabalhador; d) assistência terapêutica integral, inclusive farmacêutica; <b>e) saúde bucal</b> (Lei 14.572/2023); f) promoção do Complexo Econômico-Industrial da Saúde, o Ceis (Lei 15.471/2026). Também inclui saneamento, formação de recursos humanos, vigilância nutricional, política de sangue e, desde a Lei 14.715/2023, a política de <b>informação e assistência toxicológica</b> e de antídotos (inciso XII).</p>
+<div class="caixa cai"><strong>Para o dentista: saúde bucal na lei</strong>
+§ 4º do art. 6º: "Entende-se por saúde bucal o conjunto articulado de ações, em todos os níveis de complexidade, que visem a garantir promoção, prevenção, recuperação e reabilitação odontológica, individual e coletiva, inseridas no contexto da integralidade da atenção à saúde." O art. 18, IV, f, passou a dizer que compete à direção <b>municipal</b> executar serviços de saúde bucal.</div>
+<div class="tabela"><table>
+  <caption style="text-align:left;font-weight:600;padding-bottom:4px">As três vigilâncias do art. 6º</caption>
+  <tr><th>Vigilância</th><th>Palavra-chave da definição</th></tr>
+  <tr><td>Sanitária (§ 1º)</td><td>eliminar, diminuir ou prevenir <b>riscos</b>; controle de <b>bens de consumo</b> e da <b>prestação de serviços</b></td></tr>
+  <tr><td>Epidemiológica (§ 2º)</td><td><b>conhecimento, detecção ou prevenção</b> de mudança nos fatores determinantes, para recomendar medidas de controle de doenças</td></tr>
+  <tr><td>Saúde do trabalhador (§ 3º)</td><td>promoção, proteção, recuperação e reabilitação dos trabalhadores, <b>por meio</b> das vigilâncias epidemiológica e sanitária</td></tr>
+</table></div>
+
+<h3>Art. 7º: princípios e diretrizes</h3>
+<p>Vale para os serviços públicos e para os privados contratados ou conveniados. Os mais cobrados:</p>
+<ul>
+  <li>I <b>universalidade</b> de acesso em todos os níveis de assistência;</li>
+  <li>II <b>integralidade</b>: conjunto articulado e contínuo de ações preventivas e curativas, individuais e coletivas, em todos os níveis de complexidade;</li>
+  <li>III preservação da <b>autonomia</b> das pessoas;</li>
+  <li>IV <b>igualdade</b> da assistência, sem preconceitos ou privilégios;</li>
+  <li>V direito à informação; VI divulgação do potencial dos serviços; VII uso da <b>epidemiologia</b> para prioridades e alocação de recursos;</li>
+  <li>VIII participação da comunidade; IX descentralização político-administrativa, com direção única em cada esfera, ênfase nos municípios, regionalização e hierarquização;</li>
+  <li>X a XIII: integração saúde, meio ambiente e saneamento; conjugação de recursos dos entes; capacidade de resolução; evitar duplicidade de meios;</li>
+  <li>XIV atendimento público específico e especializado para mulheres e vítimas de violência doméstica (Lei 13.427/2017); XV proteção integral dos direitos humanos <b>de todos os usuários</b> e especial atenção à identificação de maus-tratos, negligência e violência sexual contra crianças e adolescentes (Lei 14.679/2023); <b>XVI atenção humanizada</b> (Lei 15.126/2025).</li>
+</ul>
+<div class="caixa pega"><strong>A pegadinha mais clássica do SUS</strong>
+A Lei 8.080 diz <b>"igualdade"</b> da assistência (art. 7º, IV). "Equidade" é o termo da doutrina e da PNAB. Se a questão perguntar "segundo a Lei 8.080", a palavra é igualdade.</div>
+
+<h3>Organização, gestão e competências</h3>
+<ul>
+  <li><b>Art. 8º:</b> serviços organizados de forma regionalizada e hierarquizada, em níveis de complexidade crescente.</li>
+  <li><b>Art. 9º:</b> direção única: Ministério da Saúde (União), Secretaria de Saúde ou órgão equivalente (Estados, DF e Municípios).</li>
+  <li><b>Art. 10:</b> os municípios podem formar <b>consórcios</b>; no nível municipal o SUS pode se organizar em <b>distritos</b>.</li>
+  <li><b>Art. 14-A:</b> as Comissões Intergestores Bipartite (CIB) e Tripartite (CIT) são foros de <b>negociação e pactuação</b> entre gestores sobre aspectos operacionais.</li>
+  <li><b>Art. 14-B:</b> Conass (estados) e Conasems (municípios) representam os entes; os Cosems representam os municípios no âmbito estadual.</li>
+  <li><b>Art. 18 (direção municipal):</b> planejar, organizar, controlar e avaliar; executar vigilância epidemiológica e sanitária, alimentação e nutrição, saneamento básico, saúde do trabalhador e <b>saúde bucal</b>; formar consórcios; gerir laboratórios públicos e hemocentros; contratar e fiscalizar serviços privados.</li>
+  <li><b>Arts. 24 a 26 (serviços privados):</b> só quando as disponibilidades do SUS forem insuficientes; por contrato ou convênio; <b>filantrópicas e sem fins lucrativos têm preferência</b>; os critérios de remuneração são fixados pela direção nacional e aprovados no Conselho Nacional de Saúde; dono ou dirigente de entidade contratada <b>não pode</b> ter cargo de chefia no SUS (§ 4º).</li>
+  <li><b>Art. 33:</b> recursos em conta especial, movimentados sob fiscalização dos <b>Conselhos de Saúde</b>; na esfera federal, pelo Fundo Nacional de Saúde.</li>
+</ul>
+<div class="caixa dica"><strong>Outras novidades no texto atual</strong>
+Art. 6º-A (Lei 14.654/2023): os gestores publicam na internet os estoques de medicamentos das farmácias públicas, com atualização <b>quinzenal</b>. Arts. 26-A a 26-H (Lei 14.510/2022): telessaúde, com consentimento do paciente e direito de recusa, garantido o atendimento presencial sempre que solicitado.</div>
+
+<h2 id="l8142">5. Lei 8.142/1990 e Resolução CNS 453/2012: controle social</h2>
+<p>A Lei 8.142 trata de duas coisas: a <b>participação da comunidade</b> e as <b>transferências de recursos</b>. Está no programa de Específicos.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Item</th><th scope="col">Conferência de Saúde</th><th scope="col">Conselho de Saúde</th></tr>
+  <tr><td>Quando</td><td>a cada <b>4 anos</b></td><td><b>permanente</b></td></tr>
+  <tr><td>Caráter</td><td>avalia a situação e <b>propõe diretrizes</b></td><td><b>deliberativo</b>: formula estratégias e controla a execução, inclusive nos aspectos econômicos e financeiros</td></tr>
+  <tr><td>Quem convoca / decide</td><td>Poder Executivo; extraordinariamente, a própria Conferência ou o Conselho</td><td>decisões <b>homologadas</b> pelo chefe do poder legalmente constituído</td></tr>
+  <tr><td>Composição</td><td colspan="2">representação dos <b>usuários paritária</b> em relação ao conjunto dos demais segmentos</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Números da Lei 8.142</strong>
+Pelo menos <b>70%</b> dos recursos do art. 3º vão para os municípios, e o restante para os estados. A comissão do Plano de Carreira, Cargos e Salários tem prazo de <b>2 anos</b> para a implantação.</div>
+<div class="caixa dica"><strong>Para receber os recursos (art. 4º), o ente precisa ter</strong>
+Fundo de Saúde; Conselho de Saúde paritário; plano de saúde; relatórios de gestão; contrapartida de recursos no orçamento; comissão de elaboração do PCCS. Se faltar algum, os recursos são administrados pelo Estado (no caso do município) ou pela União (no caso do estado).</div>
+
+<h3>Resolução CNS 453/2012: como o Conselho funciona</h3>
+<ul>
+  <li>O Conselho é instância <b>colegiada, deliberativa e permanente</b> (1ª diretriz) e é <b>criado por lei</b> de cada esfera (2ª diretriz).</li>
+  <li>Vagas (3ª diretriz): <b>50% usuários</b>, <b>25% trabalhadores da saúde</b>, <b>25% governo e prestadores</b> de serviços privados conveniados ou sem fins lucrativos.</li>
+  <li>O presidente é <b>eleito entre os membros</b>, em reunião plenária.</li>
+  <li>Recomenda-se renovar pelo menos <b>30%</b> das entidades a cada eleição.</li>
+  <li>Quem tem cargo de direção ou de confiança na gestão do SUS, ou é prestador, <b>não pode</b> representar usuários nem trabalhadores.</li>
+  <li><b>Não podem</b> ser conselheiros: membros eleitos do Legislativo, representantes do Judiciário e do Ministério Público.</li>
+  <li>A função de conselheiro <b>não é remunerada</b> (relevância pública) e garante a dispensa do trabalho sem prejuízo.</li>
+  <li>O plenário se reúne no mínimo <b>uma vez por mês</b>; a pauta chega aos conselheiros com <b>10 dias</b> de antecedência; as reuniões são <b>abertas ao público</b>.</li>
+  <li>Quórum mínimo: <b>metade mais um</b>. Maioria qualificada = <b>2/3</b> do total de membros.</li>
+  <li>As resoluções são homologadas pelo chefe do poder em <b>30 dias</b>. Sem homologação nem justificativa, as entidades podem recorrer à Justiça e ao Ministério Público.</li>
+  <li>Sem Conselho Municipal, o <b>Conselho Estadual</b> convoca a Conferência Municipal com o executivo municipal.</li>
+  <li>O Conselho delibera <b>anualmente</b> sobre o relatório de gestão.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha dentro da própria resolução</strong>
+Sobre a prestação de contas do gestor, a 4ª diretriz (item X) diz "<b>a cada três meses</b>", e a 5ª diretriz (item X) diz "<b>a cada quadrimestre</b>", conforme a LC 141/2012. Se a questão citar a diretriz, siga o texto dela. Paridade não é "metade para cada lado": usuários têm 50% e os outros 50% se dividem entre trabalhadores (25%) e governo/prestadores (25%).</div>
+
+<h2 id="d7508">6. Decreto 7.508/2011: como o SUS se organiza no território</h2>
+<p>Regulamenta a Lei 8.080 quanto à organização do SUS, ao planejamento, à assistência e à articulação entre os entes.</p>
+<div class="tabela"><table>
+  <tr><th>Termo (art. 2º)</th><th>O que é</th></tr>
+  <tr><td>Região de Saúde</td><td>espaço geográfico <b>contínuo</b> de municípios <b>limítrofes</b>, com identidades culturais, econômicas e sociais e redes de comunicação e transporte compartilhadas</td></tr>
+  <tr><td>Contrato Organizativo da Ação Pública da Saúde (COAP)</td><td><b>acordo de colaboração</b> entre entes, com responsabilidades, indicadores, metas, recursos e controle</td></tr>
+  <tr><td>Portas de Entrada</td><td>serviços de atendimento <b>inicial</b> ao usuário no SUS</td></tr>
+  <tr><td>Comissões Intergestores</td><td>instâncias de pactuação <b>consensual</b> entre os entes</td></tr>
+  <tr><td>Mapa da Saúde</td><td>descrição geográfica dos recursos humanos e serviços do SUS <b>e da iniciativa privada</b></td></tr>
+  <tr><td>Rede de Atenção à Saúde</td><td>ações e serviços articulados em níveis de complexidade crescente, para garantir a integralidade</td></tr>
+  <tr><td>Serviços Especiais de Acesso Aberto</td><td>atendimento especial por agravo ou situação laboral</td></tr>
+  <tr><td>Protocolo Clínico e Diretriz Terapêutica</td><td>critérios de diagnóstico, tratamento, posologia, controle e acompanhamento</td></tr>
+</table></div>
+<div class="caixa cai"><strong>Listas que viram questão</strong>
+<b>Para instituir uma Região de Saúde (art. 5º), o mínimo são 5 tipos de ação:</b> atenção primária; urgência e emergência; atenção psicossocial; atenção ambulatorial especializada e hospitalar; vigilância em saúde.<br>
+<b>As 4 Portas de Entrada (art. 9º):</b> atenção primária; urgência e emergência; atenção psicossocial; serviços especiais de acesso aberto. Os entes podem criar <b>novas</b> portas, com justificativa técnica e pactuação nas Comissões Intergestores (parágrafo único).</div>
+<div class="caixa pega"><strong>Pegadinha</strong>
+Atenção <b>hospitalar e ambulatorial especializada</b> está nas exigências da Região, mas <b>não</b> é Porta de Entrada: ela é <b>referenciada</b> a partir das portas (art. 10). Vigilância em saúde também não é porta de entrada.</div>
+<ul>
+  <li><b>Art. 11:</b> o acesso é <b>ordenado pela atenção primária</b>, com base na <b>gravidade do risco</b> individual e coletivo e no <b>critério cronológico</b>, respeitando quem tem proteção especial. A população indígena tem regras de acesso diferenciadas.</li>
+  <li><b>RENASES (art. 21):</b> todas as ações e serviços que o SUS oferece para a integralidade.</li>
+  <li><b>RENAME (art. 25):</b> seleção e padronização de medicamentos, acompanhada do Formulário Terapêutico Nacional (FTN). Só entram produtos com registro na <b>Anvisa</b> (art. 29).</li>
+  <li><b>Comissões Intergestores (art. 30):</b> <b>CIT</b> (União, ligada ao Ministério da Saúde), <b>CIB</b> (Estado, ligada à Secretaria Estadual), <b>CIR</b> (região, ligada à Secretaria Estadual e seguindo as diretrizes da CIB).</li>
+</ul>
+
+<h2 id="pnab">7. PNAB: a Política Nacional de Atenção Básica (Portaria 2.436/2017)</h2>
+<p>É o "manual" do seu futuro trabalho no PSF. A PNAB trata <b>Atenção Básica</b> e <b>Atenção Primária à Saúde</b> como termos equivalentes.</p>
+<div class="caixa conceito"><strong>Art. 2º, definição</strong>Atenção Básica é o conjunto de ações individuais, familiares e coletivas de promoção, prevenção, proteção, diagnóstico, tratamento, reabilitação, redução de danos, cuidados paliativos e vigilância em saúde, feitas por <b>equipe multiprofissional</b> para a população de <b>território definido</b>, sobre a qual as equipes assumem <b>responsabilidade sanitária</b>. É a <b>principal porta de entrada</b> e o centro de comunicação da Rede de Atenção à Saúde (RAS), coordenadora do cuidado e ordenadora das ações. É oferecida integral e <b>gratuitamente</b> a todas as pessoas.</div>
+<div class="tabela"><table>
+  <tr><th>Princípios (art. 3º, I)</th><th>Diretrizes (art. 3º, II)</th></tr>
+  <tr><td>Universalidade<br><b>Equidade</b><br>Integralidade</td><td>Regionalização e hierarquização · Territorialização · População adscrita · Cuidado centrado na pessoa · Resolutividade · Longitudinalidade do cuidado · Coordenação do cuidado · Ordenação da rede · Participação da comunidade</td></tr>
+</table></div>
+<ul>
+  <li><b>Art. 4º:</b> a <b>Saúde da Família</b> é a estratégia prioritária. Outras estratégias são reconhecidas só em caráter <b>transitório</b>, com estímulo à conversão em ESF.</li>
+  <li><b>Art. 5º:</b> a integração entre Vigilância em Saúde e Atenção Básica é condição essencial.</li>
+  <li><b>Art. 6º:</b> todo estabelecimento de Atenção Básica é chamado de <b>Unidade Básica de Saúde (UBS)</b>.</li>
+</ul>
+<div class="caixa numero"><strong>Números da PNAB</strong>
+População adscrita recomendada por equipe (eSF e eAB): <b>2.000 a 3.500 pessoas</b>. Em áreas de grande dispersão, risco ou vulnerabilidade: cobertura de 100% com no máximo <b>750 pessoas por ACS</b>. Na Saúde da Família, carga horária <b>obrigatória de 40 horas semanais</b> para todos os profissionais, que só podem estar ligados a <b>1 equipe</b>.</div>
+<h3>Equipes</h3>
+<ul>
+  <li><b>eSF (Saúde da Família):</b> no mínimo médico, enfermeiro, auxiliar ou técnico de enfermagem e ACS. Pode ter ACE e os profissionais de saúde bucal (cirurgião-dentista, <b>preferencialmente especialista em saúde da família</b>, e auxiliar ou técnico em saúde bucal).</li>
+  <li><b>eSB (Saúde Bucal):</b> Modalidade I = cirurgião-dentista + ASB <b>ou</b> TSB. Modalidade II = cirurgião-dentista + TSB + ASB (ou outro TSB). Qualquer que seja a modalidade, a eSB fica <b>vinculada</b> a uma eSF ou eAB e tem responsabilidade sanitária pela mesma população e território.</li>
+</ul>
+<div class="caixa cai"><strong>Atribuições do cirurgião-dentista (Anexo, item 4.2.2, "Cirurgião-Dentista")</strong>
+I atenção em saúde bucal individual e coletiva, na UBS, no domicílio e em espaços comunitários (escolas, associações); II diagnóstico para obter o <b>perfil epidemiológico</b> do território; III procedimentos clínicos e cirúrgicos da AB, incluindo <b>urgências</b>, pequenas cirurgias ambulatoriais e as fases clínicas de moldagem, adaptação e acompanhamento de <b>próteses</b> (elementar, total e parcial removível); IV coordenar ações coletivas de promoção e prevenção; V integrar as ações com a equipe; VI <b>supervisionar TSB e ASB</b>; VII planejar, gerenciar e avaliar as ações dos ACS e ACE com a equipe; VIII estratificação de risco e plano de cuidados para condições crônicas; IX outras atribuições da área.</div>
+
+<h2 id="pnh">8. Política Nacional de Humanização (PNH / HumanizaSUS)</h2>
+<div class="tabela"><table>
+  <tr><th>Estrutura</th><th>Conteúdo (Documento Base para Gestores e Trabalhadores do SUS)</th></tr>
+  <tr><td>3 princípios</td><td><b>Transversalidade</b> · <b>Indissociabilidade entre atenção e gestão</b> · <b>Protagonismo, corresponsabilidade e autonomia</b> dos sujeitos e coletivos</td></tr>
+  <tr><td>Método</td><td><b>Tríplice inclusão</b>: dos sujeitos (gestores, trabalhadores e usuários), dos analisadores sociais (conflitos) e do coletivo</td></tr>
+  <tr><td>Diretrizes</td><td>Clínica ampliada · Cogestão · Acolhimento · Valorização do trabalho e do trabalhador · Defesa dos direitos do usuário · Fomento das grupalidades, coletivos e redes · Construção da memória do SUS que dá certo</td></tr>
+  <tr><td>Dispositivos (exemplos)</td><td>Grupo de Trabalho de Humanização (GTH) · Colegiado gestor · Ouvidorias · Visita aberta e direito a acompanhante · Equipe de referência e apoio matricial · Projetos de ambiência · <b>Acolhimento com classificação de risco</b> · Projeto Terapêutico Singular</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha</strong>
+Princípio não é diretriz. "Acolhimento" e "clínica ampliada" são <b>diretrizes</b>; "transversalidade" é <b>princípio</b>. E "atenção humanizada" virou princípio da própria Lei 8.080 (art. 7º, XVI, Lei 15.126/2025).</div>
+
+<h2 id="nr32">9. NR-32: segurança no trabalho em serviços de saúde</h2>
+<p>Norma do Ministério do Trabalho. No consultório odontológico, o risco biológico é o centro dela.</p>
+<ul>
+  <li><b>32.2.4.5:</b> o empregador deve <b>proibir</b>: usar pias de trabalho para outros fins; fumar, usar <b>adornos</b> e manusear lentes de contato no posto de trabalho; comer e beber no posto; guardar alimentos em local impróprio; usar <b>calçados abertos</b>.</li>
+  <li><b>32.2.4.6:</b> vestimenta de trabalho adequada, fornecida <b>sem ônus</b>; o trabalhador <b>não pode sair</b> do local de trabalho com os EPI e as vestimentas usadas.</li>
+  <li><b>32.2.4.15:</b> são <b>vedados o reencape e a desconexão manual de agulhas</b>.</li>
+  <li><b>32.2.4.16:</b> o empregador deve ter um <b>Plano de Prevenção de Riscos de Acidentes com Materiais Perfurocortantes</b> (Anexo III da norma).</li>
+  <li><b>32.2.4.17.1:</b> vacinação gratuita contra <b>tétano, difteria e hepatite B</b>, além das previstas no PCMSO; o empregador controla a eficácia da vacina e providencia reforço.</li>
+</ul>
+
+<h2 id="mental">10. Saúde mental: Lei 10.216/2001 e RAPS (Portaria 3.088/2011)</h2>
+<h3>Lei 10.216 (Reforma Psiquiátrica)</h3>
+<ul>
+  <li>Direitos (art. 2º): melhor tratamento; ser tratado com humanidade; proteção contra abuso; <b>sigilo</b>; presença médica para esclarecer internação involuntária; acesso a meios de comunicação; informação sobre a doença; tratamento pelos meios <b>menos invasivos</b>; tratamento <b>preferencialmente em serviços comunitários</b>.</li>
+  <li><b>Art. 4º:</b> internação só quando os recursos <b>extra-hospitalares forem insuficientes</b>. É <b>vedada</b> a internação em instituições com características <b>asilares</b>.</li>
+  <li><b>Art. 6º:</b> internação exige <b>laudo médico circunstanciado</b>. Tipos: <b>voluntária</b> (com consentimento), <b>involuntária</b> (sem consentimento, a pedido de terceiro) e <b>compulsória</b> (determinada pela Justiça).</li>
+</ul>
+<div class="caixa numero"><strong>Prazos da Lei 10.216</strong>
+Internação involuntária: comunicar ao <b>Ministério Público Estadual em 72 horas</b>, e também na alta (art. 8º, § 1º). Evasão, transferência, acidente, intercorrência grave ou óbito: comunicar à família e à autoridade sanitária em <b>24 horas</b> (art. 10).</div>
+<h3>RAPS: Rede de Atenção Psicossocial</h3>
+<p>Diretrizes (art. 2º), entre outras: respeito aos direitos humanos e à autonomia; equidade; combate a estigmas; atenção humanizada; <b>redução de danos</b>; serviços de base territorial e comunitária; e o <b>projeto terapêutico singular</b> como eixo central do cuidado.</p>
+<div class="caixa cai"><strong>Os 7 componentes da RAPS (art. 5º)</strong>
+Atenção Básica em Saúde · Atenção Psicossocial Especializada · Atenção de Urgência e Emergência · Atenção Residencial de Caráter Transitório · Atenção Hospitalar · Estratégias de Desinstitucionalização · Reabilitação Psicossocial. A UBS é ponto de atenção da RAPS.</div>
+
+<h2 id="acs">11. Lei 11.350/2006: agentes comunitários (ACS) e de endemias (ACE)</h2>
+<ul>
+  <li>Atuam <b>exclusivamente no SUS</b>, com <b>vínculo direto</b> com a administração direta, autárquica ou fundacional (art. 2º). É essencial e obrigatória a presença de ACS na Estratégia Saúde da Família e de ACE na vigilância epidemiológica e ambiental.</li>
+  <li>O ACS faz prevenção de doenças e promoção da saúde a partir da <b>Educação Popular em Saúde</b>, em ações domiciliares ou comunitárias (art. 3º).</li>
+</ul>
+<div class="tabela"><table>
+  <tr><th>Requisito</th><th>ACS (art. 6º)</th><th>ACE (art. 7º)</th></tr>
+  <tr><td>Residir na área</td><td><b>Sim</b>, desde a publicação do edital</td><td>Não exigido</td></tr>
+  <tr><td>Curso de formação inicial</td><td colspan="2">mínimo de <b>40 horas</b></td></tr>
+  <tr><td>Escolaridade</td><td colspan="2"><b>ensino médio</b>; sem candidato com médio, admite-se fundamental, com prazo de <b>3 anos</b> para concluir o médio</td></tr>
+</table></div>
+<p>Lembre a ligação com a CF: a EC 140/2026 tornou a atuação de ACS e ACE uma diretriz do SUS (art. 198, IV) e proibiu sua contratação temporária ou terceirizada.</p>
+<div class="caixa pega"><strong>Atenção ao regime jurídico</strong>
+O art. 8º da Lei 11.350 ainda diz que ACS e ACE seguem a <b>CLT</b>, salvo lei local diferente. Mas a EC 140/2026 incluiu na CF o § 4º-B do art. 198, que os submete ao regime dos <b>servidores de cargo efetivo</b>. A Constituição prevalece. Se a questão citar "segundo a Lei 11.350, art. 8º", a resposta é CLT; se citar a Constituição, é o regime de cargo efetivo.</div>
+
+<h2 id="pacto">12. Pacto pela Saúde (Portarias 399/2006, 699/2006 e 372/2007)</h2>
+<p>A Portaria 399/2006 divulgou o Pacto pela Saúde 2006, "Consolidação do SUS", e aprovou suas Diretrizes Operacionais. A Portaria 699/2006 regulamentou as diretrizes dos Pactos pela Vida e de Gestão, e a 372/2007 alterou a 699.</p>
+<div class="caixa conceito"><strong>Três componentes</strong>
+<b>Pacto pela Vida</b> (compromissos sanitários com foco em resultados) · <b>Pacto em Defesa do SUS</b> (o SUS como política de Estado, mobilização social, regulamentação da EC 29, Carta dos Direitos dos Usuários) · <b>Pacto de Gestão</b> (responsabilidades claras de cada ente).</div>
+<div class="caixa cai"><strong>As 6 prioridades do Pacto pela Vida em 2006</strong>
+Saúde do idoso · Câncer de colo de útero e de mama · Mortalidade infantil e materna · Doenças emergentes e endemias, com ênfase em dengue, hanseníase, tuberculose, malária e influenza · Promoção da saúde · Fortalecimento da Atenção Básica.</div>
+
+<h2 id="pneps">13. Política Nacional de Educação Permanente em Saúde (PNEPS)</h2>
+<div class="caixa conceito"><strong>O que é</strong>
+Nas palavras da Portaria 1.996/2007: "A Educação Permanente é <b>aprendizagem no trabalho</b>, onde o aprender e o ensinar se incorporam ao cotidiano das organizações e ao trabalho". Ela é feita "<b>a partir dos problemas enfrentados na realidade</b>" e se baseia na aprendizagem significativa. Essa portaria definiu novas diretrizes para a política, adequando-a ao Pacto pela Saúde.</div>
+<ul>
+  <li>A condução regional é feita pelos <b>Colegiados de Gestão Regional</b>, com participação das <b>Comissões Permanentes de Integração Ensino-Serviço (CIES)</b> (art. 2º).</li>
+  <li>Os Colegiados elaboram o <b>Plano de Ação Regional de Educação Permanente</b>, submetido à <b>CIB</b> para homologação.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha (distinção da doutrina, não está no texto da portaria)</strong>
+Educação <b>permanente</b> parte dos problemas do serviço e é coletiva. Educação <b>continuada</b> são cursos e atualizações pontuais, geralmente por categoria profissional. Se a alternativa disser que a PNEPS se baseia em cursos isolados de atualização, desconfie.</div>
+
+<h2 id="inclusao">14. Inclusão, TEA e infância</h2>
+<ul>
+  <li><b>Lei 13.146/2015 (LBI), art. 2º:</b> pessoa com deficiência é quem tem impedimento <b>de longo prazo</b> (físico, mental, intelectual ou sensorial) que, <b>em interação com barreiras</b>, pode obstruir sua participação plena. A avaliação, quando necessária, é <b>biopsicossocial</b>, feita por equipe multiprofissional e interdisciplinar. <b>Art. 18:</b> atenção integral à saúde em todos os níveis, pelo SUS, com acesso universal e igualitário.</li>
+  <li><b>Lei 12.764/2012 (TEA):</b> a pessoa com TEA é considerada <b>pessoa com deficiência para todos os efeitos legais</b>. Tem direito ao diagnóstico precoce, <b>ainda que não definitivo</b>, e a atendimento multiprofissional. A <b>fita quebra-cabeça</b> pode identificar a prioridade (Lei 13.977/2020). Na classe comum, com necessidade comprovada, tem direito a <b>acompanhante especializado</b>.</li>
+  <li><b>Lei 13.438/2017:</b> incluiu no ECA (art. 14, § 5º) a obrigação de aplicar a todas as crianças, nos <b>primeiros 18 meses</b> de vida, protocolo para detectar risco ao desenvolvimento psíquico, em consulta pediátrica.</li>
+  <li><b>Lei 13.935/2019:</b> as redes públicas de educação básica terão serviços de <b>psicologia e serviço social</b>, com equipes multiprofissionais; prazo de <b>1 ano</b> para os sistemas de ensino se adequarem.</li>
+  <li><b>Lei 14.254/2021:</b> acompanhamento integral de educandos com <b>dislexia, TDAH</b> ou outro transtorno de aprendizagem: identificação precoce, encaminhamento para diagnóstico, apoio educacional e apoio terapêutico na rede de saúde.</li>
+  <li><b>PNAISC (Portaria 1.130/2015):</b> criança = <b>0 a 9 anos</b>; primeira infância = <b>0 a 5 anos</b>; nos serviços pediátricos do SUS, atendimento até <b>15 anos</b>. Tem <b>7 eixos estratégicos</b>: gestação, parto e recém-nascido; aleitamento materno e alimentação complementar; crescimento e desenvolvimento; agravos prevalentes e doenças crônicas; violências, acidentes e cultura de paz; crianças com deficiência ou em vulnerabilidade; vigilância do óbito infantil, fetal e materno.</li>
+</ul>
+<div class="caixa pega"><strong>O que esta apostila não cobre em detalhe</strong>
+A Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva (2008) e as Diretrizes do Ministério da Saúde para a atenção à pessoa com TEA estão no programa, mas os textos oficiais não foram lidos para esta versão. Para essas duas, use o documento oficial.</div>
+
+<h2 id="questoes">15. Questões comentadas (formato da prova: 4 alternativas)</h2>
+<p>Responda antes de abrir o comentário. A resposta certa aparece em verde, como uma frase para gravar. As erradas aparecem riscadas, com a correção ao lado.</p>
+
+<div class="questao" id="q1">
+<p><b>1.</b> Segundo o art. 7º da Lei 8.080/1990, é princípio do SUS:</p>
+<ol><li>equidade da assistência à saúde, com prioridade aos mais vulneráveis.</li><li>centralização político-administrativa, com direção nacional única.</li><li>participação da iniciativa privada em caráter substitutivo.</li><li>igualdade da assistência à saúde, sem preconceitos ou privilégios de qualquer espécie.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A Lei 8.080 garante a igualdade da assistência à saúde, sem preconceitos ou privilégios de qualquer espécie (art. 7º, IV).</span></p>
+<p class="errada">A) <s>equidade</s> → a lei diz <b>igualdade</b>; "equidade" é termo da PNAB e da doutrina.</p>
+<p class="errada">B) <s>centralização, direção nacional única</s> → <b>descentralização</b>, com direção única <b>em cada esfera</b> de governo (IX).</p>
+<p class="errada">C) <s>substitutivo</s> → a participação privada é <b>complementar</b> (art. 4º, § 2º).</p>
+</details></div>
+
+<div class="questao" id="q2">
+<p><b>2.</b> A Emenda Constitucional 140/2026 acrescentou ao art. 198 da Constituição, como diretriz do SUS:</p>
+<ol><li>a gratuidade dos medicamentos de uso contínuo.</li><li>a gestão quadripartite dos serviços de saúde.</li><li>a atuação obrigatória e permanente de agentes comunitários de saúde e de agentes de combate às endemias.</li><li>a contratação terceirizada de agentes comunitários como regra.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">O art. 198, IV (EC 140/2026), prevê a atuação obrigatória e permanente de ACS e ACE, atividade essencial ao SUS e exclusiva de Estado.</span></p>
+<p class="errada">A) <s>gratuidade de medicamentos contínuos</s> → não é diretriz do art. 198.</p>
+<p class="errada">B) <s>gestão quadripartite da saúde</s> → a gestão quadripartite é objetivo da <b>seguridade social</b> (art. 194, VII).</p>
+<p class="errada">D) <s>terceirizada como regra</s> → o § 4º-A <b>proíbe</b> a contratação temporária ou terceirizada, salvo emergência em saúde pública.</p>
+</details></div>
+
+<div class="questao" id="q3">
+<p><b>3.</b> De acordo com a Lei 8.142/1990, a Conferência de Saúde:</p>
+<ol><li>reúne-se a cada quatro anos para avaliar a situação de saúde e propor diretrizes para a política de saúde.</li><li>reúne-se a cada dois anos e tem caráter deliberativo e permanente.</li><li>é convocada exclusivamente pelo Poder Legislativo.</li><li>tem suas decisões homologadas pelo Ministério Público.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A Conferência de Saúde se reúne a cada quatro anos para avaliar a situação de saúde e propor diretrizes para a formulação da política de saúde.</span></p>
+<p class="errada">B) <s>dois anos, deliberativo e permanente</s> → <b>quatro</b> anos; "permanente e deliberativo" descreve o <b>Conselho</b>.</p>
+<p class="errada">C) <s>exclusivamente pelo Legislativo</s> → convocada pelo <b>Poder Executivo</b> ou, extraordinariamente, por ela mesma ou pelo Conselho.</p>
+<p class="errada">D) <s>homologadas pelo Ministério Público</s> → a lei não manda homologar as decisões da Conferência. A homologação pelo <b>chefe do poder</b> é para as decisões do <b>Conselho</b> (art. 1º, § 2º).</p>
+</details></div>
+
+<div class="questao" id="q4">
+<p><b>4.</b> Segundo a Resolução CNS 453/2012, as vagas do Conselho de Saúde são distribuídas da seguinte forma:</p>
+<ol><li>1/3 usuários, 1/3 trabalhadores e 1/3 governo.</li><li>50% governo e 50% sociedade civil.</li><li>50% usuários, 25% trabalhadores da saúde e 25% governo e prestadores de serviços.</li><li>25% usuários, 25% trabalhadores e 50% prestadores.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">No Conselho de Saúde: 50% usuários, 25% trabalhadores da saúde e 25% governo e prestadores de serviços.</span></p>
+<p class="errada">A, B e D) <s>terços iguais / metade governo / 25% usuários</s> → a paridade é dos <b>usuários (50%)</b> em relação ao conjunto dos demais segmentos.</p>
+</details></div>
+
+<div class="questao" id="q5">
+<p><b>5.</b> Pelo Decreto 7.508/2011, NÃO é Porta de Entrada às ações e serviços de saúde:</p>
+<ol><li>a atenção primária.</li><li>a atenção de urgência e emergência.</li><li>a atenção hospitalar e ambulatorial especializada.</li><li>os serviços especiais de acesso aberto.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">A atenção hospitalar e a ambulatorial especializada são referenciadas pelas Portas de Entrada; não são portas de entrada.</span></p>
+<p class="errada">A, B e D são portas de entrada. A quarta que falta é a <b>atenção psicossocial</b> (art. 9º).</p>
+</details></div>
+
+<div class="questao" id="q6">
+<p><b>6.</b> Na Política Nacional de Atenção Básica (Portaria 2.436/2017), a população adscrita recomendada por equipe de Saúde da Família é de:</p>
+<ol><li>até 1.000 pessoas.</li><li>2.000 a 3.500 pessoas.</li><li>4.000 a 6.000 pessoas.</li><li>no máximo 750 pessoas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">A PNAB recomenda de 2.000 a 3.500 pessoas por equipe de Saúde da Família ou de Atenção Básica.</span></p>
+<p class="errada">D) <s>máximo 750 pessoas por equipe</s> → 750 é o limite <b>por ACS</b>, em áreas de dispersão, risco ou vulnerabilidade.</p>
+<p class="errada">A e C) não constam da PNAB.</p>
+</details></div>
+
+<div class="questao" id="q7">
+<p><b>7.</b> Sobre a equipe de Saúde Bucal na PNAB, é correto afirmar:</p>
+<ol><li>A modalidade I é composta por cirurgião-dentista, TSB e ASB.</li><li>A eSB atua de forma independente, sem vínculo com eSF ou eAB.</li><li>A modalidade I é composta por cirurgião-dentista e ASB ou TSB.</li><li>O cirurgião-dentista não realiza atendimento domiciliar.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Modalidade I: cirurgião-dentista e ASB ou TSB. Modalidade II: cirurgião-dentista, TSB e ASB (ou outro TSB).</span></p>
+<p class="errada">A) <s>modalidade I com TSB e ASB</s> → essa é a <b>modalidade II</b>.</p>
+<p class="errada">B) <s>independente</s> → a eSB é sempre <b>vinculada</b> a uma eSF ou eAB, com a mesma população e território.</p>
+<p class="errada">D) <s>não realiza atendimento domiciliar</s> → atende na UBS e, quando indicado, <b>no domicílio</b> e em espaços comunitários.</p>
+</details></div>
+
+<div class="questao" id="q8">
+<p><b>8.</b> São princípios da Política Nacional de Atenção Básica:</p>
+<ol><li>universalidade, equidade e integralidade.</li><li>territorialização, longitudinalidade e resolutividade.</li><li>universalidade, igualdade e hierarquização.</li><li>acolhimento, cogestão e ambiência.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Os princípios da PNAB são universalidade, equidade e integralidade.</span></p>
+<p class="errada">B) <s>princípios</s> → territorialização, longitudinalidade e resolutividade são <b>diretrizes</b> da PNAB.</p>
+<p class="errada">C) <s>igualdade e hierarquização</s> → a PNAB diz <b>equidade</b>; hierarquização é diretriz.</p>
+<p class="errada">D) <s>acolhimento, cogestão, ambiência</s> → vocabulário da <b>PNH</b>.</p>
+</details></div>
+
+<div class="questao" id="q9">
+<p><b>9.</b> Segundo a NR-32, no serviço de saúde:</p>
+<ol><li>o reencape de agulhas é permitido quando feito com as duas mãos.</li><li>o trabalhador pode sair do serviço com o jaleco, desde que o leve para lavar em casa.</li><li>a vacinação contra hepatite B é paga pelo trabalhador.</li><li>são vedados o reencape e a desconexão manual de agulhas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A NR-32 veda o reencape e a desconexão manual de agulhas (32.2.4.15).</span></p>
+<p class="errada">A) <s>permitido com as duas mãos</s> → é <b>vedado</b> em qualquer caso.</p>
+<p class="errada">B) <s>sair com o jaleco</s> → o trabalhador <b>não deve deixar o local de trabalho</b> com EPI e vestimentas usadas.</p>
+<p class="errada">C) <s>paga pelo trabalhador</s> → vacinas contra tétano, difteria e hepatite B são <b>gratuitas</b>.</p>
+</details></div>
+
+<div class="questao" id="q10">
+<p><b>10.</b> De acordo com a Lei 10.216/2001, a internação involuntária:</p>
+<ol><li>é a determinada pela Justiça.</li><li>dispensa laudo médico.</li><li>deve ser comunicada ao Ministério Público Estadual em até 72 horas.</li><li>é a que ocorre com o consentimento do usuário.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">A internação involuntária deve ser comunicada ao Ministério Público Estadual em 72 horas, e também na alta.</span></p>
+<p class="errada">A) <s>determinada pela Justiça</s> → essa é a <b>compulsória</b>.</p>
+<p class="errada">B) <s>dispensa laudo</s> → toda internação psiquiátrica exige <b>laudo médico circunstanciado</b>.</p>
+<p class="errada">D) <s>com consentimento</s> → essa é a <b>voluntária</b>; a involuntária é sem consentimento, a pedido de terceiro.</p>
+</details></div>
+
+<div class="questao" id="q11">
+<p><b>11.</b> São princípios da Política Nacional de Humanização (PNH):</p>
+<ol><li>acolhimento, clínica ampliada e ambiência.</li><li>transversalidade; indissociabilidade entre atenção e gestão; protagonismo, corresponsabilidade e autonomia dos sujeitos.</li><li>universalidade, equidade e integralidade.</li><li>regionalização, hierarquização e descentralização.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Princípios da PNH: transversalidade; indissociabilidade entre atenção e gestão; protagonismo, corresponsabilidade e autonomia.</span></p>
+<p class="errada">A) <s>princípios</s> → acolhimento e clínica ampliada são <b>diretrizes</b>.</p>
+<p class="errada">C) <s>universalidade, equidade, integralidade</s> → princípios da <b>PNAB</b>.</p>
+<p class="errada">D) <s>regionalização, hierarquização</s> → organização do SUS (CF e Lei 8.080).</p>
+</details></div>
+
+<div class="questao" id="q12">
+<p><b>12.</b> Para instituir uma Região de Saúde, o Decreto 7.508/2011 exige, no mínimo, ações e serviços de:</p>
+<ol><li>atenção primária, urgência e emergência, atenção psicossocial, atenção ambulatorial especializada e hospitalar e vigilância em saúde.</li><li>atenção primária e atenção hospitalar, apenas.</li><li>vigilância sanitária e assistência farmacêutica, apenas.</li><li>atenção primária, saúde bucal e reabilitação.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A Região de Saúde precisa ter, no mínimo, atenção primária, urgência e emergência, atenção psicossocial, atenção ambulatorial especializada e hospitalar e vigilância em saúde.</span></p>
+<p class="errada">B, C e D) <s>listas incompletas ou inventadas</s> → são <b>5</b> tipos (art. 5º).</p>
+</details></div>
+
+<div class="questao" id="q13">
+<p><b>13.</b> Para receber os recursos de que trata a Lei 8.142/1990, o município deve contar com, EXCETO:</p>
+<ol><li>Fundo de Saúde.</li><li>Conselho de Saúde com composição paritária.</li><li>plano de saúde e relatórios de gestão.</li><li>hospital municipal próprio.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A Lei 8.142 não exige hospital próprio; exige Fundo, Conselho paritário, plano, relatórios de gestão, contrapartida e comissão do PCCS.</span></p>
+</details></div>
+
+<div class="questao" id="q14">
+<p><b>14.</b> Segundo a Lei 8.080/1990, a participação da iniciativa privada no SUS:</p>
+<ol><li>é vedada.</li><li>ocorre com preferência para empresas de capital estrangeiro.</li><li>permite que o dono da entidade contratada ocupe cargo de chefia no SUS.</li><li>ocorre quando as disponibilidades do SUS forem insuficientes, com preferência para entidades filantrópicas e sem fins lucrativos.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">O SUS recorre ao setor privado quando seus serviços forem insuficientes, com preferência para entidades filantrópicas e sem fins lucrativos (arts. 24 e 25).</span></p>
+<p class="errada">A) <s>vedada</s> → é permitida em caráter <b>complementar</b>.</p>
+<p class="errada">B) <s>capital estrangeiro</s> → a CF <b>veda</b> capital estrangeiro na assistência, salvo casos previstos em lei.</p>
+<p class="errada">C) <s>pode ocupar chefia</s> → é <b>vedado</b> (art. 26, § 4º).</p>
+</details></div>
+
+<div class="questao" id="q15">
+<p><b>15.</b> Sobre os requisitos do Agente Comunitário de Saúde na Lei 11.350/2006, é correto:</p>
+<ol><li>basta ter o ensino fundamental completo.</li><li>deve residir na área da comunidade em que atuar desde a data de publicação do edital.</li><li>o curso de formação inicial tem carga mínima de 120 horas.</li><li>pode atuar fora da área geográfica definida, se houver necessidade.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">O ACS deve residir na área em que atua desde a publicação do edital, ter curso de formação inicial de 40 horas e ensino médio.</span></p>
+<p class="errada">A) <s>fundamental basta</s> → exige-se <b>ensino médio</b>; o fundamental só é aceito sem candidato com médio, com <b>3 anos</b> para concluir.</p>
+<p class="errada">C) <s>120 horas</s> → <b>40 horas</b>.</p>
+<p class="errada">D) <s>pode atuar fora</s> → é <b>vedada</b> a atuação fora da área.</p>
+</details></div>
+
+<div class="questao" id="q16">
+<p><b>16.</b> Integram a seguridade social, segundo o art. 194 da Constituição:</p>
+<ol><li>saúde, educação e previdência.</li><li>saúde, assistência social e moradia.</li><li>previdência, trabalho e assistência social.</li><li>saúde, previdência e assistência social.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A seguridade social assegura os direitos relativos à saúde, à previdência e à assistência social.</span></p>
+<p class="errada">A, B e C) <s>educação, moradia, trabalho</s> → são direitos sociais (art. 6º), mas <b>não</b> compõem a seguridade.</p>
+</details></div>
+
+<div class="questao" id="q17">
+<p><b>17.</b> Pela Lei 12.764/2012, a pessoa com transtorno do espectro autista:</p>
+<ol><li>é considerada pessoa com deficiência para todos os efeitos legais.</li><li>só tem direitos após diagnóstico definitivo.</li><li>não tem direito a acompanhante especializado na escola.</li><li>é atendida exclusivamente na rede privada.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A pessoa com TEA é considerada pessoa com deficiência para todos os efeitos legais.</span></p>
+<p class="errada">B) <s>diagnóstico definitivo</s> → direito ao diagnóstico precoce, <b>ainda que não definitivo</b>.</p>
+<p class="errada">C) <s>sem acompanhante</s> → com necessidade comprovada, <b>tem direito</b> a acompanhante especializado.</p>
+<p class="errada">D) <s>só rede privada</s> → tem direito a ações e serviços de saúde com atenção integral.</p>
+</details></div>
+
+<div class="questao" id="q18">
+<p><b>18.</b> A Lei 14.572/2023 alterou a Lei 8.080/1990 para:</p>
+<ol><li>criar a telessaúde.</li><li>incluir a saúde bucal no campo de atuação do SUS.</li><li>extinguir os Conselhos de Saúde.</li><li>criar o Pacto pela Saúde.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">A Lei 14.572/2023 incluiu a saúde bucal no campo de atuação do SUS (art. 6º, I, e, e § 4º) e entre as competências do município (art. 18, IV, f).</span></p>
+<p class="errada">A) <s>telessaúde</s> → veio pela <b>Lei 14.510/2022</b>.</p>
+<p class="errada">C) <s>extinguir Conselhos</s> → os Conselhos estão na Lei 8.142 e continuam valendo.</p>
+<p class="errada">D) <s>Pacto pela Saúde</s> → <b>Portaria 399/2006</b>.</p>
+</details></div>
+
+<div class="questao" id="q19">
+<p><b>19.</b> São componentes do Pacto pela Saúde 2006:</p>
+<ol><li>Pacto pela Vida, Pacto em Defesa do SUS e Pacto de Gestão.</li><li>Pacto pela Vida, Pacto Federativo e Pacto Fiscal.</li><li>Pacto de Gestão, Pacto pela Atenção Básica e Pacto pela Humanização.</li><li>Pacto em Defesa do SUS e Pacto de Financiamento, apenas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">O Pacto pela Saúde 2006 tem três componentes: Pacto pela Vida, Pacto em Defesa do SUS e Pacto de Gestão.</span></p>
+</details></div>
+
+<div class="questao" id="q20">
+<p><b>20.</b> Sobre o funcionamento dos Conselhos de Saúde (Resolução CNS 453/2012), é correto:</p>
+<ol><li>vereadores podem ser conselheiros representando os usuários.</li><li>o plenário se reúne no mínimo a cada mês, e as reuniões são abertas ao público.</li><li>a função de conselheiro é remunerada.</li><li>o presidente é sempre o secretário de saúde.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">O plenário do Conselho de Saúde se reúne no mínimo a cada mês, e as reuniões são abertas ao público.</span></p>
+<p class="errada">A) <s>vereadores podem</s> → membros eleitos do Legislativo, do Judiciário e do MP <b>não podem</b> ser conselheiros.</p>
+<p class="errada">C) <s>remunerada</s> → <b>não é remunerada</b>; é de relevância pública.</p>
+<p class="errada">D) <s>sempre o secretário</s> → o presidente é <b>eleito entre os membros</b>, em plenária.</p>
+</details></div>
+
+<h2 id="respostas">16. Respostas que a banca dá como certas</h2>
+<p>Afirmações corretas, agrupadas pelos ramos do mapa. Leia em voz alta na revisão da véspera.</p>
+<h3>Constituição</h3>
+<ul class="respostas">
+  <li>A seguridade social abrange saúde, previdência e assistência social.</li>
+  <li>A saúde é direito de todos e dever do Estado, com acesso universal e igualitário.</li>
+  <li>O atendimento é integral, com prioridade para as atividades preventivas.</li>
+  <li>ACS e ACE têm atuação obrigatória e permanente no SUS (EC 140/2026), e é vedada sua contratação temporária ou terceirizada, salvo emergência em saúde pública.</li>
+  <li>O privado participa do SUS de forma complementar, com preferência para filantrópicas e sem fins lucrativos.</li>
+</ul>
+<h3>Lei 8.080</h3>
+<ul class="respostas">
+  <li>A lei diz igualdade da assistência, sem preconceitos ou privilégios.</li>
+  <li>A saúde bucal integra o campo de atuação do SUS e é executada pelo município.</li>
+  <li>A direção do SUS é única em cada esfera de governo.</li>
+  <li>CIB e CIT são foros de negociação e pactuação entre gestores.</li>
+  <li>Atenção humanizada é princípio do SUS (art. 7º, XVI).</li>
+</ul>
+<h3>Lei 8.142 e Resolução 453</h3>
+<ul class="respostas">
+  <li>A Conferência se reúne a cada 4 anos; o Conselho é permanente e deliberativo.</li>
+  <li>Usuários têm 50% das vagas; trabalhadores, 25%; governo e prestadores, 25%.</li>
+  <li>Pelo menos 70% dos recursos vão para os municípios.</li>
+  <li>Legisladores, juízes e membros do Ministério Público não podem ser conselheiros.</li>
+</ul>
+<h3>Decreto 7.508</h3>
+<ul class="respostas">
+  <li>As 4 Portas de Entrada: atenção primária, urgência e emergência, atenção psicossocial e serviços especiais de acesso aberto.</li>
+  <li>O acesso é ordenado pela atenção primária, pela gravidade do risco e pelo critério cronológico.</li>
+  <li>A RENAME só pode conter produtos registrados na Anvisa.</li>
+</ul>
+<h3>PNAB e equipe</h3>
+<ul class="respostas">
+  <li>Princípios da PNAB: universalidade, equidade e integralidade.</li>
+  <li>De 2.000 a 3.500 pessoas por equipe; no máximo 750 por ACS em áreas de risco.</li>
+  <li>Na Saúde da Família, 40 horas semanais para todos os profissionais.</li>
+  <li>eSB modalidade I: dentista + ASB ou TSB; modalidade II: dentista + TSB + ASB.</li>
+  <li>O cirurgião-dentista supervisiona o TSB e o ASB.</li>
+</ul>
+<h3>Políticas de cuidado</h3>
+<ul class="respostas">
+  <li>Princípios da PNH: transversalidade, indissociabilidade entre atenção e gestão, protagonismo.</li>
+  <li>A NR-32 veda reencapar e desconectar agulhas com as mãos.</li>
+  <li>Internação involuntária: comunicar ao Ministério Público Estadual em 72 horas.</li>
+  <li>A RAPS tem 7 componentes, começando pela Atenção Básica.</li>
+  <li>A pessoa com TEA é pessoa com deficiência para todos os efeitos legais.</li>
+</ul>
+
+<h2 id="fontes">17. Fontes oficiais usadas</h2>
+<p>Conferido em 27/10/2026. Leis e Constituição na redação atualizada do Planalto. As portarias foram lidas no texto publicado na data indicada; alterações posteriores a elas não foram conferidas (a PNAB, por exemplo, foi lida na versão do DOU de 2017).</p>
+<p><b>Não lidos no texto oficial:</b> Portarias 699/2006 e 372/2007 (aqui só pelo nome), Política Nacional de Educação Especial na Perspectiva da Educação Inclusiva (2008) e Diretrizes do Ministério da Saúde para a atenção à pessoa com TEA.</p>
+<ul class="fontes">
+  <li>Constituição Federal, texto compilado: planalto.gov.br/ccivil_03/constituicao/constituicao.htm</li>
+  <li>Lei 8.080/1990: planalto.gov.br/ccivil_03/leis/l8080.htm</li>
+  <li>Lei 8.142/1990: planalto.gov.br/ccivil_03/leis/l8142.htm</li>
+  <li>Decreto 7.508/2011: planalto.gov.br/ccivil_03/_ato2011-2014/2011/decreto/d7508.htm</li>
+  <li>Lei 11.350/2006, Lei 10.216/2001, Lei 12.764/2012, Lei 13.438/2017, Lei 13.935/2019, Lei 14.254/2021: planalto.gov.br</li>
+  <li>Lei 13.146/2015 (LBI), NR-32 e HumanizaSUS – Documento Base: cópias oficiais na pasta <code>material/saude/</code></li>
+  <li>Resolução CNS 453/2012: cópia do DOU de 06/06/2012, publicada pela Secretaria da Saúde de SP</li>
+  <li>Portaria 2.436/2017 (PNAB): cópia do DOU de 22/09/2017 publicada pela Prefeitura de Rio Grande (RS)</li>
+  <li>Portaria 399/2006: cópia publicada pela Secretaria da Saúde do Paraná</li>
+  <li>Portaria 3.088/2011 (RAPS): cópia publicada pela Secretaria da Saúde de Mato Grosso</li>
+  <li>Portaria 1.996/2007: cópia publicada pela Secretaria da Saúde de SP</li>
+  <li>Portaria 1.130/2015 (PNAISC): texto republicado pelo Conass</li>
+</ul>
+<p class="sub">A Biblioteca Virtual em Saúde do Ministério bloqueou o acesso automático. Por isso as portarias foram lidas nas cópias oficiais de secretarias de saúde listadas acima.</p>
+</main>
+
+<footer>
+  Material de estudo do concurso de Barão de Cotegipe. Prevalece sempre o texto oficial da norma e do edital.
+  <br><a class="voltar" href="../disciplinas/index.html#saude">← Voltar às trilhas das disciplinas</a>
+</footer>
+<script>
+  // Na impressão, abre os comentários das questões para que saiam no papel.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+</body>
+</html>

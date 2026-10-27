@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apostila de Matemática e Raciocínio Lógico para o concurso de Odontólogo/PSF de Barão de Cotegipe: lógica, matemática financeira, funções, matrizes, geometria, estatística, combinatória e probabilidade, com exemplos resolvidos e 20 questões comentadas.">
+<title>Apostila de Matemática e Lógica</title>
+<style>
+  :root {
+    --fundo: #fbfaf7; --texto: #1d2125; --suave: #5b6470; --linha: #d9dde2; --cartao: #ffffff;
+    --conceito: #1f6fb2; --conceito-bg: #e8f1fa;
+    --dica: #237a45; --dica-bg: #e7f5ec;
+    --cai: #b45f06; --cai-bg: #fdf0e1;
+    --pega: #b3261e; --pega-bg: #fbe9e7;
+    --numero: #6b4aa5; --numero-bg: #f1ecfa;
+    --foco: #1f6fb2;
+    color-scheme: light dark;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+      --conceito: #79b8ee; --conceito-bg: #182a3b;
+      --dica: #74cf95; --dica-bg: #17301f;
+      --cai: #f2b264; --cai-bg: #3a2814;
+      --pega: #f08a80; --pega-bg: #3b1d1a;
+      --numero: #bfa5f0; --numero-bg: #2a2140;
+      --foco: #79b8ee;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+    --conceito: #79b8ee; --conceito-bg: #182a3b;
+    --dica: #74cf95; --dica-bg: #17301f;
+    --cai: #f2b264; --cai-bg: #3a2814;
+    --pega: #f08a80; --pega-bg: #3b1d1a;
+    --numero: #bfa5f0; --numero-bg: #2a2140;
+    --foco: #79b8ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); }
+  main, header, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: .4rem 0; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.4rem 0 .6rem; padding-top: .6rem; border-top: 2px solid var(--linha); scroll-margin-top: 12px; }
+  h3 { font-size: 1.15rem; margin: 1.4rem 0 .4rem; }
+  a { color: var(--conceito); }
+  a:focus-visible, summary:focus-visible, button:focus-visible, .mapa:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .sub { color: var(--suave); margin: 0; }
+  .voltar { display: inline-flex; align-items: center; min-height: 44px; }
+  .caixa { border-left: 5px solid; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  .caixa > strong:first-child { display: block; margin-bottom: 2px; }
+  .conceito { border-color: var(--conceito); background: var(--conceito-bg); }
+  .dica { border-color: var(--dica); background: var(--dica-bg); }
+  .cai { border-color: var(--cai); background: var(--cai-bg); }
+  .pega { border-color: var(--pega); background: var(--pega-bg); }
+  .numero { border-color: var(--numero); background: var(--numero-bg); }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; font-size: .9rem; }
+  .legenda li { padding: 2px 10px; border-radius: 0 6px 6px 0; border-left: 5px solid; }
+  .indice { columns: 2 260px; padding-left: 1.2rem; }
+  .indice li { break-inside: avoid; margin: 2px 0; }
+  .indice a { display: inline-block; min-height: 32px; padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--linha); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--cartao); }
+  .tabela { overflow-x: auto; }
+  .mapa { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 8px; margin: 14px 0; }
+  .mapa svg { width: 100%; height: auto; display: block; }
+  .mapa svg text { font-family: system-ui, sans-serif; fill: var(--texto); }
+  .mapa .c-ramo { stroke-width: 3; fill: none; }
+  .mapa .no { stroke-width: 2; }
+  .mapa .t-titulo { font-weight: 700; font-size: 15px; }
+  .mapa .t-folha { font-size: 12.5px; }
+  .s-conceito { stroke: var(--conceito); } .f-conceito { fill: var(--conceito-bg); }
+  .s-dica { stroke: var(--dica); } .f-dica { fill: var(--dica-bg); }
+  .s-cai { stroke: var(--cai); } .f-cai { fill: var(--cai-bg); }
+  .s-pega { stroke: var(--pega); } .f-pega { fill: var(--pega-bg); }
+  .s-numero { stroke: var(--numero); } .f-numero { fill: var(--numero-bg); }
+  .s-centro { stroke: var(--texto); } .f-centro { fill: var(--cartao); }
+  .questao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+  .questao ol { list-style: upper-alpha; padding-left: 1.6rem; margin: 6px 0; }
+  .questao li { margin: 3px 0; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 6px; color: var(--conceito); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; display: inline-block; transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .certa { background: var(--dica-bg); border-left: 5px solid var(--dica); padding: 6px 10px; border-radius: 6px; margin: 6px 0; }
+  .errada { color: var(--suave); margin: 4px 0; }
+  .errada s { color: var(--pega); }
+  .grava { font-weight: 700; }
+  .respostas li { margin: 4px 0; }
+  .fontes li { margin: 3px 0; word-break: break-word; }
+  footer { padding: 32px 16px 48px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 1024px) { :root { font-size: 16.5px; } }
+  .mapa-dica { display: none; color: var(--suave); font-size: .9rem; margin: 0 0 4px; }
+  @media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .mapa { overflow-x: auto; }
+    .mapa svg { min-width: 900px; }
+    .mapa-dica { display: block; }
+    .indice a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+    th, td { padding: 6px; font-size: .9rem; }
+  }
+  @media (max-width: 480px) {
+    :root { font-size: 16px; }
+    .caixa, .questao { padding: 9px 10px; }
+  }
+  @media print {
+    details { display: block; } details > * { display: block; }
+    a { color: inherit; } .voltar { display: none; }
+    h2 { break-after: avoid; } .questao, .caixa, .mapa { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="voltar" href="../disciplinas/index.html#matematica">← Voltar às trilhas das disciplinas</a>
+  <h1>Matemática e Raciocínio Lógico</h1>
+  <p class="sub">Concurso de Barão de Cotegipe (RS), Odontólogo/PSF, Instituto DOM, prova em 22/11/2026</p>
+
+  <div class="caixa conceito">
+    <strong>O que é esta página</strong>
+    Uma apostila para estudar sozinho e offline. Ela percorre os 20 itens do programa de Matemática e Raciocínio Lógico do Nível Superior, de forma enxuta: cada tema tem passos curtos, um exemplo resolvido com a conta aberta e um "como reconhecer o tipo de questão". Todas as contas e os gabaritos foram conferidos por programa de computador. As fontes estão no final.
+  </div>
+
+  <div class="caixa cai">
+    <strong>Quanto isso vale na prova</strong>
+    5 questões (10 pontos, ou seja, 2 pontos cada) de um total de 30, com 4 alternativas (A, B, C, D). O programa é amplo (20 itens) e o nível do edital é avançado; como são só 5 questões, o caminho inteligente é dominar primeiro o que dá mais retorno para quem não é de exatas: <b>lógica</b> (quase sem fórmula), <b>porcentagem e juros</b>, <b>PA/PG</b>, <b>contagem e probabilidade</b> e as <b>fórmulas básicas de geometria</b>.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Sobre "o que mais cai"</strong>
+    O Instituto DOM não publica os cadernos de prova, então não há como medir o que a banca mais cobra, e esta apostila não afirma frequência nenhuma. A ordem abaixo segue o programa do edital, adaptada pela relação esforço/retorno: o que se aprende raciocinando vem antes do que exige decorar fórmula.
+  </div>
+
+  <ul class="legenda" aria-label="Legenda de cores">
+    <li class="conceito">Azul: conceito</li>
+    <li class="dica">Verde: dica ou resposta certa</li>
+    <li class="cai">Laranja: prioridade (melhor retorno)</li>
+    <li class="pega">Vermelho: pegadinha</li>
+    <li class="numero">Roxo: número, fórmula, percentual</li>
+  </ul>
+
+  <h2 id="indice" style="border-top:0">Ordem de estudo</h2>
+  <ol class="indice">
+    <li><a href="#mapa">Mapa geral e o programa</a></li>
+    <li><a href="#logica">Lógica proposicional</a></li>
+    <li><a href="#quant">Quantificadores, silogismos e conjuntos</a></li>
+    <li><a href="#argumentos">Argumentos, validade e falácias</a></li>
+    <li><a href="#jogos">Verdades e mentiras, jogos de lógica e espaço</a></li>
+    <li><a href="#razao">Razão, porcentagem e regra de três</a></li>
+    <li><a href="#financeira">Matemática financeira</a></li>
+    <li><a href="#pa">Progressões: PA e PG</a></li>
+    <li><a href="#funcoes">Funções, exponencial e logaritmo</a></li>
+    <li><a href="#matrizes">Matrizes, determinantes e sistemas</a></li>
+    <li><a href="#analitica">Geometria analítica</a></li>
+    <li><a href="#trigo">Trigonometria</a></li>
+    <li><a href="#plana">Geometria plana</a></li>
+    <li><a href="#solidos">Sólidos geométricos</a></li>
+    <li><a href="#estatistica">Estatística e Bayes</a></li>
+    <li><a href="#combinatoria">Análise combinatória</a></li>
+    <li><a href="#probabilidade">Probabilidade</a></li>
+    <li><a href="#gavetas">Otimização e princípio das gavetas</a></li>
+    <li><a href="#discreta">Divisibilidade, MDC/MMC e congruência</a></li>
+    <li><a href="#modelagem">Modelagem e leitura de gráficos</a></li>
+    <li><a href="#questoes">Questões comentadas</a></li>
+    <li><a href="#respostas">Respostas que a banca dá como certas</a></li>
+    <li><a href="#fontes">Fontes</a></li>
+  </ol>
+</header>
+
+<main>
+
+<h2 id="mapa">1. Mapa geral e o programa</h2>
+<p>Do centro para fora: cada ramo é um bloco do programa, com a ideia que mais rende.</p>
+<p class="mapa-dica">No celular, arraste o mapa para o lado para ver tudo.</p>
+<div class="mapa" role="region" tabindex="0" aria-label="Mapa mental de Matemática e Raciocínio Lógico (no celular, role para o lado)">
+<svg viewBox="0 0 960 620" role="img" aria-labelledby="mapa-tit mapa-desc">
+  <title id="mapa-tit">Mapa mental de Matemática e Raciocínio Lógico</title>
+  <desc id="mapa-desc">No centro, Matemática e Lógica. Seis ramos: lógica e argumentos, matemática financeira, funções e progressões, matrizes e geometria analítica, geometria plana e sólidos, contagem, probabilidade e estatística.</desc>
+  <path class="c-ramo s-cai" d="M480 310 C 380 250, 330 140, 250 110"/>
+  <path class="c-ramo s-numero" d="M480 310 C 580 250, 630 140, 710 110"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 380 330, 320 320, 250 315"/>
+  <path class="c-ramo s-dica" d="M480 310 C 580 330, 640 320, 710 315"/>
+  <path class="c-ramo s-pega" d="M480 310 C 380 380, 330 480, 250 510"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 580 380, 630 480, 710 510"/>
+  <rect class="no s-centro f-centro" x="400" y="280" width="160" height="60" rx="30"/>
+  <text x="480" y="306" text-anchor="middle" class="t-titulo">Matemática</text>
+  <text x="480" y="325" text-anchor="middle" class="t-folha">e lógica: 5 questões</text>
+
+  <rect class="no s-cai f-cai" x="20" y="40" width="300" height="150" rx="12"/>
+  <text x="34" y="64" class="t-titulo">Lógica e argumentos</text>
+  <text x="34" y="88" class="t-folha">Conectivos e tabela-verdade</text>
+  <text x="34" y="108" class="t-folha">Não(se p então q) = p e não q</text>
+  <text x="34" y="128" class="t-folha">Não(todo) = existe um que não</text>
+  <text x="34" y="148" class="t-folha">Falácia: afirmar o consequente</text>
+  <text x="34" y="168" class="t-folha">Gavetas: pior caso + 1</text>
+
+  <rect class="no s-numero f-numero" x="640" y="40" width="300" height="150" rx="12"/>
+  <text x="654" y="64" class="t-titulo">Matemática financeira</text>
+  <text x="654" y="88" class="t-folha">Composta: M = C·(1+i)ⁿ</text>
+  <text x="654" y="108" class="t-folha">Nominal ÷ períodos = taxa do período</text>
+  <text x="654" y="128" class="t-folha">Desconto comercial &gt; racional</text>
+  <text x="654" y="148" class="t-folha">SAC: amortização fixa</text>
+  <text x="654" y="168" class="t-folha">Price: parcela fixa</text>
+
+  <rect class="no s-conceito f-conceito" x="20" y="250" width="230" height="142" rx="12"/>
+  <text x="34" y="274" class="t-titulo">Funções, PA e PG</text>
+  <text x="34" y="298" class="t-folha">Exponencial: 2ˣ cresce</text>
+  <text x="34" y="318" class="t-folha">log(a·b) = log a + log b</text>
+  <text x="34" y="338" class="t-folha">PA soma: n·(a₁+aₙ)/2</text>
+  <text x="34" y="358" class="t-folha">PG termo: a₁·qⁿ⁻¹</text>
+  <text x="34" y="378" class="t-folha">MMC e MDC: mod = resto</text>
+
+  <rect class="no s-dica f-dica" x="710" y="250" width="230" height="142" rx="12"/>
+  <text x="724" y="274" class="t-titulo">Matrizes, reta e ciclo</text>
+  <text x="724" y="298" class="t-folha">Det 3×3: Sarrus; Cramer: Dx/D</text>
+  <text x="724" y="318" class="t-folha">D = 0: SPI ou SI</text>
+  <text x="724" y="338" class="t-folha">Distância: √(Δx² + Δy²)</text>
+  <text x="724" y="358" class="t-folha">Perpendicular: m₁·m₂ = −1</text>
+  <text x="724" y="378" class="t-folha">sen² + cos² = 1</text>
+
+  <rect class="no s-pega f-pega" x="20" y="440" width="300" height="160" rx="12"/>
+  <text x="34" y="464" class="t-titulo">Geometria plana e sólidos</text>
+  <text x="34" y="488" class="t-folha">Semelhança: área × k², volume × k³</text>
+  <text x="34" y="508" class="t-folha">Tales: paralelas dão proporção</text>
+  <text x="34" y="528" class="t-folha">Cilindro πr²h · Cone πr²h/3</text>
+  <text x="34" y="548" class="t-folha">Esfera 4πr³/3 · área 4πr²</text>
+  <text x="34" y="568" class="t-folha">Tronco: h/3 · (B + √(B·b) + b)</text>
+
+  <rect class="no s-conceito f-conceito" x="640" y="440" width="300" height="160" rx="12"/>
+  <text x="654" y="464" class="t-titulo">Contagem, chance e dados</text>
+  <text x="654" y="488" class="t-folha">Arranjo: ordem importa; combinação: não</text>
+  <text x="654" y="508" class="t-folha">P = casos favoráveis ÷ possíveis</text>
+  <text x="654" y="528" class="t-folha">Binomial: C(n,k)·pᵏ·(1−p)ⁿ⁻ᵏ</text>
+  <text x="654" y="548" class="t-folha">DP = √variância; CV = DP ÷ média</text>
+  <text x="654" y="568" class="t-folha">Bayes: P(A|B) = P(A e B) ÷ P(B)</text>
+</svg>
+</div>
+
+<h3>Onde cada item do programa está nesta apostila</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Itens do edital</th><th scope="col">Seção</th><th scope="col">Profundidade</th></tr>
+  <tr><td>12 Lógica proposicional; 14 Argumentos e falácias</td><td><a href="#logica">2</a>, <a href="#argumentos">4</a></td><td>completa, com exemplos e questões</td></tr>
+  <tr><td>13 Quantificadores e silogismos; 16 Conjuntos</td><td><a href="#quant">3</a></td><td>completa; relações e funções só em definição</td></tr>
+  <tr><td>20 Jogos de lógica e raciocínio espacial</td><td><a href="#jogos">5</a></td><td>técnica geral e exemplos</td></tr>
+  <tr><td>1 Matemática financeira</td><td><a href="#razao">6</a>, <a href="#financeira">7</a></td><td>completa nos 4 subtemas do edital</td></tr>
+  <tr><td>3 PA e PG; 2 Funções</td><td><a href="#pa">8</a>, <a href="#funcoes">9</a></td><td>fórmulas e exemplos; gráficos só descritos</td></tr>
+  <tr><td>4 Matrizes e sistemas; 5 Geometria analítica; 6 Trigonometria</td><td><a href="#matrizes">10</a>, <a href="#analitica">11</a>, <a href="#trigo">12</a></td><td>essencial; inequações trigonométricas e cônicas apenas em reconhecimento</td></tr>
+  <tr><td>7 Geometria plana; 8 Sólidos</td><td><a href="#plana">13</a>, <a href="#solidos">14</a></td><td>fórmulas e um exemplo por sólido</td></tr>
+  <tr><td>9 Estatística; 10 Combinatória; 11 Probabilidade</td><td><a href="#estatistica">15</a>, <a href="#combinatoria">16</a>, <a href="#probabilidade">17</a></td><td>essencial; inferência (testes e intervalos) fora</td></tr>
+  <tr><td>15 Otimização e gavetas; 17 Matemática discreta</td><td><a href="#gavetas">18</a>, <a href="#discreta">19</a></td><td>essencial</td></tr>
+  <tr><td>18 Modelagem; 19 Análise de dados e gráficos</td><td><a href="#modelagem">20</a></td><td>método e exemplos</td></tr>
+</table></div>
+
+<h2 id="logica">2. Lógica proposicional</h2>
+<p>Proposição é uma frase que pode ser dita <b>verdadeira (V)</b> ou <b>falsa (F)</b>. Ordens, perguntas e frases com "x" solto não são proposições. A lógica monta frases novas ligando proposições com <b>conectivos</b>.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Conectivo</th><th scope="col">Símbolo</th><th scope="col">Quando é verdadeiro</th><th scope="col">Como gravar</th></tr>
+  <tr><td>não p</td><td>¬p</td><td>quando p é F</td><td>troca V por F</td></tr>
+  <tr><td>p e q</td><td>p ∧ q</td><td>só quando <b>as duas</b> são V</td><td>basta um F para ser F</td></tr>
+  <tr><td>p ou q</td><td>p ∨ q</td><td>quando <b>pelo menos uma</b> é V</td><td>só é F se as duas são F</td></tr>
+  <tr><td>ou p ou q</td><td>p ⊻ q</td><td>quando <b>exatamente uma</b> é V</td><td>"ou...ou" é exclusivo</td></tr>
+  <tr><td>se p, então q</td><td>p → q</td><td>é F <b>só</b> quando p é V e q é F</td><td>promessa quebrada</td></tr>
+  <tr><td>p se e somente se q</td><td>p ↔ q</td><td>quando p e q têm o <b>mesmo</b> valor</td><td>"vale nos dois sentidos"</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Tabela-verdade do "se...então" (a que mais confunde)</strong>
+p V, q V → <b>V</b> · p V, q F → <b>F</b> · p F, q V → <b>V</b> · p F, q F → <b>V</b>. Pense numa promessa: "se eu passar, te pago um jantar". Só é mentira se passei e não paguei. Se não passei, a promessa não foi descumprida, qualquer que seja o jantar.</div>
+
+<h3>Tautologia, contradição, contingência</h3>
+<ul>
+  <li><b>Tautologia:</b> a última coluna da tabela é toda V (exemplo: p ∨ ¬p, "chove ou não chove").</li>
+  <li><b>Contradição:</b> a última coluna é toda F (exemplo: p ∧ ¬p, "chove e não chove").</li>
+  <li><b>Contingência:</b> tem V e F (exemplo: p ∧ q).</li>
+</ul>
+<div class="caixa dica"><strong>Atalho: método da falsidade</strong>
+Para saber se uma proposição composta é tautologia, tente deixá-la <b>falsa</b>. Se for impossível, é tautologia. Se for possível, não é. Para provar contingência, basta achar uma linha V e uma linha F.</div>
+
+<h3>Equivalências e negações que você precisa saber de cor</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Frase</th><th scope="col">Equivale a</th><th scope="col">Exemplo</th></tr>
+  <tr><td>p → q</td><td><b>¬q → ¬p</b> (contrapositiva) e <b>¬p ∨ q</b></td><td>"Se tem cárie, vai ao dentista" = "Se não vai ao dentista, não tem cárie" = "Não tem cárie ou vai ao dentista"</td></tr>
+  <tr><td>¬(p → q)</td><td><b>p ∧ ¬q</b></td><td>Negar a promessa: "tem cárie <b>e</b> não vai ao dentista"</td></tr>
+  <tr><td>¬(p ∧ q)</td><td><b>¬p ∨ ¬q</b> (De Morgan)</td><td>Não é "A e B" = "não A ou não B"</td></tr>
+  <tr><td>¬(p ∨ q)</td><td><b>¬p ∧ ¬q</b> (De Morgan)</td><td>Não é "A ou B" = "não A e não B"</td></tr>
+  <tr><td>p ↔ q</td><td>(p → q) ∧ (q → p)</td><td>"Só se, e somente se"</td></tr>
+  <tr><td>¬(p ↔ q)</td><td>p ⊻ q (ou exclusivo)</td><td>"Têm valores diferentes"</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinha: recíproca e inversa NÃO são equivalentes</strong>
+De p → q saem três primas: a <b>recíproca</b> (q → p), a <b>inversa</b> (¬p → ¬q) e a <b>contrapositiva</b> (¬q → ¬p). Só a contrapositiva é equivalente à original. A negação do "se...então" <b>não começa com "se"</b>: é uma frase com "e".</div>
+<div class="caixa conceito"><strong>Macete para negar o "se...então"</strong>
+<b>Mantém a primeira, troca o "se" por "e", nega a segunda.</b> "Se chove, a rua molha" → "Chove <b>e</b> a rua <b>não</b> molha".</div>
+
+<h3>Exemplo resolvido</h3>
+<p>Qual é a negação de "Não fumo ou faço exercício"?</p>
+<ol>
+  <li>A frase é "¬p ∨ q" (p = fumo; q = faço exercício).</li>
+  <li>De Morgan: nega-se o "ou" trocando por "e" e negando cada parte: ¬(¬p) ∧ ¬q.</li>
+  <li>Dupla negação volta ao positivo: <b>p ∧ ¬q</b>, ou seja, "<b>Fumo e não faço exercício</b>".</li>
+</ol>
+<div class="caixa dica"><strong>Como reconhecer o tipo de questão</strong>
+Se o enunciado pede "a negação de", "equivale a", "é logicamente equivalente" ou "tautologia", é caso de <b>tabela-verdade ou regra de equivalência</b>. Eliminar alternativas ajuda: teste com valores simples (p = V, q = F) e veja quais alternativas dão o mesmo resultado.</div>
+
+<h2 id="quant">3. Quantificadores, silogismos e conjuntos</h2>
+<p>"Todo", "nenhum", "algum" e "existe" falam de grupos. Negar um quantificador é um dos pontos mais cobrados, e o erro clássico é negar "todo" com "nenhum".</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Frase</th><th scope="col">Negação</th><th scope="col">Atenção</th></tr>
+  <tr><td>Todo A é B</td><td><b>Existe A que não é B</b> (algum A não é B)</td><td>não é "nenhum A é B"</td></tr>
+  <tr><td>Nenhum A é B</td><td><b>Algum A é B</b></td><td>não é "todo A é B"</td></tr>
+  <tr><td>Algum A é B</td><td><b>Nenhum A é B</b></td><td>"existe" = "algum"</td></tr>
+  <tr><td>Algum A não é B</td><td><b>Todo A é B</b></td><td></td></tr>
+</table></div>
+<div class="caixa conceito"><strong>Como lembrar</strong>
+Para negar "todo", basta <b>um</b> contraexemplo. Para negar "nenhum", basta <b>um</b> caso. A negação de uma frase universal (todo/nenhum) é existencial (algum), e vice-versa; troca-se também a parte final (é ↔ não é) quando se nega o "todo".</div>
+
+<h3>Silogismo e diagramas</h3>
+<p>Desenhe cada grupo como um círculo. "Todo A é B": círculo A <b>dentro</b> de B. "Nenhum A é B": círculos <b>separados</b>. "Algum A é B": círculos que <b>se cruzam</b>.</p>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+Premissas: "Todo cirurgião-dentista tem registro no CRO" (A dentro de B) e "Nenhum profissional com registro atua como clandestino" (B separado de C). Como A está dentro de B, e B não toca C, então A não toca C. Conclusão válida: <b>"Nenhum cirurgião-dentista atua como clandestino"</b>. A inversa ("todo com registro é dentista") não segue: B pode ser maior que A.</div>
+<div class="caixa pega"><strong>Pegadinha: conclusão que parece boa</strong>
+Só vale a conclusão que é verdadeira em <b>todos</b> os desenhos possíveis. Em prova de concurso, "Todo A é B" permite concluir "Algum A é B" (o círculo A está dentro de B, então eles têm parte em comum); mas não permite concluir "Todo B é A". Em dúvida, procure um desenho que derrube a alternativa.</div>
+
+<h3>Conjuntos e diagramas de Venn</h3>
+<ul>
+  <li><b>União (A ∪ B):</b> está em A <b>ou</b> em B. <b>Interseção (A ∩ B):</b> está nos dois. <b>Diferença (A − B):</b> está em A e não em B. <b>Complementar:</b> o que falta para o universo.</li>
+  <li><b>Dois conjuntos:</b> n(A ∪ B) = n(A) + n(B) − n(A ∩ B).</li>
+  <li><b>Três conjuntos:</b> n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A∩B) − n(A∩C) − n(B∩C) + n(A∩B∩C).</li>
+  <li><b>Relação</b> de A em B é qualquer conjunto de pares (a, b). <b>Função</b> é a relação em que cada elemento de A tem <b>exatamente um</b> correspondente em B.</li>
+</ul>
+<div class="caixa numero"><strong>Exemplo resolvido (3 conjuntos)</strong>
+Num grupo, 30 pessoas fazem exame A, 25 fazem B, 20 fazem C; 10 fazem A e B, 8 fazem A e C, 6 fazem B e C, e 4 fazem os três. Total que faz pelo menos um exame: 30 + 25 + 20 − 10 − 8 − 6 + 4 = <b>55</b>. Dica prática: comece <b>sempre pelo meio</b> do Venn (os 4 dos três exames) e vá subtraindo para fora.</div>
+
+<h2 id="argumentos">4. Argumentos, validade e falácias</h2>
+<p>Argumento é um conjunto de <b>premissas</b> e uma <b>conclusão</b>. Ele é <b>válido</b> quando é impossível as premissas serem verdadeiras e a conclusão falsa. Validade é sobre a <b>forma</b>, não sobre a verdade da conclusão no mundo real.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Forma válida</th><th scope="col">Esquema</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Modus ponens</td><td>p → q; p; logo q</td><td>Se o selo é verde, está estéril. O selo é verde. Logo está estéril.</td></tr>
+  <tr><td>Modus tollens</td><td>p → q; ¬q; logo ¬p</td><td>Se está estéril, o selo é verde. O selo não é verde. Logo não está estéril.</td></tr>
+  <tr><td>Silogismo hipotético</td><td>p → q; q → r; logo p → r</td><td>Se há cárie, dói; se dói, procura o dentista; logo, se há cárie, procura o dentista.</td></tr>
+  <tr><td>Silogismo disjuntivo</td><td>p ∨ q; ¬p; logo q</td><td>Ou atende de manhã ou à tarde. Não atende de manhã. Logo atende à tarde.</td></tr>
+</table></div>
+<h3>Falácias formais (as duas mais cobradas)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Falácia</th><th scope="col">Esquema</th><th scope="col">Por que erra</th></tr>
+  <tr><td>Afirmação do consequente</td><td>p → q; q; logo p</td><td>q pode acontecer por outro motivo. "Se tem cárie, vai ao dentista. Foi ao dentista. Logo tem cárie" (talvez fosse a revisão).</td></tr>
+  <tr><td>Negação do antecedente</td><td>p → q; ¬p; logo ¬q</td><td>q pode ocorrer sem p. "Se tem cárie, vai ao dentista. Não tem cárie. Logo não vai ao dentista" (pode ir fazer limpeza).</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Macete: o "se" só funciona de dois jeitos</strong>
+Com p → q você pode <b>afirmar p</b> (e concluir q) ou <b>negar q</b> (e concluir ¬p). Afirmar q ou negar p <b>não conclui nada</b>. Quando a questão dá essas premissas, a resposta certa costuma ser "nada se pode concluir".</div>
+<h3>Falácias informais (reconhecer pelo nome)</h3>
+<ul>
+  <li><b>Ataque pessoal (ad hominem):</b> ataca quem fala, não o argumento.</li>
+  <li><b>Apelo à autoridade:</b> "é verdade porque fulano famoso disse".</li>
+  <li><b>Falso dilema:</b> só oferece duas opções quando existem outras.</li>
+  <li><b>Generalização apressada:</b> conclui sobre todos a partir de poucos casos.</li>
+  <li><b>Petição de princípio (círculo):</b> a conclusão já está embutida na premissa.</li>
+  <li><b>Apelo à ignorância:</b> "ninguém provou que é falso, logo é verdadeiro".</li>
+  <li><b>Causa falsa (post hoc):</b> "aconteceu depois, logo foi por causa".</li>
+  <li><b>Espantalho:</b> distorce a posição do outro para atacá-la.</li>
+</ul>
+<div class="caixa conceito"><strong>Consistência das premissas</strong>
+Um conjunto de premissas é <b>consistente</b> se existe pelo menos uma situação em que todas são verdadeiras ao mesmo tempo. "Se chove, a rua molha. Chove. A rua não molha." é <b>inconsistente</b>: as três não podem ser V juntas. Para testar, tente atribuir valores de V/F que satisfaçam todas.</div>
+<div class="caixa dica"><strong>Como reconhecer o tipo de questão</strong>
+Verbos como "conclui-se", "é correto afirmar" e "argumento válido" pedem <b>teste de validade</b>. Estratégia: assuma as premissas verdadeiras (comece pela mais simples, uma frase sem "se") e vá deduzindo; se alguma alternativa puder ser falsa, descarte.</div>
+
+<h2 id="jogos">5. Verdades e mentiras, jogos de lógica e raciocínio espacial</h2>
+<h3>Verdades e mentiras</h3>
+<p>Cada pessoa <b>sempre</b> diz a verdade ou <b>sempre</b> mente. O método é suposição e teste:</p>
+<ol>
+  <li>Escolha uma pessoa e suponha que ela fala a verdade.</li>
+  <li>O que ela diz passa a ser fato; deduza o que isso obriga nos outros.</li>
+  <li>Se aparecer contradição, a suposição era falsa: troque e refaça.</li>
+  <li>Confira no final se <b>todas</b> as falas batem com os papéis (quem mente tem fala falsa).</li>
+</ol>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+Ana diz: "Beto mente." Beto diz: "Ana e eu dizemos a verdade." Suponha que Beto fale a verdade: então Ana fala a verdade, e Ana diria que Beto mente, contradição. Logo <b>Beto mente</b>. Se Beto mente, a fala de Ana ("Beto mente") é verdadeira: <b>Ana diz a verdade</b>. Confere: a fala de Beto é falsa (Beto mente), como deve ser.</div>
+<div class="caixa dica"><strong>Atalho</strong>
+Fala que se refere a si mesmo ("eu minto", "nós dois dizemos a verdade") costuma resolver o caso rápido. "Pelo menos um mente" e "apenas um diz a verdade" pedem contar casos.</div>
+
+<h3>Alocações condicionais (quem fica onde)</h3>
+<p>Liste <b>todas</b> as possibilidades que cabem na situação (poucas, em geral) e vá cortando com cada regra. Exemplo: Ana, Bia e Caio atendem em dias diferentes (segunda, terça, quarta). Regras: Ana não atende na segunda; Bia atende antes de Caio. Possibilidades (segunda, terça, quarta): <b>Bia, Ana, Caio</b> ou <b>Bia, Caio, Ana</b>. Com a regra extra "Ana atende depois de Caio", sobra só <b>Bia, Caio, Ana</b>.</p>
+
+<h3>Raciocínio espacial</h3>
+<ul>
+  <li><b>Dado comum:</b> faces opostas somam 7 (1-6, 2-5, 3-4).</li>
+  <li><b>Cubo:</b> 6 faces, 12 arestas, 8 vértices (relação de Euler: V − A + F = 2).</li>
+  <li><b>Cubo grande pintado e cortado em 27 cubinhos (3×3×3):</b> 8 cubinhos com 3 faces pintadas (cantos), 12 com 2 faces (arestas), 6 com 1 face (centros das faces), 1 sem tinta (centro).</li>
+  <li><b>Planificação do cubo:</b> são 6 quadrados em que, ao dobrar, nenhuma face fica sobreposta. Numa planificação comum, 4 quadrados em linha formam o "cinturão" do cubo e os outros 2 viram a tampa e o fundo.</li>
+  <li><b>Rotação:</b> gire a figura mentalmente (ou desenhe) um pedaço por vez e compare as faces vizinhas.</li>
+</ul>
+
+<h2 id="razao">6. Razão, porcentagem e regra de três</h2>
+<p>É a base de quase todo o resto. Porcentagem é uma fração de denominador 100: 20% = 20/100 = 0,20.</p>
+<ol>
+  <li><b>Parte de um todo:</b> 20% de 250 = 0,20 × 250 = <b>50</b>.</li>
+  <li><b>Aumento de p%:</b> multiplica por (1 + p/100). <b>Desconto de p%:</b> multiplica por (1 − p/100).</li>
+  <li><b>Variação percentual</b> = (valor novo − valor antigo) ÷ <b>valor antigo</b>. A base é sempre o valor de <b>antes</b>.</li>
+  <li><b>Regra de três:</b> grandezas <b>diretas</b> (mais gente, mais trabalho): multiplica em cruz. <b>Inversas</b> (mais gente, menos dias): inverte uma das razões.</li>
+</ol>
+<div class="caixa pega"><strong>Pegadinha: porcentagens não se somam</strong>
+Aumento de 20% seguido de desconto de 20% <b>não volta ao início</b>: 1,2 × 0,8 = 0,96, ou seja, <b>queda de 4%</b>. Dois aumentos de 10% seguidos dão 1,1 × 1,1 = 1,21, ou seja, <b>21%</b> (e não 20%).</div>
+<div class="caixa numero"><strong>Exemplo resolvido (regra de três inversa)</strong>
+4 técnicos limpam o material em 6 dias. Em quantos dias 3 técnicos fazem o mesmo? Menos gente, mais dias (inversa): 4 × 6 = 3 × x, logo x = <b>8 dias</b>.</div>
+
+<h2 id="financeira">7. Matemática financeira</h2>
+<h3>Capitalização composta</h3>
+<p>Nos juros <b>compostos</b>, o juro de cada período vira capital do período seguinte ("juros sobre juros"). Nos juros <b>simples</b>, só o capital inicial rende.</p>
+<div class="caixa numero"><strong>Fórmulas</strong>
+Simples: <b>M = C · (1 + i · n)</b>. Composto: <b>M = C · (1 + i)<sup>n</sup></b>. M = montante, C = capital, i = taxa de cada período, n = número de períodos. Juros = M − C. A taxa e o tempo precisam estar na <b>mesma unidade</b> (taxa ao mês, prazo em meses).</div>
+<div class="caixa conceito"><strong>Exemplo resolvido</strong>
+R$ 1.000 a 10% ao ano por 3 anos. Composto: 1.000 × 1,1<sup>3</sup> = 1.000 × 1,331 = <b>R$ 1.331</b>. Simples: 1.000 × (1 + 0,10 × 3) = <b>R$ 1.300</b>. A diferença (R$ 31) vem dos juros sobre juros.</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Juros sobre juros", "capitalização", "montante após n meses": composto. Se não disser, o enunciado diz "regime de juros simples". Conta à mão: decore as potências pequenas (1,1<sup>2</sup> = 1,21; 1,1<sup>3</sup> = 1,331; 1,2<sup>2</sup> = 1,44) e use taxas redondas.</div>
+
+<h3>Taxa nominal, efetiva e equivalente</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Taxa</th><th scope="col">O que é</th><th scope="col">Como calcular</th></tr>
+  <tr><td>Nominal</td><td>a taxa "de vitrine": o período da taxa é diferente do período da capitalização</td><td>divide-se (proporcional) para achar a taxa de cada período de capitalização</td></tr>
+  <tr><td>Efetiva</td><td>a taxa que realmente rende no período da taxa</td><td>(1 + taxa do período)<sup>nº de períodos</sup> − 1</td></tr>
+  <tr><td>Equivalentes</td><td>duas taxas em períodos diferentes que dão o <b>mesmo montante</b></td><td>iguala os fatores: (1 + i<sub>a</sub>) = (1 + i<sub>s</sub>)<sup>2</sup></td></tr>
+</table></div>
+<div class="caixa numero"><strong>Exemplo resolvido (nominal para efetiva)</strong>
+Taxa de 12% ao ano com capitalização mensal. Taxa de cada mês: 12% ÷ 12 = 1%. Efetiva do ano: 1,01<sup>12</sup> − 1 ≈ <b>12,68%</b>, maior que os 12% anunciados. Outro exemplo: 20% ao ano capitalizados por semestre: 10% por semestre, e 1,1<sup>2</sup> − 1 = <b>21% ao ano</b> efetivos.</div>
+<div class="caixa numero"><strong>Exemplo resolvido (equivalente)</strong>
+21% ao ano equivale a quanto ao semestre? 1,21 = (1 + i<sub>s</sub>)<sup>2</sup>, logo 1 + i<sub>s</sub> = 1,1 e i<sub>s</sub> = <b>10% ao semestre</b>. Já 21% ÷ 2 = 10,5% (taxa proporcional) <b>não é</b> a equivalente.</div>
+<div class="caixa pega"><strong>Pegadinha: proporcional não é equivalente</strong>
+Dividir a taxa por 12 dá a taxa <b>proporcional</b> (usada na nominal). Para converter taxas efetivas, use a <b>raiz</b>/potência dos fatores. E nunca some taxas de períodos diferentes.</div>
+
+<h3>Desconto comercial (por fora) e racional (por dentro)</h3>
+<p>Desconto é o abatimento que se faz num título (duplicata, promissória) pago <b>antes</b> do vencimento. N = valor nominal (de face), i = taxa, n = prazo antecipado.</p>
+<div class="tabela"><table>
+  <tr><th scope="col"></th><th scope="col">Comercial (por fora)</th><th scope="col">Racional (por dentro)</th></tr>
+  <tr><td>Incide sobre</td><td>o valor <b>nominal</b> N</td><td>o valor <b>atual</b> A</td></tr>
+  <tr><td>Desconto</td><td>D<sub>c</sub> = N · i · n</td><td>D<sub>r</sub> = N − N ÷ (1 + i · n)</td></tr>
+  <tr><td>Valor atual (que se recebe)</td><td>A<sub>c</sub> = N − D<sub>c</sub></td><td>A<sub>r</sub> = N ÷ (1 + i · n)</td></tr>
+  <tr><td>Relação</td><td colspan="2">D<sub>c</sub> = D<sub>r</sub> · (1 + i · n): o comercial é <b>sempre maior</b> (para o mesmo i e n)</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+Título de R$ 6.000, pago 2 meses antes do vencimento, taxa de 10% ao mês. <b>Comercial:</b> D<sub>c</sub> = 6.000 × 0,10 × 2 = R$ 1.200; recebe 6.000 − 1.200 = <b>R$ 4.800</b>. <b>Racional:</b> A<sub>r</sub> = 6.000 ÷ 1,2 = <b>R$ 5.000</b>; D<sub>r</sub> = R$ 1.000. Confere a relação: 1.000 × 1,2 = 1.200.</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Desconto bancário" ou "comercial" = por fora (multiplica o nominal pela taxa e pelo prazo, a conta mais fácil). "Desconto racional" ou "por dentro" = divide por (1 + i·n). Veja se a pergunta quer o <b>desconto</b> ou o <b>valor recebido</b>.</div>
+
+<h3>Sistemas de amortização: SAC e Price</h3>
+<p>Ao pagar um financiamento, cada parcela = <b>amortização</b> (a parte que reduz a dívida) + <b>juros</b> (taxa × saldo devedor do mês anterior).</p>
+<div class="tabela"><table>
+  <tr><th scope="col"></th><th scope="col">SAC</th><th scope="col">Price (tabela francesa)</th></tr>
+  <tr><td>Amortização</td><td><b>constante</b> (dívida ÷ nº de parcelas)</td><td>crescente</td></tr>
+  <tr><td>Parcela</td><td><b>decrescente</b> (juros caem)</td><td><b>constante</b></td></tr>
+  <tr><td>Juros</td><td>decrescentes</td><td>decrescentes</td></tr>
+  <tr><td>Total de juros</td><td>menor</td><td>maior</td></tr>
+</table></div>
+<div class="caixa numero"><strong>SAC: R$ 3.000 em 3 parcelas a 10% ao mês</strong>
+Amortização fixa: 3.000 ÷ 3 = 1.000.
+<div class="tabela"><table>
+  <tr><th scope="col">Mês</th><th scope="col">Saldo antes</th><th scope="col">Juros (10%)</th><th scope="col">Amortização</th><th scope="col">Parcela</th></tr>
+  <tr><td>1</td><td>3.000</td><td>300</td><td>1.000</td><td><b>1.300</b></td></tr>
+  <tr><td>2</td><td>2.000</td><td>200</td><td>1.000</td><td><b>1.200</b></td></tr>
+  <tr><td>3</td><td>1.000</td><td>100</td><td>1.000</td><td><b>1.100</b></td></tr>
+</table></div>
+Total de juros: 300 + 200 + 100 = <b>R$ 600</b>.</div>
+<div class="caixa numero"><strong>Price: dívida de R$ 3.310 em 3 parcelas fixas de R$ 1.331 a 10% ao mês</strong>
+(Os números foram escolhidos para a conta fechar certinho. Na Price, a parcela sai de uma fórmula com potência negativa, difícil à mão; por isso o estudo mais útil é saber montar a tabela a partir da parcela.)
+<div class="tabela"><table>
+  <tr><th scope="col">Mês</th><th scope="col">Saldo antes</th><th scope="col">Juros (10%)</th><th scope="col">Amortização (parcela − juros)</th><th scope="col">Saldo depois</th></tr>
+  <tr><td>1</td><td>3.310</td><td>331</td><td>1.000</td><td>2.310</td></tr>
+  <tr><td>2</td><td>2.310</td><td>231</td><td>1.100</td><td>1.210</td></tr>
+  <tr><td>3</td><td>1.210</td><td>121</td><td>1.210</td><td>0</td></tr>
+</table></div>
+Total de juros: 331 + 231 + 121 = <b>R$ 683</b>. Repare: os juros diminuem e a amortização <b>aumenta</b>, com a parcela sempre igual. Para a mesma dívida de R$ 3.000, a Price teria parcela de cerca de R$ 1.206,34 e juros totais de cerca de R$ 619, contra R$ 600 do SAC.</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Amortização constante" é SAC: a parcela cai. "Prestações iguais" ou "tabela Price" é Price: a parcela não muda. Na SAC, a n-ésima parcela = amortização + taxa × saldo antes dela.</div>
+
+<h2 id="pa">8. Progressões: PA e PG</h2>
+<div class="tabela"><table>
+  <tr><th scope="col"></th><th scope="col">PA (soma uma razão)</th><th scope="col">PG (multiplica por uma razão)</th></tr>
+  <tr><td>Exemplo</td><td>5, 8, 11, 14... (razão r = 3)</td><td>2, 6, 18, 54... (razão q = 3)</td></tr>
+  <tr><td>Termo geral</td><td>a<sub>n</sub> = a<sub>1</sub> + (n − 1) · r</td><td>a<sub>n</sub> = a<sub>1</sub> · q<sup>n−1</sup></td></tr>
+  <tr><td>Soma dos n primeiros</td><td>S<sub>n</sub> = n · (a<sub>1</sub> + a<sub>n</sub>) ÷ 2</td><td>S<sub>n</sub> = a<sub>1</sub> · (q<sup>n</sup> − 1) ÷ (q − 1)</td></tr>
+  <tr><td>Soma infinita (PG com |q| &lt; 1)</td><td>não existe</td><td>S = a<sub>1</sub> ÷ (1 − q)</td></tr>
+  <tr><td>Interpolação</td><td>r = (último − primeiro) ÷ (nº de meios + 1)</td><td>q = raiz de índice (nº de meios + 1) de (último ÷ primeiro)</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>PA:</b> a<sub>1</sub> = 5, r = 3. O 20º termo: 5 + 19 × 3 = <b>62</b>. A soma dos 20 primeiros: 20 × (5 + 62) ÷ 2 = <b>670</b>.<br>
+<b>PG:</b> 2, 6, 18... soma dos 6 primeiros: 2 × (3<sup>6</sup> − 1) ÷ 2 = 729 − 1 = <b>728</b>.<br>
+<b>Interpolação:</b> inserir 3 termos entre 4 e 20 em PA: r = (20 − 4) ÷ 4 = 4, logo 4, <b>8, 12, 16</b>, 20.<br>
+<b>PG infinita:</b> 1/2 + 1/4 + 1/8 + ... = (1/2) ÷ (1 − 1/2) = <b>1</b>.</div>
+<div class="caixa conceito"><strong>Aplicação financeira</strong>
+Juros compostos são uma <b>PG</b> de razão (1 + i): 1.000, 1.100, 1.210, 1.331 (razão 1,1). Juros simples são uma <b>PA</b>: 1.000, 1.100, 1.200, 1.300 (razão 100). Depósitos mensais iguais que rendem a juros compostos formam a soma de uma PG.</div>
+<div class="caixa pega"><strong>Pegadinha: contar os termos</strong>
+De 10 a 100 de 5 em 5 há (100 − 10) ÷ 5 + 1 = <b>19</b> termos, não 18. Em "inserir k meios", há k + 2 termos e k + 1 saltos. Na PG, o expoente é <b>n − 1</b>, não n.</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Aumenta sempre a mesma quantidade" = PA. "Aumenta sempre a mesma porcentagem" ou "dobra a cada" = PG.</div>
+
+<h2 id="funcoes">9. Funções: polinomiais, exponencial e logaritmo</h2>
+<h3>Polinomiais</h3>
+<ul>
+  <li><b>1º grau</b> f(x) = ax + b: reta; raiz x = −b/a. <b>2º grau</b> f(x) = ax² + bx + c: parábola; raízes por Bhaskara x = (−b ± √Δ) ÷ 2a, com Δ = b² − 4ac; vértice em x = −b ÷ 2a. Soma das raízes = −b/a; produto = c/a.</li>
+  <li><b>Teorema do resto:</b> o resto de P(x) dividido por (x − a) é P(a).</li>
+</ul>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+x² − 5x + 6 = 0: Δ = 25 − 24 = 1; x = (5 ± 1) ÷ 2, logo x = <b>3</b> ou x = <b>2</b> (soma 5, produto 6, como previsto). Resto de P(x) = x³ − 2x + 4 por (x − 2): P(2) = 8 − 4 + 4 = <b>8</b>.</div>
+
+<h3>Exponencial</h3>
+<p>f(x) = a<sup>x</sup>, com a &gt; 0 e a ≠ 1. Se a &gt; 1, <b>cresce</b>; se 0 &lt; a &lt; 1, <b>decresce</b>. O gráfico nunca toca o eixo x e passa por (0, 1).</p>
+<ol>
+  <li>Para resolver a equação exponencial, <b>iguale as bases</b>: se a<sup>m</sup> = a<sup>n</sup>, então m = n.</li>
+  <li>Propriedades: a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup>; a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup>; (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>; a<sup>−n</sup> = 1 ÷ a<sup>n</sup>.</li>
+</ol>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>Equação:</b> 2<sup>x+1</sup> = 32 = 2<sup>5</sup>, logo x + 1 = 5 e <b>x = 4</b>.<br>
+<b>Crescimento:</b> uma cultura de 500 bactérias dobra a cada 3 horas. Em 12 horas ocorrem 12 ÷ 3 = 4 dobras: 500 × 2<sup>4</sup> = <b>8.000</b>.<br>
+<b>Decaimento (meia-vida):</b> 800 mg de uma substância com meia-vida de 4 horas. Em 12 h são 3 meias-vidas: 800 × (1/2)<sup>3</sup> = <b>100 mg</b>.</div>
+<div class="caixa dica"><strong>Modelo geral</strong>
+Quantidade final = inicial × (fator)<sup>nº de períodos</sup>. O fator é 2 se "dobra", 1/2 se "reduz à metade", 1 + i se cresce i% por período.</div>
+
+<h3>Logaritmo</h3>
+<p>log<sub>a</sub> b = x quer dizer a<sup>x</sup> = b. É a pergunta "a que expoente elevo a para obter b?". Exige a &gt; 0, a ≠ 1 e b &gt; 0.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Propriedade</th><th scope="col">Fórmula</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Produto</td><td>log(b · c) = log b + log c</td><td>log<sub>2</sub> 8 + log<sub>2</sub> 4 = 3 + 2 = 5 = log<sub>2</sub> 32</td></tr>
+  <tr><td>Quociente</td><td>log(b ÷ c) = log b − log c</td><td>log<sub>2</sub> 64 − log<sub>2</sub> 2 = 6 − 1 = 5</td></tr>
+  <tr><td>Potência</td><td>log b<sup>k</sup> = k · log b</td><td>log<sub>2</sub> 4<sup>3</sup> = 3 × 2 = 6 = log<sub>2</sub> 64</td></tr>
+  <tr><td>Mudança de base</td><td>log<sub>a</sub> b = log b ÷ log a</td><td>serve para tirar o log de qualquer base com a base 10</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>Equação:</b> log<sub>3</sub> (x − 1) = 2 significa x − 1 = 3<sup>2</sup> = 9, logo <b>x = 10</b>.<br>
+<b>Com dados:</b> dado log 2 = 0,30 e log 3 = 0,48, calcule log 12. Decomponha 12 = 2<sup>2</sup> × 3: log 12 = 2 × 0,30 + 0,48 = <b>1,08</b>.</div>
+<div class="caixa pega"><strong>Pegadinha</strong>
+log (b + c) <b>não</b> é log b + log c; só o <b>produto</b> vira soma. E o logaritmando precisa ser positivo: depois de resolver, confira se o valor de x não zera ou torna negativo o que está dentro do log.</div>
+
+<h2 id="matrizes">10. Matrizes, determinantes e sistemas lineares</h2>
+<h3>Operações</h3>
+<ul>
+  <li><b>Soma/subtração:</b> termo a termo, só entre matrizes do mesmo tamanho.</li>
+  <li><b>Produto A·B:</b> cada elemento é "linha de A vezes coluna de B" (multiplica e soma). Só existe se nº de colunas de A = nº de linhas de B. <b>A·B ≠ B·A</b> em geral.</li>
+</ul>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+A = [[1, 2], [3, 4]] e B = [[0, 1], [1, 0]]. Linha 1 de A × coluna 1 de B = 1·0 + 2·1 = 2; × coluna 2 = 1·1 + 2·0 = 1. Linha 2: 3·0 + 4·1 = 4 e 3·1 + 4·0 = 3. Resultado: A·B = <b>[[2, 1], [4, 3]]</b>. Já B·A = [[3, 4], [1, 2]], diferente.</div>
+<h3>Determinantes</h3>
+<ul>
+  <li><b>2×2:</b> det = (diagonal principal) − (diagonal secundária). Para [[1, 2], [3, 4]]: 1·4 − 2·3 = <b>−2</b>.</li>
+  <li><b>3×3 (regra de Sarrus):</b> repete as duas primeiras colunas à direita; soma os produtos das 3 diagonais que descem e <b>subtrai</b> os das 3 que sobem.</li>
+  <li><b>Laplace:</b> escolha a linha ou coluna com mais zeros e expanda pelos cofatores (sinais alternados + − +).</li>
+  <li>Se há <b>duas linhas iguais/proporcionais</b> ou uma linha de zeros, det = 0.</li>
+</ul>
+<div class="caixa numero"><strong>Exemplo resolvido (Sarrus)</strong>
+M = [[2, 1, 0], [1, 3, 1], [0, 1, 2]]. Diagonais que descem: 2·3·2 + 1·1·0 + 0·1·1 = 12 + 0 + 0 = 12. Diagonais que sobem: 0·3·0 + 2·1·1 + 1·1·2 = 0 + 2 + 2 = 4. det M = 12 − 4 = <b>8</b>. Conferência por Laplace na 1ª linha: 2 · (3·2 − 1·1) − 1 · (1·2 − 1·0) + 0 = 10 − 2 = 8.</div>
+<h3>Sistemas lineares: SPD, SPI, SI</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Tipo</th><th scope="col">Soluções</th><th scope="col">Como aparece (det D do sistema quadrado)</th></tr>
+  <tr><td>SPD (possível e determinado)</td><td>exatamente uma</td><td>D ≠ 0</td></tr>
+  <tr><td>SPI (possível e indeterminado)</td><td>infinitas</td><td>D = 0 e as equações são "a mesma" (compatíveis)</td></tr>
+  <tr><td>SI (impossível)</td><td>nenhuma</td><td>D = 0 e as equações se contradizem</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Regra de Cramer (exemplo)</strong>
+Sistema 2x + 3y = 12 e x − y = 1. D = 2·(−1) − 3·1 = −5. D<sub>x</sub> (troca a coluna de x pelos termos independentes): 12·(−1) − 3·1 = −15. D<sub>y</sub>: 2·1 − 12·1 = −10. Então x = D<sub>x</sub>/D = <b>3</b> e y = D<sub>y</sub>/D = <b>2</b>. Teste: 2·3 + 3·2 = 12 e 3 − 2 = 1.</div>
+<div class="caixa numero"><strong>Discussão por parâmetro</strong>
+x + y = 2 e 2x + ky = 5. D = 1·k − 1·2 = k − 2. Se k ≠ 2, D ≠ 0: <b>SPD</b>. Se k = 2, o sistema fica x + y = 2 e 2x + 2y = 5, ou seja, x + y = 2,5: contradição, <b>SI</b>. (Se o segundo termo fosse 4, em vez de 5, a segunda equação seria o dobro da primeira e o sistema seria <b>SPI</b>.)</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Para que valores de k o sistema tem solução única?" = D ≠ 0. "Impossível" ou "indeterminado" = D = 0, e depois olha se os termos independentes acompanham a mesma proporção (SPI) ou não (SI).</div>
+
+<h2 id="analitica">11. Geometria analítica</h2>
+<p>Aqui a geometria vira conta com coordenadas (x, y).</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Tema</th><th scope="col">Fórmula</th><th scope="col">Exemplo: A(1, 2) e B(7, 10)</th></tr>
+  <tr><td>Distância entre dois pontos</td><td>d = √[(x<sub>2</sub> − x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> − y<sub>1</sub>)<sup>2</sup>]</td><td>√(6<sup>2</sup> + 8<sup>2</sup>) = √100 = <b>10</b></td></tr>
+  <tr><td>Ponto médio</td><td>((x<sub>1</sub> + x<sub>2</sub>) ÷ 2 ; (y<sub>1</sub> + y<sub>2</sub>) ÷ 2)</td><td>(8 ÷ 2 ; 12 ÷ 2) = <b>(4, 6)</b></td></tr>
+  <tr><td>Coeficiente angular (inclinação)</td><td>m = Δy ÷ Δx = tg do ângulo com o eixo x</td><td>m = 8 ÷ 6 = <b>4/3</b></td></tr>
+  <tr><td>Equação da reta</td><td>y − y<sub>1</sub> = m · (x − x<sub>1</sub>); geral: ax + by + c = 0</td><td>y − 2 = (4/3)(x − 1), ou <b>4x − 3y + 2 = 0</b></td></tr>
+  <tr><td>Distância de ponto a reta</td><td>|a·x<sub>0</sub> + b·y<sub>0</sub> + c| ÷ √(a<sup>2</sup> + b<sup>2</sup>)</td><td>de (2, 1) à reta 3x + 4y + 1 = 0: 11 ÷ 5</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Paralelas e perpendiculares</strong>
+<b>Paralelas:</b> mesmo coeficiente angular (m<sub>1</sub> = m<sub>2</sub>). <b>Perpendiculares:</b> m<sub>1</sub> · m<sub>2</sub> = −1, ou seja, <b>inverte e troca o sinal</b>. Exemplo: y = 3x + 1 tem m = 3; uma perpendicular tem m = <b>−1/3</b>. Paralelas a ela, m = 3 (y = 3x − 5).</div>
+<div class="caixa pega"><strong>Pegadinha: forma da equação</strong>
+Em y = mx + n o coeficiente angular é o número que multiplica x. Em ax + by + c = 0 ele é <b>−a/b</b>. Exemplo: 4x − 3y + 2 = 0 tem m = −4/(−3) = 4/3.</div>
+<h3>Circunferência</h3>
+<div class="caixa conceito"><strong>Equação reduzida</strong>
+<b>(x − a)<sup>2</sup> + (y − b)<sup>2</sup> = r<sup>2</sup></b>: centro (a, b) e raio r. Atenção ao sinal: o centro tem o sinal <b>contrário</b> do que aparece, e o lado direito é r<sup>2</sup>, não r.</div>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+(x − 2)<sup>2</sup> + (y + 3)<sup>2</sup> = 16: centro <b>(2, −3)</b> e raio √16 = <b>4</b>. Desenvolvida (forma geral): x<sup>2</sup> + y<sup>2</sup> − 4x + 6y − 3 = 0. Para voltar à reduzida, complete quadrados: (x<sup>2</sup> − 4x + 4) + (y<sup>2</sup> + 6y + 9) = 3 + 4 + 9 = 16.</div>
+<h3>Cônicas: só reconhecer a equação</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Equação</th><th scope="col">Cônica</th><th scope="col">Pista</th></tr>
+  <tr><td>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></td><td>circunferência</td><td>x<sup>2</sup> e y<sup>2</sup> com <b>mesmo sinal e coeficiente</b></td></tr>
+  <tr><td>x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1</td><td>elipse</td><td>soma; denominadores diferentes. Focos: c<sup>2</sup> = a<sup>2</sup> − b<sup>2</sup> (a = 5, b = 3 dá c = 4)</td></tr>
+  <tr><td>x<sup>2</sup>/a<sup>2</sup> − y<sup>2</sup>/b<sup>2</sup> = 1</td><td>hipérbole</td><td><b>diferença</b>. c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup></td></tr>
+  <tr><td>y = ax<sup>2</sup> + bx + c</td><td>parábola</td><td>só <b>uma</b> das variáveis ao quadrado</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Como reconhecer o tipo de questão</strong>
+"Distância", "ponto médio", "inclinação": fórmula direta. "Paralela", "perpendicular": compare os m. "Centro e raio": ajuste a equação ao molde (x − a)<sup>2</sup> + (y − b)<sup>2</sup> = r<sup>2</sup>.</div>
+
+<h2 id="trigo">12. Trigonometria</h2>
+<h3>Triângulo retângulo e ciclo</h3>
+<ul>
+  <li>No triângulo retângulo: <b>sen = cateto oposto ÷ hipotenusa</b>; <b>cos = cateto adjacente ÷ hipotenusa</b>; <b>tg = oposto ÷ adjacente = sen ÷ cos</b>.</li>
+  <li><b>Ciclo trigonométrico:</b> círculo de raio 1. Um ângulo mede o giro a partir do eixo x, no sentido anti-horário. O <b>cosseno</b> é a coordenada x do ponto e o <b>seno</b> é a coordenada y. Por isso ambos ficam entre −1 e 1.</li>
+  <li><b>Radianos:</b> 180° = π rad; 90° = π/2; 60° = π/3; 120° = 2π/3; 360° = 2π.</li>
+  <li><b>Sinais por quadrante:</b> 1º quadrante: sen e cos positivos. 2º: sen +, cos −. 3º: ambos −. 4º: sen −, cos +.</li>
+</ul>
+<div class="tabela"><table>
+  <caption style="text-align:left;font-weight:600;padding-bottom:4px">Valores notáveis</caption>
+  <tr><th scope="col">Ângulo</th><th scope="col">30° (π/6)</th><th scope="col">45° (π/4)</th><th scope="col">60° (π/3)</th></tr>
+  <tr><td>sen</td><td>1/2</td><td>√2/2</td><td>√3/2</td></tr>
+  <tr><td>cos</td><td>√3/2</td><td>√2/2</td><td>1/2</td></tr>
+  <tr><td>tg</td><td>√3/3</td><td>1</td><td>√3</td></tr>
+</table></div>
+<div class="caixa dica"><strong>Como decorar</strong>
+O seno sobe 1/2, √2/2, √3/2; o cosseno faz o caminho de volta (o cosseno de um ângulo é o seno do seu complementar: cos 60° = sen 30°).</div>
+<div class="caixa numero"><strong>Identidade fundamental: sen<sup>2</sup> x + cos<sup>2</sup> x = 1</strong>
+É o Teorema de Pitágoras no círculo de raio 1. Serve para achar um quando se conhece o outro. <b>Exemplo:</b> sen x = 3/5 com x no 2º quadrante. cos<sup>2</sup> x = 1 − 9/25 = 16/25, logo cos x = ±4/5. No 2º quadrante o cosseno é negativo: <b>cos x = −4/5</b>. (O triângulo 3-4-5 confirma: 3<sup>2</sup> + 4<sup>2</sup> = 5<sup>2</sup>.)</div>
+<div class="caixa numero"><strong>Equação simples</strong>
+sen x = 1/2 para x entre 0 e 2π. O seno vale 1/2 no 1º quadrante (x = π/6) e no 2º quadrante (x = π − π/6 = 5π/6). Resposta: <b>x = π/6 ou x = 5π/6</b>.</div>
+<div class="caixa pega"><strong>Pegadinhas</strong>
+(1) Esquecer o sinal pelo quadrante. (2) Esquecer a raiz quadrada ao usar sen² + cos² = 1. (3) Inequações trigonométricas pedem o ciclo desenhado: marque no círculo os arcos que satisfazem e leia o intervalo; esta apostila não aprofunda esse subtema.</div>
+
+<h2 id="plana">13. Geometria plana: Tales, semelhança, circunferência</h2>
+<ul>
+  <li><b>Teorema de Tales:</b> retas paralelas cortadas por transversais determinam segmentos proporcionais. Se AB/BC = DE/EF.</li>
+  <li><b>Semelhança de triângulos:</b> mesmos ângulos, lados proporcionais. A razão entre lados correspondentes é a <b>razão de semelhança k</b>.</li>
+</ul>
+<div class="caixa numero"><strong>O que muda com k (guarde esta linha)</strong>
+Comprimentos (lados, perímetro, altura) × <b>k</b>. Áreas × <b>k<sup>2</sup></b>. Volumes × <b>k<sup>3</sup></b>.</div>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>Tales:</b> segmentos de 4 e 6 de um lado; no outro, x e 9. 4/6 = x/9, logo x = 4 × 9 ÷ 6 = <b>6</b>.<br>
+<b>Áreas:</b> dois triângulos semelhantes com k = 2; o menor tem área 10. O maior tem 10 × 2<sup>2</sup> = <b>40</b>.<br>
+<b>Cordas que se cruzam:</b> AP · PB = CP · PD. Com 4 · 6 = 3 · x: <b>x = 8</b>.<br>
+<b>Potência de ponto (secante e tangente):</b> de um ponto P externo, a tangente PT cumpre PT<sup>2</sup> = PA · PB (A e B os pontos onde a secante corta a circunferência, medidas a partir de P). Com PA = 4 e PB = 9: PT<sup>2</sup> = 36 e <b>PT = 6</b>.</div>
+<div class="caixa pega"><strong>Pegadinha: área não é k</strong>
+Se a razão entre os lados é 3, a razão entre as áreas é <b>9</b>, e entre os volumes <b>27</b>. As alternativas erradas trazem 3 (esqueceu de elevar) e 6 (multiplicou por 2).</div>
+<div class="caixa dica"><strong>Outras fórmulas úteis</strong>
+Triângulo: área = base × altura ÷ 2. Retângulo: base × altura. Trapézio: (B + b) × h ÷ 2. Círculo: área π r<sup>2</sup>, comprimento 2 π r. Pitágoras: a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>.</div>
+
+<h2 id="solidos">14. Sólidos geométricos</h2>
+<div class="tabela"><table>
+  <tr><th scope="col">Sólido</th><th scope="col">Volume</th><th scope="col">Área</th><th scope="col">Exemplo</th></tr>
+  <tr><td>Cilindro (raio r, altura h)</td><td>π r<sup>2</sup> h</td><td>total: 2 π r (r + h)</td><td>r = 3, h = 10: V = <b>90π</b>; A = 2π·3·13 = <b>78π</b></td></tr>
+  <tr><td>Cone (r, h, geratriz g)</td><td>(1/3) π r<sup>2</sup> h</td><td>lateral π r g; g<sup>2</sup> = r<sup>2</sup> + h<sup>2</sup></td><td>r = 3, h = 4, g = 5: V = <b>12π</b>; lateral = <b>15π</b>; total = π·3·(5 + 3) = <b>24π</b></td></tr>
+  <tr><td>Esfera (raio r)</td><td>(4/3) π r<sup>3</sup></td><td>4 π r<sup>2</sup></td><td>r = 3: V = (4/3)·27π = <b>36π</b>; A = 4·9π = <b>36π</b></td></tr>
+  <tr><td>Tronco de cone (R, r, h)</td><td>(π h ÷ 3) · (R<sup>2</sup> + R r + r<sup>2</sup>)</td><td>lateral π g (R + r)</td><td>h = 3, R = 4, r = 2: (3π/3)·(16 + 8 + 4) = <b>28π</b></td></tr>
+  <tr><td>Tronco de pirâmide (B, b, h)</td><td>(h ÷ 3) · (B + √(B·b) + b)</td><td>soma das faces</td><td>B = 36, b = 9, h = 6: (6/3)·(36 + 18 + 9) = <b>126</b></td></tr>
+</table></div>
+<div class="caixa conceito"><strong>Ideias para não decorar tudo</strong>
+Cone = <b>um terço</b> do cilindro de mesma base e altura. Tronco = cone grande menos o cone pequeno cortado, e os dois são <b>semelhantes</b>: se o cone cortado tem razão 1/3, seu volume é (1/3)<sup>3</sup> = 1/27 do cone inteiro. "Sólidos de revolução" são os gerados girando uma figura plana em torno de um eixo: o retângulo gera o cilindro; o triângulo retângulo, o cone; o semicírculo, a esfera.</div>
+<div class="caixa pega"><strong>Pegadinha: altura x geratriz</strong>
+No volume do cone use a <b>altura h</b> (perpendicular à base), não a geratriz g (a "inclinada"). A geratriz entra na área lateral. Erros previsíveis: esquecer o 1/3 (resultado de cilindro) ou usar r no lugar de r<sup>2</sup>.</div>
+
+<h2 id="estatistica">15. Estatística e teorema de Bayes</h2>
+<h3>Medidas de posição e de dispersão</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Medida</th><th scope="col">Como calcular</th><th scope="col">Para que serve</th></tr>
+  <tr><td>Média</td><td>soma ÷ quantidade de dados</td><td>valor "equilibrado"; sensível a valores extremos</td></tr>
+  <tr><td>Mediana</td><td>valor do meio dos dados <b>em ordem</b> (com quantidade par, média dos dois do meio)</td><td>resiste a extremos</td></tr>
+  <tr><td>Moda</td><td>valor que mais se repete</td><td>o mais comum (pode haver mais de uma ou nenhuma)</td></tr>
+  <tr><td>Variância</td><td>média dos <b>quadrados dos desvios</b> em relação à média (amostra: divide por n − 1)</td><td>mede o espalhamento (em unidade ao quadrado)</td></tr>
+  <tr><td>Desvio padrão</td><td>raiz quadrada da variância</td><td>espalhamento na mesma unidade dos dados</td></tr>
+  <tr><td>Coeficiente de variação</td><td>CV = desvio padrão ÷ média (em %)</td><td>compara a dispersão de grupos de escalas diferentes</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Exemplo resolvido (dados da população toda)</strong>
+Dados: 2, 4, 4, 4, 5, 5, 7, 9 (8 valores). <b>Média:</b> 40 ÷ 8 = 5. <b>Mediana:</b> o 4º e o 5º valores são 4 e 5; média = <b>4,5</b>. <b>Moda:</b> <b>4</b>. <b>Desvios da média</b> (−3, −1, −1, −1, 0, 0, 2, 4), <b>quadrados</b> (9, 1, 1, 1, 0, 0, 4, 16), soma 32. <b>Variância</b> = 32 ÷ 8 = <b>4</b>. <b>Desvio padrão</b> = √4 = <b>2</b>. <b>CV</b> = 2 ÷ 5 = <b>40%</b>. Se os dados fossem uma amostra, a variância seria 32 ÷ 7.</div>
+<div class="caixa pega"><strong>Pegadinhas</strong>
+(1) Somar todos os valores e tirar a mediana sem ordenar. (2) Confundir variância com desvio padrão (a variância está "ao quadrado"). (3) No CV, dividir pela média, não pelo número de dados. (4) Somando uma constante a todos os dados, a média sobe igual mas o desvio padrão <b>não muda</b>; multiplicando por k, a média fica × k e o desvio padrão fica × |k| (o valor sem sinal).</div>
+<h3>Distribuição de frequências</h3>
+<p>Quando os dados vêm em tabela (valor e quantas vezes aparece), a média é <b>ponderada</b>: soma de (valor × frequência) ÷ total de frequências. Exemplo: notas 6 (2 alunos) e 8 (3 alunos): (2·6 + 3·8) ÷ 5 = <b>7,2</b>.</p>
+<h3>Probabilidade condicional e Bayes</h3>
+<div class="caixa conceito"><strong>Fórmulas</strong>
+<b>P(A | B) = P(A e B) ÷ P(B)</b> (probabilidade de A sabendo que B ocorreu). <b>Bayes:</b> P(A | B) = P(B | A) · P(A) ÷ P(B), com P(B) obtida somando todos os caminhos que levam a B (probabilidade total).</div>
+<div class="caixa numero"><strong>Exemplo resolvido (teste diagnóstico)</strong>
+10% da população tem uma doença. O teste dá positivo em 90% dos doentes e em 20% dos sadios (falso positivo). Qual a chance de estar doente dado que o teste deu positivo?<br>
+Caminho 1 (doente e positivo): 0,10 × 0,90 = 0,09. Caminho 2 (sadio e positivo): 0,90 × 0,20 = 0,18. P(positivo) = 0,09 + 0,18 = 0,27.<br>
+P(doente | positivo) = 0,09 ÷ 0,27 = <b>1/3 (cerca de 33%)</b>. Surpresa comum: mesmo com 90% de sensibilidade, só um em três positivos está doente, porque a doença é rara.</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Dado que", "sabendo que", "entre os que testaram positivo": é condicional. Monte uma árvore de caminhos e divida o caminho de interesse pela soma de <b>todos</b> os caminhos que chegam ao evento dado.</div>
+
+<h2 id="combinatoria">16. Análise combinatória</h2>
+<ul>
+  <li><b>Princípio fundamental da contagem (PFC):</b> etapas independentes <b>multiplicam</b>. 3 camisas × 4 calças = 12 combinações.</li>
+  <li><b>Permutação simples:</b> ordenar n elementos diferentes: n! (5! = 120).</li>
+  <li><b>Permutação com repetição:</b> n! ÷ (a! · b! · ...), onde a, b são as repetições. BANANA: 6! ÷ (3! · 2!) = 720 ÷ 12 = <b>60</b>.</li>
+  <li><b>Arranjo</b> (a <b>ordem importa</b>): A(n, p) = n! ÷ (n − p)!. <b>Combinação</b> (a ordem <b>não</b> importa): C(n, p) = n! ÷ [p! · (n − p)!].</li>
+  <li><b>Combinação com repetição:</b> escolher p itens entre n tipos, podendo repetir: C(n + p − 1, p). Ex.: 4 bolas de sorvete entre 3 sabores: C(6, 4) = <b>15</b>.</li>
+  <li><b>Divisão em grupos iguais, sem nome:</b> 6 pessoas em 2 grupos de 3: C(6, 3) ÷ 2 = <b>10</b> (divide pelo nº de grupos iguais, porque trocar os grupos de lugar não muda nada).</li>
+</ul>
+<div class="caixa conceito"><strong>Pergunta-chave: a ordem importa?</strong>
+Escolher <b>comissão</b> de 3 pessoas: ordem não importa, combinação, C(6, 3) = 20. Escolher <b>presidente, vice e secretário</b>: ordem importa, arranjo, A(6, 3) = 6·5·4 = 120.</div>
+<h3>Restrições e inclusão-exclusão</h3>
+<ul>
+  <li><b>"Juntos":</b> trate o bloco como um só e multiplique por suas trocas internas. 5 pessoas numa fila com duas sempre juntas: 4! × 2 = <b>48</b>.</li>
+  <li><b>"Pelo menos um" ou "não pode":</b> conte o total e subtraia o que viola (complementar).</li>
+  <li><b>Inclusão-exclusão:</b> n(A ∪ B) = n(A) + n(B) − n(A ∩ B). Quantos números de 1 a 100 são múltiplos de 2 ou de 3? 50 + 33 − 16 = <b>67</b> (os múltiplos de 6 foram contados duas vezes).</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: somar ou multiplicar?</strong>
+"Ou" (escolhas que se excluem) soma; "e" (etapas seguidas) multiplica. Na comissão com <b>exatamente</b> 2 dentistas (de 6) e 2 médicos (de 4): C(6,2) × C(4,2) = 15 × 6 = <b>90</b> (as duas escolhas acontecem, então multiplica; somar daria 21).</div>
+
+<h2 id="probabilidade">17. Probabilidade</h2>
+<div class="caixa numero"><strong>Regras</strong>
+<b>P(evento) = casos favoráveis ÷ casos possíveis</b> (quando todos são igualmente prováveis); vai de 0 a 1. <b>Complementar:</b> P(não A) = 1 − P(A). <b>"A ou B":</b> P(A) + P(B) − P(A e B). <b>"A e B" independentes:</b> P(A) × P(B). <b>"A e B" dependentes:</b> P(A) × P(B | A).</div>
+<div class="caixa conceito"><strong>Exemplos resolvidos</strong>
+<b>Sem reposição:</b> urna com 5 bolas vermelhas e 3 azuis; tirar duas vermelhas seguidas: 5/8 × 4/7 = 20/56 = <b>5/14</b>.<br>
+<b>Ao menos um 6 em dois dados:</b> complementar: 1 − (5/6)<sup>2</sup> = 1 − 25/36 = <b>11/36</b>.<br>
+<b>Soma 7 em dois dados:</b> são 6 pares (1+6, 2+5, 3+4 e os inversos) em 36: <b>1/6</b>.</div>
+<h3>Distribuição binomial</h3>
+<p>Para <b>n tentativas independentes</b>, cada uma com probabilidade p de "sucesso", a chance de exatamente k sucessos é <b>P(k) = C(n, k) · p<sup>k</sup> · (1 − p)<sup>n−k</sup></b>.</p>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+Casal com 3 filhos: probabilidade de exatamente 2 meninas (p = 1/2): C(3, 2) · (1/2)<sup>2</sup> · (1/2)<sup>1</sup> = 3 × 1/8 = <b>3/8</b>.<br>
+5 pacientes agendados, cada um com 20% de chance de faltar: exatamente 1 falta: C(5, 1) · 0,2 · 0,8<sup>4</sup> = 5 × 0,2 × 0,4096 = <b>0,4096 (41%)</b>.</div>
+<h3>Variável aleatória discreta</h3>
+<p>É uma variável que assume valores separados (1, 2, 3...), cada um com sua probabilidade; a soma das probabilidades é 1. A <b>esperança</b> (valor esperado) é E = soma de (valor × probabilidade). Dado comum: E = (1+2+3+4+5+6) ÷ 6 = <b>3,5</b>.</p>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+"Pelo menos um": use o complementar. "Exatamente k de n": binomial. "Sem reposição": a probabilidade muda a cada retirada (dependentes).</div>
+
+<h2 id="gavetas">18. Otimização e princípio das gavetas</h2>
+<h3>Princípio das gavetas de Dirichlet</h3>
+<div class="caixa conceito"><strong>Ideia</strong>
+Se você guarda mais objetos do que gavetas, <b>alguma gaveta fica com 2 ou mais</b>. Para pedir "garantir", imagine o <b>pior caso possível</b> e some 1. Com 13 pessoas e 12 meses, pelo menos duas fazem aniversário no mesmo mês.</div>
+<div class="caixa numero"><strong>Exemplo resolvido (pior caso + 1)</strong>
+Numa caixa escura há muitas luvas de 3 cores (preta, branca e azul). Quantas retirar para <b>garantir 3 da mesma cor</b>? No pior caso você tira 2 de cada cor sem completar trio: 2 + 2 + 2 = 6. A próxima (a 7ª) obriga um trio: <b>7</b>.</div>
+<h3>Otimização e programação linear básica</h3>
+<ul>
+  <li><b>Sem restrição de tipo:</b> para um retângulo de perímetro fixo (20), a maior área é o quadrado (5 × 5 = <b>25</b>).</li>
+  <li><b>Programação linear:</b> maximizar/minimizar uma expressão linear com restrições lineares. O ótimo está sempre num <b>vértice</b> da região permitida: calcule o valor em cada vértice e compare.</li>
+</ul>
+<div class="caixa numero"><strong>Exemplo resolvido</strong>
+Maximizar L = 3x + 2y com x + y ≤ 4, x ≤ 3, x ≥ 0 e y ≥ 0. Vértices da região: (0, 0), (3, 0), (3, 1) e (0, 4). Valores de L: 0; 9; 3·3 + 2·1 = <b>11</b>; 8. O máximo é <b>11</b>, em (3, 1).</div>
+
+<h2 id="discreta">19. Divisibilidade, MDC/MMC e congruência</h2>
+<ul>
+  <li><b>Critérios:</b> por 2 (termina em par); por 3 (soma dos algarismos divisível por 3); por 4 (dois últimos algarismos formam número divisível por 4); por 5 (termina em 0 ou 5); por 9 (soma dos algarismos divisível por 9); por 10 (termina em 0).</li>
+  <li><b>Primos</b> são os que têm só 2 divisores: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29... Dois números são <b>primos entre si</b> quando o MDC é 1 (8 e 15, mesmo sendo ambos compostos).</li>
+  <li><b>MDC</b> (maior divisor comum): "dividir em partes iguais". <b>MMC</b> (menor múltiplo comum): "coincidência", "daqui a quanto tempo de novo juntos". Relação: <b>a · b = MDC · MMC</b>.</li>
+  <li><b>Algoritmo de Euclides</b> para o MDC: divida o maior pelo menor e repita com o resto até o resto zerar; o último divisor é o MDC.</li>
+</ul>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>MMC:</b> um plantão a cada 6 dias e outro a cada 8, coincidindo hoje; coincidem de novo em MMC(6, 8) = <b>24 dias</b>. <b>MDC:</b> dividir 36 e 48 itens em pacotes iguais, o maior possível: MDC(36, 48) = <b>12</b>.<br>
+<b>Euclides:</b> MDC(252, 105): 252 = 2 · 105 + 42; 105 = 2 · 42 + 21; 42 = 2 · 21 + 0. MDC = <b>21</b>.</div>
+<h3>Congruência módulo m</h3>
+<p>a ≡ b (mod m) significa que a e b dão o <b>mesmo resto</b> quando divididos por m. Vale somar, subtrair e multiplicar dos dois lados: se a ≡ b então a + c ≡ b + c e a·c ≡ b·c.</p>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>Calendário:</b> hoje é segunda. Daqui a 100 dias? 100 = 14 × 7 + 2, resto 2: andam-se 2 dias além de semanas completas, então cai numa <b>quarta-feira</b>.<br>
+<b>Potência:</b> 3<sup>100</sup> dividido por 7. Como 3<sup>6</sup> = 729 ≡ 1 (mod 7), e 100 = 6 · 16 + 4, vale 3<sup>100</sup> ≡ 3<sup>4</sup> = 81 ≡ <b>4</b> (mod 7).</div>
+<div class="caixa dica"><strong>Como reconhecer</strong>
+Ciclo que se repete (dias da semana, horas, posição numa sequência periódica) pede o <b>resto</b> da divisão pelo tamanho do ciclo.</div>
+
+<h2 id="modelagem">20. Modelagem de problemas e leitura de gráficos e tabelas</h2>
+<h3>Do texto para a equação</h3>
+<ol>
+  <li>Diga o que é cada incógnita (x = quantidade de kits de R$ 15; y = de R$ 20).</li>
+  <li>Traduza cada frase em uma equação ou inequação: "total de" vira soma; "no máximo" vira ≤; "pelo menos" vira ≥.</li>
+  <li>Resolva e <b>confira no texto</b> (valores inteiros? positivos?).</li>
+</ol>
+<div class="caixa numero"><strong>Exemplos resolvidos</strong>
+<b>Sistema:</b> a prefeitura compra 10 kits, uns de R$ 15 e outros de R$ 20, gastando R$ 170. x + y = 10 e 15x + 20y = 170. De x = 10 − y: 150 − 15y + 20y = 170, logo y = 4 e <b>x = 6</b>.<br>
+<b>Inequação:</b> custo fixo de R$ 300 mais R$ 12 por atendimento; orçamento de R$ 900. 300 + 12n ≤ 900, então n ≤ 50: no máximo <b>50 atendimentos</b>.</div>
+<h3>Interpretação crítica de dados</h3>
+<ul>
+  <li><b>Variação percentual</b> tem como base o valor <b>inicial</b>. Atendimentos: 2023 = 200; 2024 = 250; 2025 = 300. De 2024 para 2025: 50 ÷ 250 = <b>20%</b>. Dividir pelo ano final dá 16,7%; usar o ano de 2023 como base dá 25%; olhar 2023 para 2025 dá 50%.</li>
+  <li><b>Pontos percentuais x porcentagem:</b> de 10% para 15% é aumento de 5 <b>pontos percentuais</b>, mas de 50% em relação ao valor anterior.</li>
+  <li><b>Gráfico:</b> olhe se o eixo começa em zero (um eixo cortado exagera as diferenças), a unidade (mil? milhão?) e o período. Em gráfico de setores, as fatias somam 100%.</li>
+  <li><b>Média x mediana:</b> um valor extremo puxa a média, mas pouco altera a mediana. Relatório que mostra só a média pode enganar.</li>
+  <li><b>Correlação não é causa:</b> duas curvas subindo juntas não provam que uma causa a outra.</li>
+</ul>
+<div class="caixa dica"><strong>Como reconhecer o tipo de questão</strong>
+Texto longo com números: separe o que é dado, o que é pedido e o que é "enfeite". Com tabelas, circule o <b>valor-base</b> de cada porcentagem antes de calcular.</div>
+
+<h2 id="questoes">21. Questões comentadas (formato da prova: 4 alternativas)</h2>
+<p>Questões originais, feitas para treinar. Responda antes de abrir o comentário. A resposta certa aparece em verde, como uma frase para gravar; cada alternativa errada vem riscada, com a conta ou o raciocínio que leva até ela.</p>
+
+<div class="questao" id="q1">
+<p><b>1.</b> A negação da proposição "Se o paciente tem dor, então ele toma analgésico" é:</p>
+<ol><li>Se o paciente não tem dor, então ele não toma analgésico.</li><li>O paciente tem dor e não toma analgésico.</li><li>Se o paciente não toma analgésico, então ele não tem dor.</li><li>O paciente não tem dor e toma analgésico.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">A negação de "se p, então q" é "p e não q": o paciente tem dor e não toma analgésico.</span></p>
+<p class="errada">A) <s>Se não tem dor, então não toma</s> → é a <b>inversa</b>, que não é equivalente nem é a negação.</p>
+<p class="errada">C) <s>Se não toma, então não tem dor</s> → é a <b>contrapositiva</b>: equivale à frase original, não a nega.</p>
+<p class="errada">D) <s>Não tem dor e toma</s> → negou a parte errada: a negação mantém a primeira parte ("tem dor") e nega a segunda ("não toma").</p>
+</details></div>
+
+<div class="questao" id="q2">
+<p><b>2.</b> A negação da frase "Todo dentista do posto usa luvas" é:</p>
+<ol><li>Nenhum dentista do posto usa luvas.</li><li>Todo dentista do posto não usa luvas.</li><li>Algum dentista do posto usa luvas.</li><li>Existe dentista do posto que não usa luvas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Para negar "todo A é B", basta existir um A que não é B: existe dentista do posto que não usa luvas.</span></p>
+<p class="errada">A) <s>Nenhum usa</s> → exagera: negar "todo" não exige que <b>nenhum</b> use.</p>
+<p class="errada">B) <s>Todo dentista não usa</s> → significa o mesmo que "nenhum usa", o erro de A.</p>
+<p class="errada">C) <s>Algum usa luvas</s> → pode ser verdade junto com a frase original (se todos usam, algum usa); não nega nada.</p>
+</details></div>
+
+<div class="questao" id="q3">
+<p><b>3.</b> Premissas: "Todo cirurgião-dentista tem registro no CRO." e "Nenhum profissional com registro no CRO atua de forma clandestina." Dessas premissas conclui-se, necessariamente, que:</p>
+<ol><li>nenhum cirurgião-dentista atua de forma clandestina.</li><li>algum cirurgião-dentista atua de forma clandestina.</li><li>todo profissional com registro no CRO é cirurgião-dentista.</li><li>todo profissional que atua de forma clandestina é cirurgião-dentista.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Se todo dentista está dentro do grupo com registro, e o grupo com registro não toca o dos clandestinos, nenhum dentista é clandestino.</span></p>
+<p class="errada">B) <s>algum dentista é clandestino</s> → contraria o desenho: o círculo dos dentistas fica fora do dos clandestinos.</p>
+<p class="errada">C) <s>todo registrado é dentista</s> → é a <b>inversa</b> da primeira premissa; o grupo com registro pode ter outros profissionais.</p>
+<p class="errada">D) <s>todo clandestino é dentista</s> → nada na premissa diz isso; os clandestinos nem tocam o grupo dos dentistas.</p>
+</details></div>
+
+<div class="questao" id="q4">
+<p><b>4.</b> Considere as premissas: "Se o equipamento está esterilizado, então o indicador está verde." e "O indicador está verde." Pode-se concluir que:</p>
+<ol><li>o equipamento está esterilizado.</li><li>o equipamento não está esterilizado.</li><li>nada se pode concluir sobre a esterilização do equipamento.</li><li>se o equipamento não está esterilizado, então o indicador não está verde.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Afirmar o consequente (o indicador verde) não prova o antecedente; o indicador pode estar verde por outro motivo, então nada se conclui.</span></p>
+<p class="errada">A) <s>está esterilizado</s> → é a falácia da <b>afirmação do consequente</b> (p → q; q; logo p).</p>
+<p class="errada">B) <s>não está esterilizado</s> → o indicador verde também não prova o contrário.</p>
+<p class="errada">D) <s>se não está esterilizado, o indicador não está verde</s> → é a <b>inversa</b> da premissa; falácia da negação do antecedente.</p>
+</details></div>
+
+<div class="questao" id="q5">
+<p><b>5.</b> Ana, Beto e Carla têm, cada um, o hábito de sempre dizer a verdade ou de sempre mentir. Ana diz: "Beto mente." Beto diz: "Carla mente." Carla diz: "Ana e Beto mentem." Quem diz a verdade?</p>
+<ol><li>Apenas Ana.</li><li>Apenas Beto.</li><li>Apenas Carla.</li><li>Ana e Carla.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Só Beto diz a verdade: Ana e Carla mentem.</span> Teste: se Beto fala a verdade, Carla mente (confere com a fala dele); se Carla mente, "Ana e Beto mentem" é falso, o que combina com Beto verdadeiro; e a fala de Ana ("Beto mente") é falsa, logo Ana mente.</p>
+<p class="errada">A) <s>Apenas Ana</s> → se Ana fala a verdade, Beto mente, então Carla fala a verdade; mas Carla diria que Ana mente: contradição.</p>
+<p class="errada">C) <s>Apenas Carla</s> → se Carla é verdadeira, Ana e Beto mentem; mas se Ana mente, "Beto mente" é falso, ou seja, Beto diria a verdade, o que contradiz a fala de Carla.</p>
+<p class="errada">D) <s>Ana e Carla</s> → se Ana é verdadeira, Beto mente; Carla verdadeira diria que Ana mente: contradição.</p>
+</details></div>
+
+<div class="questao" id="q6">
+<p><b>6.</b> Um capital de R$ 2.000 é aplicado a juros compostos de 10% ao ano, durante 2 anos. Os juros obtidos no período são de:</p>
+<ol><li>R$ 220.</li><li>R$ 400.</li><li>R$ 420.</li><li>R$ 2.420.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Os juros compostos são M − C = 2.000 × 1,1<sup>2</sup> − 2.000 = 2.420 − 2.000 = R$ 420.</span></p>
+<p class="errada">A) <s>R$ 220</s> → só o juro do 2º ano (10% de 2.200); faltou o do 1º ano (200).</p>
+<p class="errada">B) <s>R$ 400</s> → é o juro <b>simples</b> (2.000 × 0,10 × 2); esqueceu os juros sobre juros.</p>
+<p class="errada">D) <s>R$ 2.420</s> → é o <b>montante</b>, não os juros.</p>
+</details></div>
+
+<div class="questao" id="q7">
+<p><b>7.</b> Uma aplicação paga taxa nominal de 20% ao ano, com capitalização semestral. A taxa efetiva anual é de:</p>
+<ol><li>21%.</li><li>20%.</li><li>10%.</li><li>120%.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A taxa semestral é 10%, e a efetiva anual é 1,1<sup>2</sup> − 1 = 21%.</span></p>
+<p class="errada">B) <s>20%</s> → repetiu a taxa nominal; ignorou os juros sobre juros do 2º semestre.</p>
+<p class="errada">C) <s>10%</s> → é a taxa de <b>um semestre</b>, não a do ano.</p>
+<p class="errada">D) <s>120%</s> → multiplicou 1,1 × 2 = 2,2 em vez de elevar ao quadrado.</p>
+</details></div>
+
+<div class="questao" id="q8">
+<p><b>8.</b> Um financiamento de R$ 12.000 será pago em 4 parcelas mensais pelo SAC (amortização constante), com juros de 2% ao mês sobre o saldo devedor. O valor da 3ª parcela é de:</p>
+<ol><li>R$ 3.240.</li><li>R$ 3.060.</li><li>R$ 3.000.</li><li>R$ 3.120.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A amortização é 3.000 por mês; antes da 3ª parcela o saldo é 6.000, os juros são 120 e a parcela vale 3.000 + 120 = R$ 3.120.</span></p>
+<p class="errada">A) <s>R$ 3.240</s> → é a <b>1ª</b> parcela (juros de 2% sobre 12.000 = 240).</p>
+<p class="errada">B) <s>R$ 3.060</s> → é a <b>4ª</b> parcela (juros de 2% sobre 3.000 = 60).</p>
+<p class="errada">C) <s>R$ 3.000</s> → é só a amortização, sem os juros.</p>
+</details></div>
+
+<div class="questao" id="q9">
+<p><b>9.</b> Uma clínica atende 5 pacientes no primeiro dia e, a cada dia seguinte, atende 3 pacientes a mais que no dia anterior. O total de atendimentos nos 20 primeiros dias é de:</p>
+<ol><li>62.</li><li>335.</li><li>670.</li><li>620.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">É uma PA: o 20º termo é 5 + 19 × 3 = 62 e a soma é 20 × (5 + 62) ÷ 2 = 670.</span></p>
+<p class="errada">A) <s>62</s> → é o atendimento <b>do 20º dia</b>, não o total.</p>
+<p class="errada">B) <s>335</s> → dividiu por 4 em vez de por 2 na fórmula da soma.</p>
+<p class="errada">D) <s>620</s> → fez 20 × 62 ÷ 2, esquecendo de somar o primeiro termo (5).</p>
+</details></div>
+
+<div class="questao" id="q10">
+<p><b>10.</b> Uma cultura tem 500 bactérias e a população dobra a cada 3 horas. Após 12 horas, o número de bactérias é de:</p>
+<ol><li>8.000.</li><li>4.000.</li><li>2.000.</li><li>16.000.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Em 12 horas ocorrem 4 dobras, então 500 × 2<sup>4</sup> = 8.000.</span></p>
+<p class="errada">B) <s>4.000</s> → usou 3 dobras (500 × 2<sup>3</sup>), confundindo as 3 horas com o expoente.</p>
+<p class="errada">C) <s>2.000</s> → multiplicou por 4 (as 4 dobras) em vez de elevar 2 à 4ª potência.</p>
+<p class="errada">D) <s>16.000</s> → usou 5 dobras (500 × 2<sup>5</sup>), contando o instante inicial como uma dobra.</p>
+</details></div>
+
+<div class="questao" id="q11">
+<p><b>11.</b> O determinante da matriz de linhas (2 1 0), (1 3 1) e (0 1 2) é:</p>
+<ol><li>10.</li><li>12.</li><li>16.</li><li>8.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Por Sarrus, diagonais que descem: 12; diagonais que sobem: 4; determinante = 12 − 4 = 8.</span></p>
+<p class="errada">A) <s>10</s> → fez só 2 × (3·2 − 1·1) = 10 e esqueceu o segundo termo do desenvolvimento (−1 × 2 = −2).</p>
+<p class="errada">B) <s>12</s> → somou apenas as diagonais principais e esqueceu de subtrair as 3 que sobem.</p>
+<p class="errada">C) <s>16</s> → somou 12 + 4 em vez de subtrair.</p>
+</details></div>
+
+<div class="questao" id="q12">
+<p><b>12.</b> A reta r tem equação y = 3x + 1. O coeficiente angular de qualquer reta perpendicular a r é:</p>
+<ol><li>3.</li><li>−1/3.</li><li>−3.</li><li>1/3.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Retas perpendiculares têm produto dos coeficientes angulares igual a −1: 3 × (−1/3) = −1.</span></p>
+<p class="errada">A) <s>3</s> → é o coeficiente de uma reta <b>paralela</b>.</p>
+<p class="errada">C) <s>−3</s> → trocou só o sinal, sem inverter a fração (3 × −3 = −9).</p>
+<p class="errada">D) <s>1/3</s> → inverteu, mas esqueceu de trocar o sinal (3 × 1/3 = 1).</p>
+</details></div>
+
+<div class="questao" id="q13">
+<p><b>13.</b> Dois triângulos são semelhantes, e a razão entre dois lados correspondentes é 3. Se a área do triângulo menor é 8 cm<sup>2</sup>, a área do maior é:</p>
+<ol><li>24 cm<sup>2</sup>.</li><li>48 cm<sup>2</sup>.</li><li>72 cm<sup>2</sup>.</li><li>216 cm<sup>2</sup>.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">A razão entre as áreas é o quadrado da razão de semelhança: 8 × 3<sup>2</sup> = 72 cm<sup>2</sup>.</span></p>
+<p class="errada">A) <s>24</s> → multiplicou por 3 (k) em vez de por 9 (k<sup>2</sup>).</p>
+<p class="errada">B) <s>48</s> → multiplicou por 6 (3 × 2), tratando o quadrado como dobro.</p>
+<p class="errada">D) <s>216</s> → multiplicou por 27 (k<sup>3</sup>), que vale para <b>volumes</b>.</p>
+</details></div>
+
+<div class="questao" id="q14">
+<p><b>14.</b> Um cone tem raio da base 3 cm e altura 4 cm (a geratriz mede 5 cm). Seu volume é:</p>
+<ol><li>12π cm<sup>3</sup>.</li><li>36π cm<sup>3</sup>.</li><li>15π cm<sup>3</sup>.</li><li>4π cm<sup>3</sup>.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">O volume do cone é (1/3) π r<sup>2</sup> h = (1/3) · π · 9 · 4 = 12π cm<sup>3</sup>.</span></p>
+<p class="errada">B) <s>36π</s> → é o volume do <b>cilindro</b> (π · 9 · 4); esqueceu o 1/3.</p>
+<p class="errada">C) <s>15π</s> → usou a geratriz (5) no lugar da altura: (1/3) · π · 9 · 5. (15π também é o valor da área lateral.)</p>
+<p class="errada">D) <s>4π</s> → usou r em vez de r<sup>2</sup>: (1/3) · π · 3 · 4.</p>
+</details></div>
+
+<div class="questao" id="q15">
+<p><b>15.</b> Os tempos de espera (em minutos) de 8 consultas foram 2, 4, 4, 4, 5, 5, 7 e 9. Considerando esses 8 valores como a população toda, o coeficiente de variação é de:</p>
+<ol><li>25%.</li><li>80%.</li><li>250%.</li><li>40%.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A média é 5, a variância é 4, o desvio padrão é 2, e o coeficiente de variação é 2 ÷ 5 = 40%.</span></p>
+<p class="errada">A) <s>25%</s> → dividiu o desvio padrão (2) pelo <b>número de dados</b> (8).</p>
+<p class="errada">B) <s>80%</s> → usou a <b>variância</b> (4) no lugar do desvio padrão: 4 ÷ 5.</p>
+<p class="errada">C) <s>250%</s> → inverteu a razão: média ÷ desvio padrão = 5 ÷ 2.</p>
+</details></div>
+
+<div class="questao" id="q16">
+<p><b>16.</b> Um grupo tem 6 dentistas e 4 médicos. O número de comissões de 4 pessoas com exatamente 2 dentistas e 2 médicos é:</p>
+<ol><li>21.</li><li>90.</li><li>210.</li><li>360.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Escolhem-se os 2 dentistas e os 2 médicos, e as escolhas se multiplicam: C(6,2) × C(4,2) = 15 × 6 = 90.</span></p>
+<p class="errada">A) <s>21</s> → somou 15 + 6; as duas escolhas acontecem juntas, então multiplica.</p>
+<p class="errada">C) <s>210</s> → é C(10,4): todas as comissões de 4, sem a condição de 2 e 2.</p>
+<p class="errada">D) <s>360</s> → usou arranjos (30 × 12), contando a ordem, que numa comissão não importa.</p>
+</details></div>
+
+<div class="questao" id="q17">
+<p><b>17.</b> Em uma população, 10% das pessoas têm certa doença. Um teste dá positivo em 90% dos doentes e em 20% dos sadios. Sabendo que o teste de uma pessoa deu positivo, a probabilidade de ela estar doente é de:</p>
+<ol><li>1/3, ou cerca de 33%.</li><li>9%.</li><li>45%.</li><li>90%.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Entre os positivos, doentes são 0,09 e sadios 0,18; a probabilidade de doença é 0,09 ÷ 0,27 = 1/3.</span></p>
+<p class="errada">B) <s>9%</s> → é P(doente e positivo) = 0,09; faltou dividir pelo total de positivos.</p>
+<p class="errada">C) <s>45%</s> → dividiu 0,09 só por 0,20 (a taxa de falso positivo), esquecendo os doentes no denominador.</p>
+<p class="errada">D) <s>90%</s> → é a sensibilidade do teste, P(positivo | doente), a probabilidade "ao contrário".</p>
+</details></div>
+
+<div class="questao" id="q18">
+<p><b>18.</b> Uma caixa escura contém muitas luvas de três cores (pretas, brancas e azuis). O menor número de luvas que se deve retirar, sem ver a cor, para ter certeza de obter 3 da mesma cor é:</p>
+<ol><li>3.</li><li>6.</li><li>9.</li><li>7.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">No pior caso saem 2 de cada cor (6 luvas) sem trio; a 7ª luva garante um trio.</span></p>
+<p class="errada">A) <s>3</s> → só serve se der sorte; não é "ter certeza".</p>
+<p class="errada">B) <s>6</s> → é exatamente o pior caso (2+2+2), que ainda não tem trio; falta o "+1".</p>
+<p class="errada">C) <s>9</s> → multiplicou 3 cores por 3 luvas; passa da quantidade necessária.</p>
+</details></div>
+
+<div class="questao" id="q19">
+<p><b>19.</b> Hoje é segunda-feira. Daqui a 100 dias será:</p>
+<ol><li>terça-feira.</li><li>quarta-feira.</li><li>quinta-feira.</li><li>sábado.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">100 dividido por 7 deixa resto 2, então 100 dias depois é 2 dias após segunda: quarta-feira.</span></p>
+<p class="errada">A) <s>terça</s> → contou 99 dias (resto 1) ou parou um dia antes.</p>
+<p class="errada">C) <s>quinta</s> → contou 101 dias, ou somou 1 ao resto por incluir o dia de hoje.</p>
+<p class="errada">D) <s>sábado</s> → andou 2 dias para trás (de segunda para sábado) em vez de para a frente.</p>
+</details></div>
+
+<div class="questao" id="q20">
+<p><b>20.</b> Uma unidade de saúde registrou 200 atendimentos em 2023, 250 em 2024 e 300 em 2025. O aumento percentual de 2024 para 2025 foi de:</p>
+<ol><li>16,7%.</li><li>25%.</li><li>20%.</li><li>50%.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">O aumento é 50 atendimentos sobre a base de 2024: 50 ÷ 250 = 20%.</span></p>
+<p class="errada">A) <s>16,7%</s> → dividiu 50 por 300, tomando o ano final como base.</p>
+<p class="errada">B) <s>25%</s> → dividiu 50 por 200, usando 2023 como base.</p>
+<p class="errada">D) <s>50%</s> → é o aumento de 2023 para 2025 (100 sobre 200), não o de 2024 para 2025.</p>
+</details></div>
+
+<h2 id="respostas">22. Respostas que a banca dá como certas</h2>
+<p>Resumo para revisar na véspera: são as frases corretas que as questões acima ensinam a gravar.</p>
+<h3>Lógica</h3>
+<ul class="respostas">
+  <li>A negação de "se p, então q" é "p e não q".</li>
+  <li>A negação de "todo A é B" é "existe A que não é B"; a de "nenhum A é B" é "algum A é B".</li>
+  <li>De "todo A é B" e "nenhum B é C" conclui-se "nenhum A é C".</li>
+  <li>De "se p, então q" e "q" nada se conclui sobre p (afirmação do consequente é falácia).</li>
+  <li>Em verdades e mentiras, suponha uma fala verdadeira, deduza e teste a contradição.</li>
+</ul>
+<h3>Financeira, progressões e funções</h3>
+<ul class="respostas">
+  <li>Juros compostos: M = C(1+i)<sup>n</sup>; juros = M − C.</li>
+  <li>A taxa efetiva vem de (1 + taxa do período)<sup>nº de períodos</sup> − 1; nominal 20% ao ano capitalizada por semestre dá 21%.</li>
+  <li>SAC: amortização constante e parcela decrescente; Price: parcela constante.</li>
+  <li>PA: S<sub>n</sub> = n(a<sub>1</sub> + a<sub>n</sub>)/2. Exponencial: quantidade final = inicial × fator<sup>períodos</sup>.</li>
+</ul>
+<h3>Matrizes, geometria e trigonometria</h3>
+<ul class="respostas">
+  <li>Determinante 3×3 por Sarrus: diagonais que descem menos as que sobem.</li>
+  <li>Retas perpendiculares: produto dos coeficientes angulares igual a −1.</li>
+  <li>Razão de áreas semelhantes é k<sup>2</sup>; de volumes, k<sup>3</sup>.</li>
+  <li>Volume do cone = (1/3) π r<sup>2</sup> h, com a altura (não a geratriz).</li>
+  <li>sen<sup>2</sup> x + cos<sup>2</sup> x = 1; confira o sinal pelo quadrante.</li>
+</ul>
+<h3>Dados, contagem e discreta</h3>
+<ul class="respostas">
+  <li>Coeficiente de variação = desvio padrão ÷ média.</li>
+  <li>Comissão (ordem não importa) usa combinação; cargos diferentes usam arranjo.</li>
+  <li>Bayes: divida o caminho de interesse pela soma de todos os caminhos que levam ao evento dado.</li>
+  <li>Gavetas: pior caso mais um. Ciclos: resto da divisão (100 dias = 14 semanas e 2 dias).</li>
+  <li>A variação percentual usa como base o valor inicial.</li>
+</ul>
+
+<h2 id="fontes">23. Fontes</h2>
+<p>Conferido em 27/10/2026.</p>
+<ul class="fontes">
+  <li>Edital do Concurso Público nº 001, de 15/09/2026, da Prefeitura Municipal de Barão de Cotegipe (RS): Anexo III, conteúdo programático de Matemática e Raciocínio Lógico (Nível Superior), 20 itens.</li>
+  <li>Conteúdo: matemática do ensino médio e superior introdutório (definições e fórmulas-padrão, sem texto de lei). A teoria de lógica foi reescrita a partir de material de estudo próprio do autor, sem aproveitar questões de provas de outras bancas.</li>
+  <li>As questões desta página são originais; os valores, os exemplos resolvidos e o gabarito foram conferidos por programa de computador (cálculo exato com frações e verificação por força bruta nos itens de lógica).</li>
+</ul>
+<p class="sub">O Instituto DOM não publica cadernos de prova: nada aqui afirma frequência ou incidência de assuntos. Itens do programa tratados só em nível de reconhecimento: cônicas, inequações trigonométricas, inferência estatística e relações.</p>
+</main>
+
+<footer>
+  Material de estudo do concurso de Barão de Cotegipe. Prevalece sempre o texto oficial do edital.
+  <br><a class="voltar" href="../disciplinas/index.html#matematica">← Voltar às trilhas das disciplinas</a>
+</footer>
+<script>
+  // Na impressão, abre os comentários das questões para que saiam no papel.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+
+</body>
+</html>

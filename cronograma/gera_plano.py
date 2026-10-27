@@ -7,7 +7,9 @@ Prova: 22/11/2026 (Domingo, 3h). 30 questões de 2 pts, mínimo 36/60 (60%).
 Carga: 2 horas diárias (120 minutos por dia) durante 28 dias (25/10 a 21/11).
 """
 import datetime as dt
+import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -248,12 +250,12 @@ DIAS_PLANO = [
                 "materiais": ["dec7508"]
             },
             {
-                "id": "2026-10-31-1",
-                "disciplina": "SAU",
-                "titulo": "Decreto 7.508/2011: COAP, Mapa da Saúde, RENAME e RENASES",
-                "detalhe": "Instrumentos do Decreto 7.508: Mapa da Saúde (descrição geográfica da distribuição de recursos humanos e de ações e serviços de saúde ofertados pelo SUS e iniciativa privada); RENAME (Relação Nacional de Medicamentos Essenciais - compreende seleção de medicamentos e insumos); RENASES (Relação Nacional de Ações e Serviços de Saúde); COAP (Contrato Organizativo da Ação Pública da Saúde - acordo de colaboração firmado entre entes federativos para organizar a rede interfederativa).",
+                "id": "2026-10-31-2",
+                "disciplina": "ATU",
+                "titulo": "Atualidades: Diversidade Sociocultural, Educação, Saúde e Indicadores Sociais",
+                "detalhe": "Leia as seções sobre diversidade sociocultural e manifestações artísticas (itens 6 do programa) e sobre educação, saúde e indicadores sociais (item 7) na apostila de Atualidades. Use o mapa geral da apostila para revisar os pontos principais e termine resolvendo as questões comentadas dessas seções.",
                 "minutos": 60,
-                "materiais": ["dec7508"]
+                "materiais": ["anexo_prog"]
             }
         ],
         "totalMin": 120
@@ -270,7 +272,7 @@ DIAS_PLANO = [
                 "id": "2026-11-01-0",
                 "disciplina": "LEG",
                 "titulo": "Constituição Federal: Direitos e Deveres Individuais e Coletivos (Art. 5º)",
-                "detalhe": "Art. 5º da CF/88 (Caput e incisos mais cobrados em prova): Inviolabilidade do direito à vida, liberdade, igualdade, segurança e propriedade. Inviolabilidade do domicílio (a casa é asilo inviolável, ninguém nela podendo penetrar sem consentimento, salvo flagrante delito, desastre, prestar socorro, ou durante o dia por determinação judicial!). Sigilo de correspondência e comunicações telegráficas/dados/telefônicas (escuta telefônica só por ordem judicial para investigação criminal ou instrução penal). Remédios constitucionais: Habeas Corpus (liberdade de locomoção), Habeas Data (acesso/retificação de informações pessoais), Mandado de Segurança (direito líquido e certo não amparado por HC ou HD), Ação Popular (anular ato lesivo ao patrimônio público, moralidade, meio ambiente, patrimônio histórico).",
+                "detalhe": "Art. 5º da CF/88 (caput e incisos principais): Inviolabilidade do direito à vida, liberdade, igualdade, segurança e propriedade. Inviolabilidade do domicílio (a casa é asilo inviolável, ninguém nela podendo penetrar sem consentimento, salvo flagrante delito, desastre, prestar socorro, ou durante o dia por determinação judicial!). Sigilo de correspondência e comunicações telegráficas/dados/telefônicas (escuta telefônica só por ordem judicial para investigação criminal ou instrução penal). Remédios constitucionais: Habeas Corpus (liberdade de locomoção), Habeas Data (acesso/retificação de informações pessoais), Mandado de Segurança (direito líquido e certo não amparado por HC ou HD), Ação Popular (anular ato lesivo ao patrimônio público, moralidade, meio ambiente, patrimônio histórico).",
                 "minutos": 60,
                 "materiais": ["cf88_geral"]
             },
@@ -300,12 +302,12 @@ DIAS_PLANO = [
                 "materiais": ["manual_art", "caderno_atencao_bucal"]
             },
             {
-                "id": "2026-11-02-1",
+                "id": "2026-11-02-2",
                 "disciplina": "ESP",
-                "titulo": "Materiais Odontológicos Forradores e Restauradores e Proteção Dentinopulpar",
-                "detalhe": "Proteção do complexo dentinopulpar: Cavidade rasa (sistema adesivo + resina), média (CIV + restauração), profunda sem exposição (CIV ou hidróxido de cálcio na parede de fundo + CIV de base), exposição pulpar acidental (capeamento pulpar direto com Hidróxido de Cálcio pró-análise ou MTA + CIV de base). Propriedades dos materiais: Resinas compostas (matriz orgânica Bis-GMA, partículas inorgânicas de carga, agente de união silano); CIV (liberação contínua de flúor, adesão química ao cálcio de esmalte e dentina, coeficiente de expansão térmica similar ao dente, biocompatibilidade).",
+                "titulo": "Flúor (usos tópico e sistêmico) e Epidemiologia em Saúde Bucal: CPO-D, ceo-d e SB Brasil",
+                "detalhe": "Leia na apostila de Odontologia as seções de flúor e de epidemiologia (CPO-D, ceo-d e SB Brasil). Foque nas caixas de pegadinha e confira o que você acertou nas questões comentadas.",
                 "minutos": 60,
-                "materiais": ["caderno_atencao_bucal"]
+                "materiais": ["guia_fluor", "caderno_atencao_bucal"]
             }
         ],
         "totalMin": 120
@@ -417,12 +419,12 @@ DIAS_PLANO = [
         "marcos": [],
         "tarefas": [
             {
-                "id": "2026-11-07-0",
-                "disciplina": "ESP",
-                "titulo": "Farmacologia Odontológica: Analgésicos, Anti-inflamatórios Não Esteroidais (AINEs) e Corticoides",
-                "detalhe": "Mecanismo de ação: AINEs inibem a ciclo-oxigenase (COX-1 e COX-2), bloqueando a síntese de prostaglandinas. Indicações e contraindicações clínicas: Ibuprofeno (400 a 600mg de 8/8h), Nimesulida (100mg 12/12h), Cetoprofeno (100mg 12/12h). Contraindicações de AINEs: úlcera péptica ativa, insuficiência renal grave, asma, gravidez no 3º trimestre. Dipirona (500mg a 1g) e Paracetamol (500 a 750mg) em analgesia. Corticoides em dose única pré-operatória preemptiva (Dexametasona 4 a 8mg VO) para controle do edema inflamatório em cirurgias de terceiros molares.",
+                "id": "2026-11-07-2",
+                "disciplina": "POR",
+                "titulo": "Colocação Pronominal, Tempos, Modos e Vozes Verbais e Variação Linguística",
+                "detalhe": "Leia na apostila de Português as seções de colocação pronominal, tempos/modos/vozes e variação linguística. Resolva as questões comentadas dos temas e anote as regras em que errar.",
                 "minutos": 60,
-                "materiais": ["caderno_atencao_bucal"]
+                "materiais": ["anexo_prog"]
             },
             {
                 "id": "2026-11-07-1",
@@ -555,12 +557,12 @@ DIAS_PLANO = [
                 "materiais": ["caderno_atencao_bucal"]
             },
             {
-                "id": "2026-11-12-1",
-                "disciplina": "ESP",
-                "titulo": "Técnicas Anestésicas e Complicações: Bloqueio do Nervo Alveolar Inferior e Acidentes",
-                "detalhe": "Técnicas infiltrativas (maxila, osso poroso) vs bloqueios regionais (mandíbula, osso cortical espesso). Bloqueio do Nervo Alveolar Inferior (BNAI) e nervo lingual: reparos anatômicos (linha oblíqua, fossa pterigotemporal, prega pterigomandibular, plano oclusal a 1cm acima dos molares inferiores). Bloqueio do nervo bucal para gengiva vestibular dos molares inferiores. Acidentes e complicações: quebra de agulha, trismo (espasmo muscular por trauma no pterigoideo medial), parestesia (trauma mecânico com agulha no tronco nervoso), hematoma, paralisia facial transitória (injeção dentro da glândula parótida posterior à mandíbula), toxicidade sistêmica por injeção intravascular acidental (aspirar sempre antes de injetar!).",
+                "id": "2026-11-12-2",
+                "disciplina": "LEG",
+                "titulo": "Regime Jurídico dos Servidores de Barão de Cotegipe (Lei Municipal 1.867/2008)",
+                "detalhe": "Leia na apostila de Legislação a seção do Regime Jurídico dos servidores municipais (Lei 1.867/2008) e confira as questões comentadas. É conteúdo local, pedido no programa do edital: atenção às diferenças entre a lei municipal e a Constituição.",
                 "minutos": 60,
-                "materiais": ["caderno_atencao_bucal"]
+                "materiais": ["regime_bc"]
             }
         ],
         "totalMin": 120
@@ -665,7 +667,7 @@ DIAS_PLANO = [
             {
                 "id": "2026-11-16-1",
                 "disciplina": "POR",
-                "titulo": "Pontuação Estilística e Sintática e Figuras de Linguagem Mais Cobradas",
+                "titulo": "Pontuação Estilística e Sintática e Figuras de Linguagem",
                 "detalhe": "Regras obrigatórias de pontuação: NUNCA se separa com vírgula o sujeito do seu verbo, nem o verbo do seu complemento direto ou indireto! Vírgula obrigatória para isolar vocativo, aposto explicativo, orações adjetivas explicativas, orações coordenadas adversativas ('mas', 'porém') e adjunto adverbial deslocado de grande extensão. Figuras de sintaxe/pensamento em concursos: Hipérbato (inversão da ordem direta), Anacoluto (quebra da estrutura sintática), Zeugma (omissão de termo já expresso), Paradoxo (ideias inconciliáveis) e Metonímia.",
                 "minutos": 60,
                 "materiais": ["anexo_prog"]
@@ -705,10 +707,10 @@ DIAS_PLANO = [
         "marcos": [],
         "tarefas": [
             {
-                "id": "2026-11-18-0",
+                "id": "2026-11-18-2",
                 "disciplina": "ESP",
-                "titulo": "Cirurgia Oral Menor na Atenção Básica: Princípios de Exodontia e Cuidados Cirúrgicos",
-                "detalhe": "Tempos cirúrgicos fundamentais: Diérese (incisão/descolamento), Exérese (remoção do dente/lesão), Hemostasia e Síntese (sutura). Princípios mecânicos dos fórceps e alavancas (alavanca de primeira classe interfixa, cunha e roda/eixo). Movimentos de luxação e expansão alveolar (intrusão, lateralidade vestibular/lingual, rotação para raízes cônicas e tração). Cuidados pré-operatórios: anamnese detalhada, controle pressórico e glicêmico. Cuidados pós-operatórios: mordedura de gaze por 30-45 min, gelo nas primeiras 24-48h, repouso, dieta fria e líquida/pastosa no 1º dia, evitar bochechos vigorosos para não deslocar o coágulo sanguíneo.",
+                "titulo": "Saúde Bucal na Atenção Básica: Periodonto, Lesões de Boca, Oclusão e SUS na Odontologia",
+                "detalhe": "Leia na apostila de Odontologia as seções de periodonto e lesões de boca, oclusão (classificação de Angle) e SUS: determinantes e sistemas de informação. Resolva as questões comentadas dessas seções.",
                 "minutos": 60,
                 "materiais": ["caderno_atencao_bucal"]
             },
@@ -809,7 +811,142 @@ DIAS_PLANO = [
 ]
 
 
+# ---------------------------------------------------------------------------
+# Apostilas HTML (edital/apostilas/): cada tarefa aponta para a secao certa.
+# O gerador le os <h2 id="..."> das apostilas e FALHA se arquivo ou ancora
+# nao existirem, para nunca publicar um botao quebrado.
+# ---------------------------------------------------------------------------
+PASTA_APOSTILAS = PASTA.parent / "edital" / "apostilas"
+APOSTILAS = {
+    "sau": ("saude-sus.html", "Saúde e SUS"),
+    "leg": ("legislacao.html", "Legislação"),
+    "por": ("portugues.html", "Português"),
+    "mat": ("matematica.html", "Matemática e Lógica"),
+    "atu": ("atualidades.html", "Atualidades"),
+    "odo": ("odontologia.html", "Odontologia"),
+}
+
+# id da tarefa -> lista de "apostila#ancora" (a ordem e a ordem dos botoes)
+APOSTILA_DA_TAREFA = {
+    "2026-10-25-0": ["sau#cf"],
+    "2026-10-25-1": ["sau#l8080"],
+    "2026-10-26-0": ["leg#cf1", "leg#cf37"],
+    "2026-10-26-1": ["leg#lom"],
+    "2026-10-27-0": ["por#leitura"],
+    "2026-10-27-1": ["por#semantica"],
+    "2026-10-28-0": ["mat#logica"],
+    "2026-10-28-1": ["mat#logica"],
+    "2026-10-29-0": ["atu#municipio"],
+    "2026-10-29-1": ["atu#municipio"],
+    "2026-10-30-0": ["odo#etica"],
+    "2026-10-30-1": ["odo#bio", "odo#ergonomia", "sau#nr32"],
+    "2026-10-31-0": ["sau#d7508"],
+    "2026-10-31-2": ["atu#cultura", "atu#indicadores", "atu#biomas"],
+    "2026-11-01-0": ["leg#cf5"],
+    "2026-11-01-1": ["leg#cf6"],
+    "2026-11-02-0": ["odo#carie", "odo#materiais"],
+    "2026-11-02-2": ["odo#fluor", "odo#epidemio"],
+    "2026-11-03-0": ["por#periodo"],
+    "2026-11-03-1": ["por#quese"],
+    "2026-11-04-0": ["mat#quant"],
+    "2026-11-04-1": ["mat#quant"],
+    "2026-11-05-0": ["sau#pnab"],
+    "2026-11-05-1": ["odo#aps", "sau#pnab"],
+    "2026-11-06-0": ["atu#geopolitica", "atu#economia"],
+    "2026-11-06-1": ["atu#ciencia"],
+    "2026-11-07-1": ["odo#farmaco", "odo#urgencias"],
+    "2026-11-07-2": ["por#colocacao", "por#vozes", "por#variacao"],
+    "2026-11-08-0": ["leg#atos"],
+    "2026-11-08-1": ["leg#atos"],
+    "2026-11-09-0": ["por#concordancia"],
+    "2026-11-09-1": ["por#regencia", "por#crase"],
+    "2026-11-10-0": ["mat#combinatoria"],
+    "2026-11-10-1": ["mat#probabilidade"],
+    "2026-11-11-0": ["sau#pnh"],
+    "2026-11-11-1": ["sau#inclusao", "sau#mental"],
+    "2026-11-12-0": ["odo#anestesia"],
+    "2026-11-12-2": ["leg#estatuto"],
+    "2026-11-13-0": ["leg#poderes"],
+    "2026-11-13-1": ["leg#orgaos", "leg#estatuto"],
+    "2026-11-14-0": ["atu#ambiente"],
+    "2026-11-14-1": ["atu#sociedade"],
+    "2026-11-15-0": ["por#questoes", "mat#questoes", "atu#questoes"],
+    "2026-11-15-1": ["leg#questoes", "sau#questoes", "odo#questoes"],
+    "2026-11-16-0": ["por#oficial", "por#ata-relatorio"],
+    "2026-11-16-1": ["por#pontuacao", "por#figuras"],
+    "2026-11-17-0": ["mat#razao", "mat#financeira"],
+    "2026-11-17-1": ["mat#estatistica", "mat#modelagem"],
+    "2026-11-18-1": ["odo#pulpa", "odo#urgencias"],
+    "2026-11-18-2": ["odo#perio", "odo#oclusao", "odo#sus"],
+    "2026-11-19-0": ["sau#l8142"],
+    "2026-11-19-1": ["sau#pacto"],
+    "2026-11-20-0": ["por#respostas", "mat#respostas", "atu#respostas"],
+    "2026-11-20-1": ["leg#respostas", "sau#respostas", "odo#respostas"],
+    "2026-11-21-0": ["por#mapa", "mat#mapa", "atu#mapa", "leg#mapa", "sau#mapa", "odo#mapa"],
+}
+
+# Texto de orientacao colocado ANTES do detalhe original nas tarefas de revisao.
+ORIENTACAO_REVISAO = {
+    "2026-11-15-0": "COMO FAZER: use as questões comentadas das apostilas de Português, Matemática e Atualidades (botões abaixo) como simulado. ",
+    "2026-11-15-1": "COMO FAZER: use as questões comentadas das apostilas de Legislação, Saúde e Odontologia (botões abaixo) como simulado. ",
+    "2026-11-20-0": "COMO FAZER: em cada apostila abaixo, releia a lista 'Respostas que a banca dá como certas' e refaça as questões comentadas que você errou. ",
+    "2026-11-20-1": "COMO FAZER: em cada apostila abaixo, releia a lista 'Respostas que a banca dá como certas' e refaça as questões comentadas que você errou. ",
+    "2026-11-21-0": "Os botões abaixo abrem o mapa geral de cada apostila para a leitura rápida. ",
+}
+
+
+def _carregar_ancoras():
+    """Le os <h2 id> de cada apostila: {chave: {ancora: titulo limpo}}."""
+    saida = {}
+    for chave, (arq, _nome) in APOSTILAS.items():
+        caminho = PASTA_APOSTILAS / arq
+        if not caminho.is_file():
+            sys.exit(f"ERRO: apostila inexistente: {caminho}")
+        texto = caminho.read_text(encoding="utf-8")
+        ancoras = {}
+        for m in re.finditer(r'<h2[^>]*id="([^"]+)"[^>]*>(.*?)</h2>', texto, re.S):
+            t = html.unescape(re.sub(r"<[^>]+>", "", m.group(2))).strip()
+            t = re.sub(r"^\d+\.\s*", "", t)               # tira a numeracao "2. "
+            t = re.sub(r"\s*\((itens?|item)\s[^)]*\)\s*$", "", t)  # tira "(item 3)"
+            ancoras[m.group(1)] = t
+        saida[chave] = ancoras
+    return saida
+
+
+def aplicar_apostilas(dias):
+    """Acrescenta a cada tarefa o campo 'apostilas' (lista de botoes)."""
+    ancoras = _carregar_ancoras()
+    ids = set()
+    for dia in dias:
+        for t in dia["tarefas"]:
+            ids.add(t["id"])
+            pre = ORIENTACAO_REVISAO.get(t["id"])
+            if pre and not t["detalhe"].startswith(pre):
+                t["detalhe"] = pre + t["detalhe"]
+            botoes = []
+            for ref in APOSTILA_DA_TAREFA.get(t["id"], []):
+                chave, ancora = ref.split("#")
+                if ancora not in ancoras[chave]:
+                    sys.exit(f"ERRO: ancora '{ancora}' nao existe em {APOSTILAS[chave][0]} (tarefa {t['id']})")
+                arq, nome = APOSTILAS[chave]
+                titulo = ancoras[chave][ancora]
+                if ancora == "mapa":
+                    titulo = "Mapa geral"
+                botoes.append({
+                    "rotulo": f"Abrir apostila: {nome} — {titulo}",
+                    "link": f"../edital/apostilas/{arq}#{ancora}",
+                })
+            if botoes:
+                t["apostilas"] = botoes
+            else:
+                t.pop("apostilas", None)
+    desconhecidos = set(APOSTILA_DA_TAREFA) - ids
+    if desconhecidos:
+        sys.exit(f"ERRO: ids de tarefa inexistentes no mapa de apostilas: {sorted(desconhecidos)}")
+
+
 def gerar_plano():
+    aplicar_apostilas(DIAS_PLANO)
     plano = {
         "titulo": "Concurso Barão de Cotegipe (RS) – Edital 001/2026 – Odontólogo/PSF",
         "cargo": "Odontólogo – PSF (Cód. 809)",

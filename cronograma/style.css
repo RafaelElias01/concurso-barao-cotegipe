@@ -140,3 +140,11 @@ details.dia.feito .dia-data::after{content:" \2713";color:var(--ok)}
 .mat-card{background:var(--card);border:1px solid var(--borda);border-radius:10px;padding:12px 14px}
 .mat-card h3{margin:0 0 6px;font-size:.95rem}
 .mat-card p{margin:0;font-size:.85rem;color:var(--suave)}
+.t-apostilas{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.btn-apostila{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:8px;background:var(--acento);color:var(--acento-t);font-weight:600;font-size:.9rem;line-height:1.3;overflow-wrap:anywhere}
+.btn-apostila:hover{filter:brightness(1.08)}
+.btn-apostila:focus-visible,.t-mats a:focus-visible{outline:3px solid var(--hoje);outline-offset:2px}
+@media (max-width:767px){
+  .btn-apostila{min-height:44px;width:100%;box-sizing:border-box}
+  .t-mats a{display:inline-flex;align-items:center;min-height:44px}
+}

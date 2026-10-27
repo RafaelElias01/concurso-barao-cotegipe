@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Apostila de revisão de Odontologia para o concurso de Odontólogo/PSF de Barão de Cotegipe: ética do CFO, flúor, epidemiologia, ART, periodonto, biossegurança, anestesia, urgências, farmacologia, radiologia e saúde bucal no SUS, com fontes oficiais citadas.">
+<title>Apostila de Odontologia</title>
+<style>
+  :root {
+    --fundo: #fbfaf7; --texto: #1d2125; --suave: #5b6470; --linha: #d9dde2; --cartao: #ffffff;
+    --conceito: #1f6fb2; --conceito-bg: #e8f1fa;
+    --dica: #237a45; --dica-bg: #e7f5ec;
+    --cai: #b45f06; --cai-bg: #fdf0e1;
+    --pega: #b3261e; --pega-bg: #fbe9e7;
+    --numero: #6b4aa5; --numero-bg: #f1ecfa;
+    --foco: #1f6fb2;
+    color-scheme: light dark;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+      --conceito: #79b8ee; --conceito-bg: #182a3b;
+      --dica: #74cf95; --dica-bg: #17301f;
+      --cai: #f2b264; --cai-bg: #3a2814;
+      --pega: #f08a80; --pega-bg: #3b1d1a;
+      --numero: #bfa5f0; --numero-bg: #2a2140;
+      --foco: #79b8ee;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fundo: #15181c; --texto: #e7e9ec; --suave: #a3abb5; --linha: #343a42; --cartao: #1d2126;
+    --conceito: #79b8ee; --conceito-bg: #182a3b;
+    --dica: #74cf95; --dica-bg: #17301f;
+    --cai: #f2b264; --cai-bg: #3a2814;
+    --pega: #f08a80; --pega-bg: #3b1d1a;
+    --numero: #bfa5f0; --numero-bg: #2a2140;
+    --foco: #79b8ee;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto); }
+  main, header, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: .4rem 0; }
+  h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.4rem 0 .6rem; padding-top: .6rem; border-top: 2px solid var(--linha); scroll-margin-top: 12px; }
+  h3 { font-size: 1.15rem; margin: 1.4rem 0 .4rem; }
+  a { color: var(--conceito); }
+  a:focus-visible, summary:focus-visible, button:focus-visible, .mapa:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }
+  .sub { color: var(--suave); margin: 0; }
+  .voltar { display: inline-flex; align-items: center; min-height: 44px; }
+  .caixa { border-left: 5px solid; border-radius: 8px; padding: 10px 14px; margin: 12px 0; }
+  .caixa > strong:first-child { display: block; margin-bottom: 2px; }
+  .conceito { border-color: var(--conceito); background: var(--conceito-bg); }
+  .dica { border-color: var(--dica); background: var(--dica-bg); }
+  .cai { border-color: var(--cai); background: var(--cai-bg); }
+  .pega { border-color: var(--pega); background: var(--pega-bg); }
+  .numero { border-color: var(--numero); background: var(--numero-bg); }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 10px; padding: 0; list-style: none; font-size: .9rem; }
+  .legenda li { padding: 2px 10px; border-radius: 0 6px 6px 0; border-left: 5px solid; }
+  .indice { columns: 2 260px; padding-left: 1.2rem; }
+  .indice li { break-inside: avoid; margin: 2px 0; }
+  .indice a { display: inline-block; min-height: 32px; padding: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--linha); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--cartao); }
+  .tabela { overflow-x: auto; }
+  .mapa { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 8px; margin: 14px 0; }
+  .mapa svg { width: 100%; height: auto; display: block; }
+  .mapa svg text { font-family: system-ui, sans-serif; fill: var(--texto); }
+  .mapa .c-ramo { stroke-width: 3; fill: none; }
+  .mapa .no { stroke-width: 2; }
+  .mapa .t-titulo { font-weight: 700; font-size: 15px; }
+  .mapa .t-folha { font-size: 12.5px; }
+  .s-conceito { stroke: var(--conceito); } .f-conceito { fill: var(--conceito-bg); }
+  .s-dica { stroke: var(--dica); } .f-dica { fill: var(--dica-bg); }
+  .s-cai { stroke: var(--cai); } .f-cai { fill: var(--cai-bg); }
+  .s-pega { stroke: var(--pega); } .f-pega { fill: var(--pega-bg); }
+  .s-numero { stroke: var(--numero); } .f-numero { fill: var(--numero-bg); }
+  .s-centro { stroke: var(--texto); } .f-centro { fill: var(--cartao); }
+  .questao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+  .questao ol { list-style: upper-alpha; padding-left: 1.6rem; margin: 6px 0; }
+  .questao li { margin: 3px 0; }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: 6px; color: var(--conceito); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "▸"; display: inline-block; transition: transform .15s; }
+  details[open] > summary::before { transform: rotate(90deg); }
+  .certa { background: var(--dica-bg); border-left: 5px solid var(--dica); padding: 6px 10px; border-radius: 6px; margin: 6px 0; }
+  .errada { color: var(--suave); margin: 4px 0; }
+  .errada s { color: var(--pega); }
+  .grava { font-weight: 700; }
+  .respostas li { margin: 4px 0; }
+  .fontes li { margin: 3px 0; word-break: break-word; }
+  footer { padding: 32px 16px 48px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 1024px) { :root { font-size: 16.5px; } }
+  .mapa-dica { display: none; color: var(--suave); font-size: .9rem; margin: 0 0 4px; }
+  @media (max-width: 768px) {
+    h1 { font-size: 1.6rem; }
+    .mapa { overflow-x: auto; }
+    .mapa svg { min-width: 900px; }
+    .mapa-dica { display: block; }
+    .indice a { min-height: 44px; display: inline-flex; align-items: center; }
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+    th, td { padding: 6px; font-size: .9rem; }
+  }
+  @media (max-width: 480px) {
+    :root { font-size: 16px; }
+    .caixa, .questao { padding: 9px 10px; }
+  }
+  @media print {
+    details { display: block; } details > * { display: block; }
+    a { color: inherit; } .voltar { display: none; }
+    h2 { break-after: avoid; } .questao, .caixa, .mapa { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="voltar" href="../disciplinas/index.html#odontologia">← Voltar às trilhas das disciplinas</a>
+  <h1>Odontologia (Conhecimentos Específicos)</h1>
+  <p class="sub">Concurso de Barão de Cotegipe (RS), Odontólogo/PSF, Instituto DOM, prova em 22/11/2026</p>
+
+  <div class="caixa conceito">
+    <strong>O que é esta página</strong>
+    Uma revisão para quem já é dentista formado e tem CRO. Ela não ensina a clínica do zero: junta, em ordem do programa do edital (cód. 808/809), o que costuma virar alternativa de prova, como números, doses máximas, classificações e condutas de protocolo. Cada afirmação vem de uma fonte oficial ou acadêmica pública, citada no texto; a lista completa está no final.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Aviso</strong>
+    Esta é uma revisão para prova. Condutas clínicas seguem sempre os protocolos e as bulas oficiais vigentes, não esta página. Onde não consegui abrir uma fonte confiável para um número, não coloquei o número e escrevi "consulte a bula" (veja a seção 17).
+  </div>
+
+  <div class="caixa cai">
+    <strong>Quanto isso vale na prova</strong>
+    Conhecimentos Específicos vale 5 das 30 questões (10 pontos), com 4 alternativas (A a D). O programa tem cerca de 20 temas; por isso a profundidade aqui é proporcional ao que é mais típico de um dentista de PSF: ética, flúor, epidemiologia, ART, biossegurança, anestesia, urgências, farmacologia, radiologia e cirurgia menor.
+  </div>
+
+  <div class="caixa pega">
+    <strong>Sobre "o que mais cai"</strong>
+    O Instituto DOM não publica os cadernos de prova, então não há como medir o que a banca mais cobra. A ordem abaixo segue o programa e a utilidade clínica, não uma estatística. A parte de SUS do programa (história do SUS, controle social, Resolução CNS 453/2012, CF arts. 194 a 200, Leis 8.080 e 8.142, Decreto 7.508/2011) está na <a href="saude-sus.html#sus-historia">apostila de Saúde e SUS</a>; aqui ficam só os determinantes sociais e os sistemas de informação (seção 12).
+  </div>
+
+  <ul class="legenda" aria-label="Legenda de cores">
+    <li class="conceito">Azul: conceito</li>
+    <li class="dica">Verde: dica ou resposta certa</li>
+    <li class="cai">Laranja: cai muito / prioridade</li>
+    <li class="pega">Vermelho: pegadinha</li>
+    <li class="numero">Roxo: número, prazo, percentual</li>
+  </ul>
+
+  <h2 id="indice" style="border-top:0">Ordem de estudo</h2>
+  <ol class="indice">
+    <li><a href="#mapa">Mapa geral</a></li>
+    <li><a href="#etica">Ética e Código do CFO</a></li>
+    <li><a href="#aps">Atuação na atenção básica e Política de Saúde Bucal</a></li>
+    <li><a href="#fluor">Flúor: usos tópico e sistêmico</a></li>
+    <li><a href="#epidemio">Epidemiologia: CPO-D, ceo-d e SB Brasil</a></li>
+    <li><a href="#carie">Cárie: ART, selantes, Black e proteção dentina-polpa</a></li>
+    <li><a href="#perio">Periodonto e lesões de boca</a></li>
+    <li><a href="#bio">Biossegurança e radiologia</a></li>
+    <li><a href="#anestesia">Anestesia local</a></li>
+    <li><a href="#urgencias">Urgências, traumatismo, cirurgia menor e farmacologia</a></li>
+    <li><a href="#oclusao">Oclusão: classificação de Angle</a></li>
+    <li><a href="#sus">SUS: determinantes e sistemas de informação</a></li>
+    <li><a href="#farmaco">Farmacologia terapêutica na atenção básica</a></li>
+    <li><a href="#pulpa">Pulpites, necrose, periodontite apical e abscesso</a></li>
+    <li><a href="#materiais">Materiais restauradores e adequação do meio bucal</a></li>
+    <li><a href="#ergonomia">Ergonomia no consultório</a></li>
+    <li><a href="#lacunas">O que ficou de fora e por quê</a></li>
+    <li><a href="#questoes">Questões comentadas</a></li>
+    <li><a href="#respostas">Respostas que a banca dá como certas</a></li>
+    <li><a href="#fontes">Fontes</a></li>
+  </ol>
+</header>
+
+<main>
+
+<h2 id="mapa">1. Mapa geral</h2>
+<p>Do centro para fora: cada ramo é um bloco do programa, com os números que viram alternativa.</p>
+<p class="mapa-dica">No celular, arraste o mapa para o lado para ver tudo.</p>
+<div class="mapa" role="region" tabindex="0" aria-label="Mapa mental de Odontologia (no celular, role para o lado)">
+<svg viewBox="0 0 960 620" role="img" aria-labelledby="mapa-tit mapa-desc">
+  <title id="mapa-tit">Mapa mental de Odontologia</title>
+  <desc id="mapa-desc">No centro, Odontologia. Seis ramos: ética do CFO, flúor, epidemiologia e cárie, anestesia e urgências, periodonto e boca, biossegurança e SUS.</desc>
+  <path class="c-ramo s-cai" d="M480 310 C 380 250, 330 140, 250 110"/>
+  <path class="c-ramo s-numero" d="M480 310 C 580 250, 630 140, 710 110"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 380 330, 320 320, 250 315"/>
+  <path class="c-ramo s-dica" d="M480 310 C 580 330, 640 320, 710 315"/>
+  <path class="c-ramo s-pega" d="M480 310 C 380 380, 330 480, 250 510"/>
+  <path class="c-ramo s-conceito" d="M480 310 C 580 380, 630 480, 710 510"/>
+  <rect class="no s-centro f-centro" x="400" y="280" width="160" height="60" rx="30"/>
+  <text x="480" y="306" text-anchor="middle" class="t-titulo">Odontologia</text>
+  <text x="480" y="325" text-anchor="middle" class="t-folha">revisão para prova</text>
+
+  <rect class="no s-cai f-cai" x="20" y="40" width="300" height="150" rx="12"/>
+  <text x="34" y="64" class="t-titulo">Ética (CFO-118/2012)</text>
+  <text x="34" y="88" class="t-folha">Alterada em 2025 (CFO-271)</text>
+  <text x="34" y="108" class="t-folha">Sigilo: justa causa (notificação)</text>
+  <text x="34" y="128" class="t-folha">Fotos: diagnóstico e final, com TCLE</text>
+  <text x="34" y="148" class="t-folha">Penas: 5; suspensão até 30 dias</text>
+  <text x="34" y="168" class="t-folha">Prontuário é obrigatório</text>
+
+  <rect class="no s-numero f-numero" x="640" y="40" width="300" height="150" rx="12"/>
+  <text x="654" y="64" class="t-titulo">Flúor (Guia MS 2026)</text>
+  <text x="654" y="88" class="t-folha">Pasta 1.000 a 1.500 ppm, 2x/dia</text>
+  <text x="654" y="108" class="t-folha">Arroz até 3 anos; ervilha depois</text>
+  <text x="654" y="128" class="t-folha">Bochecho: 0,05% dia; 0,2% semana</text>
+  <text x="654" y="148" class="t-folha">DPT: 5 mg F/kg</text>
+  <text x="654" y="168" class="t-folha">Água: 0,55 a 0,94; VMP 1,5 mg/L</text>
+
+  <rect class="no s-conceito f-conceito" x="20" y="250" width="230" height="142" rx="12"/>
+  <text x="34" y="274" class="t-titulo">Epidemiologia e cárie</text>
+  <text x="34" y="298" class="t-folha">SB Brasil 2010, 12 anos:</text>
+  <text x="34" y="316" class="t-folha">CPO-D 2,07</text>
+  <text x="34" y="336" class="t-folha">5 anos: ceo-d 2,43</text>
+  <text x="34" y="356" class="t-folha">ART: sem anestesia, manual</text>
+  <text x="34" y="374" class="t-folha">e selamento com ionômero</text>
+
+  <rect class="no s-dica f-dica" x="710" y="250" width="230" height="142" rx="12"/>
+  <text x="724" y="274" class="t-titulo">Anestesia e urgências</text>
+  <text x="724" y="298" class="t-folha">Articaína: 7 mg/kg, máx. 500 mg</text>
+  <text x="724" y="316" class="t-folha">(bula Septanest)</text>
+  <text x="724" y="336" class="t-folha">Avulsão: reimplante e splint</text>
+  <text x="724" y="354" class="t-folha">flexível por 2 semanas</text>
+  <text x="724" y="374" class="t-folha">Endocardite: amoxicilina 2 g</text>
+
+  <rect class="no s-pega f-pega" x="20" y="440" width="300" height="160" rx="12"/>
+  <text x="34" y="464" class="t-titulo">Periodonto e boca</text>
+  <text x="34" y="488" class="t-folha">2017: estágios 1 a 4, graus A a C</text>
+  <text x="34" y="506" class="t-folha">Crônica e agressiva viraram uma só</text>
+  <text x="34" y="526" class="t-folha">Lesão de mucosa sem regredir</text>
+  <text x="34" y="544" class="t-folha">em 3 semanas: referenciar</text>
+  <text x="34" y="564" class="t-folha">Black: III sem ângulo incisal;</text>
+  <text x="34" y="582" class="t-folha">IV com remoção do ângulo</text>
+
+  <rect class="no s-conceito f-conceito" x="640" y="440" width="300" height="160" rx="12"/>
+  <text x="654" y="464" class="t-titulo">Biossegurança, RX e SUS</text>
+  <text x="654" y="488" class="t-folha">Crítico: esterilizar (RDC 15)</text>
+  <text x="654" y="506" class="t-folha">Semicrítico: desinfecção alto nível</text>
+  <text x="654" y="526" class="t-folha">RX intraoral: 2 m do cabeçote</text>
+  <text x="654" y="546" class="t-folha">SIM: Declaração de Óbito</text>
+  <text x="654" y="564" class="t-folha">SINAN: notificação compulsória</text>
+  <text x="654" y="582" class="t-folha">SISAB substituiu o SIAB (2013)</text>
+</svg>
+</div>
+
+<h2 id="etica">2. Ética e Código do CFO</h2>
+<p>O programa pede "Código de Ética profissional e Resoluções vigentes". O texto-base é o <b>Código de Ética Odontológica, Resolução CFO-118/2012</b> (publicado no DOU de 14/06/2012, seção 1, p. 118 a 121), alterado pela <b>Resolução CFO-271, de 18/06/2025</b>. O CFO informa que prepara uma revisão completa do Código, ainda não publicada; confira no site do CFO se saiu alguma novidade antes da prova.</p>
+
+<div class="caixa cai"><strong>O que a Resolução CFO-271/2025 mudou</strong>
+Cumprindo decisão do CADE, ela <b>mudou</b> o art. 20, VIII e X (brindes, sorteios, "vale presente" e atividades mercantilistas), <b>revogou</b> o art. 32, XIII e <b>reescreveu</b> o art. 44, XIV. O efeito prático: <b>cartão de desconto deixou de ser infração ética</b>. Continuam infração o aliciamento por telemarketing ativo, caixas de som portáteis ou em veículos, plaqueteiros e meios que caracterizem concorrência desleal.</div>
+
+<div class="tabela"><table>
+  <tr><th scope="col">Tema</th><th scope="col">O que o Código diz (CFO-118/2012)</th></tr>
+  <tr><td>Quem é alcançado (arts. 1º e 8º)</td><td>cirurgiões-dentistas, profissionais técnicos e auxiliares e pessoas jurídicas; todos devem comunicar ao Conselho Regional fatos que caracterizem possível infração</td></tr>
+  <tr><td>Relação com o paciente (art. 11)</td><td><b>Infração:</b> discriminar; exagerar diagnóstico, prognóstico ou terapêutica; <b>deixar de esclarecer propósitos, riscos, custos e alternativas</b>; abandonar paciente sem motivo justificável; <b>deixar de atender urgência</b> quando não haja outro dentista em condições; <b>iniciar tratamento sem consentimento prévio, exceto urgência ou emergência</b>; delegar a técnico ou auxiliar ato privativo do dentista; <b>adotar técnica ou material sem comprovação científica</b></td></tr>
+  <tr><td>Sigilo (arts. 14 a 16)</td><td>É infração revelar, sem justa causa, fato sigiloso. <b>Justa causa</b> (parágrafo único do art. 14): notificação compulsória de doença; colaboração com a justiça nos casos previstos em lei; perícia nos seus exatos limites; estrita defesa de interesse legítimo do profissional; revelação ao responsável pelo incapaz. Não é quebra de sigilo declinar o tratamento na cobrança judicial de honorários (art. 15) nem comunicar ao Conselho e às autoridades sanitárias condições de trabalho indignas ou inseguras (art. 16)</td></tr>
+  <tr><td>Imagem do paciente (art. 14, III)</td><td>É infração exibir paciente, sua imagem ou casos identificáveis em qualquer meio de comunicação, salvo na docência ou em publicações científicas, com autorização do paciente ou responsável, e com finalidade didático-acadêmica</td></tr>
+  <tr><td>Prontuário (arts. 17 e 18)</td><td><b>Obrigatório</b>, legível e atualizado, em arquivo próprio, físico ou digital. Cada avaliação é registrada em ordem cronológica com <b>data, hora, nome, assinatura e número de registro do dentista no CRO</b>. É infração negar ao paciente acesso ao prontuário ou cópia, salvo risco ao próprio paciente ou a terceiros</td></tr>
+  <tr><td>Divulgação (arts. 43 e 44)</td><td>Deve constar o <b>nome e o número de inscrição</b> no CRO. <b>Infração:</b> propaganda enganosa ou abusiva, anunciar título ou especialidade que não possua, criticar técnica de outro profissional, dar consulta ou divulgar resultados clínicos em meio de comunicação de massa, divulgar dados que identifiquem o paciente sem consentimento, usar a expressão "popular". <b>Imagens:</b> a <b>Resolução CFO-196/2019</b> autoriza selfies e imagens do <b>diagnóstico</b> e do <b>resultado final</b>, feitas pelo dentista responsável, com TCLE do paciente e sem sensacionalismo ou promessa de resultado; continua <b>proibido</b> divulgar imagens ou vídeos do "<b>durante</b>" (transcurso do procedimento), salvo em publicação científica</td></tr>
+  <tr><td>Penas (arts. 51 e 52)</td><td>Cinco, em gradação: <b>advertência confidencial; censura confidencial; censura pública; suspensão do exercício até 30 dias; cassação</b> (ad referendum do Conselho Federal). A gradação só é pulada em casos de manifesta gravidade, avaliada pela extensão do dano e suas consequências</td></tr>
+</table></div>
+
+<div class="caixa pega"><strong>Pegadinha: o que a 271/2025 mexeu e o que não mexeu</strong>
+Quem lê só a notícia pode concluir que "propaganda com desconto" ficou livre. Não ficou: a resolução tirou da lista de infrações o <b>cartão de desconto</b> e as restrições a ele ligadas, mas manteve como infração a publicidade enganosa, o aliciamento por telemarketing ativo e a promoção que caracterize concorrência desleal. Leia o verbo da alternativa.</div>
+
+<h2 id="aps">3. Atuação na atenção básica e Política de Saúde Bucal</h2>
+<p>O Caderno de Atenção Básica nº 17 (MS, 2008) descreve o trabalho do dentista na Estratégia Saúde da Família. Ele é anterior à Lei 11.889/2008 e ainda usa os nomes antigos THD (técnico em higiene dental) e ACD (auxiliar de consultório dentário); hoje são <b>TSB e ASB</b> (técnico e auxiliar em saúde bucal), profissões que o Código de Ética cita pela Lei 11.889/2008.</p>
+<div class="caixa conceito"><strong>Competências do cirurgião-dentista na equipe (CAB 17, item 3.4.1)</strong>
+Diagnóstico para obter o <b>perfil epidemiológico</b> e programar as ações; procedimentos clínicos da atenção básica, <b>incluindo urgências e pequenas cirurgias ambulatoriais</b>; atenção integral individual e coletiva; <b>encaminhar e orientar o usuário mantendo a responsabilização pelo acompanhamento</b> (referência e contrarreferência); coordenar ações coletivas de promoção e prevenção; <b>supervisão técnica</b> do THD (hoje TSB) e do ACD (hoje ASB); participar do gerenciamento dos insumos.</div>
+<ul>
+  <li><b>Vigilância mínima da cárie (CAB 17, item 4.1.3.1):</b> acompanhar a média <b>ceo/CPOD</b> e o percentual de livres de cárie aos <b>5 e 12 anos</b>, com série histórica de no mínimo <b>4 anos</b>; cada município deve avançar para os 18 anos e as perdas dentárias.</li>
+  <li><b>Lei 14.572, de 08/05/2023:</b> instituiu a <b>Política Nacional de Saúde Bucal</b> no SUS (art. 1º), com dez diretrizes (art. 2º): entre elas gestão participativa e controle social; acesso universal, equitativo e contínuo; integralidade; vínculo; educação permanente; vigilância epidemiológica e sanitária; pesquisas nacionais periódicas; e, no inciso X, a <b>vigilância sanitária da fluoretação da água de abastecimento público</b>, obrigatória pela Lei 6.050/1974. O art. 4º alterou a Lei 8.080/1990 para incluir a saúde bucal no campo de atuação do SUS (art. 6º, I, "e") e define saúde bucal como o conjunto articulado de ações de promoção, prevenção, recuperação e reabilitação (art. 6º, § 4º).</li>
+</ul>
+
+<h2 id="fluor">4. Flúor: usos tópico e sistêmico</h2>
+<p>A base é o <b>Guia de recomendações para o uso de fluoretos no Brasil</b>. Há duas edições e elas <b>diferem</b>: a 1ª é de 2009 e a <b>2ª é de 2026</b> (Secretaria de Atenção Primária à Saúde). Usei a de 2026 como a vigente e marquei onde ela muda a de 2009, porque questões de prova podem ter sido escritas com a edição antiga.</p>
+
+<h3>Dentifrício (Guia 2026, seção 5.2)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Ponto</th><th scope="col">Guia 2026</th><th scope="col">Guia 2009 (antigo)</th></tr>
+  <tr><td>Concentração</td><td><b>1.000 a 1.500 ppm F</b> (total) para todos, da infância à senescência, <b>pelo menos 2 vezes ao dia</b>, com ou sem água fluoretada; 1.000 ppm é o mínimo com eficácia comprovada e 1.500 ppm o máximo para crianças menores de 7 anos</td><td>cerca de 1.100 a 1.500 ppm; a norma de 2000 limitava a 0,15% F (1.500 ppm)</td></tr>
+  <tr><td>Quantidade na escova</td><td>até <b>3 anos</b>: <b>grão de arroz</b> (~0,15 g); depois: <b>ervilha</b> (~0,3 g). Escovação de criança até 7 anos logo após a refeição (em até 15 minutos)</td><td>menores de <b>9 anos</b>: ~0,3 g, "equivalente a um grão de arroz"</td></tr>
+  <tr><td>Pasta sem flúor ou de baixa concentração</td><td>recomendar "para prevenir fluorose" é <b>equivocado</b>: aumenta o risco de cárie e não protege contra a fluorose esteticamente relevante</td><td>também não recomendadas</td></tr>
+  <tr><td>Alto risco de cárie radicular (adultos e idosos)</td><td>pasta de <b>5.000 ppm F</b> é mais eficaz que a convencional</td><td>não consta</td></tr>
+</table></div>
+
+<h3>Enxaguatórios, gel, verniz e DFP</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Produto</th><th scope="col">Concentração</th><th scope="col">Como e quando (Guia 2026)</th></tr>
+  <tr><td>Bochecho NaF 0,05%</td><td>225 ppm F</td><td><b>diário</b>, uso caseiro; 10 mL por 1 minuto e expelir</td></tr>
+  <tr><td>Bochecho NaF 0,2%</td><td>900 ppm F</td><td><b>semanal</b>, supervisionado (programas escolares)</td></tr>
+  <tr><td>Gel ou espuma de APF</td><td>FFA 1,23% F (12.300 ppm); formulações de 2.425 a 12.500 ppm</td><td>uso <b>profissional</b>; média de <b>4 minutos</b>; em geral <b>2 a 4 vezes ao ano</b>; dispensa profilaxia prévia, desde que os dentes estejam limpos. Com moldeira, ~2,5 g de gel (1,5 g de espuma); com escova, ~0,6 g</td></tr>
+  <tr><td>Verniz fluoretado</td><td>faixa de 7.700 a 56.300 ppm; o mais testado tem 22.600 ppm F (NaF 5% = 22.000 ppm F na tabela do Guia)</td><td><b>pelo menos 2 aplicações por ano</b>; dentes escovados, secos e isolados da saliva; <b>não escovar por pelo menos 4 horas</b>. Preferido em pré-escolares e em quem pode engolir o produto; risco de toxicidade aguda muito baixo (~0,5 mL por aplicação)</td></tr>
+  <tr><td>Diamino fluoreto de prata (DFP)</td><td>38% (45.200 ppm F); concentrações de 30% ou mais paralisam melhor a cárie cavitada em decíduos</td><td>agente <b>cariostático</b>; <b>escurece</b> a lesão; aplicado direto na polpa sadia causou necrose em estudo com cães; exige consentimento esclarecido. Entrou na Carteira de Serviços da APS (Casaps, 2019)</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Pegadinhas do flúor</strong>
+(1) Bochechos <b>não são recomendados abaixo de 6 anos</b> (risco de ingestão). (2) O Guia 2026 diz que <b>não há ensaio clínico</b> que sustente "não comer nem beber por 30 minutos" após o gel; a recomendação do verniz é diferente: não escovar por 4 horas. (3) "Dentifrício de baixa concentração previne fluorose" é o tipo de frase que a edição de 2026 chama de equívoco. (4) O CAB 17 (2008) define a aplicação tópica coletiva universal com água "<b>abaixo de 0,4 ppm</b>" e sem acesso à pasta fluoretada; o Guia de 2009 trazia "<b>até 0,54 ppm</b>"; as duas coincidem em <b>CPOD maior que 3 aos 12 anos</b> e <b>menos de 30% de livres de cárie aos 12 anos</b>.</div>
+
+<h3>Toxicidade e água de abastecimento</h3>
+<div class="caixa numero"><strong>Números que caem</strong>
+<b>Dose provavelmente tóxica (DPT): 5 mg F/kg</b> de peso. Para uma criança de 20 kg (5 a 6 anos), a Tabela 2 do Guia 2026 mostra o quanto de cada produto chega à DPT: <b>DFP 38%: 2,21 mL; verniz NaF 5%: 4,5 g; gel ou espuma de 12.300 ppm: 8,1 g; dentifrício de 1.100 ppm: 90 g (uma bisnaga); bochecho NaF 0,2%: 111 mL; NaF 0,05%: 444 mL; água a 0,70 ppm: 143 litros</b>. <b>Água:</b> o Valor Máximo Permitido de fluoreto é <b>1,5 mg F/L</b> (Portaria GM/MS 888/2021); o consenso técnico reconhece três faixas ótimas conforme o clima (0,45 a 0,74; 0,55 a 0,84; 0,65 a 0,94 mg F/L), no geral <b>0,55 a 0,94</b>; valores de <b>0,95 a 1,5</b> não são recomendados para o Brasil. O Guia de 2009 falava em teor ideal de 0,7 ppm na maior parte do país e 0,8 ppm na maior parte do Sul.</div>
+<ul>
+  <li><b>Fluorose dentária:</b> é o único efeito adverso do flúor no controle da cárie com base na melhor evidência (Guia 2026, 5.2.4). O risco existe enquanto o dente está em formação, por isso a atenção com a quantidade de pasta e com a água em menores de 8 anos.</li>
+  <li>A interrupção da fluoretação da água faz o benefício se perder: o Guia de 2009 cita aumento de 34,3% no CPOD em cidades onde a medida foi interrompida (comparação de estudo brasileiro).</li>
+</ul>
+
+<h2 id="epidemio">5. Epidemiologia: CPO-D, ceo-d e SB Brasil</h2>
+<div class="caixa conceito"><strong>Os índices</strong>
+<b>CPO-D</b>: soma de dentes <b>c</b>ariados, <b>p</b>erdidos e <b>o</b>bturados na dentição permanente; <b>ceo-d</b>: o equivalente na decídua. "Livre de cárie" é CPO-D ou ceo-d igual a zero. Como o índice é <b>cumulativo</b>, o percentual de livres de cárie cai com a idade. As idades-índice do SB Brasil são 5 e 12 anos e os grupos de 15 a 19, 35 a 44 e 65 a 74 anos.</div>
+<div class="tabela"><table>
+  <caption style="text-align:left;font-weight:600;padding-bottom:4px">SB Brasil 2010 (Resultados Principais, MS, 2011)</caption>
+  <tr><th scope="col">Idade</th><th scope="col">Média (experiência de cárie)</th><th scope="col">Livres de cárie</th></tr>
+  <tr><td>5 anos</td><td>ceo-d <b>2,43</b> (componente cariado: mais de 80% do índice)</td><td><b>46,6%</b></td></tr>
+  <tr><td>12 anos</td><td>CPO-D <b>2,07</b></td><td><b>43,5%</b></td></tr>
+  <tr><td>15 a 19 anos</td><td>CPO-D <b>4,25</b></td><td>23,9%</td></tr>
+  <tr><td>35 a 44 anos</td><td>CPO-D <b>16,75</b> (componente perdido: cerca de 44,7%)</td><td>0,9%</td></tr>
+  <tr><td>65 a 74 anos</td><td>CPO-D <b>27,53</b> (componente perdido: cerca de 92%)</td><td>0,2%</td></tr>
+</table></div>
+<ul>
+  <li><b>Perfil por idade:</b> em crianças e adolescentes o principal problema é a <b>cárie não tratada</b>; em adultos e idosos, a <b>perda dentária</b>. Os menores índices estão no Sudeste e no Sul; os maiores, no Norte, Nordeste e Centro-Oeste.</li>
+  <li><b>Condição periodontal aos 12 anos (CPI, 2010):</b> 62,9% com todos os sextantes hígidos; cálculo foi a pior condição em 23,7%; sangramento como escore máximo em 11,7%. O CPI avalia sangramento, cálculo e bolsas (rasas de 3 a 5 mm e profundas de 6 mm ou mais), por sextante; nos adultos e idosos soma-se a perda de inserção periodontal (PIP).</li>
+  <li><b>SB Brasil 2023:</b> a pesquisa foi concluída no primeiro semestre de 2024 e é o levantamento mais recente. A notícia oficial de 13/06/2024 informa <b>53,17%</b> das crianças de 5 anos livres de cárie, contra 46,6% em 2010. Não consegui abrir o relatório final de 2023, por isso não coloquei os demais números; as questões que usam "o levantamento mais recente" podem trazê-los.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: idade e índice</strong>
+O número 2,07 é de <b>12 anos</b>; 4,25 é de <b>15 a 19</b>; 2,43 é <b>ceo-d aos 5 anos</b> (dentição decídua, índice com letra minúscula). Trocar a idade é a forma mais comum de montar a alternativa errada.</div>
+
+<h2 id="carie">6. Cárie: ART, selantes, Black e proteção dentina-polpa</h2>
+<div class="caixa cai"><strong>ART / TRA, Tratamento Restaurador Atraumático (CAB 17, item 4.1.4)</strong>
+Estratégia para <b>lesões cariosas iniciais</b>, integrada a programas educativo-preventivos, em populações com acesso restrito. <b>Preparo cavitário sem anestesia</b>, remoção do tecido cariado amolecido com <b>instrumentos manuais</b> e <b>selamento da cavidade com cimento ionomérico</b>. Não precisa de equipamento, então serve para atendimento <b>extraclínico</b> (acamados, institucionalizados, escolares). Pode ser indicado de forma universalizada em <b>dentes decíduos vitais</b>, com monitoramento. Em populações de alta prevalência pode funcionar como abordagem coletiva até o usuário ser vinculado ao agendamento na unidade.</div>
+<ul>
+  <li><b>Selantes (CAB 17):</b> não são medida de rotina; indicação individual pelo risco. A regra de decisão da FSP-USP indica o selante quando ocorrem <b>simultaneamente</b>: dente presente na boca há <b>menos de 2 anos</b>; dente homólogo com cárie; e placa clinicamente detectável.</li>
+  <li><b>Sinais de atividade (CAB 17):</b> lesão ativa é mancha branca <b>rugosa e opaca</b> ou cavidade com dentina amolecida de cor marrom clara; lesão inativa é mancha branca brilhante ou cavidade com dentina escurecida.</li>
+  <li><b>Ionômeros de vidro</b> liberam flúor e servem de selante e na ART; segundo o Guia de 2009, falta ensaio clínico randomizado que comprove sua ação anticárie secundária, mas há evidência de que, como selantes, previnem o início e a progressão da lesão.</li>
+</ul>
+
+<h3>Classificação de Black (cavidades, classificação artificial)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Classe</th><th scope="col">Onde</th></tr>
+  <tr><td>I</td><td>cicatrículas e fissuras: face oclusal de molares e pré-molares; 2/3 oclusais da vestibular dos molares inferiores; palatina/lingual de incisivos superiores e 2/3 da palatina dos molares superiores</td></tr>
+  <tr><td>II</td><td>faces <b>proximais</b> de pré-molares e molares</td></tr>
+  <tr><td>III</td><td>faces proximais de incisivos e caninos, <b>sem</b> remoção do ângulo incisal</td></tr>
+  <tr><td>IV</td><td>faces proximais de incisivos e caninos <b>com</b> remoção e restauração do ângulo incisal</td></tr>
+  <tr><td>V</td><td>terço <b>gengival</b> das faces vestibular e lingual de todos os dentes (fora de cicatrículas)</td></tr>
+  <tr><td>VI</td><td>não é de Black: Howard e Simon acrescentaram as bordas incisais e pontas de cúspide</td></tr>
+</table></div>
+
+<h3>Proteção do complexo dentina-polpa</h3>
+<ul>
+  <li>Dentina e polpa são <b>interdependentes</b> (complexo dentino-pulpar). A proteção visa reduzir bactérias viáveis, remineralizar a dentina, induzir dentina reacionária e preservar a polpa (revisão da UFRGS, 2020, sobre dentes decíduos).</li>
+  <li><b>Hidróxido de cálcio, MTA, ionômero de vidro (convencional ou modificado por resina), óxido de zinco e eugenol</b> e sistema adesivo são os materiais citados. O <b>MTA</b> funcionou tão bem quanto o hidróxido de cálcio no capeamento direto, com desvantagens de tempo de presa longo e custo. O <b>OZE</b> serve para selamento provisório ou base; o eugenol pode atrapalhar os sistemas adesivos. Para o hidróxido de cálcio como <b>forrador</b>, a revisão cita "poucos indícios" que o apoiem; a própria dentina remanescente bem selada é o melhor protetor.</li>
+  <li>O ionômero modificado por resina tem melhores propriedades mecânicas, mas maior efeito citotóxico que o convencional.</li>
+</ul>
+
+<h2 id="perio">7. Periodonto e lesões de boca</h2>
+<div class="caixa conceito"><strong>Classificação de 2017 (Workshop AAP/EFP; Caton et al., 2018)</strong>
+Há <b>três formas de periodontite</b>: necrosante, periodontite como manifestação de doença sistêmica e <b>"periodontite"</b>, que reúne o que antes era "crônica" e "agressiva". A periodontite recebe <b>estágio</b> (<b>1 a 4</b>, conforme perda de inserção, perda óssea, profundidade de sondagem, defeitos angulares e de furca, mobilidade e perda dentária) e <b>grau</b> (<b>A baixo, B moderado, C alto risco</b> de progressão, incorporando saúde geral, tabagismo e controle metabólico no diabetes). O <b>sangramento à sondagem</b> é o parâmetro principal para definir gengivite. Pela primeira vez foram incluídas doenças e condições <b>peri-implantares</b>, e o paciente que teve periodontite continua paciente periodontal.</div>
+<div class="caixa pega"><strong>Pegadinha: o CAB 17 é de 2008</strong>
+O CAB 17 fala em periodontite "crônica" e "agressiva". Esses termos são da classificação de 1999. Se a questão citar a classificação de 2017, a resposta usa estágios e graus. Do CAB 17 continuam valendo: <b>gengivite e periodontite são processos independentes</b> (a gengivite é fator de risco, não evolui necessariamente); fatores de risco são diabetes, fumo, ausência de controle de placa, imunodepressão e estresse; gengivite trata-se com remoção de fatores retentivos de placa, <b>raspagem e polimento supragengival</b>, educação e controle de placa, com alta quando há ausência de sangramento e placa mínima.</div>
+
+<h3>Câncer de boca e lesões de mucosa (CAB 17, item 4.3)</h3>
+<ul>
+  <li>Mais de <b>50%</b> dos casos são diagnosticados em estágio avançado; <b>70%</b> em maiores de 50 anos; o tipo mais frequente (90 a 95%) é o <b>carcinoma de células escamosas</b>; as localizações preferenciais são <b>assoalho da boca e língua</b>.</li>
+  <li>Fatores de risco: tabagismo, etilismo (associados potencializam), radiação solar, má higiene, prótese mal ajustada, imunodeficiência. Lesões com potencial de malignização: <b>leucoplasia, queilite actínica, líquen plano</b> erosivo ou ulcerado.</li>
+  <li><b>Qualquer lesão de tecido mole que não regrida espontaneamente ou após remover os fatores causais em no máximo 3 semanas deve ser referenciada para diagnóstico.</b> O exame da boca é feito na primeira consulta e nas consultas de urgência.</li>
+</ul>
+
+<h2 id="bio">8. Biossegurança e radiologia</h2>
+<h3>Processamento de produtos para saúde (Anvisa, RDC 15/2012)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Classe</th><th scope="col">Definição</th><th scope="col">Processo mínimo após a limpeza</th></tr>
+  <tr><td>Crítico (art. 11)</td><td>procedimentos invasivos com penetração de pele e mucosas adjacentes, tecidos subepiteliais e sistema vascular</td><td><b>esterilização</b></td></tr>
+  <tr><td>Semicrítico (art. 12)</td><td>contato com pele não íntegra ou mucosa íntegra colonizada</td><td>no mínimo <b>desinfecção de alto nível</b></td></tr>
+  <tr><td>Não crítico (art. 14)</td><td>contato com pele íntegra ou sem contato com o paciente</td><td>no mínimo <b>limpeza</b></td></tr>
+</table></div>
+<ul>
+  <li><b>Desinfecção de alto nível:</b> destrói a maioria dos microrganismos de artigos semicríticos, inclusive micobactérias e fungos, <b>exceto um número elevado de esporos</b>. <b>Nível intermediário:</b> destrói formas vegetativas, micobactérias, a maioria dos vírus e fungos de objetos inanimados e superfícies.</li>
+  <li>O fluxo do processamento é sempre da <b>área suja para a limpa</b> (art. 15). Não se usa embalagem de papel kraft, papel toalha, manilha, jornal ou lâmina de alumínio (art. 79).</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: a RDC 15 exclui consultório odontológico</strong>
+O art. 3º, parágrafo único, diz que ficam excluídos do escopo "o processamento de produtos para saúde realizados em consultórios odontológicos, consultórios individualizados e não vinculados a serviços de saúde" (entre outros). A RDC 15 trata de Centros de Material e Esterilização (CME). Para o consultório, o texto de referência é o manual da Anvisa "Serviços Odontológicos: Prevenção e Controle de Riscos" (2006), que <b>não consegui abrir</b>; por isso não há aqui parâmetros de autoclave (tempo, temperatura) nem de monitoramento biológico. Consulte o manual e a vigilância sanitária local.</div>
+
+<h3>Radiologia (RDC 611/2022)</h3>
+<div class="caixa numero"><strong>Odontologia intraoral na RDC 611, de 09/03/2022 (DOU 16/03/2022)</strong>
+O consultório odontológico isolado com <b>só equipamento intraoral</b> é <b>dispensado do projeto de blindagem aprovado</b> (art. 8º, parágrafo único) e da sinalização de sala (art. 52). A <b>cabine de comando pode ser dispensada</b> se a equipe ficar a <b>no mínimo 2 metros</b> do cabeçote e do paciente (art. 54, parágrafo único). A blindagem dos órgãos mais radiossensíveis do paciente (gônadas, cristalino, tireoide) tem, em geral, no mínimo <b>0,5 mm de chumbo</b> equivalente; nos serviços odontológicos só com equipamento intraoral, <b>0,25 mm</b> (art. 61 e parágrafo único). O <b>dosímetro individual</b> é dispensado para consultório com 1 equipamento intraoral e carga de trabalho de até <b>4 mA.min/semana</b> (art. 65, parágrafo único). Acompanhante só quando imprescindível, voluntário; <b>proibido a gestantes e menores de 18 anos</b> (art. 56, § 3º).</div>
+<h3>Técnica radiográfica intraoral (Manual de Boas Práticas da FOUSP, 2025)</h3>
+<p>A fonte é o Manual de Boas Práticas MBP-RADIO-001, versão 1.0, da Faculdade de Odontologia da USP (2025). É material de uma universidade pública descrevendo a rotina do serviço, não uma norma federal.</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Técnica</th><th scope="col">Receptor e feixe</th><th scope="col">Quando e para quê</th></tr>
+  <tr><td>Paralelismo (periapical)</td><td>receptor <b>paralelo ao longo eixo do dente</b>, em geral com posicionador; feixe <b>perpendicular ao eixo do dente e ao receptor</b></td><td>preferida para periapicais e interproximais, por causar <b>menor distorção geométrica</b> e ter <b>maior reprodutibilidade</b></td></tr>
+  <tr><td>Bissetriz (periapical)</td><td>feixe <b>perpendicular à linha que divide ao meio</b> o ângulo entre o longo eixo do dente e o plano do receptor (Lei da Isometria de Cieszyński); o ângulo horizontal faz o feixe passar entre os contatos proximais</td><td>quando o paralelismo não é viável (por exemplo, discrepância entre as arcadas); é <b>menos precisa</b>, mas dá imagem diagnóstica aceitável se o feixe for bem ajustado</td></tr>
+  <tr><td>Interproximal (bite-wing, asa de mordida)</td><td>feixe perpendicular ao receptor, <b>angulação vertical de +8 a +10°</b> e ângulo horizontal perpendicular às faces proximais; receptor mantido por posicionador ou asa de mordida</td><td>mostra <b>coroas superiores e inferiores</b> na mesma imagem, com as <b>cristas ósseas alveolares</b>: detecção precoce de cárie interproximal, avaliação de restaurações, perda óssea na doença periodontal, controle de tratamentos restauradores</td></tr>
+  <tr><td>Oclusal</td><td>receptor (filme tamanho 4 ou sensor equivalente) na horizontal sobre a superfície oclusal, estabilizado pela mordida; plano de Frankfurt paralelo ao solo; feixe perpendicular ao receptor</td><td>áreas amplas da arcada: dentes inclusos, anomalias ósseas, fraturas, lesões expansivas, corpos estranhos</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Angulações verticais citadas para a oclusal (mesmo manual)</strong>
+Oclusal anterior da maxila: cerca de <b>+60°</b>, feixe pela glabela. Anterior da mandíbula: <b>-55°</b>, incidência submentoniana. Total da maxila: <b>+65°</b>. Total da mandíbula: <b>0°</b>, na linha média abaixo do mento. Lateral da mandíbula (corpo mandibular ou ductos salivares): <b>-45°</b>. O próprio manual diz que esses ângulos variam com a anatomia do paciente e com o equipamento.</div>
+<div class="caixa pega"><strong>Pegadinha: perpendicular a quê?</strong>
+No <b>paralelismo</b> o feixe é perpendicular ao dente e ao receptor; na <b>bissetriz</b> ele é perpendicular à <b>bissetriz</b> do ângulo entre dente e receptor. E a <b>interproximal</b> registra coroas e cristas ósseas, não o ápice: a periapical é a que deve mostrar o dente "da coroa ao ápice radicular" (descrição de imagem ideal do manual). Este manual não traz interpretação de imagem; isso fica para o livro-texto (seção 17).</div>
+
+<h2 id="anestesia">9. Anestesia local</h2>
+<div class="caixa pega"><strong>Doses: use a bula do produto que você tem na mão</strong>
+Os valores abaixo vêm de quatro bulas que abri (Septanest, Xylestesin em frasco-ampola, Mepicain 3% e Citocaína 3%) e de nenhuma tabela de literatura. Fontes de prova e artigos trazem números diferentes para o mesmo sal. Não incluo mepivacaína 2% com epinefrina nem lidocaína 2% em tubete, porque não abri bula do fabricante para elas: consulte a bula do produto.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Anestésico (bula)</th><th scope="col">Dose máxima</th><th scope="col">Detalhes</th></tr>
+  <tr><td>Articaína 4% com epinefrina 1:100.000 ou 1:200.000 (Septanest, Septodont, 2024)</td><td>adultos e adolescentes (12 a 18 anos): <b>7 mg/kg</b>, com teto absoluto de <b>500 mg</b>; crianças de 4 a 11 anos: 7 mg/kg, teto de 385 mg para uma criança de 55 kg</td><td>tubete de <b>1,7 mL = 68 mg</b> de articaína. Adulto com 70 kg ou mais: 490 mg (cerca de 7 tubetes). Dose média eficaz em crianças: 2 mg/kg (procedimento simples) e 4 mg/kg (complexo). Segurança <b>não estabelecida abaixo de 4 anos</b>. Para a maioria dos procedimentos, prefere-se 1:200.000; 1:100.000 quando precisa de hemostasia acentuada</td></tr>
+  <tr><td>Lidocaína com epinefrina 1:200.000, frasco-ampola 1% e 2% (Xylestesin com vasoconstritor, Cristália)</td><td>adultos saudáveis: <b>7 mg/kg</b> e, em geral, no máximo <b>500 mg</b></td><td>para crianças a bula dá um exemplo: 5 anos e 25 kg, não mais que 75 a 100 mg (3,0 a 4,0 mg/kg). A bula pede reduzir doses em crianças conforme idade, peso e condição física</td></tr>
+  <tr><td>Mepivacaína 3% sem vasoconstritor (Mepicain, Cristália)</td><td>adultos: <b>4,4 mg/kg</b>, sem ultrapassar <b>300 mg</b> (a bula diz que isso equivale a 5 carpules em adulto saudável)</td><td>carpule de <b>1,8 mL = 54 mg</b>. Tabela da bula por peso: 20 kg, 1,5 carpule; 40 kg, 3; 60 kg, 4,5; 70 kg ou mais, 5,5. Reduzir em comprometidos (renal, hepático), debilitados e idosos. Criança: pesar, calcular a dose máxima, usar a menor concentração e o menor volume. Gravidez: categoria C</td></tr>
+  <tr><td>Prilocaína 3% com felipressina 0,03 UI/mL (Citocaína, Cristália)</td><td>adultos: <b>4,5 mg/kg</b>, sem ultrapassar <b>400 mg</b> (equivalente a 7 carpules)</td><td>carpule de <b>1,8 mL = 54 mg</b> de prilocaína. Tabela da bula: 10 kg, 0,5 carpule; 50 kg, 4; 70 kg, 5,5; 90 kg ou mais, 7. Cardiopatas e outros comprometimentos sistêmicos: no máximo <b>5 carpules</b> por consulta; ASA III ou IV: <b>0,27 UI</b> de felipressina (até 5 carpules); hepatopatas e cardiopatas compensados: até 2 carpules; insuficiência renal: até 2 carpules por sessão</td></tr>
+</table></div>
+<ul>
+  <li><b>Fazer a conta do tubete:</b> mg por tubete = concentração (mg/mL) x volume do tubete. Articaína 4% = 40 mg/mL; o volume do tubete muda por marca (a bula do Septanest usa 1,7 mL). A mesma regra vale para qualquer sal.</li>
+  <li><b>Reduzir a dose</b> (Septanest): pacientes sedados (efeito aditivo de depressão do SNC), hipóxia, hipercalemia e acidose metabólica; usar a menor dose que dê anestesia eficaz. Não exceder a dose máxima somada de todos os anestésicos usados. Gravidez: categoria B.</li>
+  <li><b>Prilocaína com felipressina (bula da Citocaína):</b> <b>contraindicada na gravidez</b>, pela ação ocitócica da felipressina (categoria C); a felipressina não é recomendada quando se precisa de <b>hemostasia</b>, porque age mais na circulação venosa que na arterial. A bula também alerta contra o uso em <b>anêmicos</b> (relação da prilocaína com metemoglobinemia) e lista entre as contraindicações a metemoglobinemia idiopática ou congênita, hemoglobinopatias como a anemia falciforme, o uso de paracetamol e fenacetina ou outros indutores de metemoglobinemia, a insuficiência hepática, a diálise renal, a insuficiência cardiovascular significativa e o hipertireoidismo. A própria bula traz também orientação de dose para cardiopatas e hepatopatas (tabela acima): leia a bula do produto antes de decidir.</li>
+  <li><b>Gestante (protocolo da SMS-SP, 2005):</b> evitar prilocaína (risco de metemoglobinemia no feto) e felipressina (pode causar contrações); anestésico de eleição lidocaína 2% com epinefrina. É protocolo municipal antigo; confirme em fonte atual.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: cada sal tem a sua conta</strong>
+Com vasoconstritor, lidocaína e articaína têm <b>7 mg/kg</b> e teto de <b>500 mg</b> (bulas Xylestesin e Septanest). Já a prilocaína 3% (4,5 mg/kg, teto 400 mg) e a mepivacaína 3% (4,4 mg/kg, teto 300 mg) têm limites menores. Não se aplica o número de um sal ao outro: a conta é o tubete (concentração x volume) contra o mg/kg do sal.</div>
+<h3>Acidentes e complicações</h3>
+<ul>
+  <li>Complicações locais mais relatadas (TCC da UFSC, 2019, com base na literatura): <b>dor pós-injeção, trismo, parestesia, fratura de agulha, hematoma e lesão de tecidos moles</b>; também paralisia do nervo facial e infecção.</li>
+  <li><b>Trismo</b>: surge quando a injeção atinge os músculos <b>temporal, masseter ou pterigóideo medial</b> e danifica suas fibras, limitando a abertura.</li>
+  <li><b>Parestesia</b>: associada a neurotoxicidade do anestésico, hematoma intra ou perineural, ou trauma do nervo pela agulha.</li>
+  <li>Bloqueio do nervo alveolar inferior (BNAI): a técnica convencional (Halsted) tem falha de até 15 a 20% e risco de injeção intravascular. <b>Gow-Gates</b> exige <b>abertura máxima</b> e é <b>contraindicada em trismo</b>; <b>Vazirani-Akinosi</b> é feita com a <b>boca fechada</b> e é indicada quando o BNAI convencional falha ou há limitação de abertura. A taxa de aspiração positiva é de cerca de 2% no Gow-Gates, contra 10 a 15% no BNAI convencional (TCC da UFSC, citando Haas, 2011).</li>
+  <li>Síncope e lipotimia são emergências do consultório (protocolo SMS-SP, 2005). Na síncope há perda breve de consciência, mas o paciente continua respirando e com pulso palpável (pode estar fraco e lento), o que a diferencia da parada cardiorrespiratória; a conduta inclui deitar o paciente com as pernas elevadas (posição em declive) para restabelecer a oxigenação cerebral.</li>
+</ul>
+
+<h2 id="urgencias">10. Urgências, traumatismo, cirurgia menor e farmacologia</h2>
+<h3>Avulsão de dente permanente (IADT, 2020)</h3>
+<div class="caixa cai"><strong>Diretrizes da International Association of Dental Traumatology (Fouad et al., Dent Traumatol 2020;36:331-342)</strong>
+<b>Reimplante imediato</b> no local do acidente é o melhor tratamento. Se não for possível, guardar em <b>leite</b>, solução de Hanks (HBSS), saliva ou soro e levar ao dentista. O prognóstico depende do <b>tempo extra-oral seco</b>: dentes guardados em meio de armazenamento (leite, HBSS, saliva ou soro) e com tempo extraoral <b>seco</b> total <b>menor que 60 minutos</b> têm células do ligamento possivelmente viáveis, porém comprometidas (após 30 minutos secos, a maioria das células já não é viável); com <b>mais de 60 minutos</b> secos, as células provavelmente não são viáveis. Estabilizar por <b>2 semanas</b> com <b>fio passivo e flexível</b> (fio rígido só se houver fratura alveolar associada, por cerca de 4 semanas). Em dente com ápice fechado, <b>iniciar o tratamento endodôntico em até 2 semanas</b> após o reimplante. Administrar antibiótico sistêmico e <b>verificar o estado de vacinação contra o tétano</b>. Anestesia local, de preferência sem vasoconstritor, ao preparar o reimplante.</div>
+<h3>Emergências que o clínico geral resolve (protocolo SMS-SP, 2005)</h3>
+<ul>
+  <li><b>Abscesso dento-alveolar:</b> radiografia prévia, drenagem por via alveolar ou dental, ou exodontia, com antibiótico e analgésico; retorno em 3 dias. <b>Celulite e angina de Ludwig</b> (bilateral, endurecida, sem flutuação, causa de óbito) e <b>trombose de seio cavernoso</b>: encaminhar com urgência ao nível hospitalar.</li>
+  <li><b>Pericoronarite:</b> limpeza local, antibiótico e anti-inflamatório, <b>clorexidina 0,12%</b> em bochechos, ulectomia; depois exodontia do dente impactado.</li>
+  <li><b>Alveolite:</b> seca (nova curetagem, irrigação com soro) ou úmida (retirada do tecido desorganizado); <b>contraindicado usar pastas</b>, porque retardam a formação do epitélio; reavaliar em 72 horas.</li>
+  <li><b>Hemorragia:</b> compressão com gaze por <b>15 minutos</b> (quadro de emergências); nas orientações pós-operatórias ao paciente, comprimir a gaze por <b>30 minutos</b>.</li>
+  <li><b>Cuidados pós-operatórios (anexo I do protocolo):</b> não bochechar nas primeiras 24 horas e evitar cuspir; repouso com a cabeça elevada por 24 horas; alimentação pastosa, de morna para fria, nas primeiras 24 horas; <b>bolsa de gelo nas primeiras 6 horas</b>; higiene com clorexidina 0,12% na primeira semana; evitar álcool e tabaco.</li>
+  <li><b>Luxação de mandíbula:</b> redução da ATM pelo método clássico; se não reduzir, encaminhar.</li>
+</ul>
+<p class="sub">Os esquemas de antibiótico e analgésico do protocolo de 2005 são antigos e não os reproduzo; os esquemas atuais estão na seção 13 (farmacologia terapêutica).</p>
+
+<h3>Profilaxia da endocardite infecciosa (AHA, 2021)</h3>
+<div class="caixa numero"><strong>Scientific Statement da American Heart Association (Wilson et al., Circulation 2021;143:e963)</strong>
+Profilaxia para procedimento dentário <b>só em quem tem o maior risco de desfecho adverso</b>: <b>válvula cardíaca protética</b> ou material protético (inclui implante transcateter e anéis de reparo), <b>endocardite prévia</b>, dispositivo de assistência ventricular esquerda ou coração implantável, cardiopatia congênita cianótica não reparada (inclusive shunts e condutos paliativos), cardiopatia congênita completamente reparada com material ou dispositivo protético, nos primeiros 6 meses após o procedimento, cardiopatia congênita reparada com defeito residual junto ao material protético, valva ou conduto pulmonar colocado por cirurgia ou cateter, receptor de transplante cardíaco com valvulopatia. <b>Não</b> é sugerida para marca-passo, stent coronário, enxertos vasculares, filtro de veia cava. Procedimentos: os que <b>manipulam tecido gengival, a região periapical ou perfuram a mucosa</b>; <b>não</b> há profilaxia para injeção anestésica em tecido não infectado, radiografias, aparelhos removíveis, ajuste ortodôntico, esfoliação de decíduo ou sangramento por trauma de lábio ou mucosa.
+<b>Esquema:</b> dose única <b>30 a 60 minutos antes</b>. Adulto: <b>amoxicilina 2 g</b> VO (criança 50 mg/kg); ampicilina 2 g IM ou IV; alérgico à penicilina: cefalexina 2 g, azitromicina ou claritromicina 500 mg, ou <b>doxiciclina 100 mg</b> (criança: azitromicina ou claritromicina 15 mg/kg; doxiciclina 2,2 mg/kg se menos de 45 kg e 100 mg se mais). <b>A clindamicina não é mais recomendada.</b> Saúde bucal e acesso regular ao dentista são considerados mais importantes que a profilaxia.</div>
+<div class="caixa pega"><strong>Pegadinha: protocolos antigos</strong>
+O protocolo da SMS-SP de 2005 coloca a cardiopatia valvular reumática entre os riscos elevados, indica amoxicilina 1 hora antes e traz a clindamicina como opção para alérgicos. A AHA (2021) mantém a lógica de 2007: só as categorias de risco máximo, amoxicilina 30 a 60 minutos antes e <b>sem clindamicina</b>.</div>
+
+<h2 id="oclusao">11. Oclusão: classificação de Angle</h2>
+<p>A classificação de Angle usa a relação dos <b>primeiros molares permanentes</b> (Garbin et al., Dental Press J Orthod, 2010).</p>
+<div class="tabela"><table>
+  <tr><th scope="col">Classe</th><th scope="col">Relação</th></tr>
+  <tr><td>I (neutroclusão)</td><td>relação anteroposterior normal entre maxila e mandíbula; pode haver giroversão, diastema ou mordida cruzada</td></tr>
+  <tr><td>II (distoclusão)</td><td>o primeiro molar inferior oclui <b>posteriormente</b> à cúspide mesiovestibular do superior. <b>Divisão 1:</b> incisivos superiores em labioversão. <b>Divisão 2:</b> incisivos centrais superiores retroinclinados (voltados para o palato) e laterais vestibularizados, em geral com sobremordida profunda</td></tr>
+  <tr><td>III (mesioclusão)</td><td>o primeiro molar inferior oclui <b>anteriormente</b> à cúspide mesiovestibular do superior</td></tr>
+</table></div>
+<p>A prevenção de más oclusões (hábitos de sucção, respiração bucal, perda precoce de decíduos) e os aparelhos ortodônticos do programa não foram cobertos por uma fonte oficial que eu tenha aberto; ficam de fora (seção 17). O Guia de fluoretos de 2009 indicava o bochecho diário de NaF 0,05% (com pasta fluoretada) para pacientes de alto risco de cárie, como os que usam aparelho ortodôntico fixo.</p>
+
+<h2 id="sus">12. SUS: determinantes e sistemas de informação</h2>
+<p>O resto da parte de SUS está na <a href="saude-sus.html">apostila de Saúde e SUS</a>. Aqui ficam dois itens do programa de Odontologia.</p>
+<div class="caixa conceito"><strong>Determinantes sociais (Lei 8.080/1990, art. 3º)</strong>
+São determinantes e condicionantes da saúde, entre outros: alimentação, moradia, saneamento básico, meio ambiente, trabalho, renda, educação, atividade física, transporte, lazer e acesso aos bens e serviços essenciais (redação da Lei 12.864/2013; texto conferido na apostila de Saúde e SUS). Para cárie, o CAB 17 lembra que a doença é multifatorial e afetada pelas condições socioeconômicas, e que as ações devem priorizar a população sob <b>risco social</b>.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Sistema</th><th scope="col">O que é</th></tr>
+  <tr><td>SIM, Sistema de Informações sobre Mortalidade</td><td>documento-base: <b>Declaração de Óbito</b>, preenchida e assinada por um médico</td></tr>
+  <tr><td>Sinasc, Sistema de Informações sobre Nascidos Vivos</td><td>documento-base de uso obrigatório em todo o país: <b>Declaração de Nascido Vivo</b></td></tr>
+  <tr><td>Sinan, Sistema de Informação de Agravos de Notificação</td><td>notificação e investigação de <b>doenças e agravos de notificação compulsória</b></td></tr>
+  <tr><td>SIH/SUS, Sistema de Informações Hospitalares do SUS</td><td>internações; documento: <b>AIH</b> (Autorização de Internação Hospitalar); base de pagamento dos serviços hospitalares</td></tr>
+  <tr><td>SIA/SUS, Sistema de Informações Ambulatoriais do SUS</td><td>produção ambulatorial; instrumentos: <b>BPA</b> (Boletim de Produção Ambulatorial, com BPA-I individualizado e BPA-C consolidado) e <b>APAC</b></td></tr>
+  <tr><td>e-SUS APS e SISAB</td><td>e-SUS APS é a estratégia de reestruturação da informação da Atenção Primária; os programas gratuitos são a <b>Coleta de Dados Simplificada (CDS)</b> e o <b>Prontuário Eletrônico do Cidadão (PEC)</b>. O <b>SISAB</b> (Sistema de Informação em Saúde para a Atenção Básica) foi instituído pela <b>Portaria 1.412, de 10/07/2013</b>, e <b>substituiu o SIAB</b>. Registra por cidadão, não em fichas consolidadas</td></tr>
+</table></div>
+<div class="caixa pega"><strong>Atenção: o Siaps</strong>
+Em resultado de busca do portal do Ministério (sisaps.saude.gov.br), o <b>Siaps</b> aparece como sistema que passa a substituir progressivamente o SISAB. Não consegui abrir essa página para confirmar. Se a questão usar a norma de 2013, a resposta é SISAB substituindo o SIAB.</div>
+
+<h2 id="farmaco">13. Farmacologia terapêutica na atenção básica</h2>
+<div class="caixa conceito"><strong>O que cada fonte diz (e o que não diz)</strong>
+A <b>RENAME 2024</b> (Ministério da Saúde, aprovada pela Portaria GM/MS 6.324, de 26/12/2024) diz <b>quais</b> medicamentos o SUS oferece e em que componente de financiamento; <b>não traz posologia</b>. Ela mantém a classificação <b>AWaRe</b> da OMS para antimicrobianos, traduzida como <b>Acesso, Alerta e Reservado</b>. A posologia adulta desta seção vem do <b>Formulário Terapêutico Nacional 2010</b> (FTN, Ministério da Saúde) e de dois protocolos públicos de urgência odontológica: o da <b>SES-DF</b> (Portaria 458/2022) e o POP da <b>RioSaúde</b> (2025). O <b>Caderno de Atenção Básica 17</b> (2008) <b>não traz tabela de medicamentos</b>; dele uso só a parte de gestantes.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Medicamento</th><th scope="col">RENAME 2024 (apresentações, componente Básico)</th><th scope="col">Adulto, FTN 2010</th><th scope="col">Protocolos públicos</th></tr>
+  <tr><td>Paracetamol</td><td>500 mg comprimido; 200 mg/mL solução oral</td><td>500 a 1.000 mg VO a cada 4 a 6 h; máximo <b>4.000 mg/dia</b></td><td>SES-DF: 500 mg a cada 6 h enquanto o sintoma persistir. Rio: 500 mg a cada 6 h, se dor ou febre</td></tr>
+  <tr><td>Dipirona</td><td>500 mg comprimido; 500 mg/mL solução oral; 500 mg/mL solução injetável</td><td>a monografia do FTN 2010 é só da <b>solução injetável</b>: 0,5 a 1 g SC, IM ou IV a cada 6 a 8 h, máximo 3 a 4 g/dia</td><td>SES-DF: solução oral 500 mg/mL a cada 6 h enquanto o sintoma persistir. Rio: 500 mg comprimido a cada 6 h, se dor. Gotas por dose para adulto: consulte a bula</td></tr>
+  <tr><td>Ibuprofeno</td><td>200 e 300 mg comprimido; 600 mg cápsula e comprimido; 50 mg/mL suspensão oral</td><td>200 a 600 mg VO a cada 6 a 8 h; máximo <b>2,4 g/dia</b></td><td>SES-DF: 600 mg a cada 8 h, por até 5 dias. Rio: 600 mg a cada 6 h, por 3 a 5 dias (segunda escolha: diclofenaco 50 mg a cada 8 h)</td></tr>
+  <tr><td>Amoxicilina</td><td>500 mg cápsula e comprimido; 50 mg/mL suspensão oral. AWaRe: <b>Acesso</b></td><td>250 a 500 mg VO a cada 8 ou 12 h; dose e duração conforme o local e a gravidade da infecção</td><td>SES-DF: 500 mg a cada 8 h por 7 dias</td></tr>
+  <tr><td>Amoxicilina + clavulanato</td><td>500 mg + 125 mg comprimido; 50 + 12,5 mg/mL suspensão. <b>Acesso</b></td><td>indicada para bactérias produtoras de betalactamase originalmente sensíveis à amoxicilina</td><td>SES-DF: a cada 8 h por 7 dias</td></tr>
+  <tr><td>Clindamicina</td><td>150 e 300 mg cápsula. <b>Acesso</b></td><td>150 a 450 mg VO a cada 6 h; máximo <b>1,8 g/dia</b></td><td>SES-DF: 300 mg a cada 6 ou 8 h por 7 dias (no protocolo de endodontia, a cada 8 h)</td></tr>
+  <tr><td>Metronidazol</td><td>250 e 400 mg comprimido. <b>Acesso</b></td><td>não li a monografia</td><td>SES-DF: 400 mg a cada 8 h por 7 dias</td></tr>
+  <tr><td>Azitromicina</td><td>500 mg comprimido. AWaRe: <b>Alerta</b></td><td>indicações do FTN: clamídia, tracoma e profilaxia de endocardite (500 mg, 30 a 60 min antes); <b>nenhuma infecção odontogênica</b></td><td>não consta no protocolo da SES-DF (veja a norma portuguesa abaixo)</td></tr>
+</table></div>
+<ul>
+  <li><b>Duração:</b> segundo a SES-DF, analgésicos e anti-inflamatórios são usados em média por <b>3 a 5 dias</b>; antibióticos por <b>7 a 10 dias</b> ou até a remoção dos sinais e sintomas. O POP do Rio diz que analgésicos e anti-inflamatórios devem ser usados <b>somente em caso de dor</b> e que AINE em criança e adolescente só entra se os sintomas forem refratários a dipirona ou paracetamol.</li>
+  <li><b>Primeira linha e alérgicos (norma portuguesa, não brasileira):</b> a Norma 064/2011 da Direção-Geral da Saúde de Portugal diz que os betalactâmicos são de primeira linha nas infecções odontogênicas, com a <b>amoxicilina como primeira escolha</b> (amoxicilina + clavulanato se houver suspeita de betalactamase). A <b>clindamicina é o fármaco de primeira linha nos alérgicos aos betalactâmicos</b>; um macrolídeo pode ser opção <b>só nas infecções de menor gravidade</b>. No abscesso periodontal com alergia, a norma cita clindamicina ou azitromicina. Na tabela de posologia média adulta da norma, a azitromicina é 500 mg a cada 24 h por 3 dias e a clindamicina, 300 mg a cada 8 h por via oral. É texto de outro país e de 2011: confirme a vigência antes de usar numa questão.</li>
+  <li><b>Alergia a penicilina e cefalosporina (FTN 2010):</b> há hipersensibilidade cruzada com cefalosporinas em menos de 10% dos casos; <b>não usar cefalosporina</b> em quem teve reação de hipersensibilidade <b>imediata</b> a penicilinas. A cefalexina 500 mg a cada 6 h por 7 dias consta no protocolo da SES-DF.</li>
+  <li><b>Gestante:</b> pelo FTN 2010, paracetamol e amoxicilina estão na categoria B da FDA; o <b>ibuprofeno</b> é B no 1º e 2º trimestres e <b>D no 3º</b>, e tem como contraindicação o <b>terceiro trimestre da gravidez</b>. O CAB 17 diz que o 2º trimestre é o mais adequado para procedimentos essenciais, que as urgências devem ser atendidas com os cuidados de cada período, que o médico deve ser consultado quando houver medicamentos ou anestésico local e que a <b>tetraciclina deve ser evitada</b> (pigmenta os dentes do bebê). As categorias da FDA são as do FTN de 2010.</li>
+  <li><b>Anticoagulados (FTN 2010):</b> o ibuprofeno aumenta a atividade anticoagulante e o risco de sangramento com varfarina e heparinas de baixo peso molecular (monitorar). O paracetamol pode aumentar o risco de sangramento com cumarínicos; a orientação é diminuir o uso e considerar o tempo de protrombina ao iniciar ou suspender. A amoxicilina com varfarina ou acenocumarol pode aumentar o risco de sangramento (monitorar o tempo de protrombina). A dipirona com clopidogrel e heparinas de baixo peso molecular pede cautela e atenção a sinais de hemorragia. O ibuprofeno também pode reduzir o efeito antiplaquetário do AAS (AAS pelo menos 30 minutos antes ou 8 horas depois). Valores de INR para exodontia: consulte a fonte do seu serviço; não incluo número.</li>
+  <li><b>Cuidados com dipirona e clindamicina (FTN 2010):</b> a dipirona é contraindicada em discrasias sanguíneas, supressão da medula óssea e hipersensibilidade ao AAS ou a outros AINE; o FTN registra que foi banida em 33 países por reações graves, como a agranulocitose. A clindamicina é contraindicada em quem já teve colite pseudomembranosa; diarreia, cólica e sangue ou muco nas fezes mandam suspender.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: os protocolos divergem no intervalo</strong>
+O ibuprofeno 600 mg é a cada <b>8 horas</b> na SES-DF (até 5 dias) e a cada <b>6 horas</b> no POP do Rio (3 a 5 dias); o teto do FTN é 2,4 g/dia. Na pericoronarite, a SES-DF (2022) lista anti-inflamatório, antibiótico e analgésico, mas ressalva que, <b>com infecção instalada, não se usa anti-inflamatório</b>; o protocolo de 2005 da SMS-SP (seção 10) não traz essa ressalva. Numa questão, siga o documento que ela citar; sem citação, vale o que é comum a todos: remover a causa primeiro e medicar apenas como complemento.</div>
+
+<h2 id="pulpa">14. Pulpites, necrose, periodontite apical e abscesso</h2>
+<div class="caixa conceito"><strong>Definições (American Board of Endodontics, 2007)</strong>
+<b>Pulpite reversível:</b> diagnóstico clínico em que a inflamação <b>deve resolver</b> e a polpa voltar ao normal. <b>Pulpite irreversível:</b> a polpa vital inflamada <b>é incapaz de se curar</b>; é <b>sintomática</b> quando há dor térmica que persiste, dor espontânea ou dor referida. <b>Necrose pulpar:</b> morte da polpa, que não responde aos testes de vitalidade. <b>Periodontite apical sintomática:</b> inflamação do periodonto apical com dor à mordida e à percussão, com ou sem área radiolúcida. <b>Periodontite apical assintomática:</b> inflamação e destruição do periodonto apical de origem pulpar, que aparece como radiolucidez apical e não dá sintomas. <b>Abscesso apical agudo:</b> reação inflamatória à infecção e necrose pulpar, com início rápido, dor espontânea, sensibilidade à pressão, formação de pus e edema. <b>Abscesso apical crônico:</b> início gradual, pouco ou nenhum desconforto e drenagem intermitente de pus por uma fístula.</div>
+<div class="tabela"><table>
+  <tr><th scope="col">Diagnóstico</th><th scope="col">Como se apresenta</th><th scope="col">Conduta de urgência</th></tr>
+  <tr><td>Pulpite reversível</td><td>clínica: cárie profunda ou trauma; sem alteração radiográfica (SES-DF, endodontia)</td><td>remover a causa: no protocolo de urgências da SES-DF, é a linha da cárie dentária com dor, tratada com remoção da lesão profunda e restauração provisória; verificar se a profundidade exige pulpectomia</td></tr>
+  <tr><td>Pulpite irreversível</td><td>SES-DF: dor <b>espontânea, intensa, difusa, contínua</b>, mal combatida com analgésicos, que <b>aumenta com calor e alivia com frio</b>. Rio (2025): fase intermediária com dor provocada, aguda, persistente depois de retirar o estímulo e pior à noite, deitado; fase avançada com dor pulsátil, contínua e espontânea. Radiografia em geral sem alteração periapical</td><td><b>Pulpectomia</b> (ápice formado, dente restaurável); exodontia se não restaurável; em dente com rizogênese incompleta, a pulpectomia <b>parcial</b> pode ser a escolha (Rio). Só medicar costuma não resolver (Rio, SES-DF). Depois, tratamento endodôntico completo (SES-DF, endodontia: em média 2 sessões)</td></tr>
+  <tr><td>Necrose pulpar</td><td>polpa morta, sem resposta à vitalidade (ABE); CID-10 K04.1</td><td>tratamento endodôntico (SES-DF: em média 2 a 3 sessões); se há infecção associada, veja o abscesso</td></tr>
+  <tr><td>Periodontite apical aguda (pericementite)</td><td>dor violenta, provocada, sensação de dente extruído, sensibilidade à <b>percussão vertical</b> e à mastigação, <b>sem edema</b>; ocorre em dente vital ou não; radiografia em geral normal, ou espaço periodontal aumentado (SES-DF)</td><td>alívio oclusal, anti-inflamatório e analgésico; o teste térmico é imprescindível para confirmar a necessidade de endodontia; tratamento endodôntico no dente despolpado (SES-DF, urgências)</td></tr>
+  <tr><td>Abscesso apical agudo</td><td>dor intensa, pulsátil, difusa, <b>com edema</b>, sensibilidade principalmente à <b>percussão horizontal</b>; aumenta à palpação; leve mobilidade; em casos avançados, febre, trismo e mal-estar; radiografia sem espessamento pela rapidez da evolução (SES-DF)</td><td><b>Pulpectomia, esvaziamento e saneamento dos canais, drenagem</b> intra e/ou extrabucal, curativo endodôntico e restauração provisória. Após drenagem extrabucal, dreno de Penrose por 48 a 72 h (SES-DF). Antibiótico se houver repercussão sistêmica ou risco séptico (DGS Portugal)</td></tr>
+  <tr><td>Periodontite apical crônica e abscesso crônico</td><td>assintomáticos; rarefação óssea periapical na radiografia; o abscesso crônico tem <b>fístula</b> (SES-DF)</td><td>tratamento endodôntico completo, sem urgência</td></tr>
+</table></div>
+<ul>
+  <li><b>Angina de Ludwig e infecção espalhada:</b> celulite bilateral dos espaços submandibular e sublingual, com edema endurecido, elevação da língua e obstrução da via aérea; conduta: manter a via aérea, antibiótico sistêmico, remover os dentes envolvidos, hidratar, drenar e <b>internar</b> (SES-DF, urgências).</li>
+  <li><b>Classificação de risco (protocolo de urgência odontológica de Curitiba, 2025, com base na Linha de Cuidado em Saúde Bucal, 3ª ed., SESA, 2021):</b> hemorragia intensa não controlada por pressão, tumefação extensa com dificuldade de engolir ou respirar ou que atinge os olhos, e trauma facial maior são <b>vermelho</b> (hospital de referência). Dor dentária intensa, espontânea e contínua, tumefação por infecção de tecido mole e traumatismo dentoalveolar com menos de duas horas são <b>laranja</b> (atendimento prioritário). Dor moderada a intensa, intermitente ou noturna, com períodos de acalmia e controlável por analgésico, é <b>amarelo</b> (até 1 hora).</li>
+  <li><b>Onde atender:</b> o CAB 17 manda atender a urgência na unidade básica; luxações, fraturas, intrusão e extrusão dentária podem e devem ser resolvidas na rede básica (com monitoramento radiográfico quando preciso). A SES-DF diz que a urgência odontológica faz parte da atenção primária e que a prioridade é <b>remover a causa</b>, não só prescrever.</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: dor intensa não pede antibiótico</strong>
+Na pulpite irreversível sem febre nem edema o tratamento é <b>pulpectomia</b>; medicar sem tratar a causa leva a aumentar a posologia e à evolução para necrose (POP do Rio). Para a norma portuguesa, antibiótico em infecção endodôntica só quando há <b>repercussão sistêmica</b> ou paciente de risco séptico. E não confunda: <b>percussão vertical</b> sem edema é periodontite apical aguda; <b>edema</b> com sensibilidade à percussão horizontal é abscesso. Essa distinção é a da descrição da SES-DF; livros-texto variam.</div>
+
+<h2 id="materiais">15. Materiais restauradores e adequação do meio bucal</h2>
+<div class="tabela"><table>
+  <tr><th scope="col">Material</th><th scope="col">Indicações</th><th scope="col">Limites</th></tr>
+  <tr><td>Cimento de ionômero de vidro (Mandarino, FORP-USP)</td><td>selamento de cicatrículas e fissuras; classe I conservadora; classe II tipo túnel e <i>slot</i> horizontal; classes III e V (lesões de cárie); classe V por erosão, abrasão e abfração; restauração em sanduíche; forramento (proteção); dentes decíduos; núcleos de preenchimento; cimentação. Tipos: I cimentação, II restauração, III forramento ou base e selamento de fissuras, IV as indicações dos tipos I a III. Uso principal: <b>adequação do meio bucal</b> e restauração temporária</td><td>frágil, com baixa resistência à tração e ao cisalhamento; <b>contraindicado</b> em classe II com crista marginal, classe IV, grande perda de esmalte vestibular, áreas de cúspide e de grande esforço mastigatório; pouca translucidez para a face vestibular visível. Como selante, o uso é discutível pela pouca retenção</td></tr>
+  <tr><td>Resina composta (Mandarino, FORP-USP)</td><td>classes III e V (resinas de micropartícula ou híbridas); perda de ângulo incisal por cárie ou fratura; colagem de fragmento dental; restaurações preventivas associadas a selante; substituição de dentina por razões estéticas ou mecânicas (mais resistente que o ionômero para sustentar esmalte sem apoio); núcleos de preenchimento; cavidades em decíduos; facetas</td><td>como proteção sob a resina, o ionômero é mais indicado em paciente de <b>alto risco de cárie</b> e quando não há esmalte na margem cervical (pela adesão química e liberação de flúor)</td></tr>
+  <tr><td>Amálgama (Mandarino, FORP-USP)</td><td>a restauração complexa está indicada quando há grande perda de estrutura dental ou suspeita de tratamento endodôntico (restauração de controle)</td><td>contraindicada quando a <b>estética</b> é a consideração principal. Veja as regras de saúde pública abaixo</td></tr>
+</table></div>
+<div class="caixa numero"><strong>Amálgama: Minamata e Anvisa</strong>
+A Convenção de Minamata sobre Mercúrio foi promulgada no Brasil pelo <b>Decreto 9.470, de 14/08/2018</b> (DOU de 15/08/2018). Em março de 2022 a COP 4.2 (Bali) alterou a <b>Parte II do Anexo A</b>, que lista as medidas para reduzir o amálgama: excluir ou não permitir o uso de <b>amálgama não encapsulado</b> pelos profissionais, e excluir, não permitir ou recomendar contra o uso em <b>dentes decíduos (pacientes com 15 anos ou menos), gestantes e lactantes</b>, exceto se o cirurgião-dentista julgar necessário pelas necessidades individuais do paciente. O Ministério da Saúde (<b>Parecer técnico 6/2022</b>) orientou descontinuar o amálgama em gestantes, lactantes e dentição decídua até os 15 anos; nas demais populações, o uso em <b>dentes posteriores</b> é facultado quando for a <b>única opção clínica viável</b>. Antes disso, a <b>RDC 173, de 15/09/2017</b>, da Anvisa já proibia fabricar, importar, comercializar e <b>usar em serviços de saúde</b> o mercúrio e o pó para liga de amálgama <b>não encapsulado</b>: só o amálgama encapsulado é permitido. Em 06/03/2024 um voto na Diretoria Colegiada da Anvisa (Voto 60/2024) propôs abrir processo para revisar a RDC 173 e restringir o amálgama em gestantes, lactantes e dentição decídua até 15 anos; <b>não confirmei se isso virou norma</b>. Notícias de 2025 falam em eliminação gradual até 2030; não abri fonte oficial, por isso não uso esse prazo.</div>
+<h3>Adequação do meio bucal (CAB 17)</h3>
+<ul>
+  <li><b>O que é (item 4.1.4.2):</b> remoção de placa, <b>remoção da dentina cariada</b>, <b>selamento das cavidades com material provisório</b> (ionômero de vidro ou cimento modificado) e remoção de outros fatores retentivos de placa, como <b>restos radiculares e cálculos</b>. Faz parte do tratamento da cárie ativa, junto com instrução de higiene, remoção profissional de placa e controle da atividade da doença (flúor tópico, aconselhamento dietético, estímulo ao fluxo salivar).</li>
+  <li><b>Para o encaminhamento:</b> o paciente em tratamento na unidade básica só segue ao serviço especializado depois de receber, <b>no mínimo</b>, ações de controle da infecção bucal: adequação do meio bucal com remoção dos fatores retentivos de placa, remoção de restos radiculares, selamento de cavidades, instruções de higiene bucal, profilaxia e controle de placa supragengival. Quem veio de uma urgência também segue esses passos, e o encaminhamento deve ser feito com a dor eliminada.</li>
+  <li><b>Na gestante</b>, a adequação do meio bucal e o controle de placa são boas condutas preventivas e garantem conforto e continuidade do tratamento após a gravidez (CAB 17).</li>
+</ul>
+<div class="caixa pega"><strong>Pegadinha: adequação não é restauração definitiva</strong>
+A adequação do meio bucal usa material <b>provisório</b> e visa controlar a infecção e a atividade da cárie antes do tratamento definitivo ou do encaminhamento. O texto de Mandarino resume: o ionômero serve principalmente à adequação do meio bucal e como restaurador temporário. A cópia que li desse texto não tem data (fala da odontologia "deste final de século"), então ele é referência didática, não norma.</div>
+
+<h2 id="ergonomia">16. Ergonomia no consultório</h2>
+<div class="caixa conceito"><strong>NR-17, Ergonomia (redação da Portaria MTP 423/2021, com alteração da Portaria MTP 4.219/2022)</strong>
+Objetivo (17.1.1): adaptar as condições de trabalho às características psicofisiológicas dos trabalhadores, para dar <b>conforto, segurança, saúde e desempenho eficiente</b>. As condições de trabalho incluem levantamento e transporte de materiais, mobiliário dos postos, máquinas, equipamentos e ferramentas manuais, conforto do ambiente e a organização do trabalho (17.1.1.1). A norma cita as organizações e os órgãos públicos que possuam <b>empregados regidos pela CLT</b> (17.2.1): confira o regime do seu vínculo. Fonte: cópia da NR-17 hospedada pela Udesc, com a ressalva de que "este texto não substitui o publicado no DOU".</div>
+<ul>
+  <li><b>Avaliação:</b> a organização faz a <b>avaliação ergonômica preliminar</b> e a registra (17.3.1 e 17.3.1.2.1); faz a <b>Análise Ergonômica do Trabalho (AET)</b> quando for preciso aprofundar, houver inadequações ou o acompanhamento de saúde sugerir (17.3.2).</li>
+  <li><b>Sobrecarga e postura (17.4.2 e 17.4.3):</b> em atividade com sobrecarga muscular estática ou dinâmica do tronco, pescoço, cabeça e membros, adotar medidas de engenharia, organizacionais ou administrativas. Evitar que o trabalhador tenha de manter de forma <b>contínua e repetitiva</b> posturas extremas ou nocivas, movimentos bruscos, uso excessivo de força, vibração, entre outros.</li>
+  <li><b>Pausas (17.4.3.1 e 17.4.3.2):</b> as medidas incluem <b>duas ou mais</b> de: pausas (computadas como tempo de trabalho efetivo), alternância de atividades, alteração da forma de execução e outras medidas técnicas. Se não for possível mudar a execução ou adotar outras medidas, as <b>pausas e a alternância são obrigatórias</b>. As pausas não podem vir com aumento da cadência e devem ser usufruídas <b>fora dos postos de trabalho</b>.</li>
+  <li><b>Mobiliário (17.6):</b> regulagem para as características antropométricas; favorecer a alternância entre a posição de pé e sentada; plano de trabalho dentro da <b>zona de alcance manual</b> e de fácil visualização; apoio para os pés se a planta não ficar totalmente apoiada. <b>Assento</b>: altura ajustável, pouca ou nenhuma conformação na base, <b>borda frontal arredondada</b>, encosto adaptado ao corpo para proteger a região lombar (17.6.6).</li>
+</ul>
+<h3>Relógio de trabalho e zonas (FDI; Barriviera e Martins, 2005)</h3>
+<div class="tabela"><table>
+  <tr><th scope="col">Elemento</th><th scope="col">O que o texto diz</th></tr>
+  <tr><td>Mostrador do relógio</td><td>o centro é a boca do paciente com a cadeira deitada na horizontal; <b>12 horas</b> é a <b>cabeça do paciente</b>, atrás da cadeira; o eixo 6-12 divide a sala em área do <b>operador</b> (à direita da cadeira) e área da <b>auxiliar</b> (à esquerda)</td></tr>
+  <tr><td>Operador</td><td>quase sempre às <b>9 horas</b>; vantagem: visão direta de todas as faces dos dentes e inclinação da coluna sempre para a frente, não para o lado</td></tr>
+  <tr><td>Auxiliar</td><td>de <b>1 a 3 horas</b>; com uma só auxiliar a variação é maior e pode invadir a área do operador</td></tr>
+  <tr><td>Área estática</td><td>atrás da cadeira: materiais de emergência e equipamentos auxiliares (amalgamador, fotopolimerizador e outros)</td></tr>
+  <tr><td>Círculo A, zona de transferência</td><td>raio de <b>0,5 m</b>; instrumentos e pontas do equipo que vão à boca, e os dois mochos; o ponto principal fica entre o dentista às 9 e a auxiliar às 3 horas; bandeja a cerca de 20 cm do campo operatório</td></tr>
+  <tr><td>Círculo B</td><td>raio de <b>1,0 m</b>; área útil de trabalho, alcançada com o braço esticado; mesas auxiliares e corpo do equipo</td></tr>
+  <tr><td>Círculo C</td><td>raio de <b>1,5 m</b>; limita a área total do consultório, que não deve passar de 3 m de largura; pias e armários, com as gavetas abertas caindo dentro do segundo círculo</td></tr>
+</table></div>
+<p>Os critérios da FDI incluem dividir a área de trabalho em partes distintas (operador e auxiliar), garantir melhor postura sentado, a posição correta do dentista e da auxiliar em relação ao paciente, e racionalizar e economizar movimentos. A cadeira de conforto, a unidade aspiradora e o mocho móvel permitiram trabalhar com o paciente em posição supina e o dentista e a auxiliar sentados.</p>
+<div class="caixa pega"><strong>Pegadinha: o 12 horas não é o dentista</strong>
+O 12 horas é a cabeça do paciente. O operador fica por volta das 9 e a auxiliar entre 1 e 3 horas. A fonte é um artigo de 2005, de arquitetura, que cita Barros (1999) e a FDI e descreve o operador à direita do paciente; ele não discute o profissional canhoto. O manual da Anvisa "Serviços Odontológicos: Prevenção e Controle de Riscos" (2006), que seria a fonte oficial, devolveu erro 403 e não foi aberto.</div>
+
+<h2 id="lacunas">17. O que ficou de fora e por quê</h2>
+<p>O trabalho exigia fonte oficial ou acadêmica pública aberta para cada conteúdo clínico, dose e norma. Ficaram de fora:</p>
+<ul>
+  <li><b>Manual da Anvisa "Serviços Odontológicos: Prevenção e Controle de Riscos" (2006):</b> a cópia encontrada no site do Centro de Vigilância Sanitária de SP devolveu erro 403, e os endereços que tentei na BVS e no gov.br não existem (404); não contornei. Sem parâmetros de autoclave, monitoramento biológico, EPI e descarte detalhados, e sem a parte de ergonomia desse manual.</li>
+  <li><b>bvsms.saude.gov.br:</b> respondeu 503 nas primeiras tentativas; na revisão desta apostila (27/10/2026) abriu e dela vieram a RENAME 2024 e o FTN 2010. O CAB 17 foi lido em cópia hospedada no Portal de Boas Práticas da Fiocruz-IFF; o Guia de fluoretos 2026, em cópia publicada no Diário Municipal de Curitiba; o Guia de 2009, em cópia do site do CFO. Não consegui abrir o relatório final do SB Brasil 2023.</li>
+  <li><b>Doses sem bula aberta:</b> mepivacaína 2% com epinefrina e lidocaína 2% em tubete (só abri as bulas citadas na seção 9); posologia de dipirona em gotas para adulto; metronidazol no FTN; doses pediátricas de analgésicos e antibióticos. Consulte a bula e a RENAME. Valores de INR para exodontia em anticoagulado: não incluí.</li>
+  <li><b>Fontes que não consegui abrir:</b> definições da AAE (Associação Americana de Endodontia) estão atrás de bloqueio (403) e não as contornei; usei as definições do American Board of Endodontics, 2007. A norma de antibióticos citada é portuguesa (2011), não brasileira. A Anvisa não tinha, nas páginas que abri, a RDC final que revisa a RDC 173/2017; só o voto de 2024.</li>
+  <li><b>Anatomia e escultura dental, aparelhos ortodônticos, materiais de moldagem e modelagem, materiais protéticos, equipamento protético, semiologia das afecções da maxila e da mandíbula, interpretação de imagem radiográfica e endodontia além do diagnóstico e da urgência (instrumentação, obturação)</b>: sem fonte aberta. Estude em livro-texto da graduação.</li>
+  <li><b>Normas do RS ou do município</b> (vigilância sanitária estadual, protocolos locais de saúde bucal): não pesquisei.</li>
+</ul>
+
+<h2 id="questoes">18. Questões comentadas (formato da prova: 4 alternativas)</h2>
+<p>Responda antes de abrir o comentário. A resposta certa aparece em verde, como uma frase para gravar. As questões são originais, escritas para esta apostila; cada comentário cita a fonte.</p>
+
+<div class="questao" id="q1">
+<p><b>1.</b> Segundo o Código de Ética Odontológica (Resolução CFO-118/2012), compreende-se como justa causa para revelar fato sigiloso, principalmente:</p>
+<ol><li>a solicitação do empregador do paciente, que paga o tratamento.</li><li>o pedido de uma companhia de seguros interessada no caso.</li><li>a notificação compulsória de doença.</li><li>a curiosidade de um familiar adulto, quando o paciente é capaz.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">A notificação compulsória de doença é justa causa para revelar fato sigiloso (Código de Ética, art. 14, parágrafo único, I).</span></p>
+<p class="errada">A, B e D) <s>empregador, seguradora, familiar</s> → não estão entre as justas causas; as previstas são notificação compulsória, colaboração com a justiça nos casos previstos em lei, perícia nos seus exatos limites, defesa de interesse legítimo do profissional e revelação ao responsável pelo incapaz.</p>
+</details></div>
+
+<div class="questao" id="q2">
+<p><b>2.</b> Constitui infração ética em publicidade, segundo o Código de Ética Odontológica e a Resolução CFO-196/2019:</p>
+<ol><li>divulgar ao público vídeos ou imagens do transcurso (o "durante") de procedimentos odontológicos, fora de publicação científica.</li><li>informar o nome e o número de inscrição no Conselho Regional.</li><li>anunciar a especialidade na qual o dentista está registrado no Conselho Regional.</li><li>divulgar endereço, telefone e horário de trabalho.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A Resolução CFO-196/2019 (art. 3º) proíbe divulgar imagens ou vídeos do transcurso dos procedimentos, salvo em publicação científica.</span> Imagens do diagnóstico e do resultado final são permitidas ao dentista responsável, com TCLE do paciente (art. 2º).</p>
+<p class="errada">B) <s>nome e inscrição</s> → são <b>obrigatórios</b> (art. 43). C e D) <s>especialidade registrada, endereço e horário</s> → podem constar (art. 43, § 1º).</p>
+<p class="errada">Nota: a CFO-271/2025 retirou das infrações o cartão de desconto; a CFO-196/2019 já tinha liberado, com TCLE, as imagens de diagnóstico e de resultado final.</p>
+</details></div>
+
+<div class="questao" id="q3">
+<p><b>3.</b> As penas previstas no Código de Ética Odontológica (art. 51), em ordem de gradação, são:</p>
+<ol><li>advertência confidencial, censura pública, multa, suspensão até 60 dias e cassação.</li><li>advertência confidencial, censura confidencial, censura pública, suspensão do exercício até 30 dias e cassação do exercício profissional.</li><li>censura confidencial, advertência pública, suspensão até 90 dias e cassação.</li><li>advertência confidencial, suspensão até 30 dias, censura pública e multa.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">As penas são advertência confidencial, censura confidencial, censura pública, suspensão do exercício até 30 dias e cassação (art. 51); a gradação só é pulada em casos de manifesta gravidade (art. 52).</span></p>
+<p class="errada">A, C e D) <s>multa na gradação, advertência pública, 60 ou 90 dias</s> → advertência pública e suspensão de 60 ou 90 dias não existem; o limite da suspensão é <b>30 dias</b>. A multa existe, mas fora da gradação do art. 51: é a <b>pena pecuniária</b> do art. 57, de 1 a 25 anuidades, aplicada <b>além</b> das penas disciplinares.</p>
+</details></div>
+
+<div class="questao" id="q4">
+<p><b>4.</b> A Política Nacional de Saúde Bucal, instituída pela Lei 14.572/2023, prevê entre suas diretrizes:</p>
+<ol><li>extinguir a fluoretação da água onde houver dentifrício fluoretado.</li><li>restringir o acesso aos serviços a crianças e gestantes.</li><li>limitar as ações de saúde bucal à atenção secundária.</li><li>manter a vigilância sanitária da fluoretação da água de abastecimento público, obrigatória pela Lei 6.050/1974.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A Política Nacional de Saúde Bucal mantém a vigilância sanitária da fluoretação da água de abastecimento público, obrigatória nos termos da Lei 6.050/1974 (Lei 14.572/2023, art. 2º, X).</span></p>
+<p class="errada">A) <s>extinguir a fluoretação</s> → a lei manda manter a vigilância. B) <s>só crianças e gestantes</s> → o acesso é universal, equitativo e contínuo. C) <s>só atenção secundária</s> → as ações compõem todas as redes e níveis de atenção.</p>
+</details></div>
+
+<div class="questao" id="q5">
+<p><b>5.</b> Segundo o Guia de recomendações para o uso de fluoretos no Brasil (2ª edição, 2026), a quantidade de dentifrício fluoretado na escova é:</p>
+<ol><li>do tamanho de uma ervilha para qualquer idade.</li><li>do tamanho de um grão de arroz (~0,3 g) em menores de 9 anos, como no guia de 2009.</li><li>do tamanho de um grão de arroz (~0,15 g) até 3 anos de idade e de uma ervilha (~0,3 g) depois dessa idade.</li><li>nenhuma, até os 6 anos, usando só gaze com água.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Até 3 anos a quantidade é um grão de arroz (~0,15 g); depois dos 3 anos, uma ervilha (~0,3 g) (Guia de fluoretos 2026, seção 5.2.4).</span></p>
+<p class="errada">B) <s>~0,3 g, grão de arroz, menores de 9 anos</s> → é o texto da edição de 2009, substituído. A) <s>ervilha para todos</s> → abaixo de 3 anos é grão de arroz. D) <s>sem pasta até 6 anos</s> → o Guia recomenda pasta com 1.000 a 1.500 ppm para todos, e chama de equivocada a pasta sem flúor ou de baixa concentração.</p>
+</details></div>
+
+<div class="questao" id="q6">
+<p><b>6.</b> Sobre os enxaguatórios fluoretados, segundo o Guia de fluoretos 2026:</p>
+<ol><li>NaF 0,05% é de uso diário e NaF 0,2% é semanal e supervisionado; não são recomendados para menores de 6 anos.</li><li>NaF 0,05% é de uso semanal e NaF 0,2% é de uso diário.</li><li>NaF 0,2% é de uso diário e é recomendado a partir de 3 anos.</li><li>são indicados para crianças de qualquer idade, desde que sob supervisão.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">NaF 0,05% (225 ppm F) é de uso diário; NaF 0,2% (900 ppm F) é semanal e supervisionado; bochechos não são recomendados abaixo de 6 anos (Guia 2026, seções 6.3 e 6.4).</span></p>
+<p class="errada">B) <s>invertido</s> → a concentração maior é a de uso semanal. C e D) <s>a partir de 3 anos / qualquer idade</s> → o limite é <b>6 anos</b>, por risco de ingestão.</p>
+</details></div>
+
+<div class="questao" id="q7">
+<p><b>7.</b> A dose provavelmente tóxica (DPT) de flúor e o que ela representa para uma criança de 20 kg são, segundo o Guia de fluoretos 2026:</p>
+<ol><li>50 mg F/kg; seria atingida com 1.000 mg de flúor.</li><li>0,5 mg F/kg; seria atingida com 10 mg de flúor.</li><li>5 mg F/kg; seria atingida com 143 mL de água otimamente fluoretada.</li><li>5 mg F/kg; seria atingida com cerca de 4,5 g de verniz de NaF a 5% (22.000 ppm F).</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">A DPT é de 5 mg F/kg; para uma criança de 20 kg (100 mg de flúor), equivale a cerca de 4,5 g de verniz de NaF 5% (Guia 2026, Tabela 2).</span></p>
+<p class="errada">A e B) <s>50 e 0,5 mg/kg</s> → valores errados. C) <s>143 mL</s> → são <b>143 litros</b> de água a 0,70 ppm F.</p>
+<p class="errada">Observação: a Tabela 2 do Guia arredonda o verniz para 22.000 ppm F; no texto, o mesmo Guia fala em até 22.600 ppm F para produtos profissionais.</p>
+</details></div>
+
+<div class="questao" id="q8">
+<p><b>8.</b> Sobre o flúor na água de abastecimento, segundo o Guia de fluoretos 2026 e a Portaria GM/MS 888/2021:</p>
+<ol><li>o teor ideal é 1,5 mg F/L em todo o país.</li><li>o Valor Máximo Permitido é 1,5 mg F/L e a concentração ótima, conforme o clima, varia de 0,55 a 0,94 mg F/L.</li><li>teores de 0,95 a 1,5 mg F/L são os recomendados para o Brasil.</li><li>o teor ótimo varia de 0,2 a 0,5 mg F/L.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">O VMP de fluoreto é 1,5 mg F/L (Portaria 888/2021) e a concentração ótima para a prevenção da cárie varia de 0,55 a 0,94 mg F/L, conforme o clima.</span></p>
+<p class="errada">A) <s>ideal = 1,5</s> → 1,5 é o <b>máximo permitido</b>, não o ideal. C) <s>0,95 a 1,5 recomendados</s> → <b>não</b> são recomendados, por risco de fluorose. D) <s>0,2 a 0,5</s> → abaixo da faixa ótima.</p>
+</details></div>
+
+<div class="questao" id="q9">
+<p><b>9.</b> No levantamento SB Brasil 2010, o CPO-D médio aos 12 anos de idade foi de:</p>
+<ol><li>4,25.</li><li>2,07.</li><li>16,75.</li><li>27,53.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">No SB Brasil 2010, o CPO-D médio aos 12 anos foi de 2,07 (Resultados Principais, item 6.2.3).</span></p>
+<p class="errada">A) 4,25 → é a média de <b>15 a 19 anos</b>. C) 16,75 → <b>35 a 44 anos</b>. D) 27,53 → <b>65 a 74 anos</b>.</p>
+<p class="errada">Para o levantamento de 2023, a fonte oficial aberta informa 53,17% de crianças de 5 anos livres de cárie (46,6% em 2010).</p>
+</details></div>
+
+<div class="questao" id="q10">
+<p><b>10.</b> O Tratamento Restaurador Atraumático (ART/TRA), segundo o Caderno de Atenção Básica nº 17, caracteriza-se por:</p>
+<ol><li>preparo com alta rotação e restauração com amálgama.</li><li>necessidade de consultório com equipo, não podendo ser feito fora da clínica.</li><li>contraindicação em dentes decíduos.</li><li>preparo sem anestesia, remoção do tecido cariado amolecido com instrumentos manuais e selamento com cimento ionomérico.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">O ART faz o preparo sem anestesia, remove o tecido cariado amolecido com instrumentos manuais e sela a cavidade com cimento ionomérico (CAB 17, item 4.1.4).</span></p>
+<p class="errada">A) <s>alta rotação e amálgama</s> → técnica "atraumática" é o oposto. B) <s>só em clínica</s> → dispensa equipamento e serve a atendimento extraclínico. C) <s>contraindicado em decíduos</s> → pode ser indicado de forma universalizada em decíduos vitais, com monitoramento.</p>
+</details></div>
+
+<div class="questao" id="q11">
+<p><b>11.</b> Uma cavidade preparada nas faces proximais de um incisivo, com remoção e restauração do ângulo incisal, pertence, na classificação de Black, à:</p>
+<ol><li>Classe IV.</li><li>Classe III.</li><li>Classe V.</li><li>Classe II.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Cavidade proximal de incisivo ou canino com remoção do ângulo incisal é de Classe IV (Black, em Mandarino, FORP-USP).</span></p>
+<p class="errada">B) <s>Classe III</s> → proximal de anterior <b>sem</b> remover o ângulo incisal. C) <s>Classe V</s> → terço gengival. D) <s>Classe II</s> → faces proximais de pré-molares e molares.</p>
+</details></div>
+
+<div class="questao" id="q12">
+<p><b>12.</b> Na classificação das doenças periodontais de 2017 (Workshop AAP/EFP), a periodontite é caracterizada por:</p>
+<ol><li>manutenção das formas crônica e agressiva, com estágios I a III.</li><li>graus de 1 a 4 e estágios de A a C.</li><li>estágios de 1 a 4 e graus A, B e C, reunindo as antigas formas crônica e agressiva numa única categoria.</li><li>três formas, leve, moderada e grave, definidas só pela profundidade de sondagem.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Em 2017 a periodontite passou a ter estágios de 1 a 4 e graus A, B e C, e as formas "crônica" e "agressiva" foram reunidas na categoria "periodontite" (Caton et al., 2018).</span></p>
+<p class="errada">A) <s>mantém crônica e agressiva</s> → é a classificação de 1999. B) <s>invertido</s> → estágio é 1 a 4; grau é A a C. D) <s>leve, moderada, grave por profundidade</s> → o estágio considera vários critérios, não só a sondagem.</p>
+</details></div>
+
+<div class="questao" id="q13">
+<p><b>13.</b> Segundo a RDC 15/2012 da Anvisa, os produtos para saúde semicríticos devem ser submetidos, após a limpeza, no mínimo a:</p>
+<ol><li>somente limpeza.</li><li>desinfecção de nível intermediário, em qualquer caso.</li><li>desinfecção de alto nível.</li><li>esterilização por calor úmido, sempre.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">Produtos semicríticos devem passar, no mínimo, por desinfecção de alto nível após a limpeza (RDC 15/2012, art. 12).</span></p>
+<p class="errada">A) <s>só limpeza</s> → é o mínimo dos <b>não críticos</b> (art. 14). B) <s>nível intermediário</s> → só para semicríticos de assistência ventilatória, anestesia e inaloterapia (parágrafo único). D) <s>esterilização sempre</s> → é o processo dos <b>críticos</b> (art. 11).</p>
+</details></div>
+
+<div class="questao" id="q14">
+<p><b>14.</b> Segundo a bula do anestésico Septanest (articaína 4% com epinefrina), a dose máxima para adultos e adolescentes é de:</p>
+<ol><li>7 mg/kg, com dose máxima absoluta de 500 mg.</li><li>2 mg/kg, com dose máxima absoluta de 100 mg.</li><li>14 mg/kg, sem dose absoluta.</li><li>7 mg/kg, sem dose absoluta, para qualquer peso.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">A dose máxima de articaína em adultos e adolescentes é de 7 mg/kg, com teto absoluto de 500 mg (bula Septanest, seção 8).</span></p>
+<p class="errada">B) <s>2 mg/kg</s> → é a dose <b>eficaz média</b> em crianças em procedimentos simples. C e D) <s>sem teto absoluto</s> → a bula limita a 500 mg; 490 mg correspondem a um adulto de 70 kg ou mais, perto de 7 tubetes de 1,7 mL (68 mg).</p>
+</details></div>
+
+<div class="questao" id="q15">
+<p><b>15.</b> O trismo após uma injeção anestésica pode ocorrer por:</p>
+<ol><li>excesso de vasoconstritor na solução.</li><li>alergia à articaína.</li><li>isquemia da mucosa palatina.</li><li>lesão das fibras dos músculos temporal, masseter ou pterigóideo medial pela agulha.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Quando a injeção atinge os músculos temporal, masseter ou pterigóideo medial, o trismo pode ocorrer por dano às fibras musculares, que limita a abertura da boca (TCC UFSC, 2019, citando Ogle e Mahjoubi, 2012).</span></p>
+<p class="errada">A, B e C) <s>vasoconstritor, alergia, isquemia</s> → causam outros quadros (reações sistêmicas, hipersensibilidade, palidez local), não o trismo por trauma muscular. Lembrete: a técnica de Gow-Gates é contraindicada em trismo; nesse caso, Vazirani-Akinosi (boca fechada).</p>
+</details></div>
+
+<div class="questao" id="q16">
+<p><b>16.</b> Um incisivo permanente de ápice fechado foi avulsionado há 20 minutos e guardado em leite. A conduta recomendada pelas diretrizes da IADT (2020) é:</p>
+<ol><li>aguardar 24 horas antes de reimplantar.</li><li>reimplantar, estabilizar por cerca de 2 semanas com fio passivo e flexível, iniciar o tratamento endodôntico em até 2 semanas, indicar antibiótico sistêmico e verificar o tétano.</li><li>estabilizar com contenção rígida por 6 meses.</li><li>não reimplantar e indicar implante.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">Reimplantar, estabilizar com fio passivo e flexível por cerca de 2 semanas, iniciar o tratamento endodôntico em até 2 semanas, usar antibiótico sistêmico e verificar o tétano (IADT 2020, avulsão).</span></p>
+<p class="errada">A) <s>esperar 24 h</s> → o reimplante deve ser imediato. C) <s>contenção rígida por 6 meses</s> → o fio é flexível e por cerca de 2 semanas (4 semanas se há fratura alveolar). D) <s>não reimplantar</s> → reimplantar quase sempre é a decisão correta, mesmo com mais de 60 minutos de tempo seco, para preservar o osso.</p>
+</details></div>
+
+<div class="questao" id="q17">
+<p><b>17.</b> Segundo o Caderno de Atenção Básica nº 17, uma lesão de tecido mole da boca que não regrida espontaneamente ou após a remoção de possíveis fatores causais deve ser referenciada para diagnóstico em, no máximo:</p>
+<ol><li>3 meses.</li><li>6 meses.</li><li>1 dia.</li><li>3 semanas.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra D. <span class="grava">Lesão de tecido mole que não regrida em no máximo 3 semanas, mesmo removidos os fatores causais, deve ser referenciada para diagnóstico (CAB 17, item 4.3.4.1).</span></p>
+<p class="errada">A e B) <s>meses</s> → atrasariam o diagnóstico de câncer de boca, que em mais de 50% dos casos já chega em estágio avançado. C) <s>1 dia</s> → é preciso dar tempo de remover as causas (dente fraturado, borda cortante de prótese).</p>
+</details></div>
+
+<div class="questao" id="q18">
+<p><b>18.</b> Segundo a declaração científica da American Heart Association (2021), em adulto de alto risco para endocardite e que pode tomar medicação oral, a profilaxia antes de procedimento dentário que manipula a gengiva é:</p>
+<ol><li>amoxicilina 2 g, dose única, 30 a 60 minutos antes do procedimento.</li><li>clindamicina 600 mg, 1 hora antes.</li><li>amoxicilina 500 mg de 8 em 8 horas por 7 dias.</li><li>amoxicilina 50 mg/kg, dose única.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra A. <span class="grava">Em adulto de alto risco, a profilaxia é amoxicilina 2 g por via oral, em dose única, 30 a 60 minutos antes do procedimento (AHA 2021, Tabela 5).</span></p>
+<p class="errada">B) <s>clindamicina</s> → não é mais recomendada. C) <s>7 dias</s> → o esquema é dose única. D) <s>50 mg/kg</s> → é a dose de <b>criança</b>.</p>
+</details></div>
+
+<div class="questao" id="q19">
+<p><b>19.</b> De acordo com a RDC 611/2022, a cabine de comando do equipamento de radiologia odontológica intraoral pode ser dispensada desde que a equipe possa manter-se do cabeçote e do paciente a, no mínimo:</p>
+<ol><li>1 metro.</li><li>2 metros.</li><li>3 metros.</li><li>nunca pode ser dispensada.</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra B. <span class="grava">A cabine de comando do equipamento intraoral pode ser dispensada se a equipe ficar a, no mínimo, 2 metros do cabeçote e do paciente, ou se o levantamento radiométrico comprovar níveis adequados (RDC 611/2022, art. 54, parágrafo único).</span></p>
+<p class="errada">A e C) <s>1 e 3 metros</s> → a norma fixa <b>2 metros</b>. D) <s>nunca</s> → a dispensa existe para o equipamento intraoral.</p>
+</details></div>
+
+<div class="questao" id="q20">
+<p><b>20.</b> O documento-base do Sistema de Informações sobre Mortalidade (SIM) é:</p>
+<ol><li>a Declaração de Nascido Vivo.</li><li>a Autorização de Internação Hospitalar (AIH).</li><li>a Declaração de Óbito.</li><li>o Boletim de Produção Ambulatorial (BPA).</li></ol>
+<details><summary>Ver resposta comentada</summary>
+<p class="certa">Letra C. <span class="grava">O documento-base do SIM é a Declaração de Óbito, preenchida e assinada por um médico.</span></p>
+<p class="errada">A) → documento do <b>Sinasc</b>. B) → documento do <b>SIH/SUS</b>. D) → instrumento do <b>SIA/SUS</b>.</p>
+</details></div>
+
+<h2 id="respostas">19. Respostas que a banca dá como certas</h2>
+<p>São as frases-resposta desta apostila, para gravar. Valem para as fontes citadas; confira se a questão cita a edição ou a norma que a apostila usou.</p>
+<h3>Ética</h3>
+<ul class="respostas">
+  <li>Justa causa para quebrar o sigilo: notificação compulsória, colaboração com a justiça nos casos previstos em lei, perícia, defesa de interesse legítimo, revelação ao responsável pelo incapaz.</li>
+  <li>Imagem do "durante" é proibida; diagnóstico e resultado final só com TCLE (CFO-196/2019); nome e número de inscrição no CRO são obrigatórios na divulgação.</li>
+  <li>Penas: advertência confidencial, censura confidencial, censura pública, suspensão até 30 dias, cassação.</li>
+  <li>Prontuário é obrigatório, com data, hora, nome, assinatura e número de registro; a CFO-271/2025 tirou o cartão de desconto da lista de infrações.</li>
+</ul>
+<h3>Flúor e epidemiologia</h3>
+<ul class="respostas">
+  <li>Pasta de 1.000 a 1.500 ppm F, pelo menos 2 vezes ao dia; grão de arroz até 3 anos, ervilha depois.</li>
+  <li>Bochecho NaF 0,05% é diário; NaF 0,2% é semanal e supervisionado; não recomendados abaixo de 6 anos.</li>
+  <li>DPT é 5 mg F/kg; VMP na água é 1,5 mg F/L; faixa ótima de 0,55 a 0,94 mg F/L.</li>
+  <li>SB Brasil 2010: CPO-D 2,07 aos 12 anos; ceo-d 2,43 aos 5 anos; livres de cárie 46,6% aos 5 anos e 43,5% aos 12.</li>
+  <li>Aplicação tópica coletiva universal: CPOD maior que 3 aos 12 anos e menos de 30% livres de cárie aos 12 anos (CAB 17).</li>
+</ul>
+<h3>Clínica</h3>
+<ul class="respostas">
+  <li>ART: sem anestesia, instrumentos manuais, selamento com ionômero; pode ser feito fora do consultório.</li>
+  <li>Black: Classe III é proximal de anterior sem o ângulo incisal; Classe IV, com remoção do ângulo.</li>
+  <li>Periodontite 2017: estágios 1 a 4, graus A a C; crônica e agressiva reunidas.</li>
+  <li>Lesão de mucosa que não regride em 3 semanas deve ser referenciada.</li>
+  <li>Crítico se esteriliza; semicrítico, no mínimo desinfecção de alto nível; não crítico, no mínimo limpeza.</li>
+  <li>Articaína 4% (bula Septanest): 7 mg/kg, no máximo 500 mg; não usar abaixo de 4 anos sem estabelecer segurança.</li>
+  <li>Avulsão: reimplante imediato, fio passivo e flexível por cerca de 2 semanas, endodontia em até 2 semanas, tétano.</li>
+  <li>Endocardite (AHA 2021): só alto risco; amoxicilina 2 g, 30 a 60 minutos antes; sem clindamicina.</li>
+  <li>Radiologia intraoral: equipe a 2 metros do cabeçote e do paciente; acompanhante gestante ou menor de 18 anos é proibido.</li>
+  <li>Angle: Classe II, molar inferior posterior; Classe III, molar inferior anterior.</li>
+  <li>Anestésicos (bulas): prilocaína 3% com felipressina, 4,5 mg/kg e no máximo 400 mg (Citocaína, contraindicada na gravidez); mepivacaína 3%, 4,4 mg/kg e no máximo 300 mg (Mepicain); carpule de 1,8 mL a 3% tem 54 mg.</li>
+  <li>RENAME 2024 lista dipirona, paracetamol, ibuprofeno, amoxicilina, clindamicina e metronidazol no componente Básico; amoxicilina e clindamicina são Acesso (AWaRe) e a azitromicina, Alerta.</li>
+  <li>FTN 2010, adulto: paracetamol 500 a 1.000 mg a cada 4 a 6 h, máximo 4 g/dia; ibuprofeno 200 a 600 mg a cada 6 a 8 h, máximo 2,4 g/dia, contraindicado no 3º trimestre; amoxicilina 250 a 500 mg a cada 8 ou 12 h; clindamicina 150 a 450 mg a cada 6 h, máximo 1,8 g/dia.</li>
+  <li>Pulpite irreversível: urgência é pulpectomia (ápice formado, dente restaurável); analgésico sozinho não resolve e antibiótico não trata a pulpite.</li>
+  <li>Abscesso apical agudo: pulpectomia, saneamento dos canais e drenagem; Ludwig e celulite extensa vão ao hospital. Percussão vertical sem edema: periodontite apical aguda.</li>
+  <li>Radiografia intraoral: no paralelismo o feixe é perpendicular ao dente e ao receptor; na bissetriz, perpendicular à bissetriz do ângulo; interproximal mostra coroas e cristas ósseas, com angulação vertical de +8 a +10°.</li>
+  <li>Ionômero de vidro: adequação do meio bucal, restauração provisória, classes III e V, forramento; contraindicado em classe IV e áreas de grande carga oclusal.</li>
+  <li>Adequação do meio bucal (CAB 17): remover dentina cariada, selar cavidades com material provisório e retirar restos radiculares e retentivos de placa, antes do encaminhamento.</li>
+  <li>Amálgama: só encapsulado (RDC Anvisa 173/2017); Minamata promulgada pelo Decreto 9.470/2018; descontinuar em gestantes, lactantes e dentição decídua até 15 anos (Parecer MS 6/2022).</li>
+  <li>Ergonomia: NR-17 exige avaliação ergonômica preliminar e, se for o caso, AET; as pausas contam como tempo de trabalho e são usufruídas fora do posto. No relógio da FDI, 12 horas é a cabeça do paciente, o operador fica às 9 e a auxiliar entre 1 e 3.</li>
+</ul>
+<h3>SUS</h3>
+<ul class="respostas">
+  <li>SIM: Declaração de Óbito; Sinasc: Declaração de Nascido Vivo; Sinan: notificação compulsória; SIH: AIH; SIA: BPA e APAC.</li>
+  <li>SISAB foi instituído pela Portaria 1.412/2013 e substituiu o SIAB.</li>
+  <li>Política Nacional de Saúde Bucal: Lei 14.572/2023; mantém a vigilância da fluoretação (Lei 6.050/1974).</li>
+</ul>
+
+<h2 id="fontes">20. Fontes</h2>
+<p>Conferido em 27/10/2026. "Lido" quer dizer que abri o texto do documento; entre parênteses, de onde veio a cópia.</p>
+<ul class="fontes">
+  <li>Código de Ética Odontológica, Resolução CFO-118/2012 (DOU 14/06/2012, seção 1, p. 118 a 121): lido, cópia do CFO, website.cfo.org.br/wp-content/uploads/2018/03/codigo_etica.pdf (arquivo criado em 18/07/2012; texto original, sem as alterações de 2025).</li>
+  <li>Resolução CFO-196, de 29/01/2019 (imagens de pacientes na divulgação, arts. 1º a 4º): lida, Conselho Federal de Odontologia, sistemas.cfo.org.br, consultada em 27/10/2026. Não encontrei revogação; confirme a vigência no site do CFO.</li>
+  <li>Resolução CFO-SEC-271, de 18/06/2025 (altera os arts. 20, 32 e 44 do Código): lida, sistemas.cfo.org.br/visualizar/atos/RESOLUÇÃO/SEC/2025/271. Notícia do CFO sobre a alteração e a revisão geral em andamento: website.cfo.org.br/em-cumprimento-a-decisao-do-cade-cfo-realiza-alteracoes-pontuais-no-codigo-de-etica/.</li>
+  <li>Guia de recomendações para o uso de fluoretos no Brasil, 2ª edição, Ministério da Saúde, Secretaria de Atenção Primária à Saúde, 2026: lido (cópia no Diário Municipal de Curitiba, mid.curitiba.pr.gov.br/2026/00462976.pdf; o endereço oficial bvsms.saude.gov.br respondeu 503). Seções 3.9, 5.1, 5.2, 6, 7, 8 e 9, Tabela 2.</li>
+  <li>Guia de recomendações para o uso de fluoretos no Brasil, 1ª edição, Ministério da Saúde, 2009 (56 p.): lido (cópia do CFO, website.cfo.org.br/wp-content/uploads/2012/01/livro_guia_fluoretos.pdf).</li>
+  <li>Saúde Bucal, Cadernos de Atenção Básica nº 17, Ministério da Saúde, Brasília, 2008 (92 p.): lido (cópia do Portal de Boas Práticas Fiocruz-IFF, portaldeboaspraticas.iff.fiocruz.br/wp-content/uploads/2022/08/saude_bucal.pdf). Itens 3.4, 4.1, 4.2, 4.3.</li>
+  <li>Projeto SBBrasil 2010: Pesquisa Nacional de Saúde Bucal, Resultados Principais, Ministério da Saúde, 2011: lido, gov.br/saude/pt-br/composicao/saps/brasil-sorridente/sb-brasil/dados/2010/relatorio-final-sb-brasil-2010.pdf. Itens 6.2 e 6.5.</li>
+  <li>"Aumenta número de crianças no Brasil sem cárie nos dentes", Ministério da Saúde, 13/06/2024 (SB Brasil 2023, 5 anos: 53,17%): lida, gov.br/saude/pt-br/assuntos/noticias/2024/junho/aumenta-numero-de-criancas-no-brasil-sem-carie-nos-dentes. Página SB Brasil (cronologia da pesquisa de 2023): gov.br/saude/pt-br/composicao/saps/brasil-sorridente/sb-brasil.</li>
+  <li>Lei 14.572, de 08/05/2023 (Política Nacional de Saúde Bucal): lida, planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14572.htm (resumo dos artigos 1º, 2º e 4º; o próprio texto lembra que prevalece o DOU de 09/05/2023).</li>
+  <li>RDC Anvisa nº 15, de 15/03/2012: lida, cópia da Secretaria de Saúde de Goiás, goias.gov.br/saude/wp-content/uploads/sites/34/2017/02/rdc-15-12-cme-3e0.pdf.</li>
+  <li>RDC Anvisa nº 611, de 09/03/2022 (DOU 16/03/2022, seção 1, p. 107): lida, cópia da SES-SP, ses.sp.bvs.br/wp-content/uploads/2022/03/U_RS-MS-ANVISA-RDC-611_090322.pdf. Arts. 8, 52, 54, 56, 61 e 65.</li>
+  <li>Bula do profissional de saúde, Septanest 1/100.000 e 1/200.000 (articaína 40 mg/mL com epinefrina), Septodont Brasil, arte modificada em 12/07/2024: lida, septodont.com.br/wp-content/uploads/sites/21/2022/12/Bula-Septanest.pdf.</li>
+  <li>Bula do profissional de saúde, Xylestesin com vasoconstritor (lidocaína com epinefrina 1:200.000, frasco-ampola), Cristália: lida, cristalia.com.br/produto/181/bula-profissional.</li>
+  <li>IADT, Guidelines for the Management of Traumatic Dental Injuries: 2. Avulsion of Permanent Teeth (Fouad et al.), Dent Traumatol 2020;36(4):331-342, doi 10.1111/edt.12573: lido (cópia do AAPD, aapd.org/globalassets/media/policies_guidelines/e_iadt-avulsion25.pdf).</li>
+  <li>Wilson WR et al., Prevention of Viridans Group Streptococcal Infective Endocarditis, AHA Scientific Statement, Circulation 2021;143:e963-e978, doi 10.1161/CIR.0000000000000969: lido (cópia hospedada em smilegeneration.com; o site da AHA devolveu 403).</li>
+  <li>Caton JG et al., A new classification scheme for periodontal and peri-implant diseases and conditions, J Clin Periodontol 2018, doi 10.1111/jcpe.12935: lido (cópia em umw.edu.pl/sites/default/files/2022-04/Article4.pdf).</li>
+  <li>Mandarino F, Nomenclatura e Classificação das Cavidades, FORP-USP: lido, forp.usp.br/restauradora/dentistica/temas/amalgama/amalgama_01/amalgama_01.pdf.</li>
+  <li>Garbin AJÍ et al., Prevalência de oclusopatias e comparação entre a Classificação de Angle e o Índice de Estética Dentária, Dental Press J Orthod 2010;15(4): lido em resumo estruturado, scielo.br/j/dpjo/a/3HJ3pDDjPmDMQMCnTrFtmLD/.</li>
+  <li>Bausen AG et al., Proteção da vitalidade dentino-pulpar em odontopediatria: revisão de literatura, Rev Fac Odontol Porto Alegre 2020;61(2): lido, seer.ufrgs.br/index.php/RevistadaFaculdadeOdontologia/article/download/103721/60166/455834.</li>
+  <li>Cadernos de Saúde Bucal da SES-SP, "Qualidade e resolutividade na atenção básica: recomendações de cirurgia ambulatorial" e "recomendações para atendimento de pacientes com necessidades especiais", adotados pela SMS-SP, dezembro de 2005: lidos, prefeitura.sp.gov.br (saudebucal/Prot_Cirurgia_Ambulatorial.pdf e Prot_Necessidades_Especiais.pdf). Protocolos antigos, usados só para condutas gerais.</li>
+  <li>Fernandes LGC, Bloqueio do nervo alveolar inferior: uma técnica alternativa com agulha extracurta, TCC, UFSC, 2019: lido, repositorio.ufsc.br (handle 123456789/201612).</li>
+  <li>"Entenda as principais características dos sistemas de informação do Ministério da Saúde", gov.br, 10/07/2023 (SIM, Sinasc, Sinan): lida. e-SUS APS, SISAB, CDS, PEC e Portaria 1.412/2013: portal Atenção Primária do RS, atencaoprimaria.rs.gov.br/e-sus. Nomes de SIH/SUS, SIA/SUS e Siaps: só em títulos e resumos de resultados de busca (DATASUS, IBGE, sisaps.saude.gov.br); essas páginas não abriram.</li>
+  <li>RENAME 2024, Relação Nacional de Medicamentos Essenciais, Ministério da Saúde, Brasília, 2024 (Portaria GM/MS 6.324, de 26/12/2024): lida, bvsms.saude.gov.br/bvs/publicacoes/relacao_nacional_medicamentos_2024.pdf, consultado em 27/10/2026. Apresentações, componente de financiamento e classificação AWaRe de dipirona, paracetamol, ibuprofeno, amoxicilina, amoxicilina + clavulanato, azitromicina, clindamicina e metronidazol.</li>
+  <li>Formulário Terapêutico Nacional 2010 (Rename 2010), Ministério da Saúde: lido, bvsms.saude.gov.br/bvs/publicacoes/formulario_terapeutico_nacional_2010.pdf, consultado em 27/10/2026. Monografias de paracetamol, dipirona, ibuprofeno, amoxicilina, amoxicilina + clavulanato, azitromicina e clindamicina.</li>
+  <li>Protocolo de Atenção à Saúde, Urgências Odontológicas, SES-DF, Portaria SES-DF 458, de 14/07/2022 (DODF 133, de 18/07/2022): lido, saude.df.gov.br/documents/37101/85832/Protocolo+de+Urg%C3%AAncias+Odontol%C3%B3gicas.pdf, consultado em 27/10/2026. Protocolo de Atenção à Saúde, Endodontia, SES-DF, Portaria 287, de 02/12/2016: lido, saude.df.gov.br/documents/37101/87400/Endodontia.pdf, consultado em 27/10/2026.</li>
+  <li>Procedimento Operacional Padrão, Tratamento de Pulpite Irreversível: Pulpectomia (POP.MULTI.007), RioSaúde, Prefeitura do Rio de Janeiro, 2025: lido, riosaude.prefeitura.rio/wp-content/uploads/sites/66/2025/03/pop-tratamento-pulpite-irreversivel-v1.pdf, consultado em 27/10/2026. A tabela de prescrição (anexo I) saiu com as colunas embaralhadas na extração; usei só o que ficou claro (ibuprofeno 600 mg, diclofenaco, dipirona e paracetamol de 500 mg).</li>
+  <li>Protocolo de atendimento às urgências e emergências odontológicas nas UPA, Secretaria Municipal da Saúde de Curitiba, 2025: lido, mid.curitiba.pr.gov.br/2025/00461415.pdf, consultado em 27/10/2026 (classificação de risco, citando a Linha de Cuidado em Saúde Bucal, 3ª ed., SESA, 2021).</li>
+  <li>American Board of Endodontics, Pulpal and Periapical Diagnostic Terminology, 22/04/2007: lido (cópia em iztacala.unam.mx/rrivas/lecturas/ABETerminologyMay2007.pdf), consultado em 27/10/2026. O documento da AAE (consenso de terminologia diagnóstica) devolveu 403 e não foi aberto.</li>
+  <li>Direção-Geral da Saúde (Portugal), Norma 064/2011, Prescrição de Antibióticos em Patologia Dentária, 30/12/2011: lida (cópia em spemd.pt/imagens/anexo_462.pdf), consultado em 27/10/2026. Norma portuguesa, usada só para primeira linha, alérgicos e posologia média da tabela 1.</li>
+  <li>Bula do profissional de saúde, Mepicain 3% sem vasoconstritor (cloridrato de mepivacaína 30 mg/mL), Cristália: lida, cristalia.com.br/produto/265/bula-profissional, consultado em 27/10/2026. Bula do profissional de saúde, Citocaína 3% (cloridrato de prilocaína 30 mg/mL com felipressina 0,03 UI/mL), Cristália: lida, cristalia.com.br/produto/253/bula-profissional, consultado em 27/10/2026.</li>
+  <li>Manual de Boas Práticas, Área Radiologia Odontológica (MBP-RADIO-001, versão 1.0), Faculdade de Odontologia da USP, 2025: lido, www4.fo.usp.br/site/protocolos-manuais-clinica/wp-content/uploads/sites/5/2025/08/MBP-RADIO.pdf, consultado em 27/10/2026. Seções 2.1.1 a 2.1.4.</li>
+  <li>Mandarino F, Cimentos de Ionômero de Vidro (texto sem data na cópia), FORP-USP: lido, forp.usp.br/restauradora/dentistica/temas/cim_ion_vid/cim_ion_vid.pdf. Mandarino F, Restaurações Estéticas em Dentes Anteriores (seção 8.4, indicações das resinas), FORP-USP: lido, forp.usp.br/restauradora/dentistica/temas/res_est_ant/res_est_ant.html. Mandarino F, Restaurações de Amálgama em Cavidades Complexas (versão 1.0 de 2003, seção 11), FORP-USP: lido, forp.usp.br/restauradora/dentistica/temas/amalgama/amalgama_11/amalgama_11.html. Consultados em 27/10/2026.</li>
+  <li>Decreto 9.470, de 14/08/2018 (promulga a Convenção de Minamata sobre Mercúrio; DOU de 15/08/2018): conferido na página de dados da norma, legis.senado.leg.br/norma/27457113; não li o texto do anexo. Voto 60/2024/SEI/DIRE3/ANVISA (06/03/2024): lido, gov.br/anvisa/pt-br/composicao/diretoria-colegiada/reunioes-da-diretoria/votos/2024/rop-2.2024/2-11.pdf, consultado em 27/10/2026; dele vêm a decisão da COP 4.2 sobre a Parte II do Anexo A, o Parecer técnico 6/2022 do Ministério da Saúde e a descrição da RDC 173/2017. O texto da RDC 173 não foi aberto.</li>
+  <li>NR-17, Ergonomia (redação da Portaria MTP 423/2021 e alterações até a Portaria MTP 4.219/2022): lida, cópia da Udesc, udesc.br/arquivos/ceplan/id_cpmenu/2156/nr_17_atualizada_2022_17490546549423_2156.pdf (com a nota "este texto não substitui o publicado no DOU"), consultado em 27/10/2026. Barriviera G, Martins EMF, Distribuição dos equipamentos nas salas de atendimento odontológico, Akrópolis (UNIPAR) 2005;13(2):97-99: lido, revistas.unipar.br/index.php/akropolis/article/download/470/428/1759, citando Barros (1999) e a FDI, consultado em 27/10/2026.</li>
+  <li>Lei 8.080/1990, art. 3º: conferido na <a href="saude-sus.html">apostila de Saúde e SUS</a> deste projeto.</li>
+</ul>
+<p class="sub">Não abertas, e por isso sem número usado: manual da Anvisa de Serviços Odontológicos (2006), relatório final do SB Brasil 2023, bulas de mepivacaína 2% com epinefrina e de lidocaína 2% em tubete, texto da RDC 173/2017, documento de terminologia da AAE, normas estaduais do RS.</p>
+</main>
+
+<footer>
+  Material de estudo do concurso de Barão de Cotegipe. Prevalece sempre o texto oficial da norma e do edital; condutas clínicas seguem protocolos e bulas oficiais vigentes.
+  <br><a class="voltar" href="../disciplinas/index.html#odontologia">← Voltar às trilhas das disciplinas</a>
+</footer>
+<script>
+  // Na impressão, abre os comentários das questões para que saiam no papel.
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+  });
+</script>
+
+</body>
+</html>

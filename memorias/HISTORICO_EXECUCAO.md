@@ -118,3 +118,67 @@ O Gemini mexeu no projeto várias vezes nesta sessão; cada rodada teve problema
 - O progresso das caixas é salvo em `localStorage` neste navegador e dispositivo; não sincroniza com o cronograma nem com outros aparelhos. A página informa essa limitação.
 - Validação: 6 módulos e 60 tópicos; restauração/gravação local e mensagem de erro de armazenamento testadas; 12 links locais e os fragmentos internos verificados; visualização local e pública conferida; página, página inicial e PDF do conteúdo programático responderam com HTTP 200.
 - A alteração foi integrada pela PR #1 em `62a49da`; o workflow Pages `40428917585` terminou com sucesso. Endereço público: <https://rafaelelias01.github.io/concurso-barao-cotegipe/disciplinas/>.
+
+## 5. Revisão do Opus em 27/10/2026 (trabalho de outras IAs)
+
+O dono pediu que o Opus revisasse tudo o que outras IAs (Copilot/Codex/Gemini) fizeram entre as sessões.
+- `cronograma/app.js` (mesclagem e sincronização inicial) e `.github/workflows/pages.yml`: revisados, sem erro encontrado.
+- `edital/disciplinas/index.html` conferido contra o Anexo III (Nível Superior + bloco de Saúde + Odontólogo cód. 808/809). Lacunas corrigidas na branch `fix/trilhas-lacunas-anexo-iii`:
+  - Atualidades: faltava o item 7 do programa (Educação, Saúde e Indicadores Sociais) → tópico `indicadores-sociais`.
+  - Legislação: faltava o item 10 (Regime estatutário e trabalhista/CLT) → tópico `regimes`.
+  - Lei 8.142, Resolução CNS 453/2012, história do SUS e CF arts. 194-200 estão no programa de **Específicos** (linha ~1001 do Anexo III), não no bloco de Saúde → aviso no tópico de Saúde e novo tópico `sus-historia` em Odontologia.
+  - Total passou de 60 para 63 tópicos; progresso já salvo continua válido (IDs antigos não mudaram).
+
+## 6. Provas antigas da DOM e apostila de Saúde (Opus, 27/10/2026)
+
+### A) Busca de provas antigas do Instituto DOM
+- O site da banca lista os concursos em `institutodom.com/informacoes/<N>/` (N de 1 a ~110; Barão é o 95). As páginas trazem editais, gabaritos e resultados, mas **nenhum caderno de questões**.
+- Baixados e lidos os 63 PDFs "Gabarito final e resposta dos recursos": trazem só letras e situações (alterado/anulado), sem o texto das questões. Há Odontólogo em Rio das Antas/SC (concurso 20, cód. 609 e ESF 610) e Calmon/SC (concurso 44, cód. 605), sem caderno.
+- PCI Concursos: nenhuma prova da DOM. QConcursos: bloqueou o acesso (HTTP 403). Buscas na web: nenhum caderno da DOM achado. **Conclusão: não há prova antiga da DOM acessível; o "o que vai cair" segue o programa do edital, e isso está dito na apostila.**
+- Fato útil confirmado no edital retificado (linha ~1176 do texto): a prova tem **4 alternativas (A a D)**. Nos 63 gabaritos, as letras certas se distribuem por igual (A 25%, B 25%, C 23%, D 23%).
+
+### B) Apostila de Saúde e SUS
+- Arquivo: `edital/apostilas/saude-sus.html` (publicado no GitHub Pages junto com o edital), ligado na trilha de Saúde.
+- Conteúdo: mapa mental SVG, CF arts. 194–200 (com a EC 140/2026), Lei 8.080 (com as mudanças de 2022–2026: saúde bucal, telessaúde, Ceis, atenção humanizada), Lei 8.142, Res. CNS 453/2012, Decreto 7.508, PNAB, PNH, NR-32, Lei 10.216 e RAPS, Lei 11.350, Pacto pela Saúde, PNEPS, LBI/TEA/infância/PNAISC; 20 questões de 4 alternativas com comentário por alternativa; lista "Respostas que a banca dá como certas".
+- Fontes: Planalto (leis, CF compilada) e cópias oficiais de secretarias de saúde para as portarias, porque a BVS do Ministério bloqueia acesso automático (HTTP 503).
+- Não coberto em detalhe (texto oficial não lido): Política de Educação Especial na Perspectiva Inclusiva (2008) e Diretrizes do MS para TEA; Portarias 699/2006 e 372/2007 só citadas pelo nome.
+- Testado no Edge headless: largura 1024, 768 (tema escuro) e 480; mapa legível, sem texto fora das caixas; no celular o mapa rola dentro da própria caixa.
+
+## 7. Apostila de Legislação (Opus + Sonnets, 27/10/2026)
+- Divisão nova pedida pelo dono: Sonnets fazem coleta de fontes, extração e revisão mecânica; o Opus só escreve e confere conteúdo.
+- Fontes municipais obtidas no portal CESPRO (cespro.com.br, município 7259, API `_data/api.php` com Referer): **Lei Orgânica de 17/11/2020** consolidada com a **Emenda 001/2026** (licença de vereador até 120 dias) e **Lei 1.867/2008** (Regime Jurídico dos Servidores) consolidada até a Lei 3.227/2026. Textos em `scratch/leg/` (fora do Git).
+- Arquivo: `edital/apostilas/legislacao.html`, ligado na trilha de Legislação. Conteúdo: Lei Orgânica, Estatuto, CF arts. 1º–13 e 37–41, poderes, atos, órgãos e agentes; 20 questões A–D (5 por letra).
+- Mudanças constitucionais recentes destacadas: EC 141/2026 (jornada de 40 h semanais), EC 138/2025 (acumulação: professor + qualquer natureza), EC 131/2023 (nacionalidade).
+- Pegadinhas municipal x CF verificadas: disponibilidade integral (Estatuto) x proporcional (CF); 44 h (Estatuto, art. 53) x 40 h (CF após EC 141, aplicada aos servidores pelo art. 39, § 3º); Estatuto art. 128 com redação antiga da acumulação.
+- Revisão Sonnet: nenhum erro factual grave; 6 ajustes aplicados (veto/promulgação, rótulo de competência, mapa, frases sem fonte, item 10 do programa, Q4).
+- Não conferido no texto literal: Súmula 473 do STF (só resumo).
+
+## 8. Apostilas de Português e de Matemática/Lógica (27/10/2026)
+- O dono pediu para reaproveitar o material do HCPA. Inventário (Sonnet): o HCPA cobria por completo só 3 de 20 itens de Português e 3 de 20 de Matemática/RL do programa de Nível Superior de Barão; todas as questões do HCPA tinham 5 alternativas (FAURGS). Reaproveitada só a teoria neutra, reescrita e sem marcas da FAURGS (rankings, selos, questões de prova).
+- `edital/apostilas/portugues.html` (Sonnet escreveu, Opus revisou): gramática do HCPA reescrita e itens novos (coerência, semântica, vozes, silepse, colocação, figuras, variação, falácias, modalizadores) e **redação oficial pelo Manual de Redação da Presidência, 3ª ed. (2018)**, com a seção citada em cada regra. O Manual não tem capítulo de ata nem de relatório, e só recomenda evitar "doutor" (abole "Digníssimo" e "Ilustríssimo").
+- `edital/apostilas/matematica.html` (Sonnet escreveu, Opus revisou): lógica do HCPA reescrita e itens novos (financeira com SAC e Price, funções, matrizes, geometria, sólidos, estatística, Bayes, combinatória, probabilidade, congruência); 195 asserts em Python conferem contas e gabaritos (script em `scratch/mat/`, fora do Git).
+- Revisão do Opus: as 40 questões conferidas uma a uma; corrigidos uma frase truncada (colocação pronominal) e um comentário (Q1 de Matemática).
+- Ficaram rasos: ata e relatório (sem fonte no Manual); cônicas e programação linear só em reconhecimento.
+
+## 9. Apostilas de Atualidades e de Odontologia (27/10/2026)
+- `edital/apostilas/atualidades.html` (Sonnet escreveu, Opus revisou): fatos até 27/10/2026, cada um com fonte e data (Selic 13,75% em 16/09/2026; IPCA 12 meses 4,58% em set/2026; PIB; COP30; IDH 2025 84º; Censo 2022; Gaza; Ucrânia; Mercosul-UE; Nobel 2026; Prodes; Ideb 2025) e Realidade Municipal só com os fatos confirmados no IBGE. Revisão: Mercosul-UE reconferido por busca (assinatura em 17/01/2026, parecer ao TJUE em 21/01/2026); retirada data sem fonte. Ficaram de fora: câmbio, tarifas dos EUA, IR até R$ 5 mil, matriz elétrica (fontes divergentes).
+- `edital/apostilas/odontologia.html` (Sonnet escreveu, Opus revisou): ética (CFO-118/2012 + CFO-271/2025), Lei 14.572/2023, **Guia de fluoretos 2ª ed. 2026** (substitui o de 2009: grão de arroz até 3 anos; água 0,55–0,94 mg F/L), SB Brasil 2010/2023, ART, Black, classificação periodontal 2017, RDC 15/2012, RDC 611/2022, articaína (bula), IADT 2020, AHA 2021, sistemas de informação. Revisão: Q3 (pena pecuniária do art. 57 existe além do art. 51) e nota sobre 22.000 x 22.600 ppm no verniz.
+- Odontologia, ficaram de fora por falta de fonte aberta: manual Anvisa 2006 (403), BVS (503), doses de mepivacaína/prilocaína/lidocaína em tubete, doses terapêuticas de analgésicos e antibióticos, anatomia, ortodontia, materiais, prótese, endodontia e técnica radiográfica.
+
+## 10. Conferência final e cronograma ligado às apostilas (27/10/2026)
+- Conferência final de conteúdo das 6 apostilas por um Opus (relatório em `scratch/revisao/relatorio.md`, fora do Git). Vereditos: 5 "prontas com ajustes"; Odontologia "precisa de correção". Correções aplicadas por Sonnets e revisadas no diff:
+  - **Odontologia:** a Resolução **CFO-196/2019** autoriza, com TCLE, imagens do diagnóstico e do resultado final; continua proibido o "durante" (transcurso). A regra antiga do "antes e depois" saiu do mapa, da tabela, da pegadinha e da lista final; a **Q2 foi reescrita** (certa continua A). Também corrigidos: AHA 2021 (lista completa de quem recebe profilaxia), avulsão (critério é o tempo extraoral **seco**), síncope (pulso palpável, pode ser fraco) e Angle II div. 2 (centrais retroinclinados).
+  - **Legislação:** EC 141, de 16/10/2026 (depois do edital), reduz a jornada de forma **gradual** (42 h e depois 40 h); nacionalidade (art. 12, I, c) completada.
+  - **Saúde:** nova seção "Como o SUS foi construído" (`#sus-historia`), INAMPS extinto pela Lei 8.689/1993 (conferido no Planalto); aviso da data da EC 140 com transição até 31/12/2028; PNAB item 4.2.2; Q3 (Conferência x Conselho); 750 por ACS só em áreas de risco.
+  - **Português:** ênclise é obrigatória no início da frase (o pronome átono é que não abre frase); vírgula com adjunto curto é facultativa; "quatro a cinco palavras" do assunto é sugestão; teste do "voltar" só para nome de lugar.
+  - **Matemática:** "Todo A é B" permite concluir "Algum A é B" em prova; desvio padrão fica × |k|.
+  - **Atualidades:** razão de sexo de 2010 = 96,0; guerra de 2026 descrita (EUA, Irã e Israel); povos da colonização; expectativa de vida PNUD x IBGE.
+- Validação: as 6 apostilas com tags balanceadas, ids únicos, âncoras válidas, gabarito 5/5/5/5; 195 asserts de Matemática passando; mapa de Odontologia conferido em print.
+- Cronograma: cada tarefa ganhou botões para a seção certa da apostila (`APOSTILA_DA_TAREFA` em `gera_plano.py`, que aborta se arquivo ou âncora não existir); 28 dias, 56 tarefas, 84 links; corrigido bug de `class` em `el()` no `app.js`.
+- **Lacunas que ficam** (pedem conteúdo novo com fonte oficial): Atualidades — biomas e indicadores municipais do IBGE Cidades (saneamento, mortalidade infantil, salário médio, setores); Odontologia — farmacologia terapêutica, doses de mepivacaína/prilocaína, técnica radiográfica, pulpites, materiais, adequação do meio, ergonomia; Português — ata e relatório. Não conferidos: vigência atual da CFO-196 (sem revogação encontrada), texto integral da EC 140/141 (lidas em resumo), bula da lidocaína.
+
+## 11. Lacunas preenchidas (27/10/2026, Sonnets; números conferidos por amostra no texto das fontes)
+- **Atualidades:** seção `#biomas` (IBGE, mapa 2019 1:250.000: Amazônia 49,5%, Cerrado 23,3%, Mata Atlântica 13,0%, Caatinga 10,1%, Pampa 2,3%, Pantanal 1,8%); município 4301701 com indicadores do IBGE (API e SIDRA), cada um com o ano: bioma Mata Atlântica; salário médio 2,3 SM (2024); população ocupada 31,09% (2022); esgotamento adequado 22,06% (2022); arborização 65,06% (2022); mortalidade infantil 14,93 por mil (2025, 1 óbito); IDHM 0,719 (2010); escolarização 100% (2022); Ideb 2025 rede pública 6,8 e 5,2; setores do VAB 2021. Brutos em `scratch/atu/ibge/`.
+- **Português:** seção `#ata-relatorio` pelo Manual de Redação Oficial do TJDFT (2ª ed., 2016, p. 41-48), com IFG e Escola de Governo de MS como complemento ("digo", "Em tempo", números por extenso, rubrica exceto a última folha).
+- **Odontologia:** seções `#farmaco` (FTN 2010, RENAME 2024, protocolos SES-DF 2022 e RioSaúde 2025), `#pulpa` (American Board of Endodontics), `#materiais` (FORP-USP, Decreto 9.470/2018, amálgama encapsulado; adequação do meio pelo CAB 17), `#ergonomia` (NR-17, relógio de trabalho); técnica radiográfica (FOUSP 2025) em `#bio`; prilocaína 3% (bula Citocaína: 4,5 mg/kg, máx. 400 mg, contraindicada na gravidez) e mepivacaína 3% (bula Mepicain: 4,4 mg/kg, máx. 300 mg) em `#anestesia`. Sem fonte aberta, não entraram: lidocaína 2% e mepivacaína 2% c/ epinefrina em tubete, INR para exodontia, manual Anvisa 2006 (403/404).
+- Cronograma: seções novas ligadas às tarefas (90 links). Nenhuma questão nova; gabaritos 5/5/5/5.

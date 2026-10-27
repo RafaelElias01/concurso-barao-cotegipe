@@ -16,6 +16,7 @@
    - O cronograma abre sozinho no seu navegador de internet.
 2. **Estude com a janela preta aberta.**
    - Mantenha a janela aberta enquanto estiver estudando.
+   - Cada tarefa do dia tem um botão azul **"Abrir apostila"**: ele abre a apostila certa já na seção do assunto daquela tarefa.
 3. **Terminou a meta do dia? Feche a janela preta.**
    - Ao marcar as caixinhas das tarefas, seu progresso é salvo automaticamente no arquivo `cronograma/progresso.json`.
 

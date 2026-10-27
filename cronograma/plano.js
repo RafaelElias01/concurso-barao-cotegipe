@@ -268,6 +268,12 @@ window.PLANO = {
       "cf88_saude",
       "k_sus_cf",
       "edital_ret"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Constituição Federal, arts. 194 a 200",
+       "link": "../edital/apostilas/saude-sus.html#cf"
+      }
      ]
     },
     {
@@ -281,6 +287,12 @@ window.PLANO = {
       "k_sus",
       "pnh",
       "v_aula1"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Lei 8.080/1990 (Lei Orgânica da Saúde)",
+       "link": "../edital/apostilas/saude-sus.html#l8080"
+      }
      ]
     }
    ],
@@ -301,6 +313,16 @@ window.PLANO = {
      "materiais": [
       "cf88_geral",
       "cf88_adm"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — CF, arts. 1º a 4º: princípios fundamentais",
+       "link": "../edital/apostilas/legislacao.html#cf1"
+      },
+      {
+       "rotulo": "Abrir apostila: Legislação — CF, arts. 37 a 41: Administração Pública e servidores",
+       "link": "../edital/apostilas/legislacao.html#cf37"
+      }
      ]
     },
     {
@@ -311,6 +333,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "lei_org_bc"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Lei Orgânica de Barão de Cotegipe",
+       "link": "../edital/apostilas/legislacao.html#lom"
+      }
      ]
     }
    ],
@@ -330,6 +358,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Leitura, discurso e coesão",
+       "link": "../edital/apostilas/portugues.html#leitura"
+      }
      ]
     },
     {
@@ -340,6 +374,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Semântica, vocabulário e classes de palavras",
+       "link": "../edital/apostilas/portugues.html#semantica"
+      }
      ]
     }
    ],
@@ -359,6 +399,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Lógica proposicional",
+       "link": "../edital/apostilas/matematica.html#logica"
+      }
      ]
     },
     {
@@ -369,6 +415,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Lógica proposicional",
+       "link": "../edital/apostilas/matematica.html#logica"
+      }
      ]
     }
    ],
@@ -391,6 +443,12 @@ window.PLANO = {
       "ibge_bc",
       "apo_realidade",
       "mapa_realidade"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Realidade municipal: Barão de Cotegipe",
+       "link": "../edital/apostilas/atualidades.html#municipio"
+      }
      ]
     },
     {
@@ -403,6 +461,12 @@ window.PLANO = {
       "ibge_bc",
       "apo_realidade",
       "mapa_realidade"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Realidade municipal: Barão de Cotegipe",
+       "link": "../edital/apostilas/atualidades.html#municipio"
+      }
      ]
     }
    ],
@@ -425,6 +489,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "codigo_etica_cfo"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Ética e Código do CFO",
+       "link": "../edital/apostilas/odontologia.html#etica"
+      }
      ]
     },
     {
@@ -437,6 +507,20 @@ window.PLANO = {
       "nr32",
       "v_nr32",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Biossegurança e radiologia",
+       "link": "../edital/apostilas/odontologia.html#bio"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Ergonomia no consultório",
+       "link": "../edital/apostilas/odontologia.html#ergonomia"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — NR-32: segurança no trabalho em serviços de saúde",
+       "link": "../edital/apostilas/saude-sus.html#nr32"
+      }
      ]
     }
    ],
@@ -456,16 +540,36 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "dec7508"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Decreto 7.508/2011: como o SUS se organiza no território",
+       "link": "../edital/apostilas/saude-sus.html#d7508"
+      }
      ]
     },
     {
-     "id": "2026-10-31-1",
-     "disciplina": "SAU",
-     "titulo": "Decreto 7.508/2011: COAP, Mapa da Saúde, RENAME e RENASES",
-     "detalhe": "Instrumentos do Decreto 7.508: Mapa da Saúde (descrição geográfica da distribuição de recursos humanos e de ações e serviços de saúde ofertados pelo SUS e iniciativa privada); RENAME (Relação Nacional de Medicamentos Essenciais - compreende seleção de medicamentos e insumos); RENASES (Relação Nacional de Ações e Serviços de Saúde); COAP (Contrato Organizativo da Ação Pública da Saúde - acordo de colaboração firmado entre entes federativos para organizar a rede interfederativa).",
+     "id": "2026-10-31-2",
+     "disciplina": "ATU",
+     "titulo": "Atualidades: Diversidade Sociocultural, Educação, Saúde e Indicadores Sociais",
+     "detalhe": "Leia as seções sobre diversidade sociocultural e manifestações artísticas (itens 6 do programa) e sobre educação, saúde e indicadores sociais (item 7) na apostila de Atualidades. Use o mapa geral da apostila para revisar os pontos principais e termine resolvendo as questões comentadas dessas seções.",
      "minutos": 60,
      "materiais": [
-      "dec7508"
+      "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Diversidade sociocultural e manifestações artísticas",
+       "link": "../edital/apostilas/atualidades.html#cultura"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Educação, saúde e indicadores sociais",
+       "link": "../edital/apostilas/atualidades.html#indicadores"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Biomas brasileiros",
+       "link": "../edital/apostilas/atualidades.html#biomas"
+      }
      ]
     }
    ],
@@ -481,10 +585,16 @@ window.PLANO = {
      "id": "2026-11-01-0",
      "disciplina": "LEG",
      "titulo": "Constituição Federal: Direitos e Deveres Individuais e Coletivos (Art. 5º)",
-     "detalhe": "Art. 5º da CF/88 (Caput e incisos mais cobrados em prova): Inviolabilidade do direito à vida, liberdade, igualdade, segurança e propriedade. Inviolabilidade do domicílio (a casa é asilo inviolável, ninguém nela podendo penetrar sem consentimento, salvo flagrante delito, desastre, prestar socorro, ou durante o dia por determinação judicial!). Sigilo de correspondência e comunicações telegráficas/dados/telefônicas (escuta telefônica só por ordem judicial para investigação criminal ou instrução penal). Remédios constitucionais: Habeas Corpus (liberdade de locomoção), Habeas Data (acesso/retificação de informações pessoais), Mandado de Segurança (direito líquido e certo não amparado por HC ou HD), Ação Popular (anular ato lesivo ao patrimônio público, moralidade, meio ambiente, patrimônio histórico).",
+     "detalhe": "Art. 5º da CF/88 (caput e incisos principais): Inviolabilidade do direito à vida, liberdade, igualdade, segurança e propriedade. Inviolabilidade do domicílio (a casa é asilo inviolável, ninguém nela podendo penetrar sem consentimento, salvo flagrante delito, desastre, prestar socorro, ou durante o dia por determinação judicial!). Sigilo de correspondência e comunicações telegráficas/dados/telefônicas (escuta telefônica só por ordem judicial para investigação criminal ou instrução penal). Remédios constitucionais: Habeas Corpus (liberdade de locomoção), Habeas Data (acesso/retificação de informações pessoais), Mandado de Segurança (direito líquido e certo não amparado por HC ou HD), Ação Popular (anular ato lesivo ao patrimônio público, moralidade, meio ambiente, patrimônio histórico).",
      "minutos": 60,
      "materiais": [
       "cf88_geral"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — CF, art. 5º: direitos e deveres individuais e coletivos",
+       "link": "../edital/apostilas/legislacao.html#cf5"
+      }
      ]
     },
     {
@@ -495,6 +605,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "cf88_sociais"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — CF, arts. 6º a 13: direitos sociais e nacionalidade",
+       "link": "../edital/apostilas/legislacao.html#cf6"
+      }
      ]
     }
    ],
@@ -517,16 +633,37 @@ window.PLANO = {
      "materiais": [
       "manual_art",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Cárie: ART, selantes, Black e proteção dentina-polpa",
+       "link": "../edital/apostilas/odontologia.html#carie"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Materiais restauradores e adequação do meio bucal",
+       "link": "../edital/apostilas/odontologia.html#materiais"
+      }
      ]
     },
     {
-     "id": "2026-11-02-1",
+     "id": "2026-11-02-2",
      "disciplina": "ESP",
-     "titulo": "Materiais Odontológicos Forradores e Restauradores e Proteção Dentinopulpar",
-     "detalhe": "Proteção do complexo dentinopulpar: Cavidade rasa (sistema adesivo + resina), média (CIV + restauração), profunda sem exposição (CIV ou hidróxido de cálcio na parede de fundo + CIV de base), exposição pulpar acidental (capeamento pulpar direto com Hidróxido de Cálcio pró-análise ou MTA + CIV de base). Propriedades dos materiais: Resinas compostas (matriz orgânica Bis-GMA, partículas inorgânicas de carga, agente de união silano); CIV (liberação contínua de flúor, adesão química ao cálcio de esmalte e dentina, coeficiente de expansão térmica similar ao dente, biocompatibilidade).",
+     "titulo": "Flúor (usos tópico e sistêmico) e Epidemiologia em Saúde Bucal: CPO-D, ceo-d e SB Brasil",
+     "detalhe": "Leia na apostila de Odontologia as seções de flúor e de epidemiologia (CPO-D, ceo-d e SB Brasil). Foque nas caixas de pegadinha e confira o que você acertou nas questões comentadas.",
      "minutos": 60,
      "materiais": [
+      "guia_fluor",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Flúor: usos tópico e sistêmico",
+       "link": "../edital/apostilas/odontologia.html#fluor"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Epidemiologia: CPO-D, ceo-d e SB Brasil",
+       "link": "../edital/apostilas/odontologia.html#epidemio"
+      }
      ]
     }
    ],
@@ -548,6 +685,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Período composto, orações reduzidas e paralelismo",
+       "link": "../edital/apostilas/portugues.html#periodo"
+      }
      ]
     },
     {
@@ -558,6 +701,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Funções do \"que\" e do \"se\"",
+       "link": "../edital/apostilas/portugues.html#quese"
+      }
      ]
     }
    ],
@@ -577,6 +726,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Quantificadores, silogismos e conjuntos",
+       "link": "../edital/apostilas/matematica.html#quant"
+      }
      ]
     },
     {
@@ -587,6 +742,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Quantificadores, silogismos e conjuntos",
+       "link": "../edital/apostilas/matematica.html#quant"
+      }
      ]
     }
    ],
@@ -607,6 +768,12 @@ window.PLANO = {
      "materiais": [
       "pnab",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — PNAB: a Política Nacional de Atenção Básica (Portaria 2.436/2017)",
+       "link": "../edital/apostilas/saude-sus.html#pnab"
+      }
      ]
     },
     {
@@ -618,6 +785,16 @@ window.PLANO = {
      "materiais": [
       "pnab",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Atuação na atenção básica e Política de Saúde Bucal",
+       "link": "../edital/apostilas/odontologia.html#aps"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — PNAB: a Política Nacional de Atenção Básica (Portaria 2.436/2017)",
+       "link": "../edital/apostilas/saude-sus.html#pnab"
+      }
      ]
     }
    ],
@@ -637,6 +814,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Geopolítica e relações internacionais",
+       "link": "../edital/apostilas/atualidades.html#geopolitica"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Economia global e nacional",
+       "link": "../edital/apostilas/atualidades.html#economia"
+      }
      ]
     },
     {
@@ -647,6 +834,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Ciência, tecnologia e inovação",
+       "link": "../edital/apostilas/atualidades.html#ciencia"
+      }
      ]
     }
    ],
@@ -659,13 +852,27 @@ window.PLANO = {
    "marcos": [],
    "tarefas": [
     {
-     "id": "2026-11-07-0",
-     "disciplina": "ESP",
-     "titulo": "Farmacologia Odontológica: Analgésicos, Anti-inflamatórios Não Esteroidais (AINEs) e Corticoides",
-     "detalhe": "Mecanismo de ação: AINEs inibem a ciclo-oxigenase (COX-1 e COX-2), bloqueando a síntese de prostaglandinas. Indicações e contraindicações clínicas: Ibuprofeno (400 a 600mg de 8/8h), Nimesulida (100mg 12/12h), Cetoprofeno (100mg 12/12h). Contraindicações de AINEs: úlcera péptica ativa, insuficiência renal grave, asma, gravidez no 3º trimestre. Dipirona (500mg a 1g) e Paracetamol (500 a 750mg) em analgesia. Corticoides em dose única pré-operatória preemptiva (Dexametasona 4 a 8mg VO) para controle do edema inflamatório em cirurgias de terceiros molares.",
+     "id": "2026-11-07-2",
+     "disciplina": "POR",
+     "titulo": "Colocação Pronominal, Tempos, Modos e Vozes Verbais e Variação Linguística",
+     "detalhe": "Leia na apostila de Português as seções de colocação pronominal, tempos/modos/vozes e variação linguística. Resolva as questões comentadas dos temas e anote as regras em que errar.",
      "minutos": 60,
      "materiais": [
-      "caderno_atencao_bucal"
+      "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Colocação pronominal",
+       "link": "../edital/apostilas/portugues.html#colocacao"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Tempos, modos e vozes",
+       "link": "../edital/apostilas/portugues.html#vozes"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Variação linguística",
+       "link": "../edital/apostilas/portugues.html#variacao"
+      }
      ]
     },
     {
@@ -676,6 +883,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Farmacologia terapêutica na atenção básica",
+       "link": "../edital/apostilas/odontologia.html#farmaco"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Urgências, traumatismo, cirurgia menor e farmacologia",
+       "link": "../edital/apostilas/odontologia.html#urgencias"
+      }
      ]
     }
    ],
@@ -695,6 +912,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "cf88_adm"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Atos administrativos",
+       "link": "../edital/apostilas/legislacao.html#atos"
+      }
      ]
     },
     {
@@ -705,6 +928,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "cf88_adm"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Atos administrativos",
+       "link": "../edital/apostilas/legislacao.html#atos"
+      }
      ]
     }
    ],
@@ -727,6 +956,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Concordância avançada e silepse",
+       "link": "../edital/apostilas/portugues.html#concordancia"
+      }
      ]
     },
     {
@@ -737,6 +972,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Regência verbal e nominal",
+       "link": "../edital/apostilas/portugues.html#regencia"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Crase",
+       "link": "../edital/apostilas/portugues.html#crase"
+      }
      ]
     }
    ],
@@ -756,6 +1001,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Análise combinatória",
+       "link": "../edital/apostilas/matematica.html#combinatoria"
+      }
      ]
     },
     {
@@ -766,6 +1017,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Probabilidade",
+       "link": "../edital/apostilas/matematica.html#probabilidade"
+      }
      ]
     }
    ],
@@ -786,6 +1043,12 @@ window.PLANO = {
      "materiais": [
       "pnh",
       "v_aula7"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Política Nacional de Humanização (PNH / HumanizaSUS)",
+       "link": "../edital/apostilas/saude-sus.html#pnh"
+      }
      ]
     },
     {
@@ -799,6 +1062,16 @@ window.PLANO = {
       "v_aula4",
       "lei_tea",
       "raps"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Inclusão, TEA e infância",
+       "link": "../edital/apostilas/saude-sus.html#inclusao"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Saúde mental: Lei 10.216/2001 e RAPS (Portaria 3.088/2011)",
+       "link": "../edital/apostilas/saude-sus.html#mental"
+      }
      ]
     }
    ],
@@ -818,16 +1091,28 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Anestesia local",
+       "link": "../edital/apostilas/odontologia.html#anestesia"
+      }
      ]
     },
     {
-     "id": "2026-11-12-1",
-     "disciplina": "ESP",
-     "titulo": "Técnicas Anestésicas e Complicações: Bloqueio do Nervo Alveolar Inferior e Acidentes",
-     "detalhe": "Técnicas infiltrativas (maxila, osso poroso) vs bloqueios regionais (mandíbula, osso cortical espesso). Bloqueio do Nervo Alveolar Inferior (BNAI) e nervo lingual: reparos anatômicos (linha oblíqua, fossa pterigotemporal, prega pterigomandibular, plano oclusal a 1cm acima dos molares inferiores). Bloqueio do nervo bucal para gengiva vestibular dos molares inferiores. Acidentes e complicações: quebra de agulha, trismo (espasmo muscular por trauma no pterigoideo medial), parestesia (trauma mecânico com agulha no tronco nervoso), hematoma, paralisia facial transitória (injeção dentro da glândula parótida posterior à mandíbula), toxicidade sistêmica por injeção intravascular acidental (aspirar sempre antes de injetar!).",
+     "id": "2026-11-12-2",
+     "disciplina": "LEG",
+     "titulo": "Regime Jurídico dos Servidores de Barão de Cotegipe (Lei Municipal 1.867/2008)",
+     "detalhe": "Leia na apostila de Legislação a seção do Regime Jurídico dos servidores municipais (Lei 1.867/2008) e confira as questões comentadas. É conteúdo local, pedido no programa do edital: atenção às diferenças entre a lei municipal e a Constituição.",
      "minutos": 60,
      "materiais": [
-      "caderno_atencao_bucal"
+      "regime_bc"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Regime Jurídico dos servidores (Lei Municipal 1.867/2008)",
+       "link": "../edital/apostilas/legislacao.html#estatuto"
+      }
      ]
     }
    ],
@@ -850,6 +1135,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "cf88_adm"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Poderes administrativos",
+       "link": "../edital/apostilas/legislacao.html#poderes"
+      }
      ]
     },
     {
@@ -861,6 +1152,16 @@ window.PLANO = {
      "materiais": [
       "cf88_adm",
       "regime_bc"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Órgãos e agentes públicos",
+       "link": "../edital/apostilas/legislacao.html#orgaos"
+      },
+      {
+       "rotulo": "Abrir apostila: Legislação — Regime Jurídico dos servidores (Lei Municipal 1.867/2008)",
+       "link": "../edital/apostilas/legislacao.html#estatuto"
+      }
      ]
     }
    ],
@@ -880,6 +1181,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Sustentabilidade e meio ambiente",
+       "link": "../edital/apostilas/atualidades.html#ambiente"
+      }
      ]
     },
     {
@@ -890,6 +1197,12 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Atualidades — Sociedade, direitos humanos e cidadania",
+       "link": "../edital/apostilas/atualidades.html#sociedade"
+      }
      ]
     }
    ],
@@ -908,22 +1221,50 @@ window.PLANO = {
      "id": "2026-11-15-0",
      "disciplina": "REV",
      "titulo": "Simulado Geral Integrado: Bloco 1 (Português, Matemática/RL e Atualidades)",
-     "detalhe": "Resolução de 15 questões simuladas (5 de Português, 5 de Matemática e 5 de Atualidades/Realidade Municipal). Cronometrar 1 hora e 30 minutos. Ao terminar, conferir gabarito: destacar cada resposta correta em frase afirmativa verde e revisar os erros com calma.",
+     "detalhe": "COMO FAZER: use as questões comentadas das apostilas de Português, Matemática e Atualidades (botões abaixo) como simulado. Resolução de 15 questões simuladas (5 de Português, 5 de Matemática e 5 de Atualidades/Realidade Municipal). Cronometrar 1 hora e 30 minutos. Ao terminar, conferir gabarito: destacar cada resposta correta em frase afirmativa verde e revisar os erros com calma.",
      "minutos": 60,
      "materiais": [
       "anexo_prog",
       "mapa_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/portugues.html#questoes"
+      },
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/matematica.html#questoes"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/atualidades.html#questoes"
+      }
      ]
     },
     {
      "id": "2026-11-15-1",
      "disciplina": "REV",
      "titulo": "Simulado Geral Integrado: Bloco 2 (Legislação, Conhecimentos sobre Saúde e Específicos)",
-     "detalhe": "Resolução de 15 questões simuladas (5 de Legislação Municipal/Geral, 5 de Conhecimentos sobre Saúde e 5 de Conhecimentos Específicos de Odontologia). Cronometrar 1 hora e 30 minutos. Calcular a nota final: meta mínima = 36 pontos (18 acertos em 30). Identificar temas prioritários para a semana de revisão.",
+     "detalhe": "COMO FAZER: use as questões comentadas das apostilas de Legislação, Saúde e Odontologia (botões abaixo) como simulado. Resolução de 15 questões simuladas (5 de Legislação Municipal/Geral, 5 de Conhecimentos sobre Saúde e 5 de Conhecimentos Específicos de Odontologia). Cronometrar 1 hora e 30 minutos. Calcular a nota final: meta mínima = 36 pontos (18 acertos em 30). Identificar temas prioritários para a semana de revisão.",
      "minutos": 60,
      "materiais": [
       "anexo_prog",
       "mapa_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/legislacao.html#questoes"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/saude-sus.html#questoes"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Questões comentadas (formato da prova: 4 alternativas)",
+       "link": "../edital/apostilas/odontologia.html#questoes"
+      }
      ]
     }
    ],
@@ -943,16 +1284,36 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "manual_redacao_pr"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Redação oficial",
+       "link": "../edital/apostilas/portugues.html#oficial"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Ata e relatório",
+       "link": "../edital/apostilas/portugues.html#ata-relatorio"
+      }
      ]
     },
     {
      "id": "2026-11-16-1",
      "disciplina": "POR",
-     "titulo": "Pontuação Estilística e Sintática e Figuras de Linguagem Mais Cobradas",
+     "titulo": "Pontuação Estilística e Sintática e Figuras de Linguagem",
      "detalhe": "Regras obrigatórias de pontuação: NUNCA se separa com vírgula o sujeito do seu verbo, nem o verbo do seu complemento direto ou indireto! Vírgula obrigatória para isolar vocativo, aposto explicativo, orações adjetivas explicativas, orações coordenadas adversativas ('mas', 'porém') e adjunto adverbial deslocado de grande extensão. Figuras de sintaxe/pensamento em concursos: Hipérbato (inversão da ordem direta), Anacoluto (quebra da estrutura sintática), Zeugma (omissão de termo já expresso), Paradoxo (ideias inconciliáveis) e Metonímia.",
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Pontuação",
+       "link": "../edital/apostilas/portugues.html#pontuacao"
+      },
+      {
+       "rotulo": "Abrir apostila: Português — Figuras de pensamento e de sintaxe",
+       "link": "../edital/apostilas/portugues.html#figuras"
+      }
      ]
     }
    ],
@@ -972,6 +1333,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Razão, porcentagem e regra de três",
+       "link": "../edital/apostilas/matematica.html#razao"
+      },
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Matemática financeira",
+       "link": "../edital/apostilas/matematica.html#financeira"
+      }
      ]
     },
     {
@@ -982,6 +1353,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Estatística e teorema de Bayes",
+       "link": "../edital/apostilas/matematica.html#estatistica"
+      },
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Modelagem de problemas e leitura de gráficos e tabelas",
+       "link": "../edital/apostilas/matematica.html#modelagem"
+      }
      ]
     }
    ],
@@ -994,13 +1375,27 @@ window.PLANO = {
    "marcos": [],
    "tarefas": [
     {
-     "id": "2026-11-18-0",
+     "id": "2026-11-18-2",
      "disciplina": "ESP",
-     "titulo": "Cirurgia Oral Menor na Atenção Básica: Princípios de Exodontia e Cuidados Cirúrgicos",
-     "detalhe": "Tempos cirúrgicos fundamentais: Diérese (incisão/descolamento), Exérese (remoção do dente/lesão), Hemostasia e Síntese (sutura). Princípios mecânicos dos fórceps e alavancas (alavanca de primeira classe interfixa, cunha e roda/eixo). Movimentos de luxação e expansão alveolar (intrusão, lateralidade vestibular/lingual, rotação para raízes cônicas e tração). Cuidados pré-operatórios: anamnese detalhada, controle pressórico e glicêmico. Cuidados pós-operatórios: mordedura de gaze por 30-45 min, gelo nas primeiras 24-48h, repouso, dieta fria e líquida/pastosa no 1º dia, evitar bochechos vigorosos para não deslocar o coágulo sanguíneo.",
+     "titulo": "Saúde Bucal na Atenção Básica: Periodonto, Lesões de Boca, Oclusão e SUS na Odontologia",
+     "detalhe": "Leia na apostila de Odontologia as seções de periodonto e lesões de boca, oclusão (classificação de Angle) e SUS: determinantes e sistemas de informação. Resolva as questões comentadas dessas seções.",
      "minutos": 60,
      "materiais": [
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Periodonto e lesões de boca",
+       "link": "../edital/apostilas/odontologia.html#perio"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Oclusão: classificação de Angle",
+       "link": "../edital/apostilas/odontologia.html#oclusao"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — SUS: determinantes e sistemas de informação",
+       "link": "../edital/apostilas/odontologia.html#sus"
+      }
      ]
     },
     {
@@ -1011,6 +1406,16 @@ window.PLANO = {
      "minutos": 60,
      "materiais": [
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Odontologia — Pulpites, necrose, periodontite apical e abscesso",
+       "link": "../edital/apostilas/odontologia.html#pulpa"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Urgências, traumatismo, cirurgia menor e farmacologia",
+       "link": "../edital/apostilas/odontologia.html#urgencias"
+      }
      ]
     }
    ],
@@ -1031,6 +1436,12 @@ window.PLANO = {
      "materiais": [
       "lei8142",
       "res_cns453"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Lei 8.142/1990 e Resolução CNS 453/2012: controle social",
+       "link": "../edital/apostilas/saude-sus.html#l8142"
+      }
      ]
     },
     {
@@ -1042,6 +1453,12 @@ window.PLANO = {
      "materiais": [
       "edital_ret",
       "anexo_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Pacto pela Saúde (Portarias 399/2006, 699/2006 e 372/2007)",
+       "link": "../edital/apostilas/saude-sus.html#pacto"
+      }
      ]
     }
    ],
@@ -1059,23 +1476,51 @@ window.PLANO = {
      "id": "2026-11-20-0",
      "disciplina": "REV",
      "titulo": "Revisão Geral das 25 Questões Básicas (Português, Matemática, Atualidades, Legislação e Saúde)",
-     "detalhe": "Revisão dos esquemas das 5 matérias comuns (que representam 50 dos 60 pontos da prova!): (1) Português: crase, concordância com sujeito partitivo e haver/fazer, funções do 'que' e do 'se'; (2) Matemática: tabela-verdade da condicional (V→F=F), equivalência da contrapositiva e De Morgan, probabilidade do evento complementar; (3) Atualidades: Barão de Cotegipe (lei 1964 x instalação 1965, vizinhos, agricultura e Censo 2022); (4) Legislação: art. 5º CF (casa como asilo inviolável, remédios constitucionais) e LIMPE art. 37; (5) Saúde: Lei 8.080 art. 7º (igualdade e universalidade), Decreto 7.508 (portas de entrada e requisitos da Região de Saúde), PNAB (longitudinalidade e acolhimento com risco).",
+     "detalhe": "COMO FAZER: em cada apostila abaixo, releia a lista 'Respostas que a banca dá como certas' e refaça as questões comentadas que você errou. Revisão dos esquemas das 5 matérias comuns (que representam 50 dos 60 pontos da prova!): (1) Português: crase, concordância com sujeito partitivo e haver/fazer, funções do 'que' e do 'se'; (2) Matemática: tabela-verdade da condicional (V→F=F), equivalência da contrapositiva e De Morgan, probabilidade do evento complementar; (3) Atualidades: Barão de Cotegipe (lei 1964 x instalação 1965, vizinhos, agricultura e Censo 2022); (4) Legislação: art. 5º CF (casa como asilo inviolável, remédios constitucionais) e LIMPE art. 37; (5) Saúde: Lei 8.080 art. 7º (igualdade e universalidade), Decreto 7.508 (portas de entrada e requisitos da Região de Saúde), PNAB (longitudinalidade e acolhimento com risco).",
      "minutos": 60,
      "materiais": [
       "anexo_prog",
       "mapa_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/portugues.html#respostas"
+      },
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/matematica.html#respostas"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/atualidades.html#respostas"
+      }
      ]
     },
     {
      "id": "2026-11-20-1",
      "disciplina": "REV",
      "titulo": "Revisão Geral dos Conhecimentos Específicos de Odontologia",
-     "detalhe": "Revisão expressa do bloco Odontológico: (1) Código de Ética: infrações de propaganda e quebra de sigilo profissional; (2) ART: ionômero de alta viscosidade + instrumentos manuais; (3) Anestésicos: limite de vasoconstritor em cardiopatas (0,04mg epinefrina), agulha não quebrar não dobrando; (4) Farmacologia: antibiótico profilático da endocardite (Amoxicilina 2g 1h antes); (5) Fluoretos: flúor na água de abastecimento (0,7 ppm), dentifrício fluoretado padrão mínimo 1.000 a 1.100 ppm F para todas as idades com quantidade controlada de grão de arroz cru para bebês; (6) Biossegurança: monitoramento semanal com bioindicador em autoclave.",
+     "detalhe": "COMO FAZER: em cada apostila abaixo, releia a lista 'Respostas que a banca dá como certas' e refaça as questões comentadas que você errou. Revisão expressa do bloco Odontológico: (1) Código de Ética: infrações de propaganda e quebra de sigilo profissional; (2) ART: ionômero de alta viscosidade + instrumentos manuais; (3) Anestésicos: limite de vasoconstritor em cardiopatas (0,04mg epinefrina), agulha não quebrar não dobrando; (4) Farmacologia: antibiótico profilático da endocardite (Amoxicilina 2g 1h antes); (5) Fluoretos: flúor na água de abastecimento (0,7 ppm), dentifrício fluoretado padrão mínimo 1.000 a 1.100 ppm F para todas as idades com quantidade controlada de grão de arroz cru para bebês; (6) Biossegurança: monitoramento semanal com bioindicador em autoclave.",
      "minutos": 60,
      "materiais": [
       "guia_fluor",
       "codigo_etica_cfo",
       "caderno_atencao_bucal"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Legislação — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/legislacao.html#respostas"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/saude-sus.html#respostas"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Respostas que a banca dá como certas",
+       "link": "../edital/apostilas/odontologia.html#respostas"
+      }
      ]
     }
    ],
@@ -1097,10 +1542,36 @@ window.PLANO = {
      "id": "2026-11-21-0",
      "disciplina": "REV",
      "titulo": "Leitura Rápida dos Mapas Mentais Visuais (30 minutos) e Estratégia de Prova",
-     "detalhe": "Revisão visual leve apenas passando os olhos pelos mapas mentais das 6 matérias. Fixar a estratégia da prova de 3 horas (30 questões): (1) Começar pela matéria de maior segurança (ex: Saúde e Específicos ou Português); (2) Não perder mais de 3 minutos em nenhuma questão difícil de Matemática/RL (marque para voltar depois se der tempo!); (3) Deixar ao menos 30 minutos reservados para passar as 30 respostas para o cartão-resposta oficial com calma, sem rasuras.",
+     "detalhe": "Os botões abaixo abrem o mapa geral de cada apostila para a leitura rápida. Revisão visual leve apenas passando os olhos pelos mapas mentais das 6 matérias. Fixar a estratégia da prova de 3 horas (30 questões): (1) Começar pela matéria de maior segurança (ex: Saúde e Específicos ou Português); (2) Não perder mais de 3 minutos em nenhuma questão difícil de Matemática/RL (marque para voltar depois se der tempo!); (3) Deixar ao menos 30 minutos reservados para passar as 30 respostas para o cartão-resposta oficial com calma, sem rasuras.",
      "minutos": 60,
      "materiais": [
       "mapa_prog"
+     ],
+     "apostilas": [
+      {
+       "rotulo": "Abrir apostila: Português — Mapa geral",
+       "link": "../edital/apostilas/portugues.html#mapa"
+      },
+      {
+       "rotulo": "Abrir apostila: Matemática e Lógica — Mapa geral",
+       "link": "../edital/apostilas/matematica.html#mapa"
+      },
+      {
+       "rotulo": "Abrir apostila: Atualidades — Mapa geral",
+       "link": "../edital/apostilas/atualidades.html#mapa"
+      },
+      {
+       "rotulo": "Abrir apostila: Legislação — Mapa geral",
+       "link": "../edital/apostilas/legislacao.html#mapa"
+      },
+      {
+       "rotulo": "Abrir apostila: Saúde e SUS — Mapa geral",
+       "link": "../edital/apostilas/saude-sus.html#mapa"
+      },
+      {
+       "rotulo": "Abrir apostila: Odontologia — Mapa geral",
+       "link": "../edital/apostilas/odontologia.html#mapa"
+      }
      ]
     },
     {
