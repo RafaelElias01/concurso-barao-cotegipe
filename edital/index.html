@@ -16,6 +16,8 @@
     li { margin: .55rem 0; }
     a { color: LinkText; }
     .formatos { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-size: .9rem; }
+    .busca { width: 100%; max-width: 34rem; padding: .65rem .8rem; border: 1px solid GrayText; border-radius: .4rem; background: Canvas; color: CanvasText; font: inherit; }
+    .resultado-busca { min-height: 1.5em; }
     @media (prefers-color-scheme: dark) { .destaque { border-color: #5fd18d; } }
   </style>
 </head>
@@ -27,7 +29,13 @@
   </header>
 
   <main>
-    <h2>Editais e alterações</h2>
+    <h2 id="documentos">Documentos disponíveis</h2>
+    <label for="busca">Buscar edital, anexo ou documento</label><br>
+    <input class="busca" type="search" id="busca" placeholder="Ex.: retificado, cronograma, isenção" aria-describedby="resultado-busca">
+    <p class="resultado-busca" id="resultado-busca" role="status" aria-live="polite"></p>
+
+    <section aria-labelledby="editais-heading">
+    <h2 id="editais-heading">Editais e alterações</h2>
     <ul>
       <li><a href="oficial/01-edital-001-2026-RETIFICADO.pdf">Edital 001/2026 retificado (PDF)</a> <span class="formatos"><a href="texto/01-edital-001-2026-RETIFICADO.txt">Texto extraído</a></span></li>
       <li><a href="oficial/02-edital-001-2026-original.pdf">Edital 001/2026 original (PDF)</a> <span class="formatos"><a href="texto/02-edital-001-2026-original.txt">Texto extraído</a></span></li>
@@ -35,8 +43,10 @@
       <li><a href="oficial/04-aditivo-002-26.pdf">Aditivo 002/2026 (PDF)</a> <span class="formatos"><a href="texto/04-aditivo-002-26.txt">Texto extraído</a></span></li>
       <li><a href="oficial/05-errata-001-26.pdf">Errata 001/2026 (PDF)</a> <span class="formatos"><a href="texto/05-errata-001-26.txt">Texto extraído</a></span></li>
     </ul>
+    </section>
 
-    <h2>Anexos</h2>
+    <section aria-labelledby="anexos-heading">
+    <h2 id="anexos-heading">Anexos</h2>
     <ul>
       <li><a href="oficial/10-anexo-I-quadro-de-vagas.pdf">Anexo I — Quadro de vagas (PDF)</a> <span class="formatos"><a href="texto/10-anexo-I-quadro-de-vagas.txt">Texto extraído</a></span></li>
       <li><a href="oficial/11-anexo-II-cronograma.pdf">Anexo II — Cronograma (PDF)</a> <span class="formatos"><a href="texto/11-anexo-II-cronograma.txt">Texto extraído</a></span></li>
@@ -44,8 +54,10 @@
       <li><a href="oficial/13-anexo-IV-atribuicoes.pdf">Anexo IV — Atribuições (PDF)</a> <span class="formatos"><a href="texto/13-anexo-IV-atribuicoes.txt">Texto extraído</a></span></li>
       <li><a href="oficial/14-anexo-V-formularios.pdf">Anexo V — Formulários (PDF)</a> <span class="formatos"><a href="texto/14-anexo-V-formularios.txt">Texto extraído</a></span></li>
     </ul>
+    </section>
 
-    <h2>Outros documentos oficiais</h2>
+    <section aria-labelledby="outros-heading">
+    <h2 id="outros-heading">Outros documentos oficiais</h2>
     <ul>
       <li><a href="oficial/20-isencao-preliminar.pdf">Resultado preliminar dos pedidos de isenção (PDF)</a> <span class="formatos"><a href="texto/20-isencao-preliminar.txt">Texto extraído</a></span></li>
       <li><a href="oficial/21-isencao-definitivo.pdf">Resultado definitivo dos pedidos de isenção (PDF)</a> <span class="formatos"><a href="texto/21-isencao-definitivo.txt">Texto extraído</a></span></li>
@@ -53,14 +65,60 @@
       <li><a href="oficial/31-portaria-comissao-4743-26.pdf">Portaria da comissão 4743/2026 (PDF)</a> <span class="formatos"><a href="texto/31-portaria-comissao-4743-26.txt">Texto extraído</a></span></li>
       <li><a href="oficial/99-espelho-agrobase-original.pdf">Espelho Agrobase original (PDF)</a> <span class="formatos"><a href="texto/99-espelho-agrobase-original.txt">Texto extraído</a></span></li>
     </ul>
+    </section>
 
-    <h2>Material de consulta</h2>
+    <section aria-labelledby="consulta-heading">
+    <h2 id="consulta-heading">Material de consulta</h2>
     <ul>
       <li><a href="MAPA-DO-PROGRAMA.md">Mapa do conteúdo programático do cargo</a></li>
     </ul>
+    </section>
   </main>
   <footer>
     <small>Os arquivos são cópias para consulta. Confirme sempre atualizações e informações no <a href="https://institutodom.com/informacoes/95/">site oficial do Instituto DOM</a>.</small>
   </footer>
+  <script>
+    (function () {
+      var busca = document.getElementById('busca');
+      var resultado = document.getElementById('resultado-busca');
+      var secoes = Array.prototype.slice.call(document.querySelectorAll('main section'));
+      var itens = [];
+
+      secoes.forEach(function (secao) {
+        Array.prototype.forEach.call(secao.querySelectorAll('li'), function (item) {
+          itens.push({ elemento: item, secao: secao, texto: item.textContent });
+        });
+      });
+
+      function normalizar(texto) {
+        return texto.toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      busca.addEventListener('input', function () {
+        var termo = normalizar(busca.value.trim());
+        var encontrados = 0;
+        var porSecao = new Map();
+
+        itens.forEach(function (item) {
+          var visivel = !termo || normalizar(item.texto).indexOf(termo) !== -1;
+          item.elemento.hidden = !visivel;
+          if (visivel) {
+            encontrados++;
+            porSecao.set(item.secao, true);
+          }
+        });
+
+        secoes.forEach(function (secao) {
+          secao.hidden = termo.length > 0 && !porSecao.has(secao);
+        });
+
+        resultado.textContent = termo
+          ? encontrados + (encontrados === 1 ? ' documento encontrado.' : ' documentos encontrados.')
+          : itens.length + ' documentos disponíveis.';
+      });
+
+      busca.dispatchEvent(new Event('input'));
+    })();
+  </script>
 </body>
 </html>
