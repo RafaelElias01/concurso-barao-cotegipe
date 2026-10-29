@@ -5,64 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Trilhas de estudo e acompanhamento das seis disciplinas do concurso de Odontólogo/PSF de Barão de Cotegipe.">
   <title>Disciplinas — Concurso Barão de Cotegipe</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      font: 16px/1.55 system-ui, sans-serif;
-      --linha: color-mix(in srgb, CanvasText 20%, Canvas);
-      --cartao: color-mix(in srgb, CanvasText 4%, Canvas);
-      --destaque: #287a4b;
-    }
-    * { box-sizing: border-box; }
-    body { max-width: 1000px; margin: 0 auto; padding: 24px 16px 48px; }
-    a { color: LinkText; }
-    h1 { line-height: 1.2; }
-    h2 { margin: 0; line-height: 1.3; }
-    .voltar { display: inline-block; margin-bottom: 1rem; }
-    .intro, .disciplina { padding: 16px; border: 1px solid var(--linha); border-radius: 12px; background: var(--cartao); }
-    .intro { margin: 1.25rem 0; }
-    .intro p:last-child { margin-bottom: 0; }
-    .atalhos { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; padding: 0; list-style: none; }
-    .atalhos a { display: block; height: 100%; padding: 12px; border: 1px solid var(--linha); border-radius: 8px; text-decoration: none; }
-    .atalhos a:hover, .atalhos a:focus-visible { outline: 2px solid var(--destaque); outline-offset: 2px; }
-    .atalhos small { display: block; color: GrayText; }
-    .disciplina { margin: 18px 0; scroll-margin-top: 16px; }
-    .disciplina-topo { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
-    .peso { color: GrayText; font-size: .9rem; }
-    .mapa { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 8px; margin: 14px 0; }
-    .ramo { padding: 9px 10px; border-left: 4px solid; border-radius: 5px; background: color-mix(in srgb, CanvasText 5%, Canvas); }
-    .ramo strong { display: block; }
-    .conceito { border-color: #287aab; }
-    .dica { border-color: #287a4b; }
-    .foco { border-color: #bd7418; }
-    .numero { border-color: #7354a5; }
-    .explicacao { margin: 12px 0; }
-    .progresso-linha { display: flex; align-items: center; gap: 10px; margin: 12px 0 16px; }
-    progress { width: min(100%, 400px); height: 14px; accent-color: var(--destaque); }
-    .topicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 8px 20px; padding: 0; list-style: none; }
-    .topicos li { min-width: 0; }
-    .topicos label { display: flex; align-items: flex-start; gap: 9px; height: 100%; padding: 8px; border-radius: 6px; }
-    .topicos label:hover { background: color-mix(in srgb, CanvasText 6%, Canvas); }
-    .topicos input { flex: 0 0 auto; width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--destaque); }
-    .fontes { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--linha); }
-    .fontes ul { display: flex; flex-wrap: wrap; gap: 8px 22px; padding-left: 20px; }
-    .nota { color: GrayText; font-size: .9rem; }
-    .aviso { min-height: 1.5em; color: GrayText; }
-    @media (prefers-color-scheme: dark) {
-      :root { --destaque: #76d39a; }
-      .conceito { border-color: #68b9e8; }
-      .dica { border-color: #76d39a; }
-      .foco { border-color: #f0b660; }
-      .numero { border-color: #bea2ed; }
-    }
-    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
-  </style>
+  <link rel="stylesheet" href="../site.css">
 </head>
 <body>
-  <header>
-    <a class="voltar" href="../index.html">← Voltar aos editais</a>
-    <h1>Trilhas das disciplinas</h1>
-    <p>Concurso de Barão de Cotegipe (RS) · Odontólogo/PSF · Instituto DOM</p>
+  <header class="topo">
+    <div class="wrap">
+      <div class="topo-linha">
+        <h1>Trilhas das disciplinas</h1>
+        <span class="topo-sub">Odontólogo/PSF · Instituto DOM</span>
+      </div>
+      <nav class="abas" aria-label="Seções do site">
+        <a href="../index.html">📄 Editais e documentos</a>
+        <a href="../disciplinas/index.html" aria-current="page">📚 Trilhas das disciplinas</a>
+      </nav>
+    </div>
+  </header>
+  <div class="wrap">
     <div class="intro">
       <strong>Como usar</strong>
       <p>Marque cada tópico depois de estudá-lo. O progresso é salvo neste navegador e neste dispositivo; não é sincronizado com o cronograma nem com outros aparelhos. As trilhas resumem o conteúdo: confira o programa oficial completo antes da prova.</p>
@@ -81,9 +39,9 @@
         <li><a href="#odontologia"><strong>Conhecimentos Específicos — Odontologia</strong><small>5 questões · 10 pontos</small></a></li>
       </ul>
     </nav>
-  </header>
+  </div>
 
-  <main>
+  <main class="wrap">
     <article class="disciplina" id="portugues" data-disciplina="portugues">
       <div class="disciplina-topo">
         <h2>Língua Portuguesa — Nível Superior</h2>
@@ -305,7 +263,7 @@
     </article>
   </main>
 
-  <footer>
+  <footer class="wrap rodape">
     <p class="nota">Programa resumido para orientar os estudos. O conteúdo oficial vigente é o edital retificado e seus atos posteriores.</p>
     <p><a href="../index.html">Voltar à página de editais</a> · <a href="../oficial/01-edital-001-2026-RETIFICADO.pdf">Abrir edital retificado (PDF)</a></p>
   </footer>
